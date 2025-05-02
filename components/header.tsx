@@ -9,6 +9,7 @@ import { ModeToggle } from "@/components/mode-toggle";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu, X, ShieldCheck } from "lucide-react";
 import { Dialog, DialogTrigger, DialogContent, DialogTitle } from "@/components/ui/dialog";
+import Script from "next/script";
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -31,13 +32,13 @@ export default function Header() {
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
-          <Link href="/" className="-m-1.5 p-1.5">
+          <Link href="/" className="-m-1.5 p-1.5 flex items-center">
             <span className="sr-only">Complianta</span>
             <div className="flex items-center">
-              <div className="h-10 w-10 rounded-full bg-primary flex items-center justify-center">
+              <div className="h-12 w-12 rounded-full bg-primary flex items-center justify-center mr-3">
                 <ShieldCheck className="h-8 w-8 text-primary-foreground" />
               </div>
-              <span className="ml-3 text-2xl font-bold">Complianta</span>
+              <span className="text-3xl font-extrabold tracking-tight leading-none" style={{letterSpacing: '-0.02em'}}>Complianta</span>
             </div>
           </Link>
         </div>
@@ -159,6 +160,19 @@ export default function Header() {
           </Dialog>
         </div>
       </nav>
+      <Script id="crisp-chat" strategy="afterInteractive">
+        {`
+          window.$crisp=[];
+          window.CRISP_WEBSITE_ID="e7431150-edda-43f1-8814-df9d78e48a2e";
+          (function(){
+            d=document;
+            s=d.createElement("script");
+            s.src="https://client.crisp.chat/l.js";
+            s.async=1;
+            d.getElementsByTagName("head")[0].appendChild(s);
+          })();
+        `}
+      </Script>
     </header>
   );
 }

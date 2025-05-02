@@ -93,75 +93,66 @@ function ContactForm() {
 export default function Home() {
   return (
     <div className="flex flex-col">
-      {/* Hero Section with Full Background Image */}
-      <section className="relative h-[90vh] flex items-center justify-center overflow-hidden">
-        {/* Background Image */}
-        <div className="absolute inset-0 z-0">
-          <Image
-            src="/hero-background.png"
-            alt="Security and compliance"
-            fill
-            priority
-            className="object-cover"
-          />
-          {/* Dark Overlay for better text readability */}
-          <div className="absolute inset-0 bg-black/50" />
-        </div>
-
-        <div className="container px-4 md:px-6 relative z-10">
-          <div className="max-w-3xl mx-auto text-center">
-            <div className="animate-fade-in-up">
-              <Badge className="mb-4 bg-primary hover:bg-primary text-white">
+      {/* Hero Section with Two Columns */}
+      <section className="relative py-20 md:py-32 bg-background">
+        <div className="container px-4 md:px-6 flex flex-col-reverse lg:flex-row items-center gap-12">
+          {/* Left: Text Content */}
+          <div className="w-full lg:w-1/2 flex flex-col justify-center items-start">
+            <Badge className="mb-4 bg-primary hover:bg-primary text-white">
               Security & Compliance for Growing Companies
-              </Badge>
-              <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl text-white mb-6 animate-fade-in-up-delay-1">
-                Security & Compliance for Growing Companies
-              </h1>
-              <p className="text-xl md:text-2xl text-white/90 mb-8 animate-fade-in-up-delay-2">
-                Helping startups and fast-growing tech companies achieve SOC 2, ISO 27001, HIPAA, GDPR, and ISO/IEC 42001 compliance without the complexity or enterprise bloat.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up-delay-3">
-                <Dialog>
-                  <DialogTrigger asChild>
-                    <Button
-                      size="lg"
-                      className="bg-primary hover:bg-primary/90 text-white animate-pulse-subtle"
-                    >
-                      Schedule a Free Consultation
-                    </Button>
-                  </DialogTrigger>
-                  <DialogContent>
-                    <DialogTitle>Schedule a Free Consultation</DialogTitle>
-                    <div className="w-full" style={{ minHeight: 600 }}>
-                      <iframe
-                        src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0Vxu3mWG4YQPBDvvUz9CX7sNoH_BBnmcGmKPRSYAiQD9S_xtFPB8TmIU_J4LtUeU_aCTmUEgzh"
-                        width="100%"
-                        height="600"
-                        frameBorder="0"
-                        style={{ border: 0 }}
-                        allowFullScreen
-                        title="Schedule a Free Consultation"
-                      ></iframe>
-                    </div>
-                  </DialogContent>
-                </Dialog>
-                <Button
-                  variant="outline"
-                  size="lg"
-                  asChild
-                  className="text-blue border-white hover:bg-white/20"
-                >
-                  <Link href="/services">Explore Our Services</Link>
-                </Button>
-              </div>
+            </Badge>
+            <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl text-foreground mb-6">
+              Security & Compliance for Growing Companies
+            </h1>
+            <p className="text-xl md:text-2xl text-muted-foreground mb-8 self-start">
+              Helping startups and fast-growing tech companies achieve SOC 2, ISO 27001, HIPAA, GDPR, and ISO/IEC 42001 compliance without the complexity or enterprise bloat.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+              <Dialog>
+                <DialogTrigger asChild>
+                  <Button
+                    size="lg"
+                    className="bg-primary hover:bg-primary/90 text-white animate-pulse-subtle"
+                  >
+                    Schedule a Free Consultation
+                  </Button>
+                </DialogTrigger>
+                <DialogContent>
+                  <DialogTitle>Schedule a Free Consultation</DialogTitle>
+                  <div className="w-full" style={{ minHeight: 600 }}>
+                    <iframe
+                      src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0Vxu3mWG4YQPBDvvUz9CX7sNoH_BBnmcGmKPRSYAiQD9S_xtFPB8TmIU_J4LtUeU_aCTmUEgzh"
+                      width="100%"
+                      height="600"
+                      frameBorder="0"
+                      style={{ border: 0 }}
+                      allowFullScreen
+                      title="Schedule a Free Consultation"
+                    ></iframe>
+                  </div>
+                </DialogContent>
+              </Dialog>
+              <Button
+                variant="outline"
+                size="lg"
+                asChild
+                className="text-blue border-primary hover:bg-primary/10"
+              >
+                <Link href="/services">Explore Our Services</Link>
+              </Button>
             </div>
           </div>
-        </div>
-
-        {/* Animated scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10 animate-bounce">
-          <div className="w-8 h-12 rounded-full border-2 border-white flex items-start justify-center p-1">
-            <div className="w-1 h-3 bg-white rounded-full animate-scroll-down"></div>
+          {/* Right: Hero Image Placeholder */}
+          <div className="w-full lg:w-1/2 flex justify-center items-center">
+            {/* Replace the src below with your uploaded transparent image */}
+            <Image
+              src="/hero2.png"
+              alt="Compliance dashboard illustration"
+              width={940}
+              height={680}
+              className="w-full max-w-lg h-auto object-contain"
+              priority
+            />
           </div>
         </div>
       </section>
@@ -265,27 +256,49 @@ export default function Home() {
 
       {/* Trust Logos */}
       <section className="py-16 md:py-24">
-        <div className="container px-4 md:px-6">
-          <div className="text-center mb-10">
-            <h2 className="text-2xl font-bold">Trusted by innovators in fintech, healthtech, SaaS, and beyond.</h2>
-          </div>
-          <div className="grid grid-cols-2 gap-8 md:grid-cols-4 lg:grid-cols-6 items-center justify-items-center opacity-70">
+        <div className="text-center mb-10">
+          <h2 className="text-2xl font-bold">Trusted by innovators in fintech, healthtech, SaaS, and beyond.</h2>
+        </div>
+        <div className="relative overflow-hidden w-full">
+          <div className="marquee flex items-center gap-12 w-max" style={{ animation: 'marquee 30s linear infinite' }}>
             {[
               { name: "Anthill", logo: "./anthil.png" },
-              { name: "Anthill", logo: "./amazon.png" },
+              { name: "Amazon", logo: "./amazon.png" },
               { name: "Anthill", logo: "./anthil.png" },
-              { name: "Anthill", logo: "./amazon.png" },
+              { name: "Amazon", logo: "./amazon.png" },
               { name: "Anthill", logo: "./anthil.png" },
-              { name: "Anthill", logo: "./amazon.png" },
+              { name: "Amazon", logo: "./amazon.png" },
             ].map((company, i) => (
               <div
                 key={i}
-                className="h-12 w-full flex items-center justify-center transform hover:scale-110 transition-transform duration-300"
+                className="h-12 flex items-center justify-center"
+                style={{ minWidth: 120 }}
               >
                 <img
                   src={company.logo}
                   alt={company.name}
-                  className="h-10 object-contain"
+                  className="h-10 object-contain opacity-70 hover:opacity-100 transition-opacity duration-300"
+                />
+              </div>
+            ))}
+            {/* Duplicate for seamless looping */}
+            {[
+              { name: "Anthill", logo: "./anthil.png" },
+              { name: "Amazon", logo: "./amazon.png" },
+              { name: "Anthill", logo: "./anthil.png" },
+              { name: "Amazon", logo: "./amazon.png" },
+              { name: "Anthill", logo: "./anthil.png" },
+              { name: "Amazon", logo: "./amazon.png" },
+            ].map((company, i) => (
+              <div
+                key={`dup-${i}`}
+                className="h-12 flex items-center justify-center"
+                style={{ minWidth: 120 }}
+              >
+                <img
+                  src={company.logo}
+                  alt={company.name}
+                  className="h-10 object-contain opacity-70 hover:opacity-100 transition-opacity duration-300"
                 />
               </div>
             ))}
@@ -390,21 +403,24 @@ export default function Home() {
             {[
               {
                 quote:
-                  "Via Comply helped us achieve SOC 2 compliance in record time. Their expertise was invaluable to our team.",
+                  "Complianta helped us achieve SOC 2 compliance in record time. Their expertise was invaluable",
                 name: "Sarah Johnson",
                 title: "CTO, FinTech Startup",
+                image: "/testimonial-1.png"
               },
               {
                 quote:
                   "The team at Via Comply simplified the complex world of compliance for us. We couldn't have done it without them.",
                 name: "Michael Chen",
                 title: "CEO, Health Tech Company",
+                image: "/testimonial-2.png"
               },
               {
                 quote:
                   "Their vCISO service provided us with enterprise-level security leadership at a fraction of the cost.",
                 name: "Jessica Williams",
                 title: "COO, SaaS Platform",
+                image: "/testimonial-3.png"
               },
             ].map((testimonial, i) => (
               <Card
@@ -418,7 +434,7 @@ export default function Home() {
                   </p>
                   <div className="flex items-center">
                     <Image
-                      src="/confident-professional.png"
+                      src={testimonial.image}
                       alt={testimonial.name}
                       width={40}
                       height={40}
