@@ -34,10 +34,10 @@ export default function Header() {
           <Link href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Complianta</span>
             <div className="flex items-center">
-              <div className="h-8 w-8 rounded-full bg-primary flex items-center justify-center">
-                <ShieldCheck className="h-6 w-6 text-primary-foreground" />
+              <div className="h-10 w-10 rounded-full bg-primary flex items-center justify-center">
+                <ShieldCheck className="h-8 w-8 text-primary-foreground" />
               </div>
-              <span className="ml-2 text-xl font-bold">Complianta</span>
+              <span className="ml-3 text-2xl font-bold">Complianta</span>
             </div>
           </Link>
         </div>
@@ -58,12 +58,12 @@ export default function Header() {
                 >
                   <span className="sr-only">Complianta</span>
                   <div className="flex items-center">
-                    <div className="h-8 w-8 rounded-full bg-primary flex items-center justify-center">
-                      <span className="text-primary-foreground font-bold">
+                    <div className="h-10 w-10 rounded-full bg-primary flex items-center justify-center">
+                      <span className="text-primary-foreground font-bold text-xl">
                         VC
                       </span>
                     </div>
-                    <span className="ml-2 text-xl font-bold">Complianta</span>
+                    <span className="ml-3 text-2xl font-bold">Complianta</span>
                   </div>
                 </Link>
                 <Button
