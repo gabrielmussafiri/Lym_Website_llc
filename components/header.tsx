@@ -7,7 +7,8 @@ import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { ModeToggle } from "@/components/mode-toggle";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ShieldCheck } from "lucide-react";
+import { Dialog, DialogTrigger, DialogContent, DialogTitle } from "@/components/ui/dialog";
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -31,12 +32,12 @@ export default function Header() {
       >
         <div className="flex lg:flex-1">
           <Link href="/" className="-m-1.5 p-1.5">
-            <span className="sr-only">Via Comply</span>
+            <span className="sr-only">Complianta</span>
             <div className="flex items-center">
               <div className="h-8 w-8 rounded-full bg-primary flex items-center justify-center">
-                <span className="text-primary-foreground font-bold">VC</span>
+                <ShieldCheck className="h-6 w-6 text-primary-foreground" />
               </div>
-              <span className="ml-2 text-xl font-bold">Via Comply</span>
+              <span className="ml-2 text-xl font-bold">Complianta</span>
             </div>
           </Link>
         </div>
@@ -55,14 +56,14 @@ export default function Header() {
                   className="-m-1.5 p-1.5"
                   onClick={() => setMobileMenuOpen(false)}
                 >
-                  <span className="sr-only">Via Comply</span>
+                  <span className="sr-only">Complianta</span>
                   <div className="flex items-center">
                     <div className="h-8 w-8 rounded-full bg-primary flex items-center justify-center">
                       <span className="text-primary-foreground font-bold">
                         VC
                       </span>
                     </div>
-                    <span className="ml-2 text-xl font-bold">Via Comply</span>
+                    <span className="ml-2 text-xl font-bold">Complianta</span>
                   </div>
                 </Link>
                 <Button
@@ -94,16 +95,25 @@ export default function Header() {
                     ))}
                   </div>
                   <div className="py-6">
-                    <Button asChild className="w-full">
-                      <a
-                        href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0Vxu3mWG4YQPBDvvUz9CX7sNoH_BBnmcGmKPRSYAiQD9S_xtFPB8TmIU_J4LtUeU_aCTmUEgzh"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        onClick={() => setMobileMenuOpen(false)}
-                      >
-                        Schedule Consultation
-                      </a>
-                    </Button>
+                    <Dialog>
+                      <DialogTrigger asChild>
+                        <Button className="w-full">Schedule Consultation</Button>
+                      </DialogTrigger>
+                      <DialogContent>
+                        <DialogTitle>Schedule a Free Consultation</DialogTitle>
+                        <div className="w-full" style={{ minHeight: 600 }}>
+                          <iframe
+                            src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0Vxu3mWG4YQPBDvvUz9CX7sNoH_BBnmcGmKPRSYAiQD9S_xtFPB8TmIU_J4LtUeU_aCTmUEgzh"
+                            width="100%"
+                            height="600"
+                            frameBorder="0"
+                            style={{ border: 0 }}
+                            allowFullScreen
+                            title="Schedule a Free Consultation"
+                          ></iframe>
+                        </div>
+                      </DialogContent>
+                    </Dialog>
                   </div>
                 </div>
               </div>
@@ -128,15 +138,25 @@ export default function Header() {
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end lg:gap-x-4">
           <ModeToggle />
-          <Button asChild>
-            <a
-              href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0Vxu3mWG4YQPBDvvUz9CX7sNoH_BBnmcGmKPRSYAiQD9S_xtFPB8TmIU_J4LtUeU_aCTmUEgzh"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Schedule Consultation
-            </a>
-          </Button>
+          <Dialog>
+            <DialogTrigger asChild>
+              <Button>Schedule Consultation</Button>
+            </DialogTrigger>
+            <DialogContent>
+              <DialogTitle>Schedule a Free Consultation</DialogTitle>
+              <div className="w-full" style={{ minHeight: 600 }}>
+                <iframe
+                  src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0Vxu3mWG4YQPBDvvUz9CX7sNoH_BBnmcGmKPRSYAiQD9S_xtFPB8TmIU_J4LtUeU_aCTmUEgzh"
+                  width="100%"
+                  height="600"
+                  frameBorder="0"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  title="Schedule a Free Consultation"
+                ></iframe>
+              </div>
+            </DialogContent>
+          </Dialog>
         </div>
       </nav>
     </header>

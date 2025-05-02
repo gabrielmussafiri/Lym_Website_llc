@@ -4,13 +4,19 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { CheckCircle, ArrowRight } from "lucide-react"
 
-export default function SOC2Page() {
+export default function ComplianceReadinessPage() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
       <section className="relative py-20 md:py-28 overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <Image src="/soc2-hero-background.png" alt="SOC 2 Compliance" fill priority className="object-cover" />
+          <Image 
+            src="/images/compliance-readiness-hero.jpg"
+            alt="Compliance Readiness"
+            fill
+            priority
+            className="object-cover"
+          />
           {/* Dark Overlay for better text readability */}
           <div className="absolute inset-0 bg-black/50" />
         </div>
@@ -18,10 +24,10 @@ export default function SOC2Page() {
         <div className="container px-4 md:px-6 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-white animate-fade-in-up">
-              SOC 2 Readiness & Compliance
+              Compliance Readiness Packages
             </h1>
             <p className="mt-4 text-white/90 md:text-xl animate-fade-in-up-delay-1">
-              Streamline your path to SOC 2 compliance with our expert guidance and proven methodology.
+              Comprehensive compliance solutions for SOC 2, ISO 27001, HIPAA, GDPR, and ISO/IEC 42001
             </p>
           </div>
         </div>
@@ -32,32 +38,31 @@ export default function SOC2Page() {
         <div className="container px-4 md:px-6">
           <div className="grid gap-12 lg:grid-cols-2 items-center">
             <div>
-              <h2 className="text-3xl font-bold tracking-tighter mb-6">What is SOC 2 Compliance?</h2>
+              <h2 className="text-3xl font-bold tracking-tighter mb-6">Comprehensive Compliance Solutions</h2>
               <p className="text-muted-foreground mb-6">
-                SOC 2 (System and Organization Controls 2) is a framework developed by the American Institute of CPAs
-                (AICPA) that defines criteria for managing customer data based on five "trust service principles":
-                security, availability, processing integrity, confidentiality, and privacy.
+                Our Compliance Readiness Packages help organizations prepare for and maintain compliance with major
+                frameworks and standards. We understand that each organization has unique needs and regulatory requirements.
               </p>
               <p className="text-muted-foreground mb-6">
-                For startups and growing companies, achieving SOC 2 compliance demonstrates your commitment to security
-                and can be a significant competitive advantage when selling to enterprise customers.
+                Whether you're pursuing SOC 2, ISO 27001, HIPAA, GDPR, or the new ISO/IEC 42001 for AI Management Systems,
+                our expert team provides tailored guidance and support throughout your compliance journey.
               </p>
               <div className="space-y-4">
                 <div className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
                   <div>
-                    <h3 className="font-semibold">SOC 2 Type I</h3>
+                    <h3 className="font-semibold">Gap Assessment</h3>
                     <p className="text-sm text-muted-foreground">
-                      Evaluates the design of security controls at a specific point in time.
+                      Comprehensive evaluation of your current controls against framework requirements
                     </p>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
                   <div>
-                    <h3 className="font-semibold">SOC 2 Type II</h3>
+                    <h3 className="font-semibold">Control Mapping</h3>
                     <p className="text-sm text-muted-foreground">
-                      Evaluates the effectiveness of those controls over a period of time (typically 6-12 months).
+                      Detailed mapping of controls across multiple frameworks to optimize compliance efforts
                     </p>
                   </div>
                 </div>
@@ -65,8 +70,8 @@ export default function SOC2Page() {
             </div>
             <div className="relative rounded-lg overflow-hidden">
               <Image
-                src="/soc2-diagram.png"
-                alt="SOC 2 Compliance Framework"
+                src="/images/compliance-frameworks.jpg"
+                alt="Compliance Frameworks"
                 width={600}
                 height={400}
                 className="object-cover rounded-lg shadow-lg transform hover:scale-105 transition-all duration-300"
@@ -80,10 +85,9 @@ export default function SOC2Page() {
       <section className="py-16 md:py-24 bg-muted">
         <div className="container px-4 md:px-6">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Our SOC 2 Readiness Approach</h2>
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Our Compliance Methodology</h2>
             <p className="mt-4 text-muted-foreground md:text-xl max-w-3xl mx-auto">
-              We've streamlined the path to SOC 2 compliance with a proven methodology that works for startups and
-              growing companies.
+              A structured approach to achieving and maintaining compliance across multiple frameworks
             </p>
           </div>
 
@@ -91,30 +95,27 @@ export default function SOC2Page() {
             {[
               {
                 step: "1",
-                title: "Gap Assessment",
-                description: "We evaluate your current security posture against SOC 2 requirements to identify gaps.",
-                icon: "/gap-assessment-icon.svg",
+                title: "Initial Assessment",
+                description: "Comprehensive evaluation of your current security and compliance posture",
+                icon: "/icons/initial-assessment.svg",
               },
               {
                 step: "2",
-                title: "Remediation Planning",
-                description:
-                  "We develop a tailored roadmap to address identified gaps and implement necessary controls.",
-                icon: "/remediation-icon.svg",
+                title: "Framework Mapping",
+                description: "Strategic mapping of controls across your target compliance frameworks",
+                icon: "/icons/framework-mapping.svg",
               },
               {
                 step: "3",
-                title: "Implementation Support",
-                description:
-                  "Our team guides you through implementing required policies, procedures, and technical controls.",
-                icon: "/implementation-icon.svg",
+                title: "Documentation & Controls",
+                description: "Development and implementation of required policies and procedures",
+                icon: "/icons/documentation-controls.svg",
               },
               {
                 step: "4",
-                title: "Audit Preparation",
-                description:
-                  "We prepare you for the audit process, including evidence collection and auditor interactions.",
-                icon: "/audit-icon.svg",
+                title: "Audit Readiness",
+                description: "Preparation and support for certification audits across frameworks",
+                icon: "/icons/audit-readiness.svg",
               },
             ].map((item, i) => (
               <Card
@@ -126,7 +127,7 @@ export default function SOC2Page() {
                 </div>
                 <CardContent className="pt-12 p-6">
                   <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 mx-auto">
-                    <Image src={item.icon || "/placeholder.svg"} alt={item.title} width={24} height={24} />
+                    <Image src={item.icon} alt={item.title} width={24} height={24} />
                   </div>
                   <h3 className="text-xl font-bold mb-2 text-center">{item.title}</h3>
                   <p className="text-muted-foreground text-center">{item.description}</p>
@@ -142,28 +143,28 @@ export default function SOC2Page() {
         <div className="container px-4 md:px-6">
           <div className="grid gap-12 lg:grid-cols-2 items-center">
             <div className="order-2 lg:order-1">
-              <h2 className="text-3xl font-bold tracking-tighter mb-6">Benefits of SOC 2 Compliance</h2>
+              <h2 className="text-3xl font-bold tracking-tighter mb-6">Benefits of Our Compliance Packages</h2>
               <div className="space-y-4">
                 {[
                   {
-                    title: "Win Enterprise Deals",
-                    description: "SOC 2 compliance is often a requirement for selling to enterprise customers.",
+                    title: "Unified Compliance Approach",
+                    description: "Streamline multiple compliance requirements into a single cohesive program",
                   },
                   {
-                    title: "Build Customer Trust",
-                    description: "Demonstrate your commitment to security and data protection.",
+                    title: "Cost Efficiency",
+                    description: "Optimize resources by addressing overlapping requirements across frameworks",
                   },
                   {
-                    title: "Improve Security Posture",
-                    description: "Strengthen your overall security program and reduce risk.",
+                    title: "Expert Guidance",
+                    description: "Access to specialists across SOC 2, ISO, HIPAA, GDPR, and AI compliance",
                   },
                   {
-                    title: "Competitive Advantage",
-                    description: "Stand out from competitors who haven't achieved compliance.",
+                    title: "Scalable Solutions",
+                    description: "Flexible approaches that grow with your compliance needs",
                   },
                   {
-                    title: "Streamline Due Diligence",
-                    description: "Simplify security questionnaires and vendor assessments.",
+                    title: "Continuous Support",
+                    description: "Ongoing assistance for maintaining compliance and addressing changes",
                   },
                 ].map((benefit, i) => (
                   <div
@@ -181,8 +182,8 @@ export default function SOC2Page() {
             </div>
             <div className="order-1 lg:order-2 relative">
               <Image
-                src="/soc2-benefits.jpg"
-                alt="SOC 2 Compliance Benefits"
+                src="/images/compliance-benefits.jpg"
+                alt="Compliance Benefits"
                 width={600}
                 height={400}
                 className="rounded-lg shadow-lg transform hover:scale-105 transition-all duration-300"
@@ -198,13 +199,13 @@ export default function SOC2Page() {
           <div className="grid gap-12 lg:grid-cols-2 items-center">
             <div>
               <h2 className="text-3xl font-bold tracking-tighter mb-6">Success Story</h2>
-              <h3 className="text-xl font-bold mb-4">FinTech Startup Achieves SOC 2 in 8 Weeks</h3>
+              <h3 className="text-xl font-bold mb-4">Healthcare SaaS Achieves Multiple Compliance Goals</h3>
               <p className="text-muted-foreground mb-6">
-                Learn how we helped a growing fintech company achieve SOC 2 Type I compliance in just 8 weeks, enabling
-                them to close a major enterprise deal worth $1.2M in annual recurring revenue.
+                Discover how we helped a healthcare technology company achieve HIPAA, SOC 2, and ISO 27001 compliance
+                within 6 months, enabling them to expand into new markets and secure major contracts.
               </p>
               <Button asChild className="group">
-                <Link href="/case-studies/fintech-soc2">
+                <Link href="/case-studies/healthcare-compliance">
                   Read the Case Study
                   <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </Link>
@@ -212,8 +213,8 @@ export default function SOC2Page() {
             </div>
             <div className="relative rounded-lg overflow-hidden">
               <Image
-                src="/fintech-case-study.jpg"
-                alt="FinTech Case Study"
+                src="/images/healthcare-case-study.jpg"
+                alt="Healthcare Case Study"
                 width={600}
                 height={400}
                 className="object-cover rounded-lg shadow-lg transform hover:scale-105 transition-all duration-300"
@@ -229,36 +230,36 @@ export default function SOC2Page() {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Frequently Asked Questions</h2>
             <p className="mt-4 text-muted-foreground md:text-xl max-w-3xl mx-auto">
-              Get answers to common questions about SOC 2 compliance.
+              Common questions about our compliance readiness packages
             </p>
           </div>
 
           <div className="mx-auto max-w-3xl space-y-4">
             {[
               {
-                question: "How long does it typically take to achieve SOC 2 compliance?",
+                question: "Which compliance framework should we pursue first?",
                 answer:
-                  "The timeline for SOC 2 compliance varies based on your organization's size and current security posture. With our streamlined approach, most startups can achieve SOC 2 Type I in 8-12 weeks and Type II in 6-9 months.",
+                  "We'll help assess your business needs, customer requirements, and market demands to determine the most strategic compliance roadmap for your organization.",
               },
               {
-                question: "What's the difference between SOC 2 Type I and Type II?",
+                question: "How do you handle multiple framework requirements?",
                 answer:
-                  "SOC 2 Type I assesses whether your security controls are properly designed at a specific point in time. Type II evaluates the operational effectiveness of those controls over a period (typically 6-12 months).",
+                  "Our approach maps controls across frameworks to identify overlapping requirements, allowing for efficient implementation and maintenance of a unified compliance program.",
               },
               {
-                question: "Do we need SOC 2 compliance for our startup?",
+                question: "What's involved in ISO/IEC 42001 compliance for AI systems?",
                 answer:
-                  "If you handle customer data, especially for enterprise clients, SOC 2 compliance is increasingly becoming a requirement. It demonstrates your commitment to security and can be a competitive advantage in sales conversations.",
+                  "ISO/IEC 42001 focuses on AI management systems, including risk management, transparency, and ethical considerations. We help implement appropriate controls and documentation.",
               },
               {
-                question: "How much does SOC 2 compliance cost?",
+                question: "How long does it take to achieve multiple certifications?",
                 answer:
-                  "The cost of SOC 2 compliance includes both the audit fees and the internal resources required to implement controls. Our approach is designed to minimize both costs by providing efficient guidance and tools.",
+                  "Timelines vary based on your starting point and target frameworks. Our streamlined approach typically enables organizations to achieve multiple certifications within 6-12 months.",
               },
               {
-                question: "Can we achieve SOC 2 compliance with a small team?",
+                question: "How do you support ongoing compliance maintenance?",
                 answer:
-                  "Yes! Our approach is specifically designed for startups and small teams. We provide templates, tools, and guidance to make the process as efficient as possible.",
+                  "We provide continuous monitoring tools, periodic assessments, and updates to ensure your compliance program remains effective and current with framework changes.",
               },
             ].map((faq, i) => (
               <Card
@@ -281,10 +282,10 @@ export default function SOC2Page() {
           <div className="rounded-lg bg-gradient-to-r from-primary/20 to-primary/5 p-8 md:p-10 lg:p-16">
             <div className="mx-auto max-w-3xl text-center">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                Ready to start your SOC 2 journey?
+                Ready to streamline your compliance journey?
               </h2>
               <p className="mt-4 text-muted-foreground md:text-xl">
-                Schedule a free consultation with our compliance experts to discuss your specific needs.
+                Schedule a free consultation to discuss your compliance goals and requirements.
               </p>
               <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
                 <Button size="lg" asChild className="bg-primary hover:bg-primary/90 animate-pulse-subtle">

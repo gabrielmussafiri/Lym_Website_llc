@@ -18,10 +18,10 @@ export default function CloudSecurityPage() {
         <div className="container px-4 md:px-6 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-white animate-fade-in-up">
-              Cloud Security Review
+              Cloud Security Posture Review
             </h1>
             <p className="mt-4 text-white/90 md:text-xl animate-fade-in-up-delay-1">
-              Identify and remediate security vulnerabilities in your cloud infrastructure.
+              Identify and remediate cloud security risks in AWS, Azure, or GCP. We analyze access controls, logging, encryption, and system architecture.
             </p>
           </div>
         </div>
@@ -35,7 +35,7 @@ export default function CloudSecurityPage() {
               <h2 className="text-3xl font-bold tracking-tighter mb-6">Secure Your Cloud Infrastructure</h2>
               <p className="text-muted-foreground mb-6">
                 As organizations increasingly rely on cloud services, securing these environments becomes critical. Our
-                Cloud Security Review provides a comprehensive assessment of your cloud infrastructure, identifying
+                Cloud Security Posture Review provides a comprehensive assessment of your cloud infrastructure, identifying
                 vulnerabilities and recommending security enhancements.
               </p>
               <p className="text-muted-foreground mb-6">
@@ -218,7 +218,7 @@ export default function CloudSecurityPage() {
         <div className="container px-4 md:px-6">
           <div className="grid gap-12 lg:grid-cols-2 items-center">
             <div className="order-2 lg:order-1">
-              <h2 className="text-3xl font-bold tracking-tighter mb-6">Benefits of Cloud Security Review</h2>
+              <h2 className="text-3xl font-bold tracking-tighter mb-6">Benefits of Cloud Security Posture Review</h2>
               <div className="space-y-4">
                 {[
                   {

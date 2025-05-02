@@ -3,6 +3,7 @@ import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { CheckCircle, ArrowRight, Users, Shield, FileText, AlertTriangle } from "lucide-react"
+import { Dialog, DialogTrigger, DialogContent, DialogTitle } from "@/components/ui/dialog"
 
 export default function VCISOPage() {
   return (
@@ -18,10 +19,10 @@ export default function VCISOPage() {
         <div className="container px-4 md:px-6 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-white animate-fade-in-up">
-              Virtual CISO Advisory Services
+              vCISO Advisory
             </h1>
             <p className="mt-4 text-white/90 md:text-xl animate-fade-in-up-delay-1">
-              Enterprise-level security leadership without the full-time executive cost.
+              Gain strategic compliance and security leadership without the cost of a full-time executive. Flexible and scalable for your needs.
             </p>
           </div>
         </div>
@@ -277,13 +278,39 @@ export default function VCISOPage() {
                       </div>
                     ))}
                   </div>
-                  <Button
-                    asChild
-                    variant={model.highlighted ? "default" : "outline"}
-                    className={model.highlighted ? "animate-pulse-subtle" : ""}
-                  >
-                    <Link href="/contact">Get Started</Link>
-                  </Button>
+                  <div className="flex flex-col gap-4">
+                    <Dialog>
+                      <DialogTrigger asChild>
+                        <Button 
+                          variant={model.highlighted ? "default" : "outline"} 
+                          className={`w-full ${model.highlighted ? "bg-primary text-white hover:bg-primary/90" : "hover:bg-primary/10"}`}
+                        >
+                          Schedule Free Call
+                        </Button>
+                      </DialogTrigger>
+                      <DialogContent>
+                        <DialogTitle>Schedule a Free Consultation</DialogTitle>
+                        <div className="w-full" style={{ minHeight: 600 }}>
+                          <iframe
+                            src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0Vxu3mWG4YQPBDvvUz9CX7sNoH_BBnmcGmKPRSYAiQD9S_xtFPB8TmIU_J4LtUeU_aCTmUEgzh"
+                            width="100%"
+                            height="600"
+                            frameBorder="0"
+                            style={{ border: 0 }}
+                            allowFullScreen
+                            title="Schedule a Free Consultation"
+                          ></iframe>
+                        </div>
+                      </DialogContent>
+                    </Dialog>
+                    <Button 
+                      variant="outline" 
+                      className="w-full hover:bg-primary/10"
+                      asChild
+                    >
+                      <Link href="/contact">Contact Us</Link>
+                    </Button>
+                  </div>
                 </CardContent>
               </Card>
             ))}
@@ -303,7 +330,7 @@ export default function VCISOPage() {
                 Schedule a free consultation with our security experts to discuss your specific needs.
               </p>
               <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
-                <Button size="lg" asChild className="bg-primary hover:bg-primary/90 animate-pulse-subtle">
+                <Button size="lg" asChild className="bg-primary hover:bg-primary/90 text-white w-full sm:w-auto">
                   <a
                     href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0Vxu3mWG4YQPBDvvUz9CX7sNoH_BBnmcGmKPRSYAiQD9S_xtFPB8TmIU_J4LtUeU_aCTmUEgzh"
                     target="_blank"
@@ -312,7 +339,7 @@ export default function VCISOPage() {
                     Schedule a Consultation
                   </a>
                 </Button>
-                <Button variant="outline" size="lg" asChild className="hover:bg-primary/10">
+                <Button variant="outline" size="lg" asChild className="hover:bg-primary/10 w-full sm:w-auto">
                   <Link href="/services">Explore Other Services</Link>
                 </Button>
               </div>

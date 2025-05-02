@@ -4,6 +4,91 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ArrowRight, Shield, ShieldCheck, Users } from "lucide-react";
+import { Dialog, DialogTrigger, DialogContent, DialogTitle } from "@/components/ui/dialog";
+import React from "react";
+import { Label } from "@/components/ui/label";
+import { Input } from "@/components/ui/input";
+import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from "@/components/ui/select";
+import { Textarea } from "@/components/ui/textarea";
+
+function ContactForm() {
+  const [formState, setFormState] = React.useState({
+    name: "",
+    email: "",
+    company: "",
+    service: "",
+    message: "",
+  });
+  const [isSubmitting, setIsSubmitting] = React.useState(false);
+  const [isSubmitted, setIsSubmitted] = React.useState(false);
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormState((prev) => ({ ...prev, [name]: value }));
+  };
+  const handleSelectChange = (value: string) => {
+    setFormState((prev) => ({ ...prev, service: value }));
+  };
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    await new Promise((resolve) => setTimeout(resolve, 1500));
+    setIsSubmitting(false);
+    setIsSubmitted(true);
+    setFormState({ name: "", email: "", company: "", service: "", message: "" });
+  };
+
+  return (
+    <div>
+      {isSubmitted ? (
+        <div className="flex flex-col items-center justify-center text-center py-10">
+          <div className="rounded-full bg-primary/10 p-3 mb-4">
+            <svg className="h-6 w-6 text-primary" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
+          </div>
+          <h3 className="text-2xl font-bold mb-2">Thank You!</h3>
+          <p className="text-muted-foreground mb-6">Your message has been received. We'll get back to you within 1-2 business days.</p>
+          <Button onClick={() => setIsSubmitted(false)}>Send Another Message</Button>
+        </div>
+      ) : (
+        <form onSubmit={handleSubmit} className="space-y-6">
+          <div className="space-y-2">
+            <Label htmlFor="name">Full Name</Label>
+            <Input id="name" name="name" value={formState.name} onChange={handleChange} required />
+          </div>
+          <div className="space-y-2">
+            <Label htmlFor="email">Email</Label>
+            <Input id="email" name="email" type="email" value={formState.email} onChange={handleChange} required />
+          </div>
+          <div className="space-y-2">
+            <Label htmlFor="company">Company</Label>
+            <Input id="company" name="company" value={formState.company} onChange={handleChange} required />
+          </div>
+          <div className="space-y-2">
+            <Label htmlFor="service">Service of Interest</Label>
+            <Select value={formState.service} onValueChange={handleSelectChange}>
+              <SelectTrigger id="service">
+                <SelectValue placeholder="Select a service" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="soc2">SOC 2 Readiness</SelectItem>
+                <SelectItem value="cloud-security">Cloud Security Review</SelectItem>
+                <SelectItem value="vciso">vCISO Advisory</SelectItem>
+                <SelectItem value="other">Other</SelectItem>
+              </SelectContent>
+            </Select>
+          </div>
+          <div className="space-y-2">
+            <Label htmlFor="message">Message</Label>
+            <Textarea id="message" name="message" value={formState.message} onChange={handleChange} rows={5} required />
+          </div>
+          <Button type="submit" className="w-full" disabled={isSubmitting}>
+            {isSubmitting ? "Sending..." : "Send Message"}
+          </Button>
+        </form>
+      )}
+    </div>
+  );
+}
 
 export default function Home() {
   return (
@@ -27,29 +112,39 @@ export default function Home() {
           <div className="max-w-3xl mx-auto text-center">
             <div className="animate-fade-in-up">
               <Badge className="mb-4 bg-primary hover:bg-primary text-white">
-                Security & Compliance
+              Security & Compliance for Growing Companies
               </Badge>
               <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl text-white mb-6 animate-fade-in-up-delay-1">
-                Simplifying Compliance for Growing Startups
+                Security & Compliance for Growing Companies
               </h1>
               <p className="text-xl md:text-2xl text-white/90 mb-8 animate-fade-in-up-delay-2">
-                We help startups achieve SOC 2, ISO 27001, and HIPAA compliance
-                without the complexity and overhead.
+                Helping startups and fast-growing tech companies achieve SOC 2, ISO 27001, HIPAA, GDPR, and ISO/IEC 42001 compliance without the complexity or enterprise bloat.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up-delay-3">
-                <Button
-                  asChild
-                  size="lg"
-                  className="bg-primary hover:bg-primary/90 text-white animate-pulse-subtle"
-                >
-                  <a
-                    href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0Vxu3mWG4YQPBDvvUz9CX7sNoH_BBnmcGmKPRSYAiQD9S_xtFPB8TmIU_J4LtUeU_aCTmUEgzh"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Schedule a Free Consultation
-                  </a>
-                </Button>
+                <Dialog>
+                  <DialogTrigger asChild>
+                    <Button
+                      size="lg"
+                      className="bg-primary hover:bg-primary/90 text-white animate-pulse-subtle"
+                    >
+                      Schedule a Free Consultation
+                    </Button>
+                  </DialogTrigger>
+                  <DialogContent>
+                    <DialogTitle>Schedule a Free Consultation</DialogTitle>
+                    <div className="w-full" style={{ minHeight: 600 }}>
+                      <iframe
+                        src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0Vxu3mWG4YQPBDvvUz9CX7sNoH_BBnmcGmKPRSYAiQD9S_xtFPB8TmIU_J4LtUeU_aCTmUEgzh"
+                        width="100%"
+                        height="600"
+                        frameBorder="0"
+                        style={{ border: 0 }}
+                        allowFullScreen
+                        title="Schedule a Free Consultation"
+                      ></iframe>
+                    </div>
+                  </DialogContent>
+                </Dialog>
                 <Button
                   variant="outline"
                   size="lg"
@@ -74,6 +169,11 @@ export default function Home() {
       {/* Value Proposition */}
       <section className="py-16 md:py-24">
         <div className="container px-4 md:px-6">
+          <div className="text-center mb-10">
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
+             Why Choose Us?
+            </h2>
+          </div>
           <div className="grid gap-6 lg:grid-cols-3 lg:gap-12">
             <Card className="border-none shadow-none bg-transparent hover:bg-muted/50 transition-all duration-300 p-4 rounded-lg">
               <CardContent className="p-0 space-y-2">
@@ -82,8 +182,7 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-bold">Streamlined Compliance</h3>
                 <p className="text-muted-foreground">
-                  We simplify complex compliance requirements into manageable
-                  steps tailored for startups.
+                We simplify complex compliance requirements into actionable steps tailored to your stage and structure.
                 </p>
               </CardContent>
             </Card>
@@ -94,8 +193,8 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-bold">Expert Guidance</h3>
                 <p className="text-muted-foreground">
-                  Our team of certified security professionals brings
-                  enterprise-level expertise to growing companies.
+                Our certified security professionals bring enterprise-grade insight to growing businesses and resource-limited
+                teams.
                 </p>
               </CardContent>
             </Card>
@@ -106,8 +205,8 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-bold">Tailored Approach</h3>
                 <p className="text-muted-foreground">
-                  We adapt our methodology to your specific business needs, tech
-                  stack, and growth stage.
+                Whether you-re seed-stage or scaling to Series C, our methodology flexes to your stack, size, and growth
+                trajectory.
                 </p>
               </CardContent>
             </Card>
@@ -120,7 +219,7 @@ export default function Home() {
         <div className="container px-4 md:px-6">
           <div className="text-center mb-10">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-              Trusted by Innovative Companies
+            Impact at a Glance
             </h2>
             <p className="mt-4 text-muted-foreground md:text-xl">
               We've helped companies across various industries achieve their
@@ -133,7 +232,7 @@ export default function Home() {
                 100+
               </span>
               <span className="text-sm text-muted-foreground mt-1">
-                Clients Served
+              Clients Served
               </span>
             </div>
             <div className="flex flex-col items-center transform hover:scale-105 transition-transform duration-300">
@@ -141,7 +240,7 @@ export default function Home() {
                 98%
               </span>
               <span className="text-sm text-muted-foreground mt-1">
-                Success Rate
+              Success Rate
               </span>
             </div>
             <div className="flex flex-col items-center transform hover:scale-105 transition-transform duration-300">
@@ -149,7 +248,7 @@ export default function Home() {
                 3x
               </span>
               <span className="text-sm text-muted-foreground mt-1">
-                Faster Compliance
+              Faster Compliance
               </span>
             </div>
             <div className="flex flex-col items-center transform hover:scale-105 transition-transform duration-300">
@@ -157,7 +256,7 @@ export default function Home() {
                 50%
               </span>
               <span className="text-sm text-muted-foreground mt-1">
-                Cost Reduction
+              Average Cost Reduction
               </span>
             </div>
           </div>
@@ -168,7 +267,7 @@ export default function Home() {
       <section className="py-16 md:py-24">
         <div className="container px-4 md:px-6">
           <div className="text-center mb-10">
-            <h2 className="text-2xl font-bold">Trusted by Industry Leaders</h2>
+            <h2 className="text-2xl font-bold">Trusted by innovators in fintech, healthtech, SaaS, and beyond.</h2>
           </div>
           <div className="grid grid-cols-2 gap-8 md:grid-cols-4 lg:grid-cols-6 items-center justify-items-center opacity-70">
             {[
@@ -212,16 +311,15 @@ export default function Home() {
                 <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-primary/10">
                   <ShieldCheck className="h-5 w-5 text-primary" />
                 </div>
-                <h3 className="text-xl font-bold mb-2">SOC 2 Readiness</h3>
+                <h3 className="text-xl font-bold mb-2">Compliance Readiness Packages</h3>
                 <p className="text-muted-foreground mb-4 flex-1">
-                  Prepare your organization for SOC 2 certification with our
-                  comprehensive readiness assessment and implementation support.
+                  Prepare your organization for certifications across SOC 2, ISO 27001, HIPAA, GDPR, and ISO/IEC 42001. We deliver gap assessments, control mapping, documentation, and audit coaching tailored to your compliance framework.
                 </p>
                 <Link
-                  href="/services/soc2"
+                  href="/services/Compliance"
                   className="group flex items-center text-primary font-medium"
                 >
-                  Learn more
+                  Learn about our compliance packages
                   <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </Link>
               </CardContent>
@@ -232,17 +330,16 @@ export default function Home() {
                   <Shield className="h-5 w-5 text-primary" />
                 </div>
                 <h3 className="text-xl font-bold mb-2">
-                  Cloud Security Review
+                  Cloud Security Posture Review
                 </h3>
                 <p className="text-muted-foreground mb-4 flex-1">
-                  Identify and remediate security vulnerabilities in your cloud
-                  infrastructure with our comprehensive security assessment.
+                  Identify and remediate cloud security risks in AWS, Azure, or GCP. We analyze access controls, logging, encryption, and system architecture.
                 </p>
                 <Link
                   href="/services/cloud-security"
                   className="group flex items-center text-primary font-medium"
                 >
-                  Learn more
+                  Explore our cloud security services
                   <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </Link>
               </CardContent>
@@ -254,18 +351,29 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-bold mb-2">vCISO Advisory</h3>
                 <p className="text-muted-foreground mb-4 flex-1">
-                  Get expert security leadership without the full-time executive
-                  cost with our virtual CISO services.
+                  Gain strategic compliance and security leadership without the cost of a full-time executive. Flexible and scalable for your needs.
                 </p>
                 <Link
                   href="/services/vciso"
                   className="group flex items-center text-primary font-medium"
                 >
-                  Learn more
+                  Discover our vCISO services
                   <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </Link>
               </CardContent>
             </Card>
+          </div>
+          <div className="mt-16 text-center">
+            <h3 className="text-2xl font-bold mb-6">Frameworks We Support</h3>
+            <div className="flex flex-wrap justify-center gap-4">
+              <Badge variant="secondary" className="text-sm">SOC 2 (Type I & II)</Badge>
+              <Badge variant="secondary" className="text-sm">ISO/IEC 27001</Badge>
+              <Badge variant="secondary" className="text-sm">HIPAA</Badge>
+              <Badge variant="secondary" className="text-sm">GDPR</Badge>
+              <Badge variant="secondary" className="text-sm">ISO/IEC 42001</Badge>
+              <Badge variant="secondary" className="text-sm">NIST 800-53</Badge>
+              <Badge variant="secondary" className="text-sm">PCI DSS (on request)</Badge>
+            </div>
           </div>
         </div>
       </section>
