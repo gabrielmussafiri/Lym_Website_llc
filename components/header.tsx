@@ -36,7 +36,7 @@ export default function Header() {
             <span className="sr-only">Complianta</span>
             <div className="flex items-center">
               <span className="ml-0 text-4xl md:text-5xl font-extrabold tracking-tight text-sidebar-primary" style={{letterSpacing: '-0.03em'}}>
-                Via Comply
+              Complianta
               </span>
             </div>
           </Link>
@@ -59,9 +59,7 @@ export default function Header() {
                   <span className="sr-only">Complianta</span>
                   <div className="flex items-center">
                     <div className="h-10 w-10 rounded-full bg-primary flex items-center justify-center">
-                      <span className="text-primary-foreground font-bold text-xl">
-                        VC
-                      </span>
+                      
                     </div>
                     <span className="ml-3 text-2xl font-bold">Complianta</span>
                   </div>

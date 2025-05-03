@@ -98,9 +98,9 @@ export default function Home() {
         <div className="container px-4 md:px-6 flex flex-col-reverse lg:flex-row items-center gap-12">
           {/* Left: Text Content */}
           <div className="w-full lg:w-1/2 flex flex-col justify-center items-start">
-            <Badge className="mb-4 bg-primary/90 text-white text-base px-4 py-1 rounded-full font-semibold shadow-md">
+            {/* <Badge className="mb-4 bg-primary/90 text-white text-base px-4 py-1 rounded-full font-semibold shadow-md">
               Security & Compliance for Growing Companies
-            </Badge>
+            </Badge> */}
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-normal tracking-tight text-balance text-sidebar-primary mb-6 text-left ">
               <span className="block">Security & Compliance</span>
                Built for  <span className="text-primary">Growth</span>
