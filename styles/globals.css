@@ -10,6 +10,9 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+  .text-sidebar-primary {
+    color: hsl(var(--sidebar-primary));
+  }
 }
 
 @layer base {

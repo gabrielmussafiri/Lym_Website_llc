@@ -98,11 +98,12 @@ export default function Home() {
         <div className="container px-4 md:px-6 flex flex-col-reverse lg:flex-row items-center gap-12">
           {/* Left: Text Content */}
           <div className="w-full lg:w-1/2 flex flex-col justify-center items-start">
-            <Badge className="mb-4 bg-primary hover:bg-primary text-white">
+            <Badge className="mb-4 bg-primary/90 text-white text-base px-4 py-1 rounded-full font-semibold shadow-md">
               Security & Compliance for Growing Companies
             </Badge>
-            <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl text-foreground mb-6">
-              Security & Compliance for Growing Companies
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-normal tracking-tight text-balance text-sidebar-primary mb-6 text-left ">
+              <span className="block">Security & Compliance</span>
+               Built for  <span className="text-primary">Growth</span>
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-8 self-start">
               Helping startups and fast-growing tech companies achieve SOC 2, ISO 27001, HIPAA, GDPR, and ISO/IEC 42001 compliance without the complexity or enterprise bloat.
@@ -146,10 +147,10 @@ export default function Home() {
           <div className="w-full lg:w-1/2 flex justify-center items-center">
             {/* Replace the src below with your uploaded transparent image */}
             <Image
-              src="/hero2.png"
+              src="/homeok.png"
               alt="Compliance dashboard illustration"
-              width={940}
-              height={680}
+              width={990}
+              height={980}
               className="w-full max-w-lg h-auto object-contain"
               priority
             />
@@ -219,7 +220,7 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
             <div className="flex flex-col items-center transform hover:scale-105 transition-transform duration-300">
-              <span className="text-4xl font-bold text-primary counter-animate">
+              <span className="text-4xl font-bold text-sidebar-primary counter-animate">
                 100+
               </span>
               <span className="text-sm text-muted-foreground mt-1">
@@ -227,7 +228,7 @@ export default function Home() {
               </span>
             </div>
             <div className="flex flex-col items-center transform hover:scale-105 transition-transform duration-300">
-              <span className="text-4xl font-bold text-primary counter-animate">
+              <span className="text-4xl font-bold text-sidebar-primary counter-animate">
                 98%
               </span>
               <span className="text-sm text-muted-foreground mt-1">
@@ -235,7 +236,7 @@ export default function Home() {
               </span>
             </div>
             <div className="flex flex-col items-center transform hover:scale-105 transition-transform duration-300">
-              <span className="text-4xl font-bold text-primary counter-animate">
+              <span className="text-4xl font-bold text-sidebar-primary counter-animate">
                 3x
               </span>
               <span className="text-sm text-muted-foreground mt-1">
@@ -243,7 +244,7 @@ export default function Home() {
               </span>
             </div>
             <div className="flex flex-col items-center transform hover:scale-105 transition-transform duration-300">
-              <span className="text-4xl font-bold text-primary counter-animate">
+              <span className="text-4xl font-bold text-sidebar-primary counter-animate">
                 50%
               </span>
               <span className="text-sm text-muted-foreground mt-1">

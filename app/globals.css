@@ -4,48 +4,48 @@
 
 @layer base {
   :root {
-    --background: 255 100% 100%; /* #FFFFFF */
-    --foreground: 217 56% 20%;  /* #1A3353 */
-    --card: 255 100% 100%;      /* #FFFFFF */
-    --card-foreground: 217 56% 20%; /* #1A3353 */
-    --popover: 255 100% 100%;   /* #FFFFFF */
-    --popover-foreground: 217 56% 20%; /* #1A3353 */
-    --primary: 24 100% 60%;     /* #FF6F2C */
-    --primary-foreground: 0 0% 100%;  /* #FFFFFF */
-    --secondary: 220 28% 97%;   /* #F5F7FA */
-    --secondary-foreground: 217 56% 20%; /* #1A3353 */
-    --muted: 217 41% 94%;       /* #E9EEF6 */
-    --muted-foreground: 220 20% 45%; /* #5A6B8A */
-    --accent: 28 100% 63%;      /* #FF8C42 */
-    --accent-foreground: 217 56% 20%; /* #1A3353 */
-    --destructive: 0 78% 58%;   /* #E53E3E */
+    --background: 205 73% 98%;         /* #F3FAFF Light Blue */
+    --foreground: 217 56% 20%;         /* #183153 Navy Blue */
+    --card: 0 0% 100%;                 /* #FFFFFF White */
+    --card-foreground: 217 56% 20%;    /* #183153 Navy Blue */
+    --popover: 0 0% 100%;              /* #FFFFFF White */
+    --popover-foreground: 217 56% 20%; /* #183153 Navy Blue */
+    --primary: 212 54% 66%;            /* #7BA7D9 Muted Blue */
+    --primary-foreground: 0 0% 100%;   /* #FFFFFF White */
+    --secondary: 210 44% 85%;          /* #B5D0EB Soft Blue */
+    --secondary-foreground: 217 56% 20%; /* #183153 Navy Blue */
+    --muted: 215 28% 60%;              /* #3B5B7E Slate Blue */
+    --muted-foreground: 217 56% 20%;   /* #183153 Navy Blue */
+    --accent: 212 54% 66%;             /* #7BA7D9 Muted Blue */
+    --accent-foreground: 0 0% 100%;    /* #FFFFFF White */
+    --destructive: 0 78% 58%;          /* #E53E3E */
     --destructive-foreground: 0 0% 100%; /* #FFFFFF */
-    --border: 220 28% 88%;      /* #D1D9E6 */
-    --input: 220 28% 88%;       /* #D1D9E6 */
-    --ring: 24 100% 60%;        /* #FF6F2C */
+    --border: 210 44% 85%;             /* #B5D0EB Soft Blue */
+    --input: 210 44% 85%;              /* #B5D0EB Soft Blue */
+    --ring: 212 54% 66%;               /* #7BA7D9 Muted Blue */
     --radius: 0.5rem;
   }
 
   .dark {
-    --background: 217 56% 20%;  /* #1A3353 */
-    --foreground: 0 0% 100%;    /* #FFFFFF */
-    --card: 217 56% 20%;        /* #1A3353 */
-    --card-foreground: 0 0% 100%; /* #FFFFFF */
-    --popover: 217 56% 20%;     /* #1A3353 */
-    --popover-foreground: 0 0% 100%; /* #FFFFFF */
-    --primary: 28 100% 63%;     /* #FF8C42 */
-    --primary-foreground: 217 56% 20%; /* #1A3353 */
-    --secondary: 220 44% 25%;   /* #223A5F */
-    --secondary-foreground: 0 0% 100%; /* #FFFFFF */
-    --muted: 220 44% 25%;       /* #2C466F */
-    --muted-foreground: 220 40% 80%; /* #B3C2DD */
-    --accent: 24 100% 60%;      /* #FF6F2C */
-    --accent-foreground: 0 0% 100%; /* #FFFFFF */
-    --destructive: 14 100% 82%; /* #FFB4A2 */
-    --destructive-foreground: 217 56% 20%; /* #1A3353 */
-    --border: 220 44% 25%;      /* #2C466F */
-    --input: 220 44% 25%;       /* #2C466F */
-    --ring: 28 100% 63%;        /* #FF8C42 */
+    --background: 217 56% 20%;         /* #183153 Navy Blue */
+    --foreground: 205 73% 98%;         /* #F3FAFF Light Blue */
+    --card: 217 56% 20%;               /* #183153 Navy Blue */
+    --card-foreground: 205 73% 98%;    /* #F3FAFF Light Blue */
+    --popover: 217 56% 20%;            /* #183153 Navy Blue */
+    --popover-foreground: 205 73% 98%; /* #F3FAFF Light Blue */
+    --primary: 212 54% 66%;            /* #7BA7D9 Muted Blue */
+    --primary-foreground: 217 56% 20%; /* #183153 Navy Blue */
+    --secondary: 215 28% 60%;          /* #3B5B7E Slate Blue */
+    --secondary-foreground: 205 73% 98%; /* #F3FAFF Light Blue */
+    --muted: 210 44% 85%;              /* #B5D0EB Soft Blue */
+    --muted-foreground: 217 56% 20%;   /* #183153 Navy Blue */
+    --accent: 212 54% 66%;             /* #7BA7D9 Muted Blue */
+    --accent-foreground: 0 0% 100%;    /* #FFFFFF White */
+    --destructive: 0 78% 58%;          /* #E53E3E */
+    --destructive-foreground: 0 0% 100%; /* #FFFFFF */
+    --border: 215 28% 60%;             /* #3B5B7E Slate Blue */
+    --input: 215 28% 60%;              /* #3B5B7E Slate Blue */
+    --ring: 212 54% 66%;               /* #7BA7D9 Muted Blue */
   }
 }
 
