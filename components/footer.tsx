@@ -9,13 +9,13 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8">
         <div className="space-y-8 md:w-1/2 lg:w-2/5">
           <div className="flex items-center">
-            <div className="h-10 w-10 rounded-full bg-primary flex items-center justify-center">
+            {/* <div className="h-10 w-10 rounded-full bg-primary flex items-center justify-center">
               <span className="text-primary-foreground font-bold text-lg">VC</span>
-            </div>
-            <span className="ml-3 text-xl font-bold">Via Comply</span>
+            </div> */}
+            <span className="ml-3 text-xl font-bold">Complianta</span>
           </div>
           <p className="text-sm text-muted-foreground max-w-md">
-            Via Comply is a boutique security and compliance consultancy helping startups achieve industry standards
+            Complianta is a boutique security and compliance consultancy helping startups achieve industry standards
             like SOC 2, ISO 27001, and HIPAA.
           </p>
           <div className="flex space-x-6">
@@ -103,7 +103,7 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl border-t border-border px-6 py-6 md:flex md:items-center md:justify-between lg:px-8">
         <div className="mt-8 md:mt-0 md:order-1">
           <p className="text-xs text-muted-foreground">
-            &copy; {new Date().getFullYear()} Via Comply. All rights reserved.
+            &copy; {new Date().getFullYear()} Complianta. All rights reserved.
           </p>
         </div>
         <div className="flex space-x-6 md:order-2">
