@@ -42,7 +42,7 @@ export default function ServicesPage() {
                 <h2 className="text-3xl font-bold tracking-tighter mb-4">
                   SOC 2 Readiness
                 </h2>
-                <p className="text-muted-foreground mb-6">
+                <p className="text-muted-foreground dark:text-white mb-6">
                   Our SOC 2 Readiness service helps organizations prepare for
                   and achieve SOC 2 compliance efficiently. We guide you through
                   the entire process, from gap assessment to remediation and
@@ -86,7 +86,7 @@ export default function ServicesPage() {
                 <h2 className="text-3xl font-bold tracking-tighter mb-4">
                   Cloud Security Review
                 </h2>
-                <p className="text-muted-foreground mb-6">
+                <p className="text-muted-foreground dark:text-white mb-6">
                   Our Cloud Security Review service provides a comprehensive
                   assessment of your cloud infrastructure, identifying
                   vulnerabilities and recommending security enhancements to
@@ -130,7 +130,7 @@ export default function ServicesPage() {
                 <h2 className="text-3xl font-bold tracking-tighter mb-4">
                   vCISO Advisory
                 </h2>
-                <p className="text-muted-foreground mb-6">
+                <p className="text-muted-foreground dark:text-white mb-6">
                   Our Virtual CISO (vCISO) service provides expert security
                   leadership without the cost of a full-time executive. Get
                   strategic guidance, program development, and ongoing support
@@ -178,7 +178,7 @@ export default function ServicesPage() {
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
               Ready to Get Started?
             </h2>
-            <p className="mt-4 text-muted-foreground md:text-xl">
+            <p className="mt-4 text-muted-foreground dark:text-white md:text-xl">
               Contact us today to discuss your security and compliance needs.
               Our team of experts is ready to help.
             </p>

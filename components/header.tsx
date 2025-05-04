@@ -35,8 +35,8 @@ export default function Header() {
           <Link href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Complianta</span>
             <div className="flex items-center">
-              <span className="ml-0 text-4xl md:text-5xl font-extrabold tracking-tight text-sidebar-primary" style={{letterSpacing: '-0.03em'}}>
-              Complianta
+              <span className="ml-0 text-4xl md:text-5xl font-extrabold tracking-tight text-sidebar-primary dark:text-white" style={{letterSpacing: '-0.03em'}}>
+                Complianta
               </span>
             </div>
           </Link>
@@ -126,8 +126,8 @@ export default function Header() {
               className={cn(
                 "text-sm font-semibold leading-6 transition-colors",
                 pathname === item.href
-                  ? "text-primary"
-                  : "text-muted-foreground hover:text-foreground"
+                  ? "text-primary dark:text-primary"
+                  : "text-muted-foreground hover:text-foreground dark:text-white dark:hover:text-gray-300"
               )}
             >
               {item.name}

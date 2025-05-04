@@ -59,7 +59,7 @@ export default function ContactPage() {
         <div className="container px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Get in Touch</h1>
-            <p className="mt-4 text-muted-foreground md:text-xl">
+            <p className="mt-4 text-muted-foreground dark:text-white md:text-xl">
               Have questions about our services? Ready to start your compliance journey? Contact us today.
             </p>
           </div>
@@ -78,7 +78,7 @@ export default function ContactPage() {
                       <CheckIcon className="h-6 w-6 text-primary" />
                     </div>
                     <h3 className="text-2xl font-bold mb-2">Thank You!</h3>
-                    <p className="text-muted-foreground mb-6">
+                    <p className="text-muted-foreground dark:text-white mb-6">
                       Your message has been received. We'll get back to you within 1-2 business days.
                     </p>
                     <Button onClick={() => setIsSubmitted(false)}>Send Another Message</Button>
@@ -139,7 +139,7 @@ export default function ContactPage() {
             <div className="space-y-8">
               <div>
                 <h2 className="text-2xl font-bold mb-4">Contact Information</h2>
-                <p className="text-muted-foreground mb-6">
+                <p className="text-muted-foreground dark:text-white mb-6">
                   Reach out to us directly or schedule a consultation using the form.
                 </p>
                 <div className="space-y-4">
@@ -165,7 +165,7 @@ export default function ContactPage() {
                     <MapPin className="h-5 w-5 text-primary mr-3 mt-0.5" />
                     <div>
                       <p className="font-medium">Office</p>
-                      <p className="text-muted-foreground">
+                      <p className="text-muted-foreground dark:text-white">
                         123 Security Street
                         <br />
                         San Francisco, CA 94105
@@ -176,7 +176,7 @@ export default function ContactPage() {
                     <Calendar className="h-5 w-5 text-primary mr-3 mt-0.5" />
                     <div>
                       <p className="font-medium">Schedule a Call</p>
-                      <p className="text-muted-foreground">Book a 30-minute consultation with our team.</p>
+                      <p className="text-muted-foreground dark:text-white">Book a 30-minute consultation with our team.</p>
                       <Button variant="outline" className="mt-2" asChild>
                         <a
                           href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0Vxu3mWG4YQPBDvvUz9CX7sNoH_BBnmcGmKPRSYAiQD9S_xtFPB8TmIU_J4LtUeU_aCTmUEgzh"
@@ -195,14 +195,14 @@ export default function ContactPage() {
                 <div className="space-y-4">
                   <div>
                     <h3 className="font-semibold">How quickly can you help us achieve compliance?</h3>
-                    <p className="text-muted-foreground">
+                    <p className="text-muted-foreground dark:text-white">
                       Timelines vary based on your current security posture and specific requirements. Most clients
                       achieve SOC 2 Type I in 8-12 weeks.
                     </p>
                   </div>
                   <div>
                     <h3 className="font-semibold">Do you work with startups?</h3>
-                    <p className="text-muted-foreground">
+                    <p className="text-muted-foreground dark:text-white">
                       Yes! We specialize in helping startups and growing companies achieve compliance efficiently.
                     </p>
                   </div>

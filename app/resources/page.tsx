@@ -13,7 +13,7 @@ export default function ResourcesPage() {
         <div className="container px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Resources</h1>
-            <p className="mt-4 text-muted-foreground md:text-xl">
+            <p className="mt-4 text-muted-foreground dark:text-white md:text-xl">
               Guides, articles, and tools to help you navigate the world of security and compliance.
             </p>
           </div>
@@ -60,7 +60,7 @@ export default function ResourcesPage() {
                 </div>
                 <CardContent className="p-6">
                   <h3 className="text-xl font-bold mb-2">{resource.title}</h3>
-                  <p className="text-muted-foreground mb-4">{resource.description}</p>
+                  <p className="text-muted-foreground dark:text-white mb-4">{resource.description}</p>
                   <Link href={resource.link} className="group flex items-center text-primary font-medium">
                     Read guide
                     <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />
@@ -78,7 +78,7 @@ export default function ResourcesPage() {
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-10">
             <div>
               <h2 className="text-3xl font-bold tracking-tighter">Latest Articles</h2>
-              <p className="mt-2 text-muted-foreground">
+              <p className="mt-2 text-muted-foreground dark:text-white">
                 Insights and advice from our security and compliance experts.
               </p>
             </div>
@@ -149,10 +149,10 @@ export default function ResourcesPage() {
                     <Badge variant="outline" className="mr-2">
                       {article.category}
                     </Badge>
-                    <span className="text-xs text-muted-foreground">{article.date}</span>
+                    <span className="text-xs text-muted-foreground dark:text-white">{article.date}</span>
                   </div>
                   <h3 className="text-xl font-bold mb-2">{article.title}</h3>
-                  <p className="text-muted-foreground mb-4 flex-1">{article.description}</p>
+                  <p className="text-muted-foreground dark:text-white mb-4 flex-1">{article.description}</p>
                   <div className="flex items-center justify-between mt-auto pt-4 border-t">
                     <span className="text-sm">By {article.author}</span>
                     <Link href={article.link} className="group flex items-center text-primary text-sm font-medium">
@@ -219,7 +219,7 @@ export default function ResourcesPage() {
                 <CardContent className="p-6">
                   <div className="mb-4">{resource.icon}</div>
                   <h3 className="text-xl font-bold mb-2">{resource.title}</h3>
-                  <p className="text-muted-foreground mb-4">{resource.description}</p>
+                  <p className="text-muted-foreground dark:text-white mb-4">{resource.description}</p>
                   <Link href={resource.link} className="group flex items-center text-primary font-medium">
                     Access resource
                     <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />
@@ -236,7 +236,7 @@ export default function ResourcesPage() {
         <div className="container px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl font-bold tracking-tighter mb-4">Stay Updated</h2>
-            <p className="text-muted-foreground mb-8">
+            <p className="text-muted-foreground dark:text-white mb-8">
               Subscribe to our newsletter to receive the latest security and compliance insights, tips, and resources.
             </p>
             <form className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
@@ -260,7 +260,7 @@ export default function ResourcesPage() {
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
                 Need personalized guidance?
               </h2>
-              <p className="mt-4 text-muted-foreground md:text-xl">
+              <p className="mt-4 text-muted-foreground dark:text-white md:text-xl">
                 Contact our team for expert advice tailored to your specific security and compliance needs.
               </p>
               <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">

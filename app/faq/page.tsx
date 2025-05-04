@@ -11,7 +11,7 @@ export default function FAQPage() {
         <div className="container px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Frequently Asked Questions</h1>
-            <p className="mt-4 text-muted-foreground md:text-xl">
+            <p className="mt-4 text-muted-foreground dark:text-white md:text-xl">
               Get answers to common questions about compliance, security, and our services.
             </p>
           </div>
@@ -64,7 +64,7 @@ export default function FAQPage() {
                   <Card key={i} className="border border-border">
                     <CardContent className="p-6">
                       <h3 className="text-lg font-semibold mb-2">{faq.question}</h3>
-                      <p className="text-muted-foreground">{faq.answer}</p>
+                      <p className="text-muted-foreground dark:text-white">{faq.answer}</p>
                     </CardContent>
                   </Card>
                 ))}
@@ -104,7 +104,7 @@ export default function FAQPage() {
                   <Card key={i} className="border border-border">
                     <CardContent className="p-6">
                       <h3 className="text-lg font-semibold mb-2">{faq.question}</h3>
-                      <p className="text-muted-foreground">{faq.answer}</p>
+                      <p className="text-muted-foreground dark:text-white">{faq.answer}</p>
                     </CardContent>
                   </Card>
                 ))}
@@ -144,7 +144,7 @@ export default function FAQPage() {
                   <Card key={i} className="border border-border">
                     <CardContent className="p-6">
                       <h3 className="text-lg font-semibold mb-2">{faq.question}</h3>
-                      <p className="text-muted-foreground">{faq.answer}</p>
+                      <p className="text-muted-foreground dark:text-white">{faq.answer}</p>
                     </CardContent>
                   </Card>
                 ))}
@@ -184,7 +184,7 @@ export default function FAQPage() {
                   <Card key={i} className="border border-border">
                     <CardContent className="p-6">
                       <h3 className="text-lg font-semibold mb-2">{faq.question}</h3>
-                      <p className="text-muted-foreground">{faq.answer}</p>
+                      <p className="text-muted-foreground dark:text-white">{faq.answer}</p>
                     </CardContent>
                   </Card>
                 ))}
@@ -199,7 +199,7 @@ export default function FAQPage() {
         <div className="container px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Still Have Questions?</h2>
-            <p className="mt-4 text-muted-foreground md:text-xl">
+            <p className="mt-4 text-muted-foreground dark:text-white md:text-xl">
               Contact us today to discuss your specific questions and needs. Our team is ready to help.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">

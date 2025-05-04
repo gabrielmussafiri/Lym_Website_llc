@@ -105,7 +105,7 @@ export default function Home() {
               <span className="block">Security & Compliance</span>
                Built for  <span className="text-primary">Growth</span>
             </h1>
-            <p className="text-xl md:text-2xl text-muted-foreground mb-8 self-start">
+            <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl dark:text-white">
               Helping startups and fast-growing tech companies achieve SOC 2, ISO 27001, HIPAA, GDPR, and ISO/IEC 42001 compliance without the complexity or enterprise bloat.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
@@ -173,7 +173,7 @@ export default function Home() {
                   <Shield className="h-6 w-6 text-primary" />
                 </div>
                 <h3 className="text-xl font-bold">Streamlined Compliance</h3>
-                <p className="text-muted-foreground">
+                <p className="text-muted-foreground dark:text-white">
                 We simplify complex compliance requirements into actionable steps tailored to your stage and structure.
                 </p>
               </CardContent>
@@ -184,7 +184,7 @@ export default function Home() {
                   <ShieldCheck className="h-6 w-6 text-primary" />
                 </div>
                 <h3 className="text-xl font-bold">Expert Guidance</h3>
-                <p className="text-muted-foreground">
+                <p className="text-muted-foreground dark:text-white">
                 Our certified security professionals bring enterprise-grade insight to growing businesses and resource-limited
                 teams.
                 </p>
@@ -196,8 +196,8 @@ export default function Home() {
                   <Users className="h-6 w-6 text-primary" />
                 </div>
                 <h3 className="text-xl font-bold">Tailored Approach</h3>
-                <p className="text-muted-foreground">
-                Whether you-re seed-stage or scaling to Series C, our methodology flexes to your stack, size, and growth
+                <p className="text-muted-foreground dark:text-white">
+                Whether you're seed-stage or scaling to Series C, our methodology flexes to your stack, size, and growth
                 trajectory.
                 </p>
               </CardContent>
@@ -213,42 +213,41 @@ export default function Home() {
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
             Impact at a Glance
             </h2>
-            <p className="mt-4 text-muted-foreground md:text-xl">
-              We've helped companies across various industries achieve their
-              compliance goals.
+            <p className="mt-4 text-muted-foreground dark:text-white md:text-xl">
+              We've helped companies across various industries achieve their compliance goals.
             </p>
           </div>
           <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
             <div className="flex flex-col items-center transform hover:scale-105 transition-transform duration-300">
-              <span className="text-4xl font-bold text-sidebar-primary counter-animate">
+              <span className="text-4xl font-bold text-sidebar-primary dark:text-blue-400 counter-animate">
                 100+
               </span>
-              <span className="text-sm text-muted-foreground mt-1">
-              Clients Served
+              <span className="text-sm text-muted-foreground dark:text-white mt-1">
+                Clients Served
               </span>
             </div>
             <div className="flex flex-col items-center transform hover:scale-105 transition-transform duration-300">
-              <span className="text-4xl font-bold text-sidebar-primary counter-animate">
+              <span className="text-4xl font-bold text-sidebar-primary dark:text-blue-400 counter-animate">
                 98%
               </span>
-              <span className="text-sm text-muted-foreground mt-1">
-              Success Rate
+              <span className="text-sm text-muted-foreground dark:text-white mt-1">
+                Success Rate
               </span>
             </div>
             <div className="flex flex-col items-center transform hover:scale-105 transition-transform duration-300">
-              <span className="text-4xl font-bold text-sidebar-primary counter-animate">
+              <span className="text-4xl font-bold text-sidebar-primary dark:text-blue-400 counter-animate">
                 3x
               </span>
-              <span className="text-sm text-muted-foreground mt-1">
-              Faster Compliance
+              <span className="text-sm text-muted-foreground dark:text-white mt-1">
+                Faster Compliance
               </span>
             </div>
             <div className="flex flex-col items-center transform hover:scale-105 transition-transform duration-300">
-              <span className="text-4xl font-bold text-sidebar-primary counter-animate">
+              <span className="text-4xl font-bold text-sidebar-primary dark:text-blue-400 counter-animate">
                 50%
               </span>
-              <span className="text-sm text-muted-foreground mt-1">
-              Average Cost Reduction
+              <span className="text-sm text-muted-foreground dark:text-white mt-1">
+                Average Cost Reduction
               </span>
             </div>
           </div>
@@ -314,7 +313,7 @@ export default function Home() {
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
               Our Services
             </h2>
-            <p className="mt-4 text-muted-foreground md:text-xl max-w-3xl mx-auto">
+            <p className="mt-4 text-muted-foreground dark:text-white md:text-xl max-w-3xl mx-auto">
               Comprehensive compliance and security solutions tailored to your
               business needs.
             </p>
@@ -326,7 +325,7 @@ export default function Home() {
                   <ShieldCheck className="h-5 w-5 text-primary" />
                 </div>
                 <h3 className="text-xl font-bold mb-2">Compliance Readiness Packages</h3>
-                <p className="text-muted-foreground mb-4 flex-1">
+                <p className="text-muted-foreground dark:text-white mb-4 flex-1">
                   Prepare your organization for certifications across SOC 2, ISO 27001, HIPAA, GDPR, and ISO/IEC 42001. We deliver gap assessments, control mapping, documentation, and audit coaching tailored to your compliance framework.
                 </p>
                 <Link
@@ -346,7 +345,7 @@ export default function Home() {
                 <h3 className="text-xl font-bold mb-2">
                   Cloud Security Posture Review
                 </h3>
-                <p className="text-muted-foreground mb-4 flex-1">
+                <p className="text-muted-foreground dark:text-white mb-4 flex-1">
                   Identify and remediate cloud security risks in AWS, Azure, or GCP. We analyze access controls, logging, encryption, and system architecture.
                 </p>
                 <Link
@@ -364,7 +363,7 @@ export default function Home() {
                   <Users className="h-5 w-5 text-primary" />
                 </div>
                 <h3 className="text-xl font-bold mb-2">vCISO Advisory</h3>
-                <p className="text-muted-foreground mb-4 flex-1">
+                <p className="text-muted-foreground dark:text-white mb-4 flex-1">
                   Gain strategic compliance and security leadership without the cost of a full-time executive. Flexible and scalable for your needs.
                 </p>
                 <Link
@@ -430,7 +429,7 @@ export default function Home() {
               >
                 <CardContent className="flex flex-col flex-1 p-6">
                   <div className="mb-4 text-4xl text-primary">"</div>
-                  <p className="text-muted-foreground mb-6 flex-1">
+                  <p className="text-muted-foreground dark:text-white mb-6 flex-1">
                     {testimonial.quote}
                   </p>
                   <div className="flex items-center">
@@ -463,7 +462,7 @@ export default function Home() {
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
                 Featured Case Studies
               </h2>
-              <p className="mt-4 text-muted-foreground md:text-xl max-w-2xl">
+              <p className="mt-4 text-muted-foreground dark:text-white md:text-xl max-w-2xl">
                 See how we've helped companies like yours achieve their
                 compliance goals.
               </p>
@@ -505,7 +504,7 @@ export default function Home() {
                 </div>
                 <CardContent className="p-6">
                   <h3 className="text-xl font-bold mb-2">{study.title}</h3>
-                  <p className="text-muted-foreground mb-4">
+                  <p className="text-muted-foreground dark:text-white mb-4">
                     {study.description}
                   </p>
                   <Link
@@ -530,7 +529,7 @@ export default function Home() {
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
                 Ready to simplify your compliance journey?
               </h2>
-              <p className="mt-4 text-muted-foreground md:text-xl">
+              <p className="mt-4 text-muted-foreground dark:text-white md:text-xl">
                 Schedule a free consultation with our compliance experts to
                 discuss your specific needs.
               </p>
@@ -569,7 +568,7 @@ export default function Home() {
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
               Frequently Asked Questions
             </h2>
-            <p className="mt-4 text-muted-foreground md:text-xl max-w-2xl mx-auto">
+            <p className="mt-4 text-muted-foreground dark:text-white md:text-xl max-w-2xl mx-auto">
               Get answers to common questions about compliance and our services.
             </p>
           </div>
@@ -599,7 +598,7 @@ export default function Home() {
               >
                 <CardContent className="p-6">
                   <h3 className="text-lg font-semibold mb-2">{faq.question}</h3>
-                  <p className="text-muted-foreground">{faq.answer}</p>
+                  <p className="text-muted-foreground dark:text-white">{faq.answer}</p>
                 </CardContent>
               </Card>
             ))}

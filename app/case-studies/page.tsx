@@ -13,7 +13,7 @@ export default function CaseStudiesPage() {
         <div className="container px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Client Success Stories</h1>
-            <p className="mt-4 text-muted-foreground md:text-xl">
+            <p className="mt-4 text-muted-foreground dark:text-white md:text-xl">
               See how we've helped companies like yours achieve their compliance and security goals.
             </p>
           </div>
@@ -29,7 +29,7 @@ export default function CaseStudiesPage() {
               <div className="order-2 lg:order-1">
                 <Badge className="mb-2">SOC 2 Compliance</Badge>
                 <h2 className="text-3xl font-bold tracking-tighter mb-4">FinTech Startup Achieves SOC 2 in 8 Weeks</h2>
-                <p className="text-muted-foreground mb-6">
+                <p className="text-muted-foreground dark:text-white mb-6">
                   A rapidly growing fintech startup needed to achieve SOC 2 compliance quickly to close enterprise deals
                   worth over $1.2M in annual recurring revenue. With our streamlined approach, they achieved SOC 2 Type
                   I in just 8 weeks.
@@ -69,7 +69,7 @@ export default function CaseStudiesPage() {
                 <h2 className="text-3xl font-bold tracking-tighter mb-4">
                   Healthcare SaaS Platform Meets HIPAA Requirements
                 </h2>
-                <p className="text-muted-foreground mb-6">
+                <p className="text-muted-foreground dark:text-white mb-6">
                   A healthcare technology company needed to implement HIPAA-compliant infrastructure to support their
                   growing customer base of healthcare providers. We helped them design and implement a secure, compliant
                   architecture.
@@ -107,7 +107,7 @@ export default function CaseStudiesPage() {
               <div className="order-2 lg:order-1">
                 <Badge className="mb-2">vCISO Services</Badge>
                 <h2 className="text-3xl font-bold tracking-tighter mb-4">SaaS Platform Strengthens Security Posture</h2>
-                <p className="text-muted-foreground mb-6">
+                <p className="text-muted-foreground dark:text-white mb-6">
                   A growing SaaS platform needed to strengthen their security posture to meet enterprise customer
                   requirements. Our vCISO service helped them develop and implement a comprehensive security program.
                 </p>
@@ -185,7 +185,7 @@ export default function CaseStudiesPage() {
                 </div>
                 <CardContent className="p-6">
                   <h3 className="text-xl font-bold mb-2">{study.title}</h3>
-                  <p className="text-muted-foreground mb-4">{study.description}</p>
+                  <p className="text-muted-foreground dark:text-white mb-4">{study.description}</p>
                   <Link href={study.link} className="group flex items-center text-primary font-medium">
                     Read case study
                     <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />
@@ -205,7 +205,7 @@ export default function CaseStudiesPage() {
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
                 Ready to become our next success story?
               </h2>
-              <p className="mt-4 text-muted-foreground md:text-xl">
+              <p className="mt-4 text-muted-foreground dark:text-white md:text-xl">
                 Contact us today to discuss how we can help you achieve your compliance and security goals.
               </p>
               <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">

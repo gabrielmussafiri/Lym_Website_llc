@@ -40,20 +40,20 @@ export default function AboutPage() {
               <h2 className="text-3xl font-bold tracking-tighter mb-6">
                 Our Story
               </h2>
-              <p className="text-muted-foreground mb-4">
+              <p className="text-muted-foreground dark:text-white mb-4">
                 Via Comply was founded in 2018 by a team of security and
                 compliance experts who saw a gap in the market: growing
                 companies needed to achieve compliance with industry standards
                 like SOC 2 and ISO 27001, but traditional consulting approaches
                 were too complex, time-consuming, and expensive.
               </p>
-              <p className="text-muted-foreground mb-4">
+              <p className="text-muted-foreground dark:text-white mb-4">
                 We set out to create a more efficient, practical approach to
                 compliance—one that would help startups and growing companies
                 achieve their compliance goals without unnecessary complexity or
                 overhead.
               </p>
-              <p className="text-muted-foreground">
+              <p className="text-muted-foreground dark:text-white">
                 Today, we've helped over 100 companies across various industries
                 achieve compliance with standards like SOC 2, ISO 27001, HIPAA,
                 and more. Our team has grown, but our mission remains the same:
@@ -80,7 +80,7 @@ export default function AboutPage() {
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
               Our Mission & Values
             </h2>
-            <p className="mt-4 text-muted-foreground md:text-xl max-w-3xl mx-auto">
+            <p className="mt-4 text-muted-foreground dark:text-white md:text-xl max-w-3xl mx-auto">
               We're guided by a clear mission and strong values that shape
               everything we do.
             </p>
@@ -90,7 +90,7 @@ export default function AboutPage() {
             <Card>
               <CardContent className="p-6">
                 <h3 className="text-2xl font-bold mb-4">Our Mission</h3>
-                <p className="text-muted-foreground">
+                <p className="text-muted-foreground dark:text-white">
                   To simplify compliance for growing companies, enabling them to
                   build trust with their customers and focus on their core
                   business.
@@ -127,7 +127,7 @@ export default function AboutPage() {
                       <CheckCircle className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
                       <div>
                         <h4 className="font-semibold">{value.title}</h4>
-                        <p className="text-sm text-muted-foreground">
+                        <p className="text-sm text-muted-foreground dark:text-white">
                           {value.description}
                         </p>
                       </div>
@@ -147,7 +147,7 @@ export default function AboutPage() {
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
               Our Team
             </h2>
-            <p className="mt-4 text-muted-foreground md:text-xl max-w-3xl mx-auto">
+            <p className="mt-4 text-muted-foreground dark:text-white md:text-xl max-w-3xl mx-auto">
               Meet the experienced professionals who make up the Via Comply
               team.
             </p>
@@ -203,10 +203,10 @@ export default function AboutPage() {
                 </div>
                 <CardContent className="p-6">
                   <h3 className="text-xl font-bold">{member.name}</h3>
-                  <p className="text-sm text-muted-foreground mb-4">
+                  <p className="text-sm text-muted-foreground dark:text-white mb-4">
                     {member.title}
                   </p>
-                  <p className="text-muted-foreground">{member.bio}</p>
+                  <p className="text-muted-foreground dark:text-white">{member.bio}</p>
                 </CardContent>
               </Card>
             ))}
@@ -221,7 +221,7 @@ export default function AboutPage() {
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
               Why Choose Via Comply
             </h2>
-            <p className="mt-4 text-muted-foreground md:text-xl max-w-3xl mx-auto">
+            <p className="mt-4 text-muted-foreground dark:text-white md:text-xl max-w-3xl mx-auto">
               What sets us apart from other security and compliance
               consultancies.
             </p>
@@ -266,7 +266,7 @@ export default function AboutPage() {
               >
                 <CardContent className="p-6">
                   <h3 className="text-xl font-bold mb-2">{reason.title}</h3>
-                  <p className="text-muted-foreground">{reason.description}</p>
+                  <p className="text-muted-foreground dark:text-white">{reason.description}</p>
                 </CardContent>
               </Card>
             ))}
@@ -282,7 +282,7 @@ export default function AboutPage() {
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
                 Ready to work with us?
               </h2>
-              <p className="mt-4 text-muted-foreground md:text-xl">
+              <p className="mt-4 text-muted-foreground dark:text-white md:text-xl">
                 Contact us today to discuss your security and compliance needs.
                 Our team is ready to help.
               </p>
