@@ -38,7 +38,8 @@ export default function ComplianceReadinessPage() {
         <div className="container px-4 md:px-6">
           <div className="grid gap-12 lg:grid-cols-2 items-center">
             <div>
-              <h2 className="text-3xl font-bold tracking-tighter mb-6">Comprehensive Compliance Solutions</h2>
+              <h2 className="text-3xl font-bold tracking-tighter mb-6">Compliance Readiness Packages
+              </h2>
               <p className="text-muted-foreground mb-6">
                 Our Compliance Readiness Packages help organizations prepare for and maintain compliance with major
                 frameworks and standards. We understand that each organization has unique needs and regulatory requirements.

@@ -6,13 +6,14 @@ import { ThemeProvider } from "@/components/theme-provider"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
 import ScrollToTop from "@/components/scroll-to-top"
+import CrispChat from "@/components/crisp-chat"
 
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Via Comply | Security & Compliance Consultancy",
+  title: "Complianta | Security & Compliance Consultancy",
   description: "Helping startups achieve industry standards like SOC 2, ISO 27001, and HIPAA compliance.",
-    generator: 'v0.dev'
+    generator: 'lygmgroup.co.za'
 }
 
 export default function RootLayout({
@@ -29,6 +30,7 @@ export default function RootLayout({
             <Header />
             <main className="flex-1">{children}</main>
             <Footer />
+            <CrispChat />
           </div>
         </ThemeProvider>
       </body>

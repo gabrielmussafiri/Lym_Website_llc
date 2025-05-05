@@ -98,9 +98,7 @@ export default function Home() {
         <div className="container px-4 md:px-6 flex flex-col-reverse lg:flex-row items-center gap-12">
           {/* Left: Text Content */}
           <div className="w-full lg:w-1/2 flex flex-col justify-center items-start">
-            {/* <Badge className="mb-4 bg-primary/90 text-white text-base px-4 py-1 rounded-full font-semibold shadow-md">
-              Security & Compliance for Growing Companies
-            </Badge> */}
+            
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-normal tracking-tight text-balance text-sidebar-primary mb-6 text-left ">
               <span className="block">Security & Compliance</span>
                Built for  <span className="text-primary">Growth</span>
@@ -406,21 +404,21 @@ export default function Home() {
                   "Complianta helped us achieve SOC 2 compliance in record time. Their expertise was invaluable",
                 name: "Sarah Johnson",
                 title: "CTO, FinTech Startup",
-                image: "/testimonial-1.png"
+               
               },
               {
                 quote:
-                  "The team at Via Comply simplified the complex world of compliance for us. We couldn't have done it without them.",
+                  "They simplified the complex world of compliance for us. We couldn’t have done it without them",
                 name: "Michael Chen",
                 title: "CEO, Health Tech Company",
-                image: "/testimonial-2.png"
+                
               },
               {
                 quote:
                   "Their vCISO service provided us with enterprise-level security leadership at a fraction of the cost.",
                 name: "Jessica Williams",
                 title: "COO, SaaS Platform",
-                image: "/testimonial-3.png"
+                
               },
             ].map((testimonial, i) => (
               <Card
@@ -433,13 +431,7 @@ export default function Home() {
                     {testimonial.quote}
                   </p>
                   <div className="flex items-center">
-                    <Image
-                      src={testimonial.image}
-                      alt={testimonial.name}
-                      width={40}
-                      height={40}
-                      className="rounded-full mr-3"
-                    />
+                   
                     <div>
                       <p className="font-medium">{testimonial.name}</p>
                       <p className="text-sm text-muted-foreground">
@@ -480,13 +472,13 @@ export default function Home() {
               {
                 title: "FinTech Startup Achieves SOC 2 in 8 Weeks",
                 description:
-                  "How we helped a growing fintech company achieve SOC 2 compliance quickly to close enterprise deals.",
+                  "How we helped a scaling fintech close deals faster with streamlined SOC 2 readiness.",
                 link: "/case-studies/fintech-soc2",
               },
               {
                 title: "Healthcare SaaS Platform Meets HIPAA Requirements",
                 description:
-                  "Our approach to helping a healthcare technology company implement HIPAA-compliant infrastructure.",
+                  "A health tech company modernized its infrastructure and passed HIPAA audits confidently",
                 link: "/case-studies/healthcare-hipaa",
               },
             ].map((study, i) => (
@@ -527,26 +519,37 @@ export default function Home() {
           <div className="rounded-lg bg-primary-foreground p-8 md:p-10 lg:p-16 transform hover:scale-[1.01] transition-all duration-500">
             <div className="mx-auto max-w-3xl text-center">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                Ready to simplify your compliance journey?
+              Ready to make compliance your competitive advantage?
               </h2>
               <p className="mt-4 text-muted-foreground dark:text-white md:text-xl">
                 Schedule a free consultation with our compliance experts to
                 discuss your specific needs.
               </p>
               <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
-                <Button
-                  size="lg"
-                  asChild
-                  className="bg-primary hover:bg-primary/90 animate-pulse-subtle"
-                >
-                  <a
-                    href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0Vxu3mWG4YQPBDvvUz9CX7sNoH_BBnmcGmKPRSYAiQD9S_xtFPB8TmIU_J4LtUeU_aCTmUEgzh"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Schedule a Consultation
-                  </a>
-                </Button>
+                <Dialog>
+                  <DialogTrigger asChild>
+                    <Button
+                      size="lg"
+                      className="bg-primary hover:bg-primary/90 animate-pulse-subtle"
+                    >
+                      Schedule a Consultation
+                    </Button>
+                  </DialogTrigger>
+                  <DialogContent>
+                    <DialogTitle>Schedule a Free Consultation</DialogTitle>
+                    <div className="w-full" style={{ minHeight: 600 }}>
+                      <iframe
+                        src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0Vxu3mWG4YQPBDvvUz9CX7sNoH_BBnmcGmKPRSYAiQD9S_xtFPB8TmIU_J4LtUeU_aCTmUEgzh"
+                        width="100%"
+                        height="600"
+                        frameBorder="0"
+                        style={{ border: 0 }}
+                        allowFullScreen
+                        title="Schedule a Free Consultation"
+                      ></iframe>
+                    </div>
+                  </DialogContent>
+                </Dialog>
                 <Button
                   variant="outline"
                   size="lg"
@@ -576,20 +579,20 @@ export default function Home() {
             {[
               {
                 question:
-                  "How long does it typically take to achieve SOC 2 compliance?",
+                  "How long does compliance take?",
                 answer:
-                  "The timeline for SOC 2 compliance varies based on your organization's size and current security posture. With our streamlined approach, most startups can achieve SOC 2 Type I in 8-12 weeks and Type II in 6-9 months.",
+                  "Type I: 8–12 weeks. Type II: 6–9 months. Varies by framework and readiness",
               },
               {
                 question:
-                  "What's the difference between SOC 2 Type I and Type II?",
+                  "What’s the difference between Type I and II?",
                 answer:
-                  "SOC 2 Type I assesses whether your security controls are properly designed at a specific point in time. Type II evaluates the operational effectiveness of those controls over a period (typically 6-12 months).",
+                  "Type I is a snapshot in time; Type II proves operational maturity over months",
               },
               {
-                question: "Do we need SOC 2 compliance for our startup?",
+                question: "Do I need SOC 2 or ISO as a startup or tech company?",
                 answer:
-                  "If you handle customer data, especially for enterprise clients, SOC 2 compliance is increasingly becoming a requirement. It demonstrates your commitment to security and can be a competitive advantage in sales conversations.",
+                  "If you store customer data or want to close larger deals, yes. It's a trust signal.",
               },
             ].map((faq, i) => (
               <Card

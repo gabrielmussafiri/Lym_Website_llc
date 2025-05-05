@@ -2,6 +2,12 @@ import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { CheckCircle } from "lucide-react";
+import {
+  Dialog,
+  DialogContent,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 
 export default function ServicesPage() {
   return (
@@ -22,11 +28,10 @@ export default function ServicesPage() {
         <div className="container px-4 md:px-6 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-white animate-fade-in-up">
-              Comprehensive Security & Compliance Services
+            Comprehensive Security & Compliance Services
             </h1>
             <p className="mt-4 text-white/90 md:text-xl animate-fade-in-up-delay-1">
-              Tailored solutions to help your organization meet industry
-              standards and protect sensitive data.
+            Tailored solutions to help your organization meet industry standards, protect sensitive data, and accelerate growth.
             </p>
           </div>
         </div>
@@ -40,21 +45,18 @@ export default function ServicesPage() {
             <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
               <div className="order-2 lg:order-1">
                 <h2 className="text-3xl font-bold tracking-tighter mb-4">
-                  SOC 2 Readiness
+                Compliance Readiness Packages
                 </h2>
                 <p className="text-muted-foreground dark:text-white mb-6">
-                  Our SOC 2 Readiness service helps organizations prepare for
-                  and achieve SOC 2 compliance efficiently. We guide you through
-                  the entire process, from gap assessment to remediation and
-                  audit preparation.
+                Prepare your organization for certifications across multiple frameworks, including SOC 2, ISO 27001, HIPAA, and GDPR. We lead the full lifecycle from assessment to auditor handoff.
                 </p>
                 <div className="space-y-3 mb-6">
                   {[
-                    "Comprehensive gap assessment against SOC 2 criteria",
-                    "Customized remediation plan tailored to your organization",
-                    "Policy and procedure development",
-                    "Implementation guidance and support",
-                    "Audit preparation and readiness verification",
+                    "Comprehensive gap analysis for applicable frameworks",
+                    "Customized remediation roadmap and control mapping",
+                    "Policy and documentation developmen",
+                    "Security awareness and control ownership coaching",
+                    "Evidence preparation and audit support",
                   ].map((item, i) => (
                     <div key={i} className="flex items-start">
                       <CheckCircle className="h-5 w-5 text-primary mr-2 mt-0.5 flex-shrink-0" />
@@ -63,8 +65,8 @@ export default function ServicesPage() {
                   ))}
                 </div>
                 <Button asChild>
-                  <Link href="/services/soc2">
-                    Learn More About SOC 2 Readiness
+                  <Link href="/services/Compliance">
+                  Learn More About Compliance Readiness Packages
                   </Link>
                 </Button>
               </div>
@@ -84,21 +86,19 @@ export default function ServicesPage() {
             <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
               <div className="order-2">
                 <h2 className="text-3xl font-bold tracking-tighter mb-4">
-                  Cloud Security Review
+                Cloud Security Posture Review
+
                 </h2>
                 <p className="text-muted-foreground dark:text-white mb-6">
-                  Our Cloud Security Review service provides a comprehensive
-                  assessment of your cloud infrastructure, identifying
-                  vulnerabilities and recommending security enhancements to
-                  protect your data and systems.
+                We assess your cloud infrastructure for risk across AWS, Azure, or GCP and deliver actionable guidance for remediation.
                 </p>
                 <div className="space-y-3 mb-6">
                   {[
-                    "Thorough assessment of cloud infrastructure security",
-                    "Identification of configuration vulnerabilities",
-                    "Access control and identity management review",
-                    "Data protection and encryption assessment",
-                    "Detailed remediation recommendations",
+                    "End-to-end infrastructure security assessment",
+                    "IAM, access control, and privilege audit",
+                    "Logging, encryption, and data protection review",,
+                    "Secure configuration and best practices audit",
+                    "Detailed recommendations with implementation support",
                   ].map((item, i) => (
                     <div key={i} className="flex items-start">
                       <CheckCircle className="h-5 w-5 text-primary mr-2 mt-0.5 flex-shrink-0" />
@@ -108,7 +108,7 @@ export default function ServicesPage() {
                 </div>
                 <Button asChild>
                   <Link href="/services/cloud-security">
-                    Learn More About Cloud Security
+                  Learn More About Cloud Security Review
                   </Link>
                 </Button>
               </div>
@@ -128,21 +128,20 @@ export default function ServicesPage() {
             <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
               <div className="order-2 lg:order-1">
                 <h2 className="text-3xl font-bold tracking-tighter mb-4">
-                  vCISO Advisory
+                vCISO Advisory Services
+
                 </h2>
                 <p className="text-muted-foreground dark:text-white mb-6">
-                  Our Virtual CISO (vCISO) service provides expert security
-                  leadership without the cost of a full-time executive. Get
-                  strategic guidance, program development, and ongoing support
-                  from experienced security professionals.
+                Get strategic security leadership without the full-time executive overhead. Our fractional CISO program scales with your business.
+
                 </p>
                 <div className="space-y-3 mb-6">
                   {[
-                    "Strategic security program development",
-                    "Security roadmap creation and implementation",
-                    "Risk assessment and management",
-                    "Security policy development and governance",
-                    "Incident response planning and management",
+                    "Executive-level security strategy and governance",
+                    "Risk management and third-party risk oversight",
+                    "Compliance leadership and board-level reporting",
+                    "Security policy lifecycle management",
+                    "Incident response strategy and simulation",
                   ].map((item, i) => (
                     <div key={i} className="flex items-start">
                       <CheckCircle className="h-5 w-5 text-primary mr-2 mt-0.5 flex-shrink-0" />
@@ -152,7 +151,7 @@ export default function ServicesPage() {
                 </div>
                 <Button asChild>
                   <Link href="/services/vciso">
-                    Learn More About vCISO Services
+                  Learn More About vCISO Services
                   </Link>
                 </Button>
               </div>
@@ -176,16 +175,31 @@ export default function ServicesPage() {
         <div className="container px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
-              Ready to Get Started?
+            Ready to Get Started?
             </h2>
             <p className="mt-4 text-muted-foreground dark:text-white md:text-xl">
-              Contact us today to discuss your security and compliance needs.
-              Our team of experts is ready to help.
+            Contact us today to discuss your security and compliance goals. Our team of experts is ready to help.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
-              <Button size="lg" asChild>
-                <Link href="/contact">Schedule a Consultation</Link>
-              </Button>
+              <Dialog>
+                <DialogTrigger asChild>
+                  <Button size="lg">Schedule Consultation</Button>
+                </DialogTrigger>
+                <DialogContent>
+                  <DialogTitle>Schedule a Free Consultation</DialogTitle>
+                  <div className="w-full" style={{ minHeight: 600 }}>
+                    <iframe
+                      src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0Vxu3mWG4YQPBDvvUz9CX7sNoH_BBnmcGmKPRSYAiQD9S_xtFPB8TmIU_J4LtUeU_aCTmUEgzh"
+                      width="100%"
+                      height="600"
+                      frameBorder="0"
+                      style={{ border: 0 }}
+                      allowFullScreen
+                      title="Schedule a Free Consultation"
+                    ></iframe>
+                  </div>
+                </DialogContent>
+              </Dialog>
               <Button variant="outline" size="lg" asChild>
                 <Link href="/case-studies">View Our Case Studies</Link>
               </Button>

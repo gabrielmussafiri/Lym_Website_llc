@@ -15,8 +15,7 @@ export default function Footer() {
             <span className="ml-3 text-xl font-bold">Complianta</span>
           </div>
           <p className="text-sm text-muted-foreground max-w-md">
-            Complianta is a boutique security and compliance consultancy helping startups achieve industry standards
-            like SOC 2, ISO 27001, and HIPAA.
+          Boutique consultancy helping startups and growth-stage companies simplify compliance and scale securely.
           </p>
           <div className="flex space-x-6">
             <Link href="#" className="text-muted-foreground hover:text-foreground">

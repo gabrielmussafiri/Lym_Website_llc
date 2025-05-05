@@ -3,6 +3,12 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { CheckCircle } from "lucide-react";
+import {
+  Dialog,
+  DialogContent,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 
 export default function AboutPage() {
   return (
@@ -23,7 +29,7 @@ export default function AboutPage() {
         <div className="container px-4 md:px-6 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-white animate-fade-in-up">
-              About Via Comply
+              About Complianta
             </h1>
             <p className="mt-4 text-white/90 md:text-xl animate-fade-in-up-delay-1">
               We're on a mission to simplify compliance for growing companies.
@@ -41,23 +47,13 @@ export default function AboutPage() {
                 Our Story
               </h2>
               <p className="text-muted-foreground dark:text-white mb-4">
-                Via Comply was founded in 2018 by a team of security and
-                compliance experts who saw a gap in the market: growing
-                companies needed to achieve compliance with industry standards
-                like SOC 2 and ISO 27001, but traditional consulting approaches
-                were too complex, time-consuming, and expensive.
+              Complianta was founded in 2018 by a team of security and compliance professionals who saw a problem: fast-growing companies were being held back by outdated, complex, and overpriced compliance models.
               </p>
               <p className="text-muted-foreground dark:text-white mb-4">
-                We set out to create a more efficient, practical approach to
-                compliance—one that would help startups and growing companies
-                achieve their compliance goals without unnecessary complexity or
-                overhead.
+              Startups and scaling tech companies needed SOC 2, ISO 27001, HIPAA, and other frameworks to win enterprise deals — but they didn't need red tape. We built Complianta to change that.
               </p>
               <p className="text-muted-foreground dark:text-white">
-                Today, we've helped over 100 companies across various industries
-                achieve compliance with standards like SOC 2, ISO 27001, HIPAA,
-                and more. Our team has grown, but our mission remains the same:
-                to simplify compliance for growing companies.
+              Today, we've helped 100+ companies across industries streamline their path to compliance with practical, modern solutions. Our team has grown, but our mission remains the same: to make compliance an enabler, not a blocker.
               </p>
             </div>
             <div className="relative rounded-lg overflow-hidden">
@@ -91,9 +87,7 @@ export default function AboutPage() {
               <CardContent className="p-6">
                 <h3 className="text-2xl font-bold mb-4">Our Mission</h3>
                 <p className="text-muted-foreground dark:text-white">
-                  To simplify compliance for growing companies, enabling them to
-                  build trust with their customers and focus on their core
-                  business.
+                To simplify compliance for growing companies, enabling them to build trust with customers and scale with confidence
                 </p>
               </CardContent>
             </Card>
@@ -105,22 +99,22 @@ export default function AboutPage() {
                     {
                       title: "Simplicity",
                       description:
-                        "We make complex compliance requirements simple and manageable.",
+                        "We break down complex requirements into clear, actionable steps",
                     },
                     {
                       title: "Practicality",
                       description:
-                        "We focus on practical solutions that work in the real world.",
+                        "Our solutions work in real-world environments — not just theory",
                     },
                     {
                       title: "Expertise",
                       description:
-                        "We bring deep expertise and experience to every client engagement.",
+                        " Each engagement is led by certified professionals with startup and enterprise experience",
                     },
                     {
                       title: "Partnership",
                       description:
-                        "We work as partners with our clients, not just consultants.",
+                        "We work alongside your team as an embedded resource, not just an outside vendor.",
                     },
                   ].map((value, i) => (
                     <div key={i} className="flex items-start">
@@ -148,8 +142,7 @@ export default function AboutPage() {
               Our Team
             </h2>
             <p className="mt-4 text-muted-foreground dark:text-white md:text-xl max-w-3xl mx-auto">
-              Meet the experienced professionals who make up the Via Comply
-              team.
+            Meet the leadership and advisory team driving Complianta's success
             </p>
           </div>
 
@@ -158,55 +151,48 @@ export default function AboutPage() {
               {
                 name: "Yannick Massivi",
                 title: "Founder & CEO",
-                bio: "Yannick is a Sr. Cloud Security Engineer with 9 years of experience securing enterprise cloud environments across AWS, Azure, and hybrid infrastructure. I specialize in strengthening cloud ecosystems through strategic security assessments, full-spectrum vulnerability management, and airtight incident response readiness",
-                image: "/lym.jpeg",
+                bio: "CISSP-certified cloud security expert with 9+ years in enterprise and startup environments. Leads engagements focused on SOC 2, ISO 27001, and cloud security strategy across AWS and Azure.",
+              },
+              {
+                name: "Jessica Tran",
+                title: "Director of Compliance & Risk",
+                bio: "Former Big 4 auditor with 10+ years in GRC consulting. Specializes in SOC 2, HIPAA, ISO, and GDPR readiness for high-growth SaaS companies. Trusted advisor to control owners and executive stakeholders.",
+              },
+              {
+                name: "David Kim",
+                title: "Principal Cloud Security Architect", 
+                bio: "AWS and Azure certified architect with deep expertise in IAM, network segmentation, secure CI/CD, and zero trust architecture. Leads all technical security reviews and remediation plans.",
+              },
+              {
+                name: "Emily Rivera",
+                title: "Compliance Program Manager",
+                bio: "Expert in policy development, evidence collection, and audit readiness. Helps clients operationalize compliance requirements with clarity and efficiency.",
               },
               {
                 name: "Gabriel Godlive",
-                title: "Software Engineer",
-                bio: "Gabriel is a software engineer with a focus on building secure applications and systems. He has experience in both frontend and backend development, with a strong emphasis on security best practices and compliance.",
-                image: "/gabriel.png",
+                title: "DevSecOps Engineer",
+                bio: "Full-stack engineer focused on secure software development, infrastructure as code, and compliance automation. Supports integrations with Drata, Vanta, and cloud-native tooling.",
               },
               {
-                name: "Find Name",
-                title: "Head of Compliance",
-                bio: "Jessica is a certified compliance professional with expertise in SOC 2, ISO 27001, and HIPAA. She has helped dozens of companies achieve compliance.",
-                image: "/team-jessica.jpg",
-              },
-              {
-                name: "Find Name",
-                title: "Senior Security Consultant",
-                bio: "David specializes in cloud security architecture and has extensive experience securing AWS, Azure, and GCP environments for startups and enterprises.",
-                image: "/team-david.jpg",
-              },
-              {
-                name: "Find Name",
-                title: "Compliance Consultant",
-                bio: "Emily is an expert in SOC 2 compliance with a background in audit and assurance. She helps clients navigate the complexities of compliance requirements.",
-                image: "/team-emily.jpg",
-              },
-              {
-                name: "Find Name",
-                title: "Security Engineer",
-                bio: "James has a strong technical background in security engineering and helps clients implement secure infrastructure and technical controls.",
-                image: "/team-james.jpg",
-              },
+                name: "James Okoro",
+                title: "Security Operations Specialist",
+                bio: "Leads vulnerability management, incident response playbooks, and endpoint security assessments. Works closely with client engineering teams to improve detection and response capabilities.",
+              }
             ].map((member, i) => (
-              <Card key={i} className="overflow-hidden">
-                <div className="aspect-square relative">
-                  <Image
-                    src={member.image || "/placeholder.svg"}
-                    alt={member.name}
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                <CardContent className="p-6">
-                  <h3 className="text-xl font-bold">{member.name}</h3>
-                  <p className="text-sm text-muted-foreground dark:text-white mb-4">
+              <Card key={i} className="overflow-hidden transform hover:scale-105 transition-all duration-300 hover:shadow-lg">
+                <CardContent className="p-8">
+                  <div className="w-16 h-16 mb-6 rounded-full bg-primary/10 flex items-center justify-center mx-auto">
+                    <span className="text-2xl font-bold text-primary">
+                      {member.name.charAt(0)}
+                    </span>
+                  </div>
+                  <h3 className="text-xl font-bold mb-2 text-center">{member.name}</h3>
+                  <p className="text-sm font-medium text-primary mb-4 text-center">
                     {member.title}
                   </p>
-                  <p className="text-muted-foreground dark:text-white">{member.bio}</p>
+                  <p className="text-muted-foreground text-sm leading-relaxed text-center">
+                    {member.bio}
+                  </p>
                 </CardContent>
               </Card>
             ))}
@@ -219,7 +205,7 @@ export default function AboutPage() {
         <div className="container px-4 md:px-6">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
-              Why Choose Via Comply
+            Why Companies Choose Complianta
             </h2>
             <p className="mt-4 text-muted-foreground dark:text-white md:text-xl max-w-3xl mx-auto">
               What sets us apart from other security and compliance
@@ -230,35 +216,36 @@ export default function AboutPage() {
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {[
               {
-                title: "Startup Focus",
+                title: "Startup-Savvy",
                 description:
-                  "We specialize in working with startups and growing companies, with an approach designed for their unique needs and constraints.",
+                  "We know the unique pressures of early-stage teams and design engagements to match",
               },
               {
-                title: "Practical Approach",
+                title: "End-to-End Delivery",
                 description:
-                  "We focus on practical, efficient solutions that work in the real world, not theoretical frameworks that create unnecessary overhead.",
-              },
-              {
-                title: "Experienced Team",
-                description:
-                  "Our team brings deep expertise from both enterprise and startup environments, with certifications in relevant frameworks.",
-              },
-              {
-                title: "End-to-End Support",
-                description:
-                  "We provide support throughout the entire compliance journey, from initial assessment to audit preparation and beyond.",
+                  "From gap assessments to auditor handoff, we stay with you through the entire compliance lifecycle",
               },
               {
                 title: "Technology-Enabled",
                 description:
-                  "We leverage technology to streamline the compliance process, making it more efficient and less resource-intensive.",
+                  "We use automation, integrations, and cloud tooling to reduce manual effort and costs.",
+              },
+              {
+                title: "Flexible & Scalable",
+                description:
+                  "We serve clients from pre-seed to post-Series C, adapting as your business grows.",
+              },
+              {
+                title: "Proven Results",
+                description:
+                  "98% success rate across SOC 2, ISO, HIPAA, and GDPR audits",
               },
               {
                 title: "Proven Track Record",
                 description:
                   "We've helped over 100 companies achieve compliance with various frameworks, with a 98% success rate.",
               },
+              
             ].map((reason, i) => (
               <Card
                 key={i}
@@ -283,19 +270,28 @@ export default function AboutPage() {
                 Ready to work with us?
               </h2>
               <p className="mt-4 text-muted-foreground dark:text-white md:text-xl">
-                Contact us today to discuss your security and compliance needs.
-                Our team is ready to help.
+              Let's simplify your security and compliance program. Book a free consultation to map your next steps.
               </p>
               <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
-                <Button size="lg" asChild>
-                  <a
-                    href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0Vxu3mWG4YQPBDvvUz9CX7sNoH_BBnmcGmKPRSYAiQD9S_xtFPB8TmIU_J4LtUeU_aCTmUEgzh"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Schedule a Consultation
-                  </a>
-                </Button>
+                <Dialog>
+                  <DialogTrigger asChild>
+                    <Button size="lg">Schedule Consultation</Button>
+                  </DialogTrigger>
+                  <DialogContent>
+                    <DialogTitle>Schedule a Free Consultation</DialogTitle>
+                    <div className="w-full" style={{ minHeight: 600 }}>
+                      <iframe
+                        src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0Vxu3mWG4YQPBDvvUz9CX7sNoH_BBnmcGmKPRSYAiQD9S_xtFPB8TmIU_J4LtUeU_aCTmUEgzh"
+                        width="100%"
+                        height="600"
+                        frameBorder="0"
+                        style={{ border: 0 }}
+                        allowFullScreen
+                        title="Schedule a Free Consultation"
+                      ></iframe>
+                    </div>
+                  </DialogContent>
+                </Dialog>
                 <Button variant="outline" size="lg" asChild>
                   <Link href="/services">Explore Our Services</Link>
                 </Button>
