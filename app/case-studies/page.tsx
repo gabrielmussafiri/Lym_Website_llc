@@ -4,6 +4,12 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { ArrowRight } from "lucide-react"
+import {
+  Dialog,
+  DialogContent,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog"
 
 export default function CaseStudiesPage() {
   return (
@@ -14,7 +20,7 @@ export default function CaseStudiesPage() {
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Client Success Stories</h1>
             <p className="mt-4 text-muted-foreground dark:text-white md:text-xl">
-              See how we've helped companies like yours achieve their compliance and security goals.
+            See how we've helped companies like yours achieve their compliance and security goals across multiple frameworks.
             </p>
           </div>
         </div>
@@ -30,9 +36,7 @@ export default function CaseStudiesPage() {
                 <Badge className="mb-2">SOC 2 Compliance</Badge>
                 <h2 className="text-3xl font-bold tracking-tighter mb-4">FinTech Startup Achieves SOC 2 in 8 Weeks</h2>
                 <p className="text-muted-foreground dark:text-white mb-6">
-                  A rapidly growing fintech startup needed to achieve SOC 2 compliance quickly to close enterprise deals
-                  worth over $1.2M in annual recurring revenue. With our streamlined approach, they achieved SOC 2 Type
-                  I in just 8 weeks.
+                A rapidly growing fintech startup needed to achieve SOC 2 compliance quickly to close enterprise deals worth over $1.2M in annual recurring revenue. With our streamlined readiness program, they achieved SOC 2 Type I in just 8 weeks.
                 </p>
                 <div className="space-y-2 mb-6">
                   <div className="flex items-start">
@@ -70,9 +74,8 @@ export default function CaseStudiesPage() {
                   Healthcare SaaS Platform Meets HIPAA Requirements
                 </h2>
                 <p className="text-muted-foreground dark:text-white mb-6">
-                  A healthcare technology company needed to implement HIPAA-compliant infrastructure to support their
-                  growing customer base of healthcare providers. We helped them design and implement a secure, compliant
-                  architecture.
+                A healthcare technology company needed to implement HIPAA-compliant infrastructure to serve its growing client base of providers. We helped them architect and document a fully compliant environment.
+
                 </p>
                 <div className="space-y-2 mb-6">
                   <div className="flex items-start">
@@ -108,8 +111,7 @@ export default function CaseStudiesPage() {
                 <Badge className="mb-2">vCISO Services</Badge>
                 <h2 className="text-3xl font-bold tracking-tighter mb-4">SaaS Platform Strengthens Security Posture</h2>
                 <p className="text-muted-foreground dark:text-white mb-6">
-                  A growing SaaS platform needed to strengthen their security posture to meet enterprise customer
-                  requirements. Our vCISO service helped them develop and implement a comprehensive security program.
+                A scaling SaaS platform needed to enhance its security program to meet enterprise client demands. Through our vCISO engagement, we built a roadmap, implemented policies, and supported third-party risk reviews.
                 </p>
                 <div className="space-y-2 mb-6">
                   <div className="flex items-start">
@@ -209,15 +211,25 @@ export default function CaseStudiesPage() {
                 Contact us today to discuss how we can help you achieve your compliance and security goals.
               </p>
               <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
-                <Button size="lg" asChild>
-                  <a
-                    href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0Vxu3mWG4YQPBDvvUz9CX7sNoH_BBnmcGmKPRSYAiQD9S_xtFPB8TmIU_J4LtUeU_aCTmUEgzh"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Schedule a Consultation
-                  </a>
-                </Button>
+                <Dialog>
+                  <DialogTrigger asChild>
+                    <Button size="lg">Schedule Consultation</Button>
+                  </DialogTrigger>
+                  <DialogContent>
+                    <DialogTitle>Schedule a Free Consultation</DialogTitle>
+                    <div className="w-full" style={{ minHeight: 600 }}>
+                      <iframe
+                        src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0Vxu3mWG4YQPBDvvUz9CX7sNoH_BBnmcGmKPRSYAiQD9S_xtFPB8TmIU_J4LtUeU_aCTmUEgzh"
+                        width="100%"
+                        height="600"
+                        frameBorder="0"
+                        style={{ border: 0 }}
+                        allowFullScreen
+                        title="Schedule a Free Consultation"
+                      ></iframe>
+                    </div>
+                  </DialogContent>
+                </Dialog>
                 <Button variant="outline" size="lg" asChild>
                   <Link href="/services">Explore Our Services</Link>
                 </Button>
