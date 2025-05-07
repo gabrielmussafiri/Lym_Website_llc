@@ -32,7 +32,7 @@ export default function AboutPage() {
               About Complianta
             </h1>
             <p className="mt-4 text-white/90 md:text-xl animate-fade-in-up-delay-1">
-              We're on a mission to simplify compliance for growing companies.
+            We’re on a mission to simplify compliance for growing companies — and for any organization building secure, scalable, and AI-ready systems. Whether you’re early-stage or expanding into new markets, we help you earn trust through strong security and streamlined certification across leading frameworks
             </p>
           </div>
         </div>

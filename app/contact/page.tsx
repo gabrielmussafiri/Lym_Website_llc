@@ -11,6 +11,12 @@ import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Calendar, Mail, MapPin, Phone } from "lucide-react"
+import {
+  Dialog,
+  DialogContent,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog"
 
 export default function ContactPage() {
   const [formState, setFormState] = useState({
@@ -147,8 +153,8 @@ export default function ContactPage() {
                     <Mail className="h-5 w-5 text-primary mr-3 mt-0.5" />
                     <div>
                       <p className="font-medium">Email</p>
-                      <a href="mailto:info@viacomply.com" className="text-muted-foreground hover:text-foreground">
-                        info@viacomply.com
+                      <a href="mailto:info@complianta.com" className="text-muted-foreground hover:text-foreground">
+                        info@complianta.com
                       </a>
                     </div>
                   </div>
@@ -166,9 +172,13 @@ export default function ContactPage() {
                     <div>
                       <p className="font-medium">Office</p>
                       <p className="text-muted-foreground dark:text-white">
-                        123 Security Street
+                      12436 FM 1960 Rd W, Unit #1621
                         <br />
-                        San Francisco, CA 94105
+                        Houston, TX 77065
+                        <br />
+                        United States
+                        <br />
+                        info@complianta.com
                       </p>
                     </div>
                   </div>
@@ -177,15 +187,25 @@ export default function ContactPage() {
                     <div>
                       <p className="font-medium">Schedule a Call</p>
                       <p className="text-muted-foreground dark:text-white">Book a 30-minute consultation with our team.</p>
-                      <Button variant="outline" className="mt-2" asChild>
-                        <a
-                          href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0Vxu3mWG4YQPBDvvUz9CX7sNoH_BBnmcGmKPRSYAiQD9S_xtFPB8TmIU_J4LtUeU_aCTmUEgzh"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          Schedule Now
-                        </a>
-                      </Button>
+                      <Dialog>
+                        <DialogTrigger asChild>
+                          <Button variant="outline" className="mt-2">Schedule Now</Button>
+                        </DialogTrigger>
+                        <DialogContent>
+                          <DialogTitle>Schedule a Free Consultation</DialogTitle>
+                          <div className="w-full" style={{ minHeight: 600 }}>
+                            <iframe
+                              src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0Vxu3mWG4YQPBDvvUz9CX7sNoH_BBnmcGmKPRSYAiQD9S_xtFPB8TmIU_J4LtUeU_aCTmUEgzh"
+                              width="100%"
+                              height="600"
+                              frameBorder="0"
+                              style={{ border: 0 }}
+                              allowFullScreen
+                              title="Schedule a Free Consultation"
+                            ></iframe>
+                          </div>
+                        </DialogContent>
+                      </Dialog>
                     </div>
                   </div>
                 </div>
