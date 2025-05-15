@@ -5,13 +5,13 @@ import { Badge } from "@/components/ui/badge"
 import { Card, CardContent } from "@/components/ui/card"
 import { CheckCircle, ArrowLeft, Calendar, Clock, Users, Building } from "lucide-react"
 
-export default function FintechCaseStudyPage() {
+function GovTechCaseStudyPage() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
       <section className="relative py-20 md:py-28 overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <Image src="/fintech-case-study-hero.png" alt="FinTech Case Study" fill priority className="object-cover" />
+          <Image src="/govtech-case-study.jpg" alt="GovTech Case Study" fill priority className="object-cover" />
           {/* Dark Overlay for better text readability */}
           <div className="absolute inset-0 bg-black/60" />
         </div>
@@ -19,10 +19,10 @@ export default function FintechCaseStudyPage() {
           <div className="max-w-3xl">
             <Badge className="mb-4 bg-primary hover:bg-primary text-white">Case Study</Badge>
             <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-white mb-6">
-              $1.2M Pipeline Unlocked
+              Cloud-Native GovTech Firm Builds Security Program
             </h1>
             <p className="text-xl text-white/90 mb-8">
-              Fintech platform closes enterprise deals post-SOC 2
+              Public sector SaaS aligns with NIST 800-53 and FedRAMP to unlock federal contracts
             </p>
           </div>
         </div>
@@ -35,36 +35,28 @@ export default function FintechCaseStudyPage() {
             <div className="lg:col-span-2">
               <h2 className="text-3xl font-bold tracking-tighter mb-6">The Challenge</h2>
               <p className="text-muted-foreground mb-6">
-                PaySecure (name changed for confidentiality) is a rapidly growing fintech startup that provides payment
-                processing solutions for e-commerce businesses. As they began targeting enterprise customers, they
-                encountered a significant roadblock: potential clients required SOC 2 compliance before signing
-                contracts.
-              </p>
-              <p className="text-muted-foreground mb-6">
-                With several enterprise deals in the pipeline—worth over $1.2M in annual recurring revenue—PaySecure
-                needed to achieve SOC 2 Type I compliance quickly. However, they faced several challenges:
+                CivicCloud (name changed for confidentiality) is a cloud-native GovTech SaaS expanding into federal procurement. To win agency contracts, they needed to align with NIST 800-53 and FedRAMP requirements, but had no formal security program or documentation in place.
               </p>
               <ul className="space-y-3 mb-6">
                 <li className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
-                  <span>Limited internal resources dedicated to security and compliance</span>
+                  <span>Federal clients required NIST 800-53 and FedRAMP alignment</span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
-                  <span>A complex cloud infrastructure spanning multiple AWS services</span>
+                  <span>No formal security program or documentation</span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
-                  <span>Minimal existing documentation and formal security policies</span>
+                  <span>Needed to build trust with agency partners</span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
-                  <span>A tight timeline of 2-3 months to achieve compliance</span>
+                  <span>Short timeline to pass preliminary security assessments</span>
                 </li>
               </ul>
               <p className="text-muted-foreground">
-                PaySecure approached Via Comply to help them navigate the SOC 2 compliance process efficiently and
-                effectively, without disrupting their core business operations.
+                CivicCloud partnered with Complianta to build a security program, map controls to NIST, and prepare for agency reviews and FedRAMP engagement.
               </p>
             </div>
             <div>
@@ -76,28 +68,28 @@ export default function FintechCaseStudyPage() {
                       <Building className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
                       <div>
                         <p className="font-medium">Industry</p>
-                        <p className="text-muted-foreground">Financial Technology</p>
+                        <p className="text-muted-foreground">GovTech / Public Sector SaaS</p>
                       </div>
                     </div>
                     <div className="flex items-start">
                       <Users className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
                       <div>
                         <p className="font-medium">Company Size</p>
-                        <p className="text-muted-foreground">50 employees</p>
+                        <p className="text-muted-foreground">35 employees</p>
                       </div>
                     </div>
                     <div className="flex items-start">
                       <Calendar className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
                       <div>
                         <p className="font-medium">Project Timeline</p>
-                        <p className="text-muted-foreground">8 weeks</p>
+                        <p className="text-muted-foreground">Phase 1: 4 months</p>
                       </div>
                     </div>
                     <div className="flex items-start">
                       <Clock className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
                       <div>
-                        <p className="font-medium">Compliance Achieved</p>
-                        <p className="text-muted-foreground">SOC 2 Type I</p>
+                        <p className="font-medium">Compliance Focus</p>
+                        <p className="text-muted-foreground">NIST 800-53, FedRAMP readiness</p>
                       </div>
                     </div>
                   </div>
@@ -116,27 +108,27 @@ export default function FintechCaseStudyPage() {
             {[
               {
                 step: "1",
-                title: "Comprehensive Gap Assessment",
+                title: "Security Roadmap & Gap Assessment",
                 description:
-                  "We conducted a thorough assessment of PaySecure's existing security controls against SOC 2 requirements, identifying gaps and prioritizing remediation efforts.",
+                  "We developed a full-stack security roadmap and performed a gap assessment against NIST 800-53 and FedRAMP controls.",
               },
               {
                 step: "2",
-                title: "Tailored Remediation Plan",
+                title: "Documentation & Control Narratives",
                 description:
-                  "We developed a customized remediation plan focused on addressing the highest-priority gaps first, with a clear timeline and resource allocation.",
+                  "We created internal governance documentation and mapped control narratives to NIST requirements.",
               },
               {
                 step: "3",
-                title: "Policy Development & Implementation",
+                title: "Incident Response & Vendor Review",
                 description:
-                  "We created and implemented essential security policies and procedures, tailored to PaySecure's specific business operations and technology stack.",
+                  "We introduced incident response plans and vendor risk review workflows tailored for public sector expectations.",
               },
               {
                 step: "4",
-                title: "Audit Preparation & Support",
+                title: "Agency Assessment Support",
                 description:
-                  "We prepared PaySecure for the audit process, including evidence collection, documentation organization, and auditor interactions.",
+                  "We prepared CivicCloud for agency security reviews and supported Q&A with procurement teams.",
               },
             ].map((phase, i) => (
               <Card key={i} className="relative overflow-hidden border-none shadow-md">
@@ -160,24 +152,24 @@ export default function FintechCaseStudyPage() {
           <div className="space-y-8">
             {[
               {
-                challenge: "Complex AWS Infrastructure",
+                challenge: "No Security Program or Documentation",
                 solution:
-                  "We conducted a detailed review of PaySecure's AWS environment, identifying security configuration issues and implementing automated monitoring and remediation using AWS Security Hub and Config.",
+                  "We built a security program from the ground up, including all required policies and procedures for NIST and FedRAMP.",
               },
               {
-                challenge: "Limited Security Documentation",
+                challenge: "NIST 800-53 Control Mapping",
                 solution:
-                  "We developed a comprehensive set of security policies and procedures tailored to PaySecure's operations, focusing on practical implementation rather than theoretical frameworks.",
+                  "We mapped CivicCloud's technical and operational controls to NIST requirements, filling gaps and documenting evidence.",
               },
               {
-                challenge: "Access Control Management",
+                challenge: "Incident Response & Vendor Risk",
                 solution:
-                  "We implemented a role-based access control system with regular access reviews, and integrated single sign-on (SSO) with multi-factor authentication across all critical systems.",
+                  "We implemented incident response plans and vendor review processes to meet agency expectations.",
               },
               {
-                challenge: "Vendor Risk Management",
+                challenge: "Procurement Friction & Trust",
                 solution:
-                  "We established a vendor risk assessment process and conducted reviews of critical vendors, implementing a continuous monitoring approach for ongoing compliance.",
+                  "We supported agency assessments and built institutional trust, reducing procurement cycle times.",
               },
             ].map((item, i) => (
               <Card key={i} className="overflow-hidden">
@@ -204,48 +196,42 @@ export default function FintechCaseStudyPage() {
             <div>
               <h2 className="text-3xl font-bold tracking-tighter mb-6">Results</h2>
               <p className="text-muted-foreground mb-6">
-                With our guidance and support, PaySecure successfully achieved SOC 2 Type I compliance in just 8 weeks,
-                significantly faster than the industry average of 3-6 months. This rapid achievement led to several
-                significant business outcomes:
+                CivicCloud positioned itself for FedRAMP Tailored engagement, passed preliminary agency security assessments, and reduced procurement friction. Key outcomes included:
               </p>
               <div className="space-y-4">
                 <div className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
                   <div>
-                    <h3 className="font-semibold">Closed $1.2M in Enterprise Deals</h3>
+                    <h3 className="font-semibold">FedRAMP Tailored Readiness</h3>
                     <p className="text-sm text-muted-foreground">
-                      PaySecure closed three enterprise deals worth over $1.2M in annual recurring revenue within one
-                      month of achieving compliance.
+                      Positioned for FedRAMP Tailored engagement and future certifications.
                     </p>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
                   <div>
-                    <h3 className="font-semibold">Strengthened Security Posture</h3>
+                    <h3 className="font-semibold">Passed Agency Assessments</h3>
                     <p className="text-sm text-muted-foreground">
-                      The compliance process identified and remediated several security vulnerabilities, significantly
-                      improving PaySecure's overall security posture.
+                      Successfully passed preliminary security reviews with key federal agency partners.
                     </p>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
                   <div>
-                    <h3 className="font-semibold">Streamlined Sales Process</h3>
+                    <h3 className="font-semibold">Reduced Procurement Friction</h3>
                     <p className="text-sm text-muted-foreground">
-                      SOC 2 compliance simplified the security questionnaire process, reducing the sales cycle by an
-                      average of 3 weeks for enterprise prospects.
+                      Built institutional trust and shortened procurement cycles for new contracts.
                     </p>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
                   <div>
-                    <h3 className="font-semibold">Established Compliance Foundation</h3>
+                    <h3 className="font-semibold">Scalable Security Foundation</h3>
                     <p className="text-sm text-muted-foreground">
-                      The policies, procedures, and controls implemented for SOC 2 created a strong foundation for
-                      ongoing compliance and future frameworks.
+                      Established a scalable security and compliance foundation for future growth.
                     </p>
                   </div>
                 </div>
@@ -253,8 +239,8 @@ export default function FintechCaseStudyPage() {
             </div>
             <div className="relative rounded-lg overflow-hidden">
               <Image
-                src="/fintech-results.png"
-                alt="FinTech Results"
+                src="/govtech-case-study.jpg"
+                alt="GovTech Results"
                 width={600}
                 height={400}
                 className="object-cover rounded-lg shadow-lg"
@@ -272,17 +258,14 @@ export default function FintechCaseStudyPage() {
               <div className="text-4xl text-primary absolute -top-8 -left-8">"</div>
               <div className="text-4xl text-primary absolute -bottom-8 -right-8">"</div>
               <blockquote className="text-xl italic text-center px-8 py-4">
-                Via Comply's approach to SOC 2 compliance was refreshingly practical and efficient. They focused on what
-                really mattered, helping us achieve compliance in record time without unnecessary overhead. Their
-                expertise was invaluable, and the ROI was immediate—we closed over $1M in deals within weeks of getting
-                our SOC 2 report.
+                Complianta helped us build a security program that met agency expectations and accelerated our federal sales cycle.
               </blockquote>
             </div>
             <div className="flex items-center justify-center mt-8">
-              <Image src="/cto-portrait.png" alt="Sarah Johnson" width={60} height={60} className="rounded-full mr-4" />
+              <Image src="/cto-portrait.png" alt="Morgan Lee" width={60} height={60} className="rounded-full mr-4" />
               <div>
-                <p className="font-semibold">Alex Chen</p>
-                <p className="text-sm text-muted-foreground">CTO, PaySecure</p>
+                <p className="font-semibold">Morgan Lee</p>
+                <p className="text-sm text-muted-foreground">CTO, CivicCloud</p>
               </div>
             </div>
           </div>
@@ -293,10 +276,9 @@ export default function FintechCaseStudyPage() {
       <section className="py-16 md:py-24 bg-muted">
         <div className="container px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl font-bold tracking-tighter mb-6">Ready to achieve compliance quickly?</h2>
+            <h2 className="text-3xl font-bold tracking-tighter mb-6">Ready to unlock public sector growth?</h2>
             <p className="text-muted-foreground mb-8">
-              Contact us today to discuss how we can help your organization achieve compliance efficiently and
-              effectively, just like we did for PaySecure.
+              Contact us today to discuss how we can help your organization build a security program for federal contracts and compliance.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <Button size="lg" asChild>
@@ -321,3 +303,5 @@ export default function FintechCaseStudyPage() {
     </div>
   )
 }
+
+export default GovTechCaseStudyPage 

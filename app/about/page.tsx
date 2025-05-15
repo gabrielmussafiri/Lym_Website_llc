@@ -32,14 +32,45 @@ export default function AboutPage() {
               About Complianta
             </h1>
             <p className="mt-4 text-white/90 md:text-xl animate-fade-in-up-delay-1">
-            We’re on a mission to simplify compliance for growing companies — and for any organization building secure, scalable, and AI-ready systems. Whether you’re early-stage or expanding into new markets, we help you earn trust through strong security and streamlined certification across leading frameworks
+              Security & Compliance for What's Next
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Main Content */}
+      <section className="py-16 md:py-24">
+        <div className="container px-4 md:px-6">
+          <div className="max-w-3xl mx-auto">
+            <p className="text-lg text-muted-foreground dark:text-white mb-8">
+              Complianta is a boutique consultancy built to support the most ambitious companies of the AI era — helping cloud-native, fast-moving, and future-focused organizations meet security and compliance standards with precision and speed.
+            </p>
+            <p className="text-lg text-muted-foreground dark:text-white mb-8">
+              We partner with startups, scaling SaaS platforms, and government-focused tech firms to operationalize trust through frameworks like:
+            </p>
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-12">
+              {[
+                "SOC 2 (Type I & II)",
+                "ISO/IEC 27001",
+                "HIPAA",
+                "GDPR",
+                "ISO/IEC 42001 (AI Governance)"
+              ].map((framework, i) => (
+                <div key={i} className="flex items-center">
+                  <CheckCircle className="h-5 w-5 text-primary mr-2 flex-shrink-0" />
+                  <span>{framework}</span>
+                </div>
+              ))}
+            </div>
+            <p className="text-lg text-muted-foreground dark:text-white">
+              Our work spans cloud security architecture, audit readiness, risk management, and strategic vCISO leadership — all tailored to companies balancing growth with governance.
             </p>
           </div>
         </div>
       </section>
 
       {/* Our Story */}
-      <section className="py-16 md:py-24">
+      <section className="py-16 md:py-24 bg-muted">
         <div className="container px-4 md:px-6">
           <div className="grid gap-12 lg:grid-cols-2 items-center">
             <div>
@@ -47,14 +78,27 @@ export default function AboutPage() {
                 Our Story
               </h2>
               <p className="text-muted-foreground dark:text-white mb-4">
-              Complianta was founded in 2018 by a team of security and compliance professionals who saw a problem: fast-growing companies were being held back by outdated, complex, and overpriced compliance models.
+                Founded by security engineer and compliance advisor Yannick Massivi, Complianta emerged from a clear gap in the industry: fast-growing companies were being held back by legacy compliance models that added friction instead of clarity.
               </p>
               <p className="text-muted-foreground dark:text-white mb-4">
-              Startups and scaling tech companies needed SOC 2, ISO 27001, HIPAA, and other frameworks to win enterprise deals — but they didn't need red tape. We built Complianta to change that.
+                After years leading audit readiness efforts for startups and enterprise environments alike, Yannick launched Complianta to bring elite, enterprise-tested methodology to leaner, faster-moving organizations.
               </p>
-              <p className="text-muted-foreground dark:text-white">
-              Today, we've helped 100+ companies across industries streamline their path to compliance with practical, modern solutions. Our team has grown, but our mission remains the same: to make compliance an enabler, not a blocker.
+              <p className="text-muted-foreground dark:text-white mb-6">
+                Today, Complianta is designed from the ground up to serve modern companies with:
               </p>
+              <div className="space-y-3">
+                {[
+                  "High-trust service delivery",
+                  "Nimble execution",
+                  "Deep framework expertise",
+                  "Clarity at every stage of the compliance lifecycle"
+                ].map((item, i) => (
+                  <div key={i} className="flex items-start">
+                    <CheckCircle className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
+                    <span>{item}</span>
+                  </div>
+                ))}
+              </div>
             </div>
             <div className="relative rounded-lg overflow-hidden">
               <Image
@@ -70,16 +114,12 @@ export default function AboutPage() {
       </section>
 
       {/* Mission & Values */}
-      <section className="py-16 md:py-24 bg-muted">
+      <section className="py-16 md:py-24">
         <div className="container px-4 md:px-6">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
               Our Mission & Values
             </h2>
-            <p className="mt-4 text-muted-foreground dark:text-white md:text-xl max-w-3xl mx-auto">
-              We're guided by a clear mission and strong values that shape
-              everything we do.
-            </p>
           </div>
 
           <div className="grid gap-8 md:grid-cols-2">
@@ -87,7 +127,7 @@ export default function AboutPage() {
               <CardContent className="p-6">
                 <h3 className="text-2xl font-bold mb-4">Our Mission</h3>
                 <p className="text-muted-foreground dark:text-white">
-                To simplify compliance for growing companies, enabling them to build trust with customers and scale with confidence
+                  To help visionary teams unlock growth, funding, and credibility — by turning security and compliance into a competitive edge.
                 </p>
               </CardContent>
             </Card>
@@ -97,24 +137,20 @@ export default function AboutPage() {
                 <div className="space-y-4">
                   {[
                     {
-                      title: "Simplicity",
-                      description:
-                        "We break down complex requirements into clear, actionable steps",
-                    },
-                    {
                       title: "Practicality",
-                      description:
-                        "Our solutions work in real-world environments — not just theory",
+                      description: "We bring frameworks into the real world. What we implement works under pressure.",
                     },
                     {
                       title: "Expertise",
-                      description:
-                        " Each engagement is led by certified professionals with startup and enterprise experience",
+                      description: "Certified professionals lead every engagement. We don't outsource your credibility.",
                     },
                     {
-                      title: "Partnership",
-                      description:
-                        "We work alongside your team as an embedded resource, not just an outside vendor.",
+                      title: "Trust",
+                      description: "We operate like an internal team. Our job is to make you look exceptional to investors, clients, and auditors.",
+                    },
+                    {
+                      title: "Precision",
+                      description: "Every control, every document, every recommendation serves a purpose. No fluff.",
                     },
                   ].map((value, i) => (
                     <div key={i} className="flex items-start">
@@ -135,14 +171,14 @@ export default function AboutPage() {
       </section>
 
       {/* Team */}
-      <section className="py-16 md:py-24">
+      <section className="py-16 md:py-24 bg-muted">
         <div className="container px-4 md:px-6">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
               Our Team
             </h2>
             <p className="mt-4 text-muted-foreground dark:text-white md:text-xl max-w-3xl mx-auto">
-            Meet the leadership and advisory team driving Complianta's success
+              We're a remote-first, deeply experienced group of compliance advisors, cloud architects, security engineers, and risk specialists — handpicked for technical depth and clarity of execution.
             </p>
           </div>
 
@@ -151,39 +187,39 @@ export default function AboutPage() {
               {
                 name: "Yannick Massivi",
                 title: "Founder & CEO",
-                bio: "CISSP-certified cloud security expert with 9+ years in enterprise and startup environments. Leads engagements focused on SOC 2, ISO 27001, and cloud security strategy across AWS and Azure.",
+                bio: "CISSP-certified security architect with 9+ years leading compliance and cloud programs across AWS, Azure, and hybrid enterprise environments. Specializes in SOC 2, ISO 27001, AI governance, and fast-track audit delivery.",
               },
               {
                 name: "Jessica Tran",
                 title: "Director of Compliance & Risk",
-                bio: "Former Big 4 auditor with 10+ years in GRC consulting. Specializes in SOC 2, HIPAA, ISO, and GDPR readiness for high-growth SaaS companies. Trusted advisor to control owners and executive stakeholders.",
+                bio: "Former Big 4 consultant with 10+ years of SOC 2, HIPAA, ISO, and GDPR experience. Drives control mapping, risk programs, and auditor coordination.",
               },
               {
                 name: "David Kim",
-                title: "Principal Cloud Security Architect", 
-                bio: "AWS and Azure certified architect with deep expertise in IAM, network segmentation, secure CI/CD, and zero trust architecture. Leads all technical security reviews and remediation plans.",
+                title: "Principal Cloud Security Architect",
+                bio: "AWS + Azure-certified infrastructure leader. Designs secure CI/CD pipelines, zero trust environments, and secure multi-cloud deployments.",
               },
               {
                 name: "Emily Rivera",
                 title: "Compliance Program Manager",
-                bio: "Expert in policy development, evidence collection, and audit readiness. Helps clients operationalize compliance requirements with clarity and efficiency.",
+                bio: "Leads documentation, policy frameworks, audit readiness and evidence workflows. Expert in high-growth SaaS and audit coaching.",
               },
               {
                 name: "Gabriel Godlive",
                 title: "DevSecOps Engineer",
-                bio: "Full-stack engineer focused on secure software development, infrastructure as code, and compliance automation. Supports integrations with Drata, Vanta, and cloud-native tooling.",
+                bio: "Full-stack engineer focused on compliance automation, IaC, and secure software deployment. Integrates tools like Drata, Vanta, and AWS-native services.",
               },
               {
                 name: "James Okoro",
                 title: "Security Operations Specialist",
-                bio: "Leads vulnerability management, incident response playbooks, and endpoint security assessments. Works closely with client engineering teams to improve detection and response capabilities.",
+                bio: "Leads vulnerability scanning, endpoint protection, and incident readiness playbooks. Helps clients align operations with evolving risk.",
               }
             ].map((member, i) => (
               <Card key={i} className="overflow-hidden transform hover:scale-105 transition-all duration-300 hover:shadow-lg">
                 <CardContent className="p-8">
                   <div className="w-16 h-16 mb-6 rounded-full bg-primary/10 flex items-center justify-center mx-auto">
                     <span className="text-2xl font-bold text-primary">
-                      {member.name.charAt(0)}
+                      {member.name.split(' ').map(n => n[0]).join('')}
                     </span>
                   </div>
                   <h3 className="text-xl font-bold mb-2 text-center">{member.name}</h3>
@@ -201,51 +237,36 @@ export default function AboutPage() {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-16 md:py-24 bg-muted">
+      <section className="py-16 md:py-24">
         <div className="container px-4 md:px-6">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
-            Why Companies Choose Complianta
+              Why Companies Choose Complianta
             </h2>
-            <p className="mt-4 text-muted-foreground dark:text-white md:text-xl max-w-3xl mx-auto">
-              What sets us apart from other security and compliance
-              consultancies.
-            </p>
           </div>
 
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {[
               {
-                title: "Startup-Savvy",
-                description:
-                  "We know the unique pressures of early-stage teams and design engagements to match",
+                title: "Designed for growth-stage speed",
+                description: "Startup-friendly but audit-proven",
               },
               {
-                title: "End-to-End Delivery",
-                description:
-                  "From gap assessments to auditor handoff, we stay with you through the entire compliance lifecycle",
+                title: "Built for AI & cloud-native companies",
+                description: "Specialists in ISO 42001 and next-gen risks",
               },
               {
-                title: "Technology-Enabled",
-                description:
-                  "We use automation, integrations, and cloud tooling to reduce manual effort and costs.",
+                title: "End-to-end readiness",
+                description: "From gap to audit, with no guesswork",
               },
               {
-                title: "Flexible & Scalable",
-                description:
-                  "We serve clients from pre-seed to post-Series C, adapting as your business grows.",
+                title: "White-glove service",
+                description: "Personal, thoughtful, precise delivery",
               },
               {
-                title: "Proven Results",
-                description:
-                  "98% success rate across SOC 2, ISO, HIPAA, and GDPR audits",
+                title: "Dual-sector alignment",
+                description: "Serve both public sector and B2B SaaS clients",
               },
-              {
-                title: "Proven Track Record",
-                description:
-                  "We've helped over 100 companies achieve compliance with various frameworks, with a 98% success rate.",
-              },
-              
             ].map((reason, i) => (
               <Card
                 key={i}
@@ -262,15 +283,15 @@ export default function AboutPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 md:py-24">
+      <section className="py-16 md:py-24 bg-muted">
         <div className="container px-4 md:px-6">
           <div className="rounded-lg bg-primary-foreground p-8 md:p-10 lg:p-16">
             <div className="mx-auto max-w-3xl text-center">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                Ready to work with us?
+                Ready to simplify your compliance journey?
               </h2>
               <p className="mt-4 text-muted-foreground dark:text-white md:text-xl">
-              Let's simplify your security and compliance program. Book a free consultation to map your next steps.
+                Book a consultation today. We'll meet you where you are — and get you where you need to go.
               </p>
               <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
                 <Dialog>

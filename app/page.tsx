@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { ArrowRight, Shield, ShieldCheck, Users } from "lucide-react";
+import { ArrowRight, Shield, ShieldCheck, Users, Target } from "lucide-react";
 import { Dialog, DialogTrigger, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import React from "react";
 import { Label } from "@/components/ui/label";
@@ -100,11 +100,11 @@ export default function Home() {
           <div className="w-full lg:w-1/2 flex flex-col justify-center items-start">
             
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-normal tracking-tight text-balance text-sidebar-primary mb-6 text-left ">
-              <span className="block">Security & Compliance</span>
-               Built for  <span className="text-primary">Growth</span>
+              <span className="block">Compliance & AI Governance</span>
+              for the <span className="text-primary">Modern Enterprise</span>
             </h1>
             <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl dark:text-white">
-              Helping startups and fast-growing tech companies achieve SOC 2, ISO 27001, HIPAA, GDPR, and ISO/IEC 42001 compliance without the complexity or enterprise bloat.
+              We help fast-moving companies operationalize trust through frameworks like SOC 2, ISO/IEC 27001, HIPAA, GDPR, and ISO/IEC 42001 — with audit-ready precision and enterprise-grade velocity.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
               <Dialog>
@@ -161,18 +161,21 @@ export default function Home() {
         <div className="container px-4 md:px-6">
           <div className="text-center mb-10">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
-             Why Choose Us?
+              Why Leading Teams Choose Complianta
             </h2>
+            <p className="text-muted-foreground dark:text-white">
+              Precision Meets Speed
+            </p>
           </div>
-          <div className="grid gap-6 lg:grid-cols-3 lg:gap-12">
+          <div className="grid gap-6 lg:grid-cols-4 lg:gap-12">
             <Card className="border-none shadow-none bg-transparent hover:bg-muted/50 transition-all duration-300 p-4 rounded-lg">
               <CardContent className="p-0 space-y-2">
                 <div className="p-2 bg-primary/10 rounded-full w-fit">
                   <Shield className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-bold">Streamlined Compliance</h3>
+                <h3 className="text-xl font-bold">Precision Meets Speed</h3>
                 <p className="text-muted-foreground dark:text-white">
-                We simplify complex compliance requirements into actionable steps tailored to your stage and structure.
+                  We compress compliance timelines without cutting corners — delivering clarity, control, and credibility in record time.
                 </p>
               </CardContent>
             </Card>
@@ -181,10 +184,9 @@ export default function Home() {
                 <div className="p-2 bg-primary/10 rounded-full w-fit">
                   <ShieldCheck className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-bold">Expert Guidance</h3>
+                <h3 className="text-xl font-bold">Built for Scaled Tech & Public Sector</h3>
                 <p className="text-muted-foreground dark:text-white">
-                Our certified security professionals bring enterprise-grade insight to growing businesses and resource-limited
-                teams.
+                  Whether you're SaaS, AI-native, or government-facing, our methodology adapts to your team, tools, and trajectory.
                 </p>
               </CardContent>
             </Card>
@@ -193,10 +195,20 @@ export default function Home() {
                 <div className="p-2 bg-primary/10 rounded-full w-fit">
                   <Users className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-bold">Tailored Approach</h3>
+                <h3 className="text-xl font-bold">Framework-Driven, Founder-Focused</h3>
                 <p className="text-muted-foreground dark:text-white">
-                Whether you're seed-stage or scaling to Series C, our methodology flexes to your stack, size, and growth
-                trajectory.
+                  Led by certified experts who've guided 100+ audit cycles across regulated industries. Our engagements run lean — but never light.
+                </p>
+              </CardContent>
+            </Card>
+            <Card className="border-none shadow-none bg-transparent hover:bg-muted/50 transition-all duration-300 p-4 rounded-lg">
+              <CardContent className="p-0 space-y-2">
+                <div className="p-2 bg-primary/10 rounded-full w-fit">
+                  <Target className="h-6 w-6 text-primary" />
+                </div>
+                <h3 className="text-xl font-bold">Security-Driven Outcomes</h3>
+                <p className="text-muted-foreground dark:text-white">
+                  Get certified, reduce risk, and close enterprise deals with confidence.
                 </p>
               </CardContent>
             </Card>
@@ -309,28 +321,27 @@ export default function Home() {
         <div className="container px-4 md:px-6">
           <div className="text-center mb-10">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
-              Our Services
+              Our Advisory Programs
             </h2>
             <p className="mt-4 text-muted-foreground dark:text-white md:text-xl max-w-3xl mx-auto">
-              Comprehensive compliance and security solutions tailored to your
-              business needs.
+              Comprehensive compliance and security solutions tailored to your business needs
             </p>
           </div>
-          <div className="grid gap-6 md:grid-cols-3 lg:gap-12">
+          <div className="grid gap-6 md:grid-cols-2 lg:gap-12">
             <Card className="flex flex-col h-full transform hover:scale-105 transition-all duration-300 hover:shadow-lg">
               <CardContent className="flex flex-col flex-1 p-6">
                 <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-primary/10">
                   <ShieldCheck className="h-5 w-5 text-primary" />
                 </div>
-                <h3 className="text-xl font-bold mb-2">Compliance Readiness Packages</h3>
+                <h3 className="text-xl font-bold mb-2">AI Governance (ISO/IEC 42001)</h3>
                 <p className="text-muted-foreground dark:text-white mb-4 flex-1">
-                  Prepare your organization for certifications across SOC 2, ISO 27001, HIPAA, GDPR, and ISO/IEC 42001. We deliver gap assessments, control mapping, documentation, and audit coaching tailored to your compliance framework.
+                  The first boutique compliance program purpose-built for AI companies. Translate ethics into systems, risk into policy, and transparency into trust.
                 </p>
                 <Link
-                  href="/services/Compliance"
+                  href="/services/ai-governance"
                   className="group flex items-center text-primary font-medium"
                 >
-                  Learn about our compliance packages
+                  Explore
                   <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </Link>
               </CardContent>
@@ -340,17 +351,15 @@ export default function Home() {
                 <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-primary/10">
                   <Shield className="h-5 w-5 text-primary" />
                 </div>
-                <h3 className="text-xl font-bold mb-2">
-                  Cloud Security Posture Review
-                </h3>
+                <h3 className="text-xl font-bold mb-2">Cloud Security Review</h3>
                 <p className="text-muted-foreground dark:text-white mb-4 flex-1">
-                  Identify and remediate cloud security risks in AWS, Azure, or GCP. We analyze access controls, logging, encryption, and system architecture.
+                  End-to-end assessment across AWS, Azure, or GCP aligned to SOC 2, ISO 27001, and HIPAA security domains. Configured for scale and speed.
                 </p>
                 <Link
                   href="/services/cloud-security"
                   className="group flex items-center text-primary font-medium"
                 >
-                  Explore our cloud security services
+                  Learn More
                   <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </Link>
               </CardContent>
@@ -362,29 +371,145 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-bold mb-2">vCISO Advisory</h3>
                 <p className="text-muted-foreground dark:text-white mb-4 flex-1">
-                  Gain strategic compliance and security leadership without the cost of a full-time executive. Flexible and scalable for your needs.
+                  Fractional security leadership to help you manage audits, mature risk posture, and brief executives with confidence.
                 </p>
                 <Link
                   href="/services/vciso"
                   className="group flex items-center text-primary font-medium"
                 >
-                  Discover our vCISO services
+                  View Program
+                  <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                </Link>
+              </CardContent>
+            </Card>
+            <Card className="flex flex-col h-full transform hover:scale-105 transition-all duration-300 hover:shadow-lg">
+              <CardContent className="flex flex-col flex-1 p-6">
+                <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-primary/10">
+                  <Target className="h-5 w-5 text-primary" />
+                </div>
+                <h3 className="text-xl font-bold mb-2">Audit Readiness Accelerator</h3>
+                <p className="text-muted-foreground dark:text-white mb-4 flex-1">
+                  8–12 week bootcamps to bring your org from ad hoc to audit-aligned. Includes gap analysis, evidence planning, and team coaching.
+                </p>
+                <Link
+                  href="/services/audit-readiness"
+                  className="group flex items-center text-primary font-medium"
+                >
+                  See What's Included
+                  <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                </Link>
+              </CardContent>
+            </Card>
+            <Card className="flex flex-col h-full transform hover:scale-105 transition-all duration-300 hover:shadow-lg">
+              <CardContent className="flex flex-col flex-1 p-6">
+                <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-primary/10">
+                  <Target className="h-5 w-5 text-primary" />
+                </div>
+                <h3 className="text-xl font-bold mb-2">Startup Compliance Foundations</h3>
+                <p className="text-muted-foreground dark:text-white mb-4 flex-1">
+                  A structured track to design controls, operationalize policies, and map risk in pre-audit environments.
+                </p>
+                <Link
+                  href="/services/startup-compliance"
+                  className="group flex items-center text-primary font-medium"
+                >
+                  Jumpstart Compliance
                   <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </Link>
               </CardContent>
             </Card>
           </div>
           <div className="mt-16 text-center">
-            <h3 className="text-2xl font-bold mb-6">Frameworks We Support</h3>
+            <h3 className="text-2xl font-bold mb-6">Frameworks We Operationalize</h3>
             <div className="flex flex-wrap justify-center gap-4">
               <Badge variant="secondary" className="text-sm">SOC 2 (Type I & II)</Badge>
               <Badge variant="secondary" className="text-sm">ISO/IEC 27001</Badge>
-              <Badge variant="secondary" className="text-sm">HIPAA</Badge>
-              <Badge variant="secondary" className="text-sm">GDPR</Badge>
-              <Badge variant="secondary" className="text-sm">ISO/IEC 42001</Badge>
+              <Badge variant="secondary" className="text-sm">HIPAA / GDPR</Badge>
+              <Badge variant="secondary" className="text-sm">ISO/IEC 42001 (AI Governance)</Badge>
               <Badge variant="secondary" className="text-sm">NIST 800-53</Badge>
-              <Badge variant="secondary" className="text-sm">PCI DSS (on request)</Badge>
+              <Badge variant="secondary" className="text-sm">PCI DSS (by request)</Badge>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Trusted By Section */}
+      <section className="py-16 md:py-24">
+        <div className="container px-4 md:px-6">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
+              Trusted by High-Trust Companies
+            </h2>
+            <p className="mt-4 text-muted-foreground dark:text-white md:text-xl max-w-3xl mx-auto">
+              We support high-velocity teams across:
+            </p>
+          </div>
+          <div className="grid gap-8 md:grid-cols-3">
+            {[
+              {
+                title: "Fintech / Healthtech",
+                description: "Helping financial and healthcare innovators build trust through robust security and compliance.",
+                icon: <Shield className="h-10 w-10 text-primary" />,
+              },
+              {
+                title: "AI/ML Startups",
+                description: "Supporting AI companies in implementing governance and security best practices.",
+                icon: <Target className="h-10 w-10 text-primary" />,
+              },
+              {
+                title: "GovTech & Public Sector Vendors",
+                description: "Enabling public sector technology providers to meet strict compliance requirements.",
+                icon: <Users className="h-10 w-10 text-primary" />,
+              },
+            ].map((industry, i) => (
+              <Card
+                key={i}
+                className="border-none shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105"
+              >
+                <CardContent className="p-6 flex flex-col items-center text-center">
+                  <div className="mb-4 p-3 bg-primary/10 rounded-full">{industry.icon}</div>
+                  <h3 className="text-xl font-bold mb-2">{industry.title}</h3>
+                  <p className="text-muted-foreground">{industry.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Proof in Execution */}
+      <section className="py-16 md:py-24">
+        <div className="container px-4 md:px-6">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
+              Proof in Execution
+            </h2>
+          </div>
+          <div className="grid gap-12 md:grid-cols-3">
+            {[
+              {
+                quote: "Complianta delivered clarity in a space where others brought red tape. Our SOC 2 Type I was done faster than we thought possible.",
+                author: "CTO, Fintech Scale-Up"
+              },
+              {
+                quote: "They made ISO 27001 feel achievable for a startup. Practical. Clean. Audit-approved.",
+                author: "Head of Engineering, SaaS Platform"
+              },
+              {
+                quote: "From zero policy to AI governance board in six weeks — they led every conversation with depth and integrity.",
+                author: "COO, AI Analytics Firm"
+              }
+            ].map((testimonial, i) => (
+              <div key={i} className="flex flex-col items-center text-center">
+                <div className="text-4xl text-primary mb-4">"</div>
+                <blockquote className="text-lg font-medium mb-4">
+                  {testimonial.quote}
+                </blockquote>
+                <p className="text-muted-foreground font-medium">
+                  — {testimonial.author}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -401,21 +526,21 @@ export default function Home() {
             {[
               {
                 quote:
-                  "Complianta helped us achieve SOC 2 compliance in record time. Their expertise was invaluable",
+                  "Complianta helped us achieve SOC 2 compliance in record time. Their expertise was invaluable.",
                 name: "Sarah Johnson",
                 title: "CTO, FinTech Startup",
                
               },
               {
                 quote:
-                  "They simplified the complex world of compliance for us. We couldn’t have done it without them",
+                  "hey simplified the complex world of compliance for us. We couldn't have done it without them.",
                 name: "Michael Chen",
                 title: "CEO, Health Tech Company",
                 
               },
               {
                 quote:
-                  "Their vCISO service provided us with enterprise-level security leadership at a fraction of the cost.",
+                  "Their vCISO service gave us enterprise-grade strategy at a startup-friendly cost.",
                 name: "Jessica Williams",
                 title: "COO, SaaS Platform",
                 
@@ -449,14 +574,13 @@ export default function Home() {
       {/* Featured Case Studies */}
       <section className="py-16 md:py-24 bg-muted">
         <div className="container px-4 md:px-6">
-          <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-10">
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-12">
             <div>
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
-                Featured Case Studies
+                Case Studies
               </h2>
               <p className="mt-4 text-muted-foreground dark:text-white md:text-xl max-w-2xl">
-                See how we've helped companies like yours achieve their
-                compliance goals.
+                Real results from companies like yours
               </p>
             </div>
             <Button
@@ -464,23 +588,35 @@ export default function Home() {
               asChild
               className="mt-4 md:mt-0 hover:bg-primary hover:text-white transition-colors duration-300"
             >
-              <Link href="/case-studies">View All Case Studies</Link>
+              <Link href="/case-studies" className="group">
+                View Case Studies
+                <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+              </Link>
             </Button>
           </div>
-          <div className="grid gap-6 md:grid-cols-2 lg:gap-12">
+          <div className="grid gap-6 md:grid-cols-3 lg:gap-12">
             {[
               {
-                title: "FinTech Startup Achieves SOC 2 in 8 Weeks",
-                description:
-                  "How we helped a scaling fintech close deals faster with streamlined SOC 2 readiness.",
-                link: "/case-studies/fintech-soc2",
+                title: "$1.2M Pipeline Unlocked",
+                description: "Fintech platform closes enterprise deals post-SOC 2",
+                category: "SOC 2",
+                image: "/fintech-case-study.jpg",
+                link: "/case-studies/fintech-soc2"
               },
               {
-                title: "Healthcare SaaS Platform Meets HIPAA Requirements",
-                description:
-                  "A health tech company modernized its infrastructure and passed HIPAA audits confidently",
-                link: "/case-studies/healthcare-hipaa",
+                title: "HIPAA Infrastructure Hardening",
+                description: "Healthtech startup secures sensitive PHI with compliant architecture",
+                category: "HIPAA",
+                image: "/healthcare-case-study.jpg",
+                link: "/case-studies/healthcare-hipaa"
               },
+              {
+                title: "AI Risk & Readiness",
+                description: "LLM-based product builds ISO/IEC 42001-aligned governance to satisfy top-tier investors",
+                category: "AI Governance",
+                image: "/ai-case-study.jpg",
+                link: "/case-studies/ai-governance"
+              }
             ].map((study, i) => (
               <Card
                 key={i}
@@ -488,11 +624,14 @@ export default function Home() {
               >
                 <div className="aspect-video relative">
                   <Image
-                    src="/compliance-blueprint.png"
+                    src={study.image}
                     alt={study.title}
                     fill
                     className="object-cover"
                   />
+                  <div className="absolute top-4 left-4">
+                    <Badge variant="secondary">{study.category}</Badge>
+                  </div>
                 </div>
                 <CardContent className="p-6">
                   <h3 className="text-xl font-bold mb-2">{study.title}</h3>
@@ -519,11 +658,10 @@ export default function Home() {
           <div className="rounded-lg bg-primary-foreground p-8 md:p-10 lg:p-16 transform hover:scale-[1.01] transition-all duration-500">
             <div className="mx-auto max-w-3xl text-center">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-              Ready to make compliance your competitive advantage?
+                This is compliance as a growth enabler — not a checkbox.
               </h2>
               <p className="mt-4 text-muted-foreground dark:text-white md:text-xl">
-                Schedule a free consultation with our compliance experts to
-                discuss your specific needs.
+                Partner with Complianta to accelerate trust, reduce risk, and scale securely.
               </p>
               <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
                 <Dialog>
@@ -556,7 +694,7 @@ export default function Home() {
                   asChild
                   className="hover:bg-primary/10"
                 >
-                  <Link href="/services">Learn More About Our Services</Link>
+                  <Link href="/services">Explore Our Services</Link>
                 </Button>
               </div>
             </div>
@@ -585,7 +723,7 @@ export default function Home() {
               },
               {
                 question:
-                  "What’s the difference between Type I and II?",
+                  "What's the difference between Type I and II?",
                 answer:
                   "Type I is a snapshot in time; Type II proves operational maturity over months",
               },

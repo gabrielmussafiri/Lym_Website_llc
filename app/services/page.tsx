@@ -1,7 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { CheckCircle } from "lucide-react";
+import { Card, CardContent } from "@/components/ui/card";
+import { CheckCircle, ArrowRight } from "lucide-react";
 import {
   Dialog,
   DialogContent,
@@ -28,10 +29,10 @@ export default function ServicesPage() {
         <div className="container px-4 md:px-6 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-white animate-fade-in-up">
-            Comprehensive Security & Compliance Services
+              Compliance & Security Programs Engineered for Growth
             </h1>
             <p className="mt-4 text-white/90 md:text-xl animate-fade-in-up-delay-1">
-            Tailored solutions to help your organization meet industry standards, protect sensitive data, and accelerate growth.
+              We deliver structured, audit-aligned programs that balance speed, scalability, and assurance — designed for high-velocity teams navigating security, compliance, and AI governance.
             </p>
           </div>
         </div>
@@ -40,23 +41,22 @@ export default function ServicesPage() {
       {/* Services List */}
       <section className="py-16 md:py-24">
         <div className="container px-4 md:px-6">
-          <div className="grid gap-12">
-            {/* SOC 2 Readiness */}
+          <div className="grid gap-16">
+            {/* AI Governance Compliance */}
             <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
               <div className="order-2 lg:order-1">
                 <h2 className="text-3xl font-bold tracking-tighter mb-4">
-                Compliance Readiness Packages
+                  AI Governance Compliance (ISO/IEC 42001)
                 </h2>
                 <p className="text-muted-foreground dark:text-white mb-6">
-                Prepare your organization for certifications across multiple frameworks, including SOC 2, ISO 27001, HIPAA, and GDPR. We lead the full lifecycle from assessment to auditor handoff.
+                  Prepare your organization to lead responsibly with AI. We align your models, controls, and internal accountability with ISO/IEC 42001 — the emerging global standard for AI risk management.
                 </p>
                 <div className="space-y-3 mb-6">
                   {[
-                    "Comprehensive gap analysis for applicable frameworks",
-                    "Customized remediation roadmap and control mapping",
-                    "Policy and documentation developmen",
-                    "Security awareness and control ownership coaching",
-                    "Evidence preparation and audit support",
+                    "Governance policy development and stakeholder training",
+                    "Risk mapping and AI use case classification",
+                    "Technical alignment (bias, explainability, data stewardship)",
+                    "Documentation and audit preparation support"
                   ].map((item, i) => (
                     <div key={i} className="flex items-start">
                       <CheckCircle className="h-5 w-5 text-primary mr-2 mt-0.5 flex-shrink-0" />
@@ -65,16 +65,17 @@ export default function ServicesPage() {
                   ))}
                 </div>
                 <Button asChild>
-                  <Link href="/services/Compliance">
-                  Learn More About Compliance Readiness Packages
+                  <Link href="/services/ai-governance" className="group">
+                    Explore AI Governance
+                    <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                   </Link>
                 </Button>
               </div>
               <div className="order-1 lg:order-2">
                 <div className="relative aspect-video overflow-hidden rounded-lg">
                   <Image
-                    src="/soc2-overview.png"
-                    alt="SOC 2 Readiness"
+                    src="/ai-governance.png"
+                    alt="AI Governance"
                     fill
                     className="object-cover"
                   />
@@ -82,23 +83,21 @@ export default function ServicesPage() {
               </div>
             </div>
 
-            {/* Cloud Security Review */}
+            {/* Cloud Security Posture Review */}
             <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
               <div className="order-2">
                 <h2 className="text-3xl font-bold tracking-tighter mb-4">
-                Cloud Security Posture Review
-
+                  Cloud Security Posture Review
                 </h2>
                 <p className="text-muted-foreground dark:text-white mb-6">
-                We assess your cloud infrastructure for risk across AWS, Azure, or GCP and deliver actionable guidance for remediation.
+                  Security misconfigurations are the #1 cause of cloud breaches. We assess your AWS, Azure, or GCP environment through the lens of compliance frameworks and secure-by-design principles.
                 </p>
                 <div className="space-y-3 mb-6">
                   {[
-                    "End-to-end infrastructure security assessment",
-                    "IAM, access control, and privilege audit",
-                    "Logging, encryption, and data protection review",,
-                    "Secure configuration and best practices audit",
-                    "Detailed recommendations with implementation support",
+                    "Full-stack infrastructure review (IAM, encryption, logging, network)",
+                    "SOC 2 / ISO 27001 / HIPAA alignment across controls",
+                    "Threat surface mapping and actionable hardening guidance",
+                    "Follow-up workshop and remediation strategy"
                   ].map((item, i) => (
                     <div key={i} className="flex items-start">
                       <CheckCircle className="h-5 w-5 text-primary mr-2 mt-0.5 flex-shrink-0" />
@@ -107,16 +106,17 @@ export default function ServicesPage() {
                   ))}
                 </div>
                 <Button asChild>
-                  <Link href="/services/cloud-security">
-                  Learn More About Cloud Security Review
+                  <Link href="/services/cloud-security" className="group">
+                    Start Your Review
+                    <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                   </Link>
                 </Button>
               </div>
               <div className="order-1">
                 <div className="relative aspect-video overflow-hidden rounded-lg">
                   <Image
-                    src="/cloudsecurity.png"
-                    alt="Cloud Security Review"
+                    src="/cloud-security.png"
+                    alt="Cloud Security"
                     fill
                     className="object-cover"
                   />
@@ -124,24 +124,21 @@ export default function ServicesPage() {
               </div>
             </div>
 
-            {/* vCISO Advisory */}
+            {/* vCISO Advisory Program */}
             <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
               <div className="order-2 lg:order-1">
                 <h2 className="text-3xl font-bold tracking-tighter mb-4">
-                vCISO Advisory Services
-
+                  vCISO Advisory Program
                 </h2>
                 <p className="text-muted-foreground dark:text-white mb-6">
-                Get strategic security leadership without the full-time executive overhead. Our fractional CISO program scales with your business.
-
+                  Security isn't a checkbox — it's a leadership function. Our fractional CISO offering provides board-level clarity, client-facing confidence, and internal structure without the full-time executive overhead.
                 </p>
                 <div className="space-y-3 mb-6">
                   {[
-                    "Executive-level security strategy and governance",
-                    "Risk management and third-party risk oversight",
-                    "Compliance leadership and board-level reporting",
-                    "Security policy lifecycle management",
-                    "Incident response strategy and simulation",
+                    "Security strategy and governance roadmap",
+                    "Risk program development and board reporting",
+                    "Third-party risk management and vendor review",
+                    "Audit, customer diligence, and investor Q&A support"
                   ].map((item, i) => (
                     <div key={i} className="flex items-start">
                       <CheckCircle className="h-5 w-5 text-primary mr-2 mt-0.5 flex-shrink-0" />
@@ -150,8 +147,9 @@ export default function ServicesPage() {
                   ))}
                 </div>
                 <Button asChild>
-                  <Link href="/services/vciso">
-                  Learn More About vCISO Services
+                  <Link href="/services/vciso" className="group">
+                    Discover Our vCISO Program
+                    <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                   </Link>
                 </Button>
               </div>
@@ -166,24 +164,106 @@ export default function ServicesPage() {
                 </div>
               </div>
             </div>
+
+            {/* Compliance Jumpstart for Startups */}
+            <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
+              <div className="order-2">
+                <h2 className="text-3xl font-bold tracking-tighter mb-4">
+                  Compliance Jumpstart for Startups
+                </h2>
+                <p className="text-muted-foreground dark:text-white mb-6">
+                  Designed for founder-led, lean teams. We deliver policy templates, operational controls, and roadmap planning for your first audit or enterprise deal.
+                </p>
+                <div className="space-y-3 mb-6">
+                  {[
+                    "Lightweight control framework mapped to SOC 2 & ISO 27001",
+                    "Security policy drafting and evidence toolkit setup",
+                    "Data access, role design, and ownership training",
+                    "Ready-to-customize artifacts for fast traction"
+                  ].map((item, i) => (
+                    <div key={i} className="flex items-start">
+                      <CheckCircle className="h-5 w-5 text-primary mr-2 mt-0.5 flex-shrink-0" />
+                      <span>{item}</span>
+                    </div>
+                  ))}
+                </div>
+                <Button asChild>
+                  <Link href="/services/startup-compliance" className="group">
+                    Launch Your Program
+                    <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                  </Link>
+                </Button>
+              </div>
+              <div className="order-1">
+                <div className="relative aspect-video overflow-hidden rounded-lg">
+                  <Image
+                    src="/startup-compliance.png"
+                    alt="Startup Compliance"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+              </div>
+            </div>
+
+            {/* Audit Readiness Accelerator */}
+            <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
+              <div className="order-2 lg:order-1">
+                <h2 className="text-3xl font-bold tracking-tighter mb-4">
+                  Audit Readiness Accelerator (8–12 Weeks)
+                </h2>
+                <p className="text-muted-foreground dark:text-white mb-6">
+                  Fast-track your path to certification. Whether it's SOC 2 Type I or ISO 27001, we build and coach you through a closed-loop audit readiness cycle with nothing left behind.
+                </p>
+                <div className="space-y-3 mb-6">
+                  {[
+                    "End-to-end gap assessment and roadmap",
+                    "Control remediation guidance and tool integration",
+                    "Auditor coordination, evidence walkthroughs, and prep sessions",
+                    "Full documentation suite and pre-audit QA"
+                  ].map((item, i) => (
+                    <div key={i} className="flex items-start">
+                      <CheckCircle className="h-5 w-5 text-primary mr-2 mt-0.5 flex-shrink-0" />
+                      <span>{item}</span>
+                    </div>
+                  ))}
+                </div>
+                <Button asChild>
+                  <Link href="/services/audit-readiness" className="group">
+                    See What's Included
+                    <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                  </Link>
+                </Button>
+              </div>
+              <div className="order-1 lg:order-2">
+                <div className="relative aspect-video overflow-hidden rounded-lg">
+                  <Image
+                    src="/audit-readiness.png"
+                    alt="Audit Readiness"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
+      {/* Custom Solutions CTA */}
       <section className="py-16 md:py-24 bg-muted">
         <div className="container px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
-            Ready to Get Started?
+              Need a tailored program or dual-framework rollout?
             </h2>
             <p className="mt-4 text-muted-foreground dark:text-white md:text-xl">
-            Contact us today to discuss your security and compliance goals. Our team of experts is ready to help.
+              We support organizations managing parallel frameworks, evolving AI risk postures, or public-sector readiness. Book a strategy call to scope your needs.
             </p>
-            <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
+            <div className="mt-8">
               <Dialog>
                 <DialogTrigger asChild>
-                  <Button size="lg">Schedule Consultation</Button>
+                  <Button size="lg">Schedule a Consultation</Button>
                 </DialogTrigger>
                 <DialogContent>
                   <DialogTitle>Schedule a Free Consultation</DialogTitle>
@@ -200,9 +280,6 @@ export default function ServicesPage() {
                   </div>
                 </DialogContent>
               </Dialog>
-              <Button variant="outline" size="lg" asChild>
-                <Link href="/case-studies">View Our Case Studies</Link>
-              </Button>
             </div>
           </div>
         </div>

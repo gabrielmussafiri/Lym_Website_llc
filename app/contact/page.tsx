@@ -1,7 +1,5 @@
 "use client"
 
-import type React from "react"
-
 import { useState } from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
@@ -9,251 +7,219 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
-import { Calendar, Mail, MapPin, Phone } from "lucide-react"
-import {
-  Dialog,
-  DialogContent,
-  DialogTitle,
-  DialogTrigger,
-} from "@/components/ui/dialog"
+import { Dialog, DialogContent, DialogTitle, DialogTrigger } from "@/components/ui/dialog"
+import { Mail, Phone, MapPin, Calendar } from "lucide-react"
+import type React from "react"
+
+const SERVICE_OPTIONS = [
+  { value: "soc2", label: "SOC 2 Readiness" },
+  { value: "iso27001", label: "ISO 27001 Implementation" },
+  { value: "hipaa", label: "HIPAA/GDPR Compliance" },
+  { value: "ai42001", label: "ISO/IEC 42001 AI Governance" },
+  { value: "cloud", label: "Cloud Security Review" },
+  { value: "vciso", label: "vCISO Advisory" },
+]
+
+type FormState = {
+  name: string
+  email: string
+  company: string
+  service: string
+  message: string
+}
 
 export default function ContactPage() {
-  const [formState, setFormState] = useState({
+  const [formState, setFormState] = useState<FormState>({
     name: "",
     email: "",
     company: "",
     service: "",
     message: "",
   })
-
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSubmitted, setIsSubmitted] = useState(false)
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target
     setFormState((prev) => ({ ...prev, [name]: value }))
   }
 
-  const handleSelectChange = (value: string) => {
-    setFormState((prev) => ({ ...prev, service: value }))
-  }
-
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     setIsSubmitting(true)
-
-    // Simulate form submission
     await new Promise((resolve) => setTimeout(resolve, 1500))
-
     setIsSubmitting(false)
     setIsSubmitted(true)
-    setFormState({
-      name: "",
-      email: "",
-      company: "",
-      service: "",
-      message: "",
-    })
+    setFormState({ name: "", email: "", company: "", service: "", message: "" })
   }
 
   return (
-    <div className="flex flex-col">
-      {/* Hero Section */}
-      <section className="relative py-20 md:py-28 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-background -z-10" />
-        <div className="container px-4 md:px-6">
-          <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Get in Touch</h1>
-            <p className="mt-4 text-muted-foreground dark:text-white md:text-xl">
-              Have questions about our services? Ready to start your compliance journey? Contact us today.
-            </p>
-          </div>
+    <div className="flex flex-col min-h-screen bg-[#f7fafd]">
+      {/* Hero/Intro Section */}
+      <section className="py-12 md:py-20">
+        <div className="container px-4 md:px-6 max-w-2xl mx-auto text-center">
+          <h1 className="text-4xl font-bold mb-4 text-[#1a2a3a]">Let's Build a Trust-Ready Program</h1>
+          <p className="text-lg text-[#3a4a5a] mb-2">Have a framework in mind? A security gap to address? Need to get audit-ready fast?</p>
+          <p className="text-lg text-[#3a4a5a] mb-6">Whether you're preparing for your first enterprise deal or expanding into AI-regulated markets, we're here to help.</p>
         </div>
       </section>
 
-      {/* Contact Form and Info */}
-      <section className="py-16 md:py-24">
-        <div className="container px-4 md:px-6">
-          <div className="grid gap-10 lg:grid-cols-2 lg:gap-16">
-            <Card>
-              <CardContent className="p-6 sm:p-8">
-                {isSubmitted ? (
-                  <div className="flex flex-col items-center justify-center text-center py-10">
-                    <div className="rounded-full bg-primary/10 p-3 mb-4">
-                      <CheckIcon className="h-6 w-6 text-primary" />
-                    </div>
-                    <h3 className="text-2xl font-bold mb-2">Thank You!</h3>
-                    <p className="text-muted-foreground dark:text-white mb-6">
-                      Your message has been received. We'll get back to you within 1-2 business days.
-                    </p>
-                    <Button onClick={() => setIsSubmitted(false)}>Send Another Message</Button>
-                  </div>
-                ) : (
-                  <form onSubmit={handleSubmit} className="space-y-6">
-                    <div className="space-y-2">
-                      <Label htmlFor="name">Full Name</Label>
-                      <Input id="name" name="name" value={formState.name} onChange={handleChange} required />
-                    </div>
-                    <div className="space-y-2">
-                      <Label htmlFor="email">Email</Label>
-                      <Input
-                        id="email"
-                        name="email"
-                        type="email"
-                        value={formState.email}
-                        onChange={handleChange}
-                        required
-                      />
-                    </div>
-                    <div className="space-y-2">
-                      <Label htmlFor="company">Company</Label>
-                      <Input id="company" name="company" value={formState.company} onChange={handleChange} required />
-                    </div>
-                    <div className="space-y-2">
-                      <Label htmlFor="service">Service of Interest</Label>
-                      <Select value={formState.service} onValueChange={handleSelectChange}>
-                        <SelectTrigger id="service">
-                          <SelectValue placeholder="Select a service" />
-                        </SelectTrigger>
-                        <SelectContent>
-                          <SelectItem value="soc2">SOC 2 Readiness</SelectItem>
-                          <SelectItem value="cloud-security">Cloud Security Review</SelectItem>
-                          <SelectItem value="vciso">vCISO Advisory</SelectItem>
-                          <SelectItem value="other">Other</SelectItem>
-                        </SelectContent>
-                      </Select>
-                    </div>
-                    <div className="space-y-2">
-                      <Label htmlFor="message">Message</Label>
-                      <Textarea
-                        id="message"
-                        name="message"
-                        value={formState.message}
-                        onChange={handleChange}
-                        rows={5}
-                        required
-                      />
-                    </div>
-                    <Button type="submit" className="w-full" disabled={isSubmitting}>
-                      {isSubmitting ? "Sending..." : "Send Message"}
-                    </Button>
-                  </form>
+      {/* Main Content: Form, Direct Contact, FAQ Preview */}
+      <section className="py-8 md:py-12">
+        <div className="container px-4 md:px-6 max-w-6xl mx-auto grid gap-10 md:grid-cols-2 items-start">
+          {/* Contact Form Card */}
+          <Card className="w-full">
+            <CardContent className="p-8">
+              <form onSubmit={handleSubmit} className="space-y-6">
+                <div className="space-y-1">
+                  <Label htmlFor="name">Full Name</Label>
+                  <Input id="name" name="name" value={formState.name} onChange={handleChange} required className="bg-[#f7fafd] border border-[#dbe6ef]" />
+                </div>
+                <div className="space-y-1">
+                  <Label htmlFor="email">Email</Label>
+                  <Input id="email" name="email" type="email" value={formState.email} onChange={handleChange} required className="bg-[#f7fafd] border border-[#dbe6ef]" />
+                </div>
+                <div className="space-y-1">
+                  <Label htmlFor="company">Company</Label>
+                  <Input id="company" name="company" value={formState.company} onChange={handleChange} required className="bg-[#f7fafd] border border-[#dbe6ef]" />
+                </div>
+                <div className="space-y-1">
+                  <Label htmlFor="service">Service of Interest</Label>
+                  <select
+                    id="service"
+                    name="service"
+                    value={formState.service}
+                    onChange={handleChange}
+                    required
+                    className="w-full rounded-md border border-[#dbe6ef] bg-[#f7fafd] px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-primary"
+                  >
+                    <option value="" disabled>Select a service</option>
+                    {SERVICE_OPTIONS.map((opt) => (
+                      <option key={opt.value} value={opt.value}>{opt.label}</option>
+                    ))}
+                  </select>
+                </div>
+                <div className="space-y-1">
+                  <Label htmlFor="message">Message</Label>
+                  <Textarea id="message" name="message" value={formState.message} onChange={handleChange} rows={5} required className="bg-[#f7fafd] border border-[#dbe6ef]" />
+                </div>
+                <Button type="submit" className="w-full" disabled={isSubmitting}>
+                  {isSubmitting ? "Sending..." : "Send Message"}
+                </Button>
+                {isSubmitted && (
+                  <div className="text-green-600 text-center pt-2">Thank you! We'll be in touch within 24 hours.</div>
                 )}
-              </CardContent>
-            </Card>
-            <div className="space-y-8">
-              <div>
-                <h2 className="text-2xl font-bold mb-4">Contact Information</h2>
-                <p className="text-muted-foreground dark:text-white mb-6">
-                  Reach out to us directly or schedule a consultation using the form.
-                </p>
-                <div className="space-y-4">
-                  <div className="flex items-start">
-                    <Mail className="h-5 w-5 text-primary mr-3 mt-0.5" />
-                    <div>
-                      <p className="font-medium">Email</p>
-                      <a href="mailto:info@complianta.com" className="text-muted-foreground hover:text-foreground">
-                        info@complianta.com
-                      </a>
-                    </div>
+              </form>
+            </CardContent>
+          </Card>
+
+          {/* Contact Info & FAQ */}
+          <div className="flex flex-col gap-8">
+            <div className="bg-white rounded-lg shadow-sm border border-[#e3eaf3] p-8">
+              <h2 className="text-xl font-bold mb-2">Contact Information</h2>
+              <p className="mb-4 text-muted-foreground">Reach out to us directly or schedule a consultation using the form.</p>
+              <div className="space-y-3">
+                <div className="flex items-start gap-3">
+                  <Mail className="h-5 w-5 text-primary mt-0.5" />
+                  <div>
+                    <span className="font-medium">Email</span><br />
+                    <a href="mailto:info@complianta.com" className="text-muted-foreground hover:text-primary">info@complianta.com</a>
                   </div>
-                  <div className="flex items-start">
-                    <Phone className="h-5 w-5 text-primary mr-3 mt-0.5" />
-                    <div>
-                      <p className="font-medium">Phone</p>
-                      <a href="tel:+1-555-123-4567" className="text-muted-foreground hover:text-foreground">
-                        +1 (555) 123-4567
-                      </a>
-                    </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <Phone className="h-5 w-5 text-primary mt-0.5" />
+                  <div>
+                    <span className="font-medium">Phone</span><br />
+                    <a href="tel:+15551234567" className="text-muted-foreground hover:text-primary">+1 (555) 123-4567</a>
                   </div>
-                  <div className="flex items-start">
-                    <MapPin className="h-5 w-5 text-primary mr-3 mt-0.5" />
-                    <div>
-                      <p className="font-medium">Office</p>
-                      <p className="text-muted-foreground dark:text-white">
-                      12436 FM 1960 Rd W, Unit #1621
-                        <br />
-                        Houston, TX 77065
-                        <br />
-                        United States
-                        <br />
-                        info@complianta.com
-                      </p>
-                    </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <MapPin className="h-5 w-5 text-primary mt-0.5" />
+                  <div>
+                    <span className="font-medium">Office</span><br />
+                    12436 FM 1960 Rd W, Unit #1621<br />
+                    Houston, TX 77065<br />
+                    United States<br />
+                    info@complianta.com
                   </div>
-                  <div className="flex items-start">
-                    <Calendar className="h-5 w-5 text-primary mr-3 mt-0.5" />
-                    <div>
-                      <p className="font-medium">Schedule a Call</p>
-                      <p className="text-muted-foreground dark:text-white">Book a 30-minute consultation with our team.</p>
-                      <Dialog>
-                        <DialogTrigger asChild>
-                          <Button variant="outline" className="mt-2">Schedule Now</Button>
-                        </DialogTrigger>
-                        <DialogContent>
-                          <DialogTitle>Schedule a Free Consultation</DialogTitle>
-                          <div className="w-full" style={{ minHeight: 600 }}>
-                            <iframe
-                              src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0Vxu3mWG4YQPBDvvUz9CX7sNoH_BBnmcGmKPRSYAiQD9S_xtFPB8TmIU_J4LtUeU_aCTmUEgzh"
-                              width="100%"
-                              height="600"
-                              frameBorder="0"
-                              style={{ border: 0 }}
-                              allowFullScreen
-                              title="Schedule a Free Consultation"
-                            ></iframe>
-                          </div>
-                        </DialogContent>
-                      </Dialog>
-                    </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <Calendar className="h-5 w-5 text-primary mt-0.5" />
+                  <div>
+                    <span className="font-medium">Schedule a Call</span><br />
+                    <span className="text-muted-foreground">Book a 30-minute consultation with our team.</span><br />
+                    <Dialog>
+                      <DialogTrigger asChild>
+                        <Button variant="outline" className="mt-2">Schedule Now</Button>
+                      </DialogTrigger>
+                      <DialogContent>
+                        <DialogTitle>Schedule a Free Consultation</DialogTitle>
+                        <div className="w-full" style={{ minHeight: 600 }}>
+                          <iframe
+                            src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0Vxu3mWG4YQPBDvvUz9CX7sNoH_BBnmcGmKPRSYAiQD9S_xtFPB8TmIU_J4LtUeU_aCTmUEgzh"
+                            width="100%"
+                            height="600"
+                            frameBorder="0"
+                            style={{ border: 0 }}
+                            allowFullScreen
+                            title="Schedule a Free Consultation"
+                          ></iframe>
+                        </div>
+                      </DialogContent>
+                    </Dialog>
                   </div>
                 </div>
               </div>
-              <div>
-                <h2 className="text-2xl font-bold mb-4">Frequently Asked Questions</h2>
-                <div className="space-y-4">
-                  <div>
-                    <h3 className="font-semibold">How quickly can you help us achieve compliance?</h3>
-                    <p className="text-muted-foreground dark:text-white">
-                      Timelines vary based on your current security posture and specific requirements. Most clients
-                      achieve SOC 2 Type I in 8-12 weeks.
-                    </p>
-                  </div>
-                  <div>
-                    <h3 className="font-semibold">Do you work with startups?</h3>
-                    <p className="text-muted-foreground dark:text-white">
-                      Yes! We specialize in helping startups and growing companies achieve compliance efficiently.
-                    </p>
-                  </div>
-                  <Link href="/faq" className="text-primary hover:underline inline-block mt-2">
-                    View all FAQs
-                  </Link>
+            </div>
+            <div className="bg-white rounded-lg shadow-sm border border-[#e3eaf3] p-8">
+              <h2 className="text-xl font-bold mb-4">Frequently Asked Questions</h2>
+              <div className="space-y-4">
+                <div>
+                  <h3 className="font-semibold">How quickly can you help us achieve compliance?</h3>
+                  <p className="text-muted-foreground">Timelines vary based on your current security posture and specific requirements. Most clients achieve SOC 2 Type I in 8-12 weeks.</p>
                 </div>
+                <div>
+                  <h3 className="font-semibold">Do you work with startups?</h3>
+                  <p className="text-muted-foreground">Yes! We specialize in helping startups and growing companies achieve compliance efficiently.</p>
+                </div>
+                <Link href="/faq" className="text-primary hover:underline inline-block mt-2">View all FAQs</Link>
               </div>
             </div>
           </div>
         </div>
       </section>
-    </div>
-  )
-}
 
-function CheckIcon(props: React.SVGProps<SVGSVGElement>) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <polyline points="20 6 9 17 4 12" />
-    </svg>
+      {/* Final CTA */}
+      <section className="py-12 md:py-20">
+        <div className="container px-4 md:px-6 max-w-2xl mx-auto text-center">
+          <h2 className="text-2xl md:text-3xl font-bold mb-4 text-[#1a2a3a]">Clarity starts with a conversation.</h2>
+          <p className="text-lg text-[#3a4a5a] mb-8">Let's explore what you need, what's possible, and how fast we can help you get there.</p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Dialog>
+              <DialogTrigger asChild>
+                <Button size="lg">Schedule Consultation</Button>
+              </DialogTrigger>
+              <DialogContent>
+                <DialogTitle>Schedule a Free Consultation</DialogTitle>
+                <div className="w-full" style={{ minHeight: 600 }}>
+                  <iframe
+                    src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0Vxu3mWG4YQPBDvvUz9CX7sNoH_BBnmcGmKPRSYAiQD9S_xtFPB8TmIU_J4LtUeU_aCTmUEgzh"
+                    width="100%"
+                    height="600"
+                    frameBorder="0"
+                    style={{ border: 0 }}
+                    allowFullScreen
+                    title="Schedule a Free Consultation"
+                  ></iframe>
+                </div>
+              </DialogContent>
+            </Dialog>
+            <Button variant="outline" size="lg" asChild>
+              <Link href="/services">Explore Services</Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+    </div>
   )
 }

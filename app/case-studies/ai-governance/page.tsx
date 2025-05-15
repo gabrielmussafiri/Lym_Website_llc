@@ -5,13 +5,13 @@ import { Badge } from "@/components/ui/badge"
 import { Card, CardContent } from "@/components/ui/card"
 import { CheckCircle, ArrowLeft, Calendar, Clock, Users, Building } from "lucide-react"
 
-export default function FintechCaseStudyPage() {
+export default function AIGovernanceCaseStudyPage() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
       <section className="relative py-20 md:py-28 overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <Image src="/fintech-case-study-hero.png" alt="FinTech Case Study" fill priority className="object-cover" />
+          <Image src="/ai-case-study.jpg" alt="AI Governance Case Study" fill priority className="object-cover" />
           {/* Dark Overlay for better text readability */}
           <div className="absolute inset-0 bg-black/60" />
         </div>
@@ -19,10 +19,10 @@ export default function FintechCaseStudyPage() {
           <div className="max-w-3xl">
             <Badge className="mb-4 bg-primary hover:bg-primary text-white">Case Study</Badge>
             <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-white mb-6">
-              $1.2M Pipeline Unlocked
+              AI Risk & Readiness
             </h1>
             <p className="text-xl text-white/90 mb-8">
-              Fintech platform closes enterprise deals post-SOC 2
+              LLM-based product builds ISO/IEC 42001-aligned governance to satisfy top-tier investors
             </p>
           </div>
         </div>
@@ -35,36 +35,31 @@ export default function FintechCaseStudyPage() {
             <div className="lg:col-span-2">
               <h2 className="text-3xl font-bold tracking-tighter mb-6">The Challenge</h2>
               <p className="text-muted-foreground mb-6">
-                PaySecure (name changed for confidentiality) is a rapidly growing fintech startup that provides payment
-                processing solutions for e-commerce businesses. As they began targeting enterprise customers, they
-                encountered a significant roadblock: potential clients required SOC 2 compliance before signing
-                contracts.
+                SynthAI (name changed for confidentiality) is a fast-growing AI startup providing LLM-powered analytics for enterprise clients. As they prepared for a major funding round and enterprise pilots, investors and customers demanded proof of responsible AI governance and risk controls.
               </p>
               <p className="text-muted-foreground mb-6">
-                With several enterprise deals in the pipeline—worth over $1.2M in annual recurring revenue—PaySecure
-                needed to achieve SOC 2 Type I compliance quickly. However, they faced several challenges:
+                SynthAI needed to align with the new ISO/IEC 42001 standard for AI governance to:
               </p>
               <ul className="space-y-3 mb-6">
                 <li className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
-                  <span>Limited internal resources dedicated to security and compliance</span>
+                  <span>Demonstrate responsible AI practices to investors and enterprise buyers</span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
-                  <span>A complex cloud infrastructure spanning multiple AWS services</span>
+                  <span>Map and mitigate AI risks (bias, explainability, data stewardship)</span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
-                  <span>Minimal existing documentation and formal security policies</span>
+                  <span>Accelerate procurement and due diligence for enterprise pilots</span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
-                  <span>A tight timeline of 2-3 months to achieve compliance</span>
+                  <span>Build a scalable governance framework for future growth</span>
                 </li>
               </ul>
               <p className="text-muted-foreground">
-                PaySecure approached Via Comply to help them navigate the SOC 2 compliance process efficiently and
-                effectively, without disrupting their core business operations.
+                SynthAI partnered with Complianta to design and implement an ISO/IEC 42001-aligned AI governance program on a tight timeline.
               </p>
             </div>
             <div>
@@ -76,28 +71,28 @@ export default function FintechCaseStudyPage() {
                       <Building className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
                       <div>
                         <p className="font-medium">Industry</p>
-                        <p className="text-muted-foreground">Financial Technology</p>
+                        <p className="text-muted-foreground">AI / SaaS</p>
                       </div>
                     </div>
                     <div className="flex items-start">
                       <Users className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
                       <div>
                         <p className="font-medium">Company Size</p>
-                        <p className="text-muted-foreground">50 employees</p>
+                        <p className="text-muted-foreground">30 employees</p>
                       </div>
                     </div>
                     <div className="flex items-start">
                       <Calendar className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
                       <div>
                         <p className="font-medium">Project Timeline</p>
-                        <p className="text-muted-foreground">8 weeks</p>
+                        <p className="text-muted-foreground">6 weeks</p>
                       </div>
                     </div>
                     <div className="flex items-start">
                       <Clock className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
                       <div>
-                        <p className="font-medium">Compliance Achieved</p>
-                        <p className="text-muted-foreground">SOC 2 Type I</p>
+                        <p className="font-medium">Governance Achieved</p>
+                        <p className="text-muted-foreground">ISO/IEC 42001 Alignment</p>
                       </div>
                     </div>
                   </div>
@@ -116,27 +111,27 @@ export default function FintechCaseStudyPage() {
             {[
               {
                 step: "1",
-                title: "Comprehensive Gap Assessment",
+                title: "AI Risk Mapping & Use Case Classification",
                 description:
-                  "We conducted a thorough assessment of PaySecure's existing security controls against SOC 2 requirements, identifying gaps and prioritizing remediation efforts.",
+                  "We mapped all LLM use cases, identified risk categories, and prioritized controls for bias, explainability, and data stewardship.",
               },
               {
                 step: "2",
-                title: "Tailored Remediation Plan",
+                title: "Governance Charter & Oversight Board",
                 description:
-                  "We developed a customized remediation plan focused on addressing the highest-priority gaps first, with a clear timeline and resource allocation.",
+                  "We established an AI governance charter and set up an internal oversight board with clear roles and responsibilities.",
               },
               {
                 step: "3",
-                title: "Policy Development & Implementation",
+                title: "Policy & Control Implementation",
                 description:
-                  "We created and implemented essential security policies and procedures, tailored to PaySecure's specific business operations and technology stack.",
+                  "We developed and rolled out policies for responsible AI, model lifecycle management, and incident response.",
               },
               {
                 step: "4",
-                title: "Audit Preparation & Support",
+                title: "Stakeholder Training & Trust Page",
                 description:
-                  "We prepared PaySecure for the audit process, including evidence collection, documentation organization, and auditor interactions.",
+                  "We trained engineering and product teams, and published a Responsible AI Trust page for external stakeholders.",
               },
             ].map((phase, i) => (
               <Card key={i} className="relative overflow-hidden border-none shadow-md">
@@ -160,24 +155,24 @@ export default function FintechCaseStudyPage() {
           <div className="space-y-8">
             {[
               {
-                challenge: "Complex AWS Infrastructure",
+                challenge: "AI Bias & Explainability",
                 solution:
-                  "We conducted a detailed review of PaySecure's AWS environment, identifying security configuration issues and implementing automated monitoring and remediation using AWS Security Hub and Config.",
+                  "We implemented bias monitoring protocols and explainability controls for all production LLMs, with regular reviews by the oversight board.",
               },
               {
-                challenge: "Limited Security Documentation",
+                challenge: "Stakeholder Trust & Transparency",
                 solution:
-                  "We developed a comprehensive set of security policies and procedures tailored to PaySecure's operations, focusing on practical implementation rather than theoretical frameworks.",
+                  "We published a Responsible AI Trust page and provided detailed documentation to investors and enterprise clients.",
               },
               {
-                challenge: "Access Control Management",
+                challenge: "Model Lifecycle Management",
                 solution:
-                  "We implemented a role-based access control system with regular access reviews, and integrated single sign-on (SSO) with multi-factor authentication across all critical systems.",
+                  "We established policies for model versioning, audit trails, and incident response for AI-driven features.",
               },
               {
-                challenge: "Vendor Risk Management",
+                challenge: "Rapid Timeline",
                 solution:
-                  "We established a vendor risk assessment process and conducted reviews of critical vendors, implementing a continuous monitoring approach for ongoing compliance.",
+                  "We delivered the full governance program in just 6 weeks, enabling SynthAI to meet investor and client deadlines.",
               },
             ].map((item, i) => (
               <Card key={i} className="overflow-hidden">
@@ -204,48 +199,42 @@ export default function FintechCaseStudyPage() {
             <div>
               <h2 className="text-3xl font-bold tracking-tighter mb-6">Results</h2>
               <p className="text-muted-foreground mb-6">
-                With our guidance and support, PaySecure successfully achieved SOC 2 Type I compliance in just 8 weeks,
-                significantly faster than the industry average of 3-6 months. This rapid achievement led to several
-                significant business outcomes:
+                SynthAI achieved ISO/IEC 42001 alignment in just 6 weeks, unlocking enterprise pilots and satisfying investor due diligence. Key outcomes included:
               </p>
               <div className="space-y-4">
                 <div className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
                   <div>
-                    <h3 className="font-semibold">Closed $1.2M in Enterprise Deals</h3>
+                    <h3 className="font-semibold">Secured 2 Enterprise Pilots</h3>
                     <p className="text-sm text-muted-foreground">
-                      PaySecure closed three enterprise deals worth over $1.2M in annual recurring revenue within one
-                      month of achieving compliance.
+                      SynthAI was selected for two enterprise pilots after demonstrating responsible AI governance and risk controls.
                     </p>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
                   <div>
-                    <h3 className="font-semibold">Strengthened Security Posture</h3>
+                    <h3 className="font-semibold">Passed Investor Due Diligence</h3>
                     <p className="text-sm text-muted-foreground">
-                      The compliance process identified and remediated several security vulnerabilities, significantly
-                      improving PaySecure's overall security posture.
+                      The governance program satisfied all investor requirements for responsible AI, enabling a successful funding round.
                     </p>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
                   <div>
-                    <h3 className="font-semibold">Streamlined Sales Process</h3>
+                    <h3 className="font-semibold">Published Responsible AI Trust Page</h3>
                     <p className="text-sm text-muted-foreground">
-                      SOC 2 compliance simplified the security questionnaire process, reducing the sales cycle by an
-                      average of 3 weeks for enterprise prospects.
+                      SynthAI's public trust page became a key differentiator in sales and partnership conversations.
                     </p>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
                   <div>
-                    <h3 className="font-semibold">Established Compliance Foundation</h3>
+                    <h3 className="font-semibold">Built Scalable Governance Foundation</h3>
                     <p className="text-sm text-muted-foreground">
-                      The policies, procedures, and controls implemented for SOC 2 created a strong foundation for
-                      ongoing compliance and future frameworks.
+                      The ISO/IEC 42001-aligned framework set the stage for future compliance and responsible AI growth.
                     </p>
                   </div>
                 </div>
@@ -253,8 +242,8 @@ export default function FintechCaseStudyPage() {
             </div>
             <div className="relative rounded-lg overflow-hidden">
               <Image
-                src="/fintech-results.png"
-                alt="FinTech Results"
+                src="/ai-governance-results.png"
+                alt="AI Governance Results"
                 width={600}
                 height={400}
                 className="object-cover rounded-lg shadow-lg"
@@ -272,17 +261,14 @@ export default function FintechCaseStudyPage() {
               <div className="text-4xl text-primary absolute -top-8 -left-8">"</div>
               <div className="text-4xl text-primary absolute -bottom-8 -right-8">"</div>
               <blockquote className="text-xl italic text-center px-8 py-4">
-                Via Comply's approach to SOC 2 compliance was refreshingly practical and efficient. They focused on what
-                really mattered, helping us achieve compliance in record time without unnecessary overhead. Their
-                expertise was invaluable, and the ROI was immediate—we closed over $1M in deals within weeks of getting
-                our SOC 2 report.
+                Complianta's expertise in AI governance was a game-changer. They helped us operationalize responsible AI in a way that made sense for our team and our clients. The process was fast, practical, and delivered real business value.
               </blockquote>
             </div>
             <div className="flex items-center justify-center mt-8">
-              <Image src="/cto-portrait.png" alt="Sarah Johnson" width={60} height={60} className="rounded-full mr-4" />
+              <Image src="/cto-portrait.png" alt="Jordan Lee" width={60} height={60} className="rounded-full mr-4" />
               <div>
-                <p className="font-semibold">Alex Chen</p>
-                <p className="text-sm text-muted-foreground">CTO, PaySecure</p>
+                <p className="font-semibold">Jordan Lee</p>
+                <p className="text-sm text-muted-foreground">CTO, SynthAI</p>
               </div>
             </div>
           </div>
@@ -293,10 +279,9 @@ export default function FintechCaseStudyPage() {
       <section className="py-16 md:py-24 bg-muted">
         <div className="container px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl font-bold tracking-tighter mb-6">Ready to achieve compliance quickly?</h2>
+            <h2 className="text-3xl font-bold tracking-tighter mb-6">Ready to build trust with responsible AI?</h2>
             <p className="text-muted-foreground mb-8">
-              Contact us today to discuss how we can help your organization achieve compliance efficiently and
-              effectively, just like we did for PaySecure.
+              Contact us today to discuss how we can help your organization implement AI governance and unlock new opportunities.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <Button size="lg" asChild>
@@ -320,4 +305,4 @@ export default function FintechCaseStudyPage() {
       </section>
     </div>
   )
-}
+} 

@@ -2,16 +2,16 @@ import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { CheckCircle, ArrowRight, Shield, Cloud, Lock, Database, FileCheck, AlertCircle } from "lucide-react"
+import { CheckCircle, ArrowRight, Shield, Users, FileCheck, BarChart, MessageSquare, Settings, ClipboardCheck } from "lucide-react"
 import { Dialog, DialogContent, DialogTitle, DialogTrigger } from "@/components/ui/dialog"
 
-export default function CloudSecurityPage() {
+export default function AuditReadinessPage() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
       <section className="relative py-20 md:py-28 overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <Image src="/cloud-security-hero.png" alt="Cloud Security" fill priority className="object-cover" />
+          <Image src="/audit-readiness-hero.png" alt="Audit Readiness Accelerator" fill priority className="object-cover" />
           {/* Dark Overlay for better text readability */}
           <div className="absolute inset-0 bg-black/50" />
         </div>
@@ -19,10 +19,10 @@ export default function CloudSecurityPage() {
         <div className="container px-4 md:px-6 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-white animate-fade-in-up">
-              Cloud Security Review
+              Audit Readiness Accelerator
             </h1>
             <p className="mt-4 text-white/90 md:text-xl animate-fade-in-up-delay-1">
-              Your cloud is your perimeter. We assess your entire cloud footprint — from IAM to encryption — and align it with compliance frameworks and secure architecture principles.
+              Whether you're facing your first SOC 2 Type I or preparing to certify for ISO 27001, our 8–12 week accelerator delivers structure, accountability, and documentation to make audit a milestone — not a stress test.
             </p>
           </div>
         </div>
@@ -36,12 +36,11 @@ export default function CloudSecurityPage() {
               <h2 className="text-3xl font-bold tracking-tighter mb-6">What's Included</h2>
               <div className="space-y-4 mb-6">
                 {[
-                  "Infrastructure-as-Code and runtime configuration review",
-                  "IAM role audit and access scoping validation",
-                  "Encryption policy verification (at rest & in transit)",
-                  "Logging, alerting, and retention posture assessment",
-                  "SOC 2 / ISO 27001 / HIPAA control mapping",
-                  "Executive summary and remediation roadmap with priority scoring",
+                  "Comprehensive gap analysis with control-level recommendations",
+                  "Audit tracker with assigned evidence collection workflow",
+                  "Hands-on support for control owners and stakeholders",
+                  "Policy review, remediation guidance, and auditor liaison",
+                  "Final QA walkthrough and pre-audit hardening",
                 ].map((item, i) => (
                   <div key={i} className="flex items-start">
                     <CheckCircle className="h-5 w-5 text-primary mr-2 mt-0.5 flex-shrink-0" />
@@ -50,13 +49,13 @@ export default function CloudSecurityPage() {
                 ))}
               </div>
               <p className="text-muted-foreground italic">
-                Designed for teams managing complex or fast-changing AWS, Azure, or GCP environments.
+                Built for companies under pressure to prove trust fast — with no room for delays or surprises.
               </p>
             </div>
             <div className="relative rounded-lg overflow-hidden">
               <Image
-                src="/cloud-security-overview.jpg"
-                alt="Cloud Security Overview"
+                src="/audit-readiness-overview.jpg"
+                alt="Audit Readiness Overview"
                 width={600}
                 height={400}
                 className="object-cover rounded-lg shadow-lg transform hover:scale-105 transition-all duration-300"
@@ -70,42 +69,42 @@ export default function CloudSecurityPage() {
       <section className="py-16 md:py-24 bg-muted">
         <div className="container px-4 md:px-6">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Our Cloud Security Services</h2>
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Our Accelerator Services</h2>
             <p className="mt-4 text-muted-foreground md:text-xl max-w-3xl mx-auto">
-              Comprehensive cloud security assessment and remediation services to protect your data and systems.
+              Comprehensive audit preparation services designed for speed and success.
             </p>
           </div>
 
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {[
               {
-                title: "Infrastructure Review",
-                description: "Assessment of IaC and runtime configurations to identify security misconfigurations.",
-                icon: <Cloud className="h-10 w-10 text-primary" />,
+                title: "Gap Analysis",
+                description: "Comprehensive assessment with detailed control-level recommendations.",
+                icon: <BarChart className="h-10 w-10 text-primary" />,
               },
               {
-                title: "Access Control Audit",
-                description: "Comprehensive review of IAM roles, permissions, and access scoping.",
-                icon: <Lock className="h-10 w-10 text-primary" />,
+                title: "Evidence Collection",
+                description: "Structured audit tracker with assigned evidence collection workflow.",
+                icon: <ClipboardCheck className="h-10 w-10 text-primary" />,
               },
               {
-                title: "Encryption Assessment",
-                description: "Verification of encryption policies for data at rest and in transit.",
-                icon: <Database className="h-10 w-10 text-primary" />,
+                title: "Control Support",
+                description: "Hands-on guidance for control owners and key stakeholders.",
+                icon: <Users className="h-10 w-10 text-primary" />,
               },
               {
-                title: "Monitoring & Logging",
-                description: "Evaluation of logging, alerting, and retention policies.",
-                icon: <AlertCircle className="h-10 w-10 text-primary" />,
-              },
-              {
-                title: "Compliance Mapping",
-                description: "Alignment with SOC 2, ISO 27001, and HIPAA security controls.",
+                title: "Policy Review",
+                description: "Comprehensive policy review and remediation guidance.",
                 icon: <FileCheck className="h-10 w-10 text-primary" />,
               },
               {
-                title: "Remediation Planning",
-                description: "Prioritized roadmap for addressing identified security gaps.",
+                title: "Auditor Liaison",
+                description: "Direct support and coordination with your audit firm.",
+                icon: <MessageSquare className="h-10 w-10 text-primary" />,
+              },
+              {
+                title: "Final QA",
+                description: "Pre-audit hardening and quality assurance walkthrough.",
                 icon: <Shield className="h-10 w-10 text-primary" />,
               },
             ].map((service, i) => (
@@ -128,9 +127,9 @@ export default function CloudSecurityPage() {
       <section className="py-16 md:py-24">
         <div className="container px-4 md:px-6">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Our Assessment Process</h2>
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Our Accelerator Process</h2>
             <p className="mt-4 text-muted-foreground md:text-xl max-w-3xl mx-auto">
-              A structured approach to identifying and addressing cloud security vulnerabilities.
+              A structured 8-12 week approach to audit readiness.
             </p>
           </div>
 
@@ -142,32 +141,32 @@ export default function CloudSecurityPage() {
               {[
                 {
                   step: "1",
-                  title: "Discovery & Scoping",
-                  description: "We analyze your cloud environment, identify key systems, and define assessment scope.",
+                  title: "Initial Assessment",
+                  description: "Comprehensive gap analysis and control-level recommendations.",
                   align: "right",
                 },
                 {
                   step: "2",
-                  title: "Configuration Review",
-                  description: "We examine IaC, runtime settings, and security configurations across your cloud footprint.",
+                  title: "Workflow Setup",
+                  description: "Implementation of audit tracker and evidence collection system.",
                   align: "left",
                 },
                 {
                   step: "3",
-                  title: "Access Control Audit",
-                  description: "We evaluate IAM policies, roles, and permissions to identify excessive access.",
+                  title: "Control Implementation",
+                  description: "Hands-on support for control owners and stakeholders.",
                   align: "right",
                 },
                 {
                   step: "4",
-                  title: "Security Analysis",
-                  description: "We assess encryption, logging, monitoring, and other security controls.",
+                  title: "Documentation Review",
+                  description: "Policy review and remediation guidance.",
                   align: "left",
                 },
                 {
                   step: "5",
-                  title: "Remediation Planning",
-                  description: "We provide a prioritized roadmap for addressing identified security gaps.",
+                  title: "Final Preparation",
+                  description: "QA walkthrough and pre-audit hardening.",
                   align: "right",
                 },
               ].map((process, i) => (
@@ -200,28 +199,28 @@ export default function CloudSecurityPage() {
         <div className="container px-4 md:px-6">
           <div className="grid gap-12 lg:grid-cols-2 items-center">
             <div className="order-2 lg:order-1">
-              <h2 className="text-3xl font-bold tracking-tighter mb-6">Benefits of Cloud Security Review</h2>
+              <h2 className="text-3xl font-bold tracking-tighter mb-6">Benefits of the Accelerator</h2>
               <div className="space-y-4">
                 {[
                   {
-                    title: "Reduced Security Risk",
-                    description: "Identify and address vulnerabilities before they can be exploited by attackers.",
+                    title: "Structured Timeline",
+                    description: "Clear 8-12 week roadmap to audit readiness.",
                   },
                   {
-                    title: "Compliance Readiness",
-                    description: "Align your cloud security controls with SOC 2, ISO 27001, and HIPAA requirements.",
+                    title: "Expert Guidance",
+                    description: "Hands-on support from experienced compliance professionals.",
                   },
                   {
-                    title: "Improved Visibility",
-                    description: "Gain a comprehensive understanding of your cloud security posture.",
+                    title: "Risk Mitigation",
+                    description: "Proactive identification and resolution of potential issues.",
                   },
                   {
-                    title: "Cost Optimization",
-                    description: "Identify unused or over-provisioned resources that may be increasing costs.",
+                    title: "Team Alignment",
+                    description: "Clear roles and responsibilities for all stakeholders.",
                   },
                   {
-                    title: "Enhanced Monitoring",
-                    description: "Implement effective logging and alerting for better security visibility.",
+                    title: "Audit Confidence",
+                    description: "Comprehensive preparation for a successful audit outcome.",
                   },
                 ].map((benefit, i) => (
                   <div
@@ -240,9 +239,9 @@ export default function CloudSecurityPage() {
             <div className="order-1 lg:order-2">
               <Card>
                 <CardContent className="p-6">
-                  <h3 className="text-xl font-bold mb-4">Ready to Get Started?</h3>
+                  <h3 className="text-xl font-bold mb-4">Ready to Accelerate Your Audit?</h3>
                   <p className="text-muted-foreground mb-6">
-                    Schedule a consultation to discuss how we can help secure your cloud infrastructure.
+                    Schedule a consultation to discuss your audit readiness needs.
                   </p>
                   <Dialog>
                     <DialogTrigger asChild>
@@ -271,4 +270,4 @@ export default function CloudSecurityPage() {
       </section>
     </div>
   )
-}
+} 

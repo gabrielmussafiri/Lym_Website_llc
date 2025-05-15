@@ -5,13 +5,13 @@ import { Badge } from "@/components/ui/badge"
 import { Card, CardContent } from "@/components/ui/card"
 import { CheckCircle, ArrowLeft, Calendar, Clock, Users, Building } from "lucide-react"
 
-export default function FintechCaseStudyPage() {
+export default function B2BSaaSCaseStudyPage() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
       <section className="relative py-20 md:py-28 overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <Image src="/fintech-case-study-hero.png" alt="FinTech Case Study" fill priority className="object-cover" />
+          <Image src="/b2b-saas-case-study.jpg" alt="B2B SaaS Case Study" fill priority className="object-cover" />
           {/* Dark Overlay for better text readability */}
           <div className="absolute inset-0 bg-black/60" />
         </div>
@@ -19,10 +19,10 @@ export default function FintechCaseStudyPage() {
           <div className="max-w-3xl">
             <Badge className="mb-4 bg-primary hover:bg-primary text-white">Case Study</Badge>
             <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-white mb-6">
-              $1.2M Pipeline Unlocked
+              B2B SaaS Fast-Tracks SOC 2 Certification
             </h1>
             <p className="text-xl text-white/90 mb-8">
-              Fintech platform closes enterprise deals post-SOC 2
+              Workflow automation platform secures enterprise deals with SOC 2 Type I in under 10 weeks
             </p>
           </div>
         </div>
@@ -35,36 +35,28 @@ export default function FintechCaseStudyPage() {
             <div className="lg:col-span-2">
               <h2 className="text-3xl font-bold tracking-tighter mb-6">The Challenge</h2>
               <p className="text-muted-foreground mb-6">
-                PaySecure (name changed for confidentiality) is a rapidly growing fintech startup that provides payment
-                processing solutions for e-commerce businesses. As they began targeting enterprise customers, they
-                encountered a significant roadblock: potential clients required SOC 2 compliance before signing
-                contracts.
-              </p>
-              <p className="text-muted-foreground mb-6">
-                With several enterprise deals in the pipeline—worth over $1.2M in annual recurring revenue—PaySecure
-                needed to achieve SOC 2 Type I compliance quickly. However, they faced several challenges:
+                FlowTech (name changed for confidentiality) is a B2B workflow automation platform preparing for a major enterprise partnership. They needed to pass SOC 2 Type I in less than 3 months to meet their client's security requirements, but lacked formal controls and documentation.
               </p>
               <ul className="space-y-3 mb-6">
                 <li className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
-                  <span>Limited internal resources dedicated to security and compliance</span>
+                  <span>Enterprise client required SOC 2 Type I certification</span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
-                  <span>A complex cloud infrastructure spanning multiple AWS services</span>
+                  <span>No formal security controls or documentation</span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
-                  <span>Minimal existing documentation and formal security policies</span>
+                  <span>Limited internal security expertise</span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
-                  <span>A tight timeline of 2-3 months to achieve compliance</span>
+                  <span>Aggressive timeline for certification</span>
                 </li>
               </ul>
               <p className="text-muted-foreground">
-                PaySecure approached Via Comply to help them navigate the SOC 2 compliance process efficiently and
-                effectively, without disrupting their core business operations.
+                FlowTech partnered with Complianta to implement SOC 2 controls, establish security practices, and achieve certification within their tight timeline.
               </p>
             </div>
             <div>
@@ -76,21 +68,21 @@ export default function FintechCaseStudyPage() {
                       <Building className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
                       <div>
                         <p className="font-medium">Industry</p>
-                        <p className="text-muted-foreground">Financial Technology</p>
+                        <p className="text-muted-foreground">B2B SaaS / Workflow Automation</p>
                       </div>
                     </div>
                     <div className="flex items-start">
                       <Users className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
                       <div>
                         <p className="font-medium">Company Size</p>
-                        <p className="text-muted-foreground">50 employees</p>
+                        <p className="text-muted-foreground">40 employees</p>
                       </div>
                     </div>
                     <div className="flex items-start">
                       <Calendar className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
                       <div>
                         <p className="font-medium">Project Timeline</p>
-                        <p className="text-muted-foreground">8 weeks</p>
+                        <p className="text-muted-foreground">10 weeks</p>
                       </div>
                     </div>
                     <div className="flex items-start">
@@ -116,27 +108,27 @@ export default function FintechCaseStudyPage() {
             {[
               {
                 step: "1",
-                title: "Comprehensive Gap Assessment",
+                title: "Rapid Gap Assessment",
                 description:
-                  "We conducted a thorough assessment of PaySecure's existing security controls against SOC 2 requirements, identifying gaps and prioritizing remediation efforts.",
+                  "We performed a comprehensive assessment of FlowTech's security posture, identifying gaps in controls and documentation.",
               },
               {
                 step: "2",
-                title: "Tailored Remediation Plan",
+                title: "Control Implementation",
                 description:
-                  "We developed a customized remediation plan focused on addressing the highest-priority gaps first, with a clear timeline and resource allocation.",
+                  "We implemented standardized security policies, configured monitoring tools, and established control ownership.",
               },
               {
                 step: "3",
-                title: "Policy Development & Implementation",
+                title: "Team Training & Documentation",
                 description:
-                  "We created and implemented essential security policies and procedures, tailored to PaySecure's specific business operations and technology stack.",
+                  "We trained control owners, created evidence workflows, and developed comprehensive documentation.",
               },
               {
                 step: "4",
-                title: "Audit Preparation & Support",
+                title: "Audit Readiness & Support",
                 description:
-                  "We prepared PaySecure for the audit process, including evidence collection, documentation organization, and auditor interactions.",
+                  "We prepared FlowTech for the audit, coordinated with the auditor, and supported throughout the process.",
               },
             ].map((phase, i) => (
               <Card key={i} className="relative overflow-hidden border-none shadow-md">
@@ -160,24 +152,24 @@ export default function FintechCaseStudyPage() {
           <div className="space-y-8">
             {[
               {
-                challenge: "Complex AWS Infrastructure",
-                solution:
-                  "We conducted a detailed review of PaySecure's AWS environment, identifying security configuration issues and implementing automated monitoring and remediation using AWS Security Hub and Config.",
-              },
-              {
                 challenge: "Limited Security Documentation",
                 solution:
-                  "We developed a comprehensive set of security policies and procedures tailored to PaySecure's operations, focusing on practical implementation rather than theoretical frameworks.",
+                  "We developed a complete set of SOC 2 policies and procedures, tailored to FlowTech's operations and technology stack.",
               },
               {
-                challenge: "Access Control Management",
+                challenge: "Control Implementation",
                 solution:
-                  "We implemented a role-based access control system with regular access reviews, and integrated single sign-on (SSO) with multi-factor authentication across all critical systems.",
+                  "We implemented automated monitoring, access controls, and security tools aligned with SOC 2 requirements.",
               },
               {
-                challenge: "Vendor Risk Management",
+                challenge: "Team Readiness",
                 solution:
-                  "We established a vendor risk assessment process and conducted reviews of critical vendors, implementing a continuous monitoring approach for ongoing compliance.",
+                  "We trained control owners and established clear ownership and evidence collection processes.",
+              },
+              {
+                challenge: "Timeline Pressure",
+                solution:
+                  "We ran parallel tracks for implementation and documentation, with weekly progress reviews and adjustments.",
               },
             ].map((item, i) => (
               <Card key={i} className="overflow-hidden">
@@ -204,48 +196,42 @@ export default function FintechCaseStudyPage() {
             <div>
               <h2 className="text-3xl font-bold tracking-tighter mb-6">Results</h2>
               <p className="text-muted-foreground mb-6">
-                With our guidance and support, PaySecure successfully achieved SOC 2 Type I compliance in just 8 weeks,
-                significantly faster than the industry average of 3-6 months. This rapid achievement led to several
-                significant business outcomes:
+                FlowTech achieved SOC 2 Type I certification in under 10 weeks, enabling them to secure enterprise partnerships. Key outcomes included:
               </p>
               <div className="space-y-4">
                 <div className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
                   <div>
-                    <h3 className="font-semibold">Closed $1.2M in Enterprise Deals</h3>
+                    <h3 className="font-semibold">SOC 2 Type I Certification</h3>
                     <p className="text-sm text-muted-foreground">
-                      PaySecure closed three enterprise deals worth over $1.2M in annual recurring revenue within one
-                      month of achieving compliance.
+                      Achieved certification in under 10 weeks, meeting the enterprise client's requirements.
                     </p>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
                   <div>
-                    <h3 className="font-semibold">Strengthened Security Posture</h3>
+                    <h3 className="font-semibold">Enterprise Client Approval</h3>
                     <p className="text-sm text-muted-foreground">
-                      The compliance process identified and remediated several security vulnerabilities, significantly
-                      improving PaySecure's overall security posture.
+                      Successfully onboarded two Fortune 100 clients following certification.
                     </p>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
                   <div>
-                    <h3 className="font-semibold">Streamlined Sales Process</h3>
+                    <h3 className="font-semibold">Improved Security Posture</h3>
                     <p className="text-sm text-muted-foreground">
-                      SOC 2 compliance simplified the security questionnaire process, reducing the sales cycle by an
-                      average of 3 weeks for enterprise prospects.
+                      Established robust security controls and monitoring capabilities.
                     </p>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
                   <div>
-                    <h3 className="font-semibold">Established Compliance Foundation</h3>
+                    <h3 className="font-semibold">Foundation for Growth</h3>
                     <p className="text-sm text-muted-foreground">
-                      The policies, procedures, and controls implemented for SOC 2 created a strong foundation for
-                      ongoing compliance and future frameworks.
+                      Built a scalable compliance program ready for Type II and future certifications.
                     </p>
                   </div>
                 </div>
@@ -253,8 +239,8 @@ export default function FintechCaseStudyPage() {
             </div>
             <div className="relative rounded-lg overflow-hidden">
               <Image
-                src="/fintech-results.png"
-                alt="FinTech Results"
+                src="/b2b-saas-case-study.jpg"
+                alt="B2B SaaS Results"
                 width={600}
                 height={400}
                 className="object-cover rounded-lg shadow-lg"
@@ -272,17 +258,14 @@ export default function FintechCaseStudyPage() {
               <div className="text-4xl text-primary absolute -top-8 -left-8">"</div>
               <div className="text-4xl text-primary absolute -bottom-8 -right-8">"</div>
               <blockquote className="text-xl italic text-center px-8 py-4">
-                Via Comply's approach to SOC 2 compliance was refreshingly practical and efficient. They focused on what
-                really mattered, helping us achieve compliance in record time without unnecessary overhead. Their
-                expertise was invaluable, and the ROI was immediate—we closed over $1M in deals within weeks of getting
-                our SOC 2 report.
+                Complianta delivered SOC 2 Type I in record time. Their structured approach and expertise made the process smooth and efficient.
               </blockquote>
             </div>
             <div className="flex items-center justify-center mt-8">
-              <Image src="/cto-portrait.png" alt="Sarah Johnson" width={60} height={60} className="rounded-full mr-4" />
+              <Image src="/cto-portrait.png" alt="Alex Chen" width={60} height={60} className="rounded-full mr-4" />
               <div>
                 <p className="font-semibold">Alex Chen</p>
-                <p className="text-sm text-muted-foreground">CTO, PaySecure</p>
+                <p className="text-sm text-muted-foreground">CTO, FlowTech</p>
               </div>
             </div>
           </div>
@@ -293,10 +276,9 @@ export default function FintechCaseStudyPage() {
       <section className="py-16 md:py-24 bg-muted">
         <div className="container px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl font-bold tracking-tighter mb-6">Ready to achieve compliance quickly?</h2>
+            <h2 className="text-3xl font-bold tracking-tighter mb-6">Ready to accelerate your SOC 2 journey?</h2>
             <p className="text-muted-foreground mb-8">
-              Contact us today to discuss how we can help your organization achieve compliance efficiently and
-              effectively, just like we did for PaySecure.
+              Contact us today to discuss how we can help you achieve SOC 2 certification and unlock enterprise opportunities.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <Button size="lg" asChild>
@@ -320,4 +302,4 @@ export default function FintechCaseStudyPage() {
       </section>
     </div>
   )
-}
+} 

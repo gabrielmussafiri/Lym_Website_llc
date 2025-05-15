@@ -1,17 +1,22 @@
-import Link from "next/link"
-import Image from "next/image"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
-import { CheckCircle, ArrowRight, Shield, Cloud, Lock, Database, FileCheck, AlertCircle } from "lucide-react"
-import { Dialog, DialogContent, DialogTitle, DialogTrigger } from "@/components/ui/dialog"
+import Link from "next/link";
+import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { CheckCircle, ArrowRight, Shield, Brain, Lock, Database, FileCheck, Users } from "lucide-react";
+import {
+  Dialog,
+  DialogContent,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 
-export default function CloudSecurityPage() {
+export default function AIGovernancePage() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
       <section className="relative py-20 md:py-28 overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <Image src="/cloud-security-hero.png" alt="Cloud Security" fill priority className="object-cover" />
+          <Image src="/ai-governance-hero.png" alt="AI Governance" fill priority className="object-cover" />
           {/* Dark Overlay for better text readability */}
           <div className="absolute inset-0 bg-black/50" />
         </div>
@@ -19,10 +24,10 @@ export default function CloudSecurityPage() {
         <div className="container px-4 md:px-6 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-white animate-fade-in-up">
-              Cloud Security Review
+              AI Governance (ISO/IEC 42001)
             </h1>
             <p className="mt-4 text-white/90 md:text-xl animate-fade-in-up-delay-1">
-              Your cloud is your perimeter. We assess your entire cloud footprint — from IAM to encryption — and align it with compliance frameworks and secure architecture principles.
+              Build a defensible AI governance program that scales with innovation. Our ISO/IEC 42001 advisory engagement aligns your models, processes, and internal accountability to the world's first AI-specific compliance standard.
             </p>
           </div>
         </div>
@@ -33,30 +38,36 @@ export default function CloudSecurityPage() {
         <div className="container px-4 md:px-6">
           <div className="grid gap-12 lg:grid-cols-2 items-center">
             <div>
-              <h2 className="text-3xl font-bold tracking-tighter mb-6">What's Included</h2>
-              <div className="space-y-4 mb-6">
-                {[
-                  "Infrastructure-as-Code and runtime configuration review",
-                  "IAM role audit and access scoping validation",
-                  "Encryption policy verification (at rest & in transit)",
-                  "Logging, alerting, and retention posture assessment",
-                  "SOC 2 / ISO 27001 / HIPAA control mapping",
-                  "Executive summary and remediation roadmap with priority scoring",
-                ].map((item, i) => (
-                  <div key={i} className="flex items-start">
-                    <CheckCircle className="h-5 w-5 text-primary mr-2 mt-0.5 flex-shrink-0" />
-                    <span className="text-muted-foreground">{item}</span>
-                  </div>
-                ))}
-              </div>
-              <p className="text-muted-foreground italic">
-                Designed for teams managing complex or fast-changing AWS, Azure, or GCP environments.
+              <h2 className="text-3xl font-bold tracking-tighter mb-6">Secure Your AI Systems</h2>
+              <p className="text-muted-foreground mb-6">
+                As organizations increasingly adopt AI technologies, establishing robust governance frameworks becomes critical. Our AI Governance program provides a comprehensive assessment of your AI systems, identifying risks and implementing controls aligned with ISO/IEC 42001.
               </p>
+              <p className="text-muted-foreground mb-6">
+                We help you build a defensible AI governance program that balances innovation with risk management, ensuring your AI systems are ethical, transparent, and compliant with emerging regulations.
+              </p>
+              <div className="grid grid-cols-2 gap-4">
+                <div className="flex items-start">
+                  <Shield className="h-5 w-5 text-primary mr-2 mt-0.5 flex-shrink-0" />
+                  <span className="text-sm">ISO/IEC 42001</span>
+                </div>
+                <div className="flex items-start">
+                  <Shield className="h-5 w-5 text-primary mr-2 mt-0.5 flex-shrink-0" />
+                  <span className="text-sm">EU AI Act</span>
+                </div>
+                <div className="flex items-start">
+                  <Shield className="h-5 w-5 text-primary mr-2 mt-0.5 flex-shrink-0" />
+                  <span className="text-sm">AI Ethics</span>
+                </div>
+                <div className="flex items-start">
+                  <Shield className="h-5 w-5 text-primary mr-2 mt-0.5 flex-shrink-0" />
+                  <span className="text-sm">Risk Management</span>
+                </div>
+              </div>
             </div>
             <div className="relative rounded-lg overflow-hidden">
               <Image
-                src="/cloud-security-overview.jpg"
-                alt="Cloud Security Overview"
+                src="/ai-governance-overview.jpg"
+                alt="AI Governance Overview"
                 width={600}
                 height={400}
                 className="object-cover rounded-lg shadow-lg transform hover:scale-105 transition-all duration-300"
@@ -70,43 +81,43 @@ export default function CloudSecurityPage() {
       <section className="py-16 md:py-24 bg-muted">
         <div className="container px-4 md:px-6">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Our Cloud Security Services</h2>
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Our AI Governance Services</h2>
             <p className="mt-4 text-muted-foreground md:text-xl max-w-3xl mx-auto">
-              Comprehensive cloud security assessment and remediation services to protect your data and systems.
+              Comprehensive AI governance assessment and implementation services to ensure ethical and compliant AI systems.
             </p>
           </div>
 
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {[
               {
-                title: "Infrastructure Review",
-                description: "Assessment of IaC and runtime configurations to identify security misconfigurations.",
-                icon: <Cloud className="h-10 w-10 text-primary" />,
-              },
-              {
-                title: "Access Control Audit",
-                description: "Comprehensive review of IAM roles, permissions, and access scoping.",
-                icon: <Lock className="h-10 w-10 text-primary" />,
-              },
-              {
-                title: "Encryption Assessment",
-                description: "Verification of encryption policies for data at rest and in transit.",
+                title: "AI System Inventory",
+                description: "Comprehensive assessment and classification of AI systems based on risk and impact.",
                 icon: <Database className="h-10 w-10 text-primary" />,
               },
               {
-                title: "Monitoring & Logging",
-                description: "Evaluation of logging, alerting, and retention policies.",
-                icon: <AlertCircle className="h-10 w-10 text-primary" />,
+                title: "Ethics & Bias Assessment",
+                description: "Evaluation of AI systems for potential biases and ethical considerations.",
+                icon: <Brain className="h-10 w-10 text-primary" />,
               },
               {
-                title: "Compliance Mapping",
-                description: "Alignment with SOC 2, ISO 27001, and HIPAA security controls.",
+                title: "Policy Development",
+                description: "Creation of comprehensive AI governance policies and procedures.",
                 icon: <FileCheck className="h-10 w-10 text-primary" />,
               },
               {
-                title: "Remediation Planning",
-                description: "Prioritized roadmap for addressing identified security gaps.",
+                title: "Risk Management",
+                description: "Implementation of controls and monitoring for AI-related risks.",
                 icon: <Shield className="h-10 w-10 text-primary" />,
+              },
+              {
+                title: "Compliance Mapping",
+                description: "Alignment with ISO/IEC 42001 and other relevant AI regulations.",
+                icon: <CheckCircle className="h-10 w-10 text-primary" />,
+              },
+              {
+                title: "Stakeholder Training",
+                description: "Education and awareness programs for AI governance stakeholders.",
+                icon: <Users className="h-10 w-10 text-primary" />,
               },
             ].map((service, i) => (
               <Card
@@ -128,9 +139,9 @@ export default function CloudSecurityPage() {
       <section className="py-16 md:py-24">
         <div className="container px-4 md:px-6">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Our Assessment Process</h2>
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Our Implementation Process</h2>
             <p className="mt-4 text-muted-foreground md:text-xl max-w-3xl mx-auto">
-              A structured approach to identifying and addressing cloud security vulnerabilities.
+              A structured approach to building a robust AI governance program.
             </p>
           </div>
 
@@ -142,32 +153,32 @@ export default function CloudSecurityPage() {
               {[
                 {
                   step: "1",
-                  title: "Discovery & Scoping",
-                  description: "We analyze your cloud environment, identify key systems, and define assessment scope.",
+                  title: "Assessment & Scoping",
+                  description: "We evaluate your current AI systems, risks, and governance needs.",
                   align: "right",
                 },
                 {
                   step: "2",
-                  title: "Configuration Review",
-                  description: "We examine IaC, runtime settings, and security configurations across your cloud footprint.",
+                  title: "Gap Analysis",
+                  description: "We identify gaps between current practices and ISO/IEC 42001 requirements.",
                   align: "left",
                 },
                 {
                   step: "3",
-                  title: "Access Control Audit",
-                  description: "We evaluate IAM policies, roles, and permissions to identify excessive access.",
+                  title: "Policy Development",
+                  description: "We create comprehensive AI governance policies and procedures.",
                   align: "right",
                 },
                 {
                   step: "4",
-                  title: "Security Analysis",
-                  description: "We assess encryption, logging, monitoring, and other security controls.",
+                  title: "Implementation",
+                  description: "We help you implement the necessary controls and processes.",
                   align: "left",
                 },
                 {
                   step: "5",
-                  title: "Remediation Planning",
-                  description: "We provide a prioritized roadmap for addressing identified security gaps.",
+                  title: "Training & Support",
+                  description: "We provide training and ongoing support for your AI governance program.",
                   align: "right",
                 },
               ].map((process, i) => (
@@ -200,28 +211,28 @@ export default function CloudSecurityPage() {
         <div className="container px-4 md:px-6">
           <div className="grid gap-12 lg:grid-cols-2 items-center">
             <div className="order-2 lg:order-1">
-              <h2 className="text-3xl font-bold tracking-tighter mb-6">Benefits of Cloud Security Review</h2>
+              <h2 className="text-3xl font-bold tracking-tighter mb-6">Benefits of AI Governance</h2>
               <div className="space-y-4">
                 {[
                   {
-                    title: "Reduced Security Risk",
-                    description: "Identify and address vulnerabilities before they can be exploited by attackers.",
+                    title: "Regulatory Compliance",
+                    description: "Align with ISO/IEC 42001 and prepare for emerging AI regulations.",
                   },
                   {
-                    title: "Compliance Readiness",
-                    description: "Align your cloud security controls with SOC 2, ISO 27001, and HIPAA requirements.",
+                    title: "Risk Reduction",
+                    description: "Identify and mitigate AI-related risks before they impact your business.",
                   },
                   {
-                    title: "Improved Visibility",
-                    description: "Gain a comprehensive understanding of your cloud security posture.",
+                    title: "Ethical AI",
+                    description: "Ensure your AI systems are fair, transparent, and accountable.",
                   },
                   {
-                    title: "Cost Optimization",
-                    description: "Identify unused or over-provisioned resources that may be increasing costs.",
+                    title: "Stakeholder Trust",
+                    description: "Build confidence in your AI systems among customers and partners.",
                   },
                   {
-                    title: "Enhanced Monitoring",
-                    description: "Implement effective logging and alerting for better security visibility.",
+                    title: "Competitive Advantage",
+                    description: "Demonstrate leadership in responsible AI development and deployment.",
                   },
                 ].map((benefit, i) => (
                   <div
@@ -242,7 +253,7 @@ export default function CloudSecurityPage() {
                 <CardContent className="p-6">
                   <h3 className="text-xl font-bold mb-4">Ready to Get Started?</h3>
                   <p className="text-muted-foreground mb-6">
-                    Schedule a consultation to discuss how we can help secure your cloud infrastructure.
+                    Schedule a consultation to discuss how we can help you build a robust AI governance program.
                   </p>
                   <Dialog>
                     <DialogTrigger asChild>
@@ -270,5 +281,5 @@ export default function CloudSecurityPage() {
         </div>
       </section>
     </div>
-  )
-}
+  );
+} 
