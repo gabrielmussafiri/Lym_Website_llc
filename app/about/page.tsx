@@ -13,25 +13,12 @@ import {
 export default function AboutPage() {
   return (
     <div className="flex flex-col">
-      {/* Hero Section */}
-      <section className="relative py-20 md:py-28 overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <Image
-            src="/about-hero.png"
-            alt="About Us"
-            fill
-            priority
-            className="object-cover"
-          />
-          {/* Dark Overlay for better text readability */}
-          <div className="absolute inset-0 bg-black/50" />
-        </div>
-        <div className="container px-4 md:px-6 relative z-10">
+      {/* Hero Section - updated to match case studies style */}
+      <section className="py-20 md:py-28 bg-gradient-to-br from-primary/10 to-background">
+        <div className="container px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-white animate-fade-in-up">
-              About Complianta
-            </h1>
-            <p className="mt-4 text-white/90 md:text-xl animate-fade-in-up-delay-1">
+            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-4">About Complianta</h1>
+            <p className="mt-4 text-muted-foreground dark:text-white md:text-xl">
               Security & Compliance for What's Next
             </p>
           </div>
