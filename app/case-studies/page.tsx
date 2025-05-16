@@ -18,9 +18,11 @@ export default function CaseStudiesPage() {
       <section className="relative py-20 md:py-28 bg-gradient-to-br from-primary/10 to-background">
         <div className="container px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Client Success Stories</h1>
-            <p className="mt-4 text-muted-foreground dark:text-white md:text-xl">
-              Real results from growth-stage teams that moved faster, scaled smarter, and proved trust through security and compliance.
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-normal tracking-tight text-balance text-foreground mb-6">
+              Case Studies
+            </h1>
+            <p className="text-lg sm:text-xl md:text-2xl text-foreground mb-8 max-w-2xl">
+              Real results from companies like yours. See how we've helped organizations achieve their compliance goals.
             </p>
           </div>
         </div>
@@ -52,19 +54,19 @@ export default function CaseStudiesPage() {
                 <div className="space-y-4 mb-6">
                   <div>
                     <h3 className="font-semibold mb-2">Challenge</h3>
-                    <p className="text-muted-foreground dark:text-white">
+                    <p className="text-foreground mb-4">
                       AnthillAI was in the late stages of a multi-year enterprise sales cycle but lacked the compliance posture to close. The buyer required SOC 2 Type II, HIPAA alignment, and demonstrable AI governance policies due to AnthillAI's use of GenAI in hiring workflows. At the time, the company had no prior certifications, documentation, or formal risk controls.
                     </p>
                   </div>
                   <div>
                     <h3 className="font-semibold mb-2">Solution</h3>
-                    <p className="text-muted-foreground dark:text-white">
+                    <p className="text-foreground mb-4">
                       Complianta executed a full audit readiness program, starting with a tailored SOC 2 roadmap and technical gap remediation across their AWS stack. We created their foundational security documentation, configured control ownership workflows, and established internal audit evidence processes. In parallel, we launched an AI governance layer aligned with ISO/IEC 42001 — including bias review procedures, ethical oversight policies, and explainability standards.
                     </p>
                   </div>
                   <div>
                     <h3 className="font-semibold mb-2">Results</h3>
-                    <ul className="list-disc list-inside text-muted-foreground dark:text-white space-y-1">
+                    <ul className="list-disc list-inside text-foreground space-y-1">
                       <li>Achieved SOC 2 Type II and HIPAA alignment in parallel</li>
                       <li>Passed investor security due diligence for $5M raise</li>
                       <li>Reduced vendor onboarding cycles by 40%</li>
@@ -107,19 +109,19 @@ export default function CaseStudiesPage() {
                 <div className="space-y-4 mb-6">
                   <div>
                     <h3 className="font-semibold mb-2">Challenge</h3>
-                    <p className="text-muted-foreground dark:text-white">
+                    <p className="text-foreground mb-4">
                       A Series A startup embedding AI copilots into productivity tools needed a governance plan to satisfy customers, investors, and evolving regulatory expectations.
                     </p>
                   </div>
                   <div>
                     <h3 className="font-semibold mb-2">Solution</h3>
-                    <p className="text-muted-foreground dark:text-white">
+                    <p className="text-foreground mb-4">
                       Complianta delivered an AI risk framework aligned to ISO/IEC 42001, including use case mapping, model lifecycle policies, bias mitigation controls, and internal training for engineering leads. A governance charter and oversight board were established with clear documentation.
                     </p>
                   </div>
                   <div>
                     <h3 className="font-semibold mb-2">Results</h3>
-                    <ul className="list-disc list-inside text-muted-foreground dark:text-white space-y-1">
+                    <ul className="list-disc list-inside text-foreground space-y-1">
                       <li>Published a responsible AI governance page for external stakeholders</li>
                       <li>Used as a trust signal to secure 3 enterprise pilots</li>
                       <li>Enabled faster internal reviews of high-risk features</li>
@@ -162,19 +164,19 @@ export default function CaseStudiesPage() {
                 <div className="space-y-4 mb-6">
                   <div>
                     <h3 className="font-semibold mb-2">Challenge</h3>
-                    <p className="text-muted-foreground dark:text-white">
+                    <p className="text-foreground mb-4">
                       The company needed to meet HIPAA requirements before onboarding a major hospital network — but lacked internal documentation, formal policies, and infrastructure safeguards.
                     </p>
                   </div>
                   <div>
                     <h3 className="font-semibold mb-2">Solution</h3>
-                    <p className="text-muted-foreground dark:text-white">
+                    <p className="text-foreground mb-4">
                       Complianta implemented encryption protocols, identity-based access controls, detailed audit logging, and a full suite of HIPAA-compliant policies. We also trained internal teams on breach response and incident triage.
                     </p>
                   </div>
                   <div>
                     <h3 className="font-semibold mb-2">Results</h3>
-                    <ul className="list-disc list-inside text-muted-foreground dark:text-white space-y-1">
+                    <ul className="list-disc list-inside text-foreground space-y-1">
                       <li>Achieved HIPAA compliance and passed hospital audit</li>
                       <li>Reduced risk score by 42%</li>
                       <li>Enabled PHI-handling features to go live in 1 month</li>
@@ -217,19 +219,19 @@ export default function CaseStudiesPage() {
                 <div className="space-y-4 mb-6">
                   <div>
                     <h3 className="font-semibold mb-2">Challenge</h3>
-                    <p className="text-muted-foreground dark:text-white">
+                    <p className="text-foreground mb-4">
                       Preparing for a major enterprise partnership, the client needed to pass SOC 2 Type I in less than 3 months.
                     </p>
                   </div>
                   <div>
                     <h3 className="font-semibold mb-2">Solution</h3>
-                    <p className="text-muted-foreground dark:text-white">
+                    <p className="text-foreground mb-4">
                       We performed a rapid controls gap assessment, implemented standardized security policies, configured monitoring and alerting across their cloud stack, and coached each internal control owner.
                     </p>
                   </div>
                   <div>
                     <h3 className="font-semibold mb-2">Results</h3>
-                    <ul className="list-disc list-inside text-muted-foreground dark:text-white space-y-1">
+                    <ul className="list-disc list-inside text-foreground space-y-1">
                       <li>SOC 2 Type I completed in under 10 weeks</li>
                       <li>Approved as a vendor by 2 Fortune 100 clients</li>
                       <li>Internal security confidence visibly improved</li>
@@ -272,19 +274,19 @@ export default function CaseStudiesPage() {
                 <div className="space-y-4 mb-6">
                   <div>
                     <h3 className="font-semibold mb-2">Challenge</h3>
-                    <p className="text-muted-foreground dark:text-white">
+                    <p className="text-foreground mb-4">
                       The company was expanding into federal procurement channels and needed to establish a security program aligned with NIST 800-53 and FedRAMP expectations.
                     </p>
                   </div>
                   <div>
                     <h3 className="font-semibold mb-2">Solution</h3>
-                    <p className="text-muted-foreground dark:text-white">
+                    <p className="text-foreground mb-4">
                       Complianta delivered a full-stack security roadmap, implemented internal governance documentation, created control narratives mapped to NIST, and introduced incident response and vendor review workflows.
                     </p>
                   </div>
                   <div>
                     <h3 className="font-semibold mb-2">Results</h3>
-                    <ul className="list-disc list-inside text-muted-foreground dark:text-white space-y-1">
+                    <ul className="list-disc list-inside text-foreground space-y-1">
                       <li>Positioned for FedRAMP Tailored engagement</li>
                       <li>Passed preliminary security assessments with key agency partners</li>
                       <li>Reduced procurement friction by building institutional trust</li>
@@ -315,7 +317,7 @@ export default function CaseStudiesPage() {
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
               Become the next success story.
             </h2>
-            <p className="mt-4 text-muted-foreground dark:text-white md:text-xl">
+            <p className="text-foreground">
               Whether you're scaling to Series B or seeking to unlock public sector contracts, we help you prove trust, protect growth, and lead with clarity.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">

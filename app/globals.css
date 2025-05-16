@@ -38,11 +38,11 @@
     --secondary: 215 28% 60%;          /* #3B5B7E Slate Blue */
     --secondary-foreground: 205 73% 98%; /* #F3FAFF Light Blue */
     --muted: 210 44% 85%;              /* #B5D0EB Soft Blue */
-    --muted-foreground: 217 56% 20%;   /* #183153 Navy Blue */
+    --muted-foreground: 205 73% 98%;   /* #F3FAFF Light Blue */
     --accent: 212 54% 66%;             /* #7BA7D9 Muted Blue */
-    --accent-foreground: 0 0% 100%;    /* #FFFFFF White */
+    --accent-foreground: 205 73% 98%;  /* #F3FAFF Light Blue */
     --destructive: 0 78% 58%;          /* #E53E3E */
-    --destructive-foreground: 0 0% 100%; /* #FFFFFF */
+    --destructive-foreground: 205 73% 98%; /* #F3FAFF Light Blue */
     --border: 215 28% 60%;             /* #3B5B7E Slate Blue */
     --input: 215 28% 60%;              /* #3B5B7E Slate Blue */
     --ring: 212 54% 66%;               /* #7BA7D9 Muted Blue */

@@ -99,11 +99,11 @@ export default function Home() {
           {/* Left: Text Content */}
           <div className="w-full lg:w-1/2 flex flex-col justify-center items-start">
             
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-normal tracking-tight text-balance text-sidebar-primary mb-6 text-left ">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-normal tracking-tight text-balance text-foreground mb-6 text-left">
               <span className="block">Compliance & AI Governance</span>
               for the <span className="text-primary">Modern Enterprise</span>
             </h1>
-            <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl dark:text-white">
+            <p className="text-lg sm:text-xl md:text-2xl text-foreground mb-8 max-w-2xl">
               We help fast-moving companies operationalize trust through frameworks like SOC 2, ISO/IEC 27001, HIPAA, GDPR, and ISO/IEC 42001 — with audit-ready precision and enterprise-grade velocity.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
@@ -163,7 +163,7 @@ export default function Home() {
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
               Why Leading Teams Choose Complianta
             </h2>
-            <p className="text-muted-foreground dark:text-white">
+            <p className="text-foreground">
               Precision Meets Speed
             </p>
           </div>
@@ -174,7 +174,7 @@ export default function Home() {
                   <Shield className="h-6 w-6 text-primary" />
                 </div>
                 <h3 className="text-xl font-bold">Precision Meets Speed</h3>
-                <p className="text-muted-foreground dark:text-white">
+                <p className="text-foreground">
                   We compress compliance timelines without cutting corners — delivering clarity, control, and credibility in record time.
                 </p>
               </CardContent>
@@ -185,7 +185,7 @@ export default function Home() {
                   <ShieldCheck className="h-6 w-6 text-primary" />
                 </div>
                 <h3 className="text-xl font-bold">Built for Scaled Tech & Public Sector</h3>
-                <p className="text-muted-foreground dark:text-white">
+                <p className="text-foreground">
                   Whether you're SaaS, AI-native, or government-facing, our methodology adapts to your team, tools, and trajectory.
                 </p>
               </CardContent>
@@ -196,7 +196,7 @@ export default function Home() {
                   <Users className="h-6 w-6 text-primary" />
                 </div>
                 <h3 className="text-xl font-bold">Framework-Driven, Founder-Focused</h3>
-                <p className="text-muted-foreground dark:text-white">
+                <p className="text-foreground">
                   Led by certified experts who've guided 100+ audit cycles across regulated industries. Our engagements run lean — but never light.
                 </p>
               </CardContent>
@@ -207,7 +207,7 @@ export default function Home() {
                   <Target className="h-6 w-6 text-primary" />
                 </div>
                 <h3 className="text-xl font-bold">Security-Driven Outcomes</h3>
-                <p className="text-muted-foreground dark:text-white">
+                <p className="text-foreground">
                   Get certified, reduce risk, and close enterprise deals with confidence.
                 </p>
               </CardContent>
@@ -223,7 +223,7 @@ export default function Home() {
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
             Impact at a Glance
             </h2>
-            <p className="mt-4 text-muted-foreground dark:text-white md:text-xl">
+            <p className="mt-4 text-foreground md:text-xl">
               We've helped companies across various industries achieve their compliance goals.
             </p>
           </div>
@@ -232,7 +232,7 @@ export default function Home() {
               <span className="text-4xl font-bold text-sidebar-primary dark:text-blue-400 counter-animate">
                 100+
               </span>
-              <span className="text-sm text-muted-foreground dark:text-white mt-1">
+              <span className="text-sm text-foreground mt-1">
                 Clients Served
               </span>
             </div>
@@ -240,7 +240,7 @@ export default function Home() {
               <span className="text-4xl font-bold text-sidebar-primary dark:text-blue-400 counter-animate">
                 98%
               </span>
-              <span className="text-sm text-muted-foreground dark:text-white mt-1">
+              <span className="text-sm text-foreground mt-1">
                 Success Rate
               </span>
             </div>
@@ -248,7 +248,7 @@ export default function Home() {
               <span className="text-4xl font-bold text-sidebar-primary dark:text-blue-400 counter-animate">
                 3x
               </span>
-              <span className="text-sm text-muted-foreground dark:text-white mt-1">
+              <span className="text-sm text-foreground mt-1">
                 Faster Compliance
               </span>
             </div>
@@ -256,7 +256,7 @@ export default function Home() {
               <span className="text-4xl font-bold text-sidebar-primary dark:text-blue-400 counter-animate">
                 50%
               </span>
-              <span className="text-sm text-muted-foreground dark:text-white mt-1">
+              <span className="text-sm text-foreground mt-1">
                 Average Cost Reduction
               </span>
             </div>
@@ -323,7 +323,7 @@ export default function Home() {
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
               Our Advisory Programs
             </h2>
-            <p className="mt-4 text-muted-foreground dark:text-white md:text-xl max-w-3xl mx-auto">
+            <p className="mt-4 text-foreground dark:text-white md:text-xl max-w-3xl mx-auto">
               Comprehensive compliance and security solutions tailored to your business needs
             </p>
           </div>
@@ -334,7 +334,7 @@ export default function Home() {
                   <ShieldCheck className="h-5 w-5 text-primary" />
                 </div>
                 <h3 className="text-xl font-bold mb-2">AI Governance (ISO/IEC 42001)</h3>
-                <p className="text-muted-foreground dark:text-white mb-4 flex-1">
+                <p className="text-foreground dark:text-white mb-4 flex-1">
                   The first boutique compliance program purpose-built for AI companies. Translate ethics into systems, risk into policy, and transparency into trust.
                 </p>
                 <Link
@@ -352,7 +352,7 @@ export default function Home() {
                   <Shield className="h-5 w-5 text-primary" />
                 </div>
                 <h3 className="text-xl font-bold mb-2">Cloud Security Review</h3>
-                <p className="text-muted-foreground dark:text-white mb-4 flex-1">
+                <p className="text-foreground dark:text-white mb-4 flex-1">
                   End-to-end assessment across AWS, Azure, or GCP aligned to SOC 2, ISO 27001, and HIPAA security domains. Configured for scale and speed.
                 </p>
                 <Link
@@ -370,7 +370,7 @@ export default function Home() {
                   <Users className="h-5 w-5 text-primary" />
                 </div>
                 <h3 className="text-xl font-bold mb-2">vCISO Advisory</h3>
-                <p className="text-muted-foreground dark:text-white mb-4 flex-1">
+                <p className="text-foreground dark:text-white mb-4 flex-1">
                   Fractional security leadership to help you manage audits, mature risk posture, and brief executives with confidence.
                 </p>
                 <Link
@@ -388,7 +388,7 @@ export default function Home() {
                   <Target className="h-5 w-5 text-primary" />
                 </div>
                 <h3 className="text-xl font-bold mb-2">Audit Readiness Accelerator</h3>
-                <p className="text-muted-foreground dark:text-white mb-4 flex-1">
+                <p className="text-foreground dark:text-white mb-4 flex-1">
                   8–12 week bootcamps to bring your org from ad hoc to audit-aligned. Includes gap analysis, evidence planning, and team coaching.
                 </p>
                 <Link
@@ -406,7 +406,7 @@ export default function Home() {
                   <Target className="h-5 w-5 text-primary" />
                 </div>
                 <h3 className="text-xl font-bold mb-2">Startup Compliance Foundations</h3>
-                <p className="text-muted-foreground dark:text-white mb-4 flex-1">
+                <p className="text-foreground dark:text-white mb-4 flex-1">
                   A structured track to design controls, operationalize policies, and map risk in pre-audit environments.
                 </p>
                 <Link
@@ -440,7 +440,7 @@ export default function Home() {
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
               Trusted by High-Trust Companies
             </h2>
-            <p className="mt-4 text-muted-foreground dark:text-white md:text-xl max-w-3xl mx-auto">
+            <p className="mt-4 text-foreground dark:text-white md:text-xl max-w-3xl mx-auto">
               We support high-velocity teams across:
             </p>
           </div>
@@ -469,7 +469,7 @@ export default function Home() {
                 <CardContent className="p-6 flex flex-col items-center text-center">
                   <div className="mb-4 p-3 bg-primary/10 rounded-full">{industry.icon}</div>
                   <h3 className="text-xl font-bold mb-2">{industry.title}</h3>
-                  <p className="text-muted-foreground">{industry.description}</p>
+                  <p className="text-foreground">{industry.description}</p>
                 </CardContent>
               </Card>
             ))}
@@ -505,7 +505,7 @@ export default function Home() {
                 <blockquote className="text-lg font-medium mb-4">
                   {testimonial.quote}
                 </blockquote>
-                <p className="text-muted-foreground font-medium">
+                <p className="font-medium text-foreground opacity-80">
                   — {testimonial.author}
                 </p>
               </div>
@@ -552,14 +552,14 @@ export default function Home() {
               >
                 <CardContent className="flex flex-col flex-1 p-6">
                   <div className="mb-4 text-4xl text-primary">"</div>
-                  <p className="text-muted-foreground dark:text-white mb-6 flex-1">
+                  <p className="text-foreground dark:text-white mb-6 flex-1">
                     {testimonial.quote}
                   </p>
                   <div className="flex items-center">
                    
                     <div>
                       <p className="font-medium">{testimonial.name}</p>
-                      <p className="text-sm text-muted-foreground">
+                      <p className="font-medium text-foreground opacity-80">
                         {testimonial.title}
                       </p>
                     </div>
@@ -579,7 +579,7 @@ export default function Home() {
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
                 Case Studies
               </h2>
-              <p className="mt-4 text-muted-foreground dark:text-white md:text-xl max-w-2xl">
+              <p className="mt-4 text-foreground dark:text-white md:text-xl max-w-2xl">
                 Real results from companies like yours
               </p>
             </div>
@@ -635,7 +635,7 @@ export default function Home() {
                 </div>
                 <CardContent className="p-6">
                   <h3 className="text-xl font-bold mb-2">{study.title}</h3>
-                  <p className="text-muted-foreground dark:text-white mb-4">
+                  <p className="text-foreground dark:text-white mb-4">
                     {study.description}
                   </p>
                   <Link
@@ -660,7 +660,7 @@ export default function Home() {
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
                 This is compliance as a growth enabler — not a checkbox.
               </h2>
-              <p className="mt-4 text-muted-foreground dark:text-white md:text-xl">
+              <p className="mt-4 text-foreground dark:text-white md:text-xl">
                 Partner with Complianta to accelerate trust, reduce risk, and scale securely.
               </p>
               <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
@@ -709,7 +709,7 @@ export default function Home() {
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
               Frequently Asked Questions
             </h2>
-            <p className="mt-4 text-muted-foreground dark:text-white md:text-xl max-w-2xl mx-auto">
+            <p className="mt-4 text-foreground dark:text-white md:text-xl max-w-2xl mx-auto">
               Get answers to common questions about compliance and our services.
             </p>
           </div>
@@ -739,7 +739,7 @@ export default function Home() {
               >
                 <CardContent className="p-6">
                   <h3 className="text-lg font-semibold mb-2">{faq.question}</h3>
-                  <p className="text-muted-foreground dark:text-white">{faq.answer}</p>
+                  <p className="text-foreground dark:text-white">{faq.answer}</p>
                 </CardContent>
               </Card>
             ))}

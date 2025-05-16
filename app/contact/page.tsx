@@ -54,13 +54,13 @@ export default function ContactPage() {
   }
 
   return (
-    <div className="flex flex-col min-h-screen bg-[#f7fafd]">
+    <div className="flex flex-col min-h-screen bg-background">
       {/* Hero/Intro Section */}
       <section className="py-12 md:py-20">
         <div className="container px-4 md:px-6 max-w-2xl mx-auto text-center">
-          <h1 className="text-4xl font-bold mb-4 text-[#1a2a3a]">Let's Build a Trust-Ready Program</h1>
-          <p className="text-lg text-[#3a4a5a] mb-2">Have a framework in mind? A security gap to address? Need to get audit-ready fast?</p>
-          <p className="text-lg text-[#3a4a5a] mb-6">Whether you're preparing for your first enterprise deal or expanding into AI-regulated markets, we're here to help.</p>
+          <h1 className="text-4xl font-bold mb-4 text-foreground">Let's Build a Trust-Ready Program</h1>
+          <p className="text-lg text-foreground mb-2">Have a framework in mind? A security gap to address? Need to get audit-ready fast?</p>
+          <p className="text-lg text-foreground mb-6">Whether you're preparing for your first enterprise deal or expanding into AI-regulated markets, we're here to help.</p>
         </div>
       </section>
 
@@ -68,20 +68,20 @@ export default function ContactPage() {
       <section className="py-8 md:py-12">
         <div className="container px-4 md:px-6 max-w-6xl mx-auto grid gap-10 md:grid-cols-2 items-start">
           {/* Contact Form Card */}
-          <Card className="w-full">
+          <Card className="w-full bg-card border border-border">
             <CardContent className="p-8">
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="space-y-1">
                   <Label htmlFor="name">Full Name</Label>
-                  <Input id="name" name="name" value={formState.name} onChange={handleChange} required className="bg-[#f7fafd] border border-[#dbe6ef]" />
+                  <Input id="name" name="name" value={formState.name} onChange={handleChange} required className="bg-background border border-border" />
                 </div>
                 <div className="space-y-1">
                   <Label htmlFor="email">Email</Label>
-                  <Input id="email" name="email" type="email" value={formState.email} onChange={handleChange} required className="bg-[#f7fafd] border border-[#dbe6ef]" />
+                  <Input id="email" name="email" type="email" value={formState.email} onChange={handleChange} required className="bg-background border border-border" />
                 </div>
                 <div className="space-y-1">
                   <Label htmlFor="company">Company</Label>
-                  <Input id="company" name="company" value={formState.company} onChange={handleChange} required className="bg-[#f7fafd] border border-[#dbe6ef]" />
+                  <Input id="company" name="company" value={formState.company} onChange={handleChange} required className="bg-background border border-border" />
                 </div>
                 <div className="space-y-1">
                   <Label htmlFor="service">Service of Interest</Label>
@@ -91,7 +91,7 @@ export default function ContactPage() {
                     value={formState.service}
                     onChange={handleChange}
                     required
-                    className="w-full rounded-md border border-[#dbe6ef] bg-[#f7fafd] px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-primary"
+                    className="w-full rounded-md border border-border bg-background px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-primary"
                   >
                     <option value="" disabled>Select a service</option>
                     {SERVICE_OPTIONS.map((opt) => (
@@ -101,7 +101,7 @@ export default function ContactPage() {
                 </div>
                 <div className="space-y-1">
                   <Label htmlFor="message">Message</Label>
-                  <Textarea id="message" name="message" value={formState.message} onChange={handleChange} rows={5} required className="bg-[#f7fafd] border border-[#dbe6ef]" />
+                  <Textarea id="message" name="message" value={formState.message} onChange={handleChange} rows={5} required className="bg-background border border-border" />
                 </div>
                 <Button type="submit" className="w-full" disabled={isSubmitting}>
                   {isSubmitting ? "Sending..." : "Send Message"}
@@ -115,7 +115,7 @@ export default function ContactPage() {
 
           {/* Contact Info & FAQ */}
           <div className="flex flex-col gap-8">
-            <div className="bg-white rounded-lg shadow-sm border border-[#e3eaf3] p-8">
+            <div className="bg-card rounded-lg shadow-sm border border-border p-8">
               <h2 className="text-xl font-bold mb-2">Contact Information</h2>
               <p className="mb-4 text-muted-foreground">Reach out to us directly or schedule a consultation using the form.</p>
               <div className="space-y-3">
@@ -171,7 +171,7 @@ export default function ContactPage() {
                 </div>
               </div>
             </div>
-            <div className="bg-white rounded-lg shadow-sm border border-[#e3eaf3] p-8">
+            <div className="bg-card rounded-lg shadow-sm border border-border p-8">
               <h2 className="text-xl font-bold mb-4">Frequently Asked Questions</h2>
               <div className="space-y-4">
                 <div>
@@ -192,8 +192,8 @@ export default function ContactPage() {
       {/* Final CTA */}
       <section className="py-12 md:py-20">
         <div className="container px-4 md:px-6 max-w-2xl mx-auto text-center">
-          <h2 className="text-2xl md:text-3xl font-bold mb-4 text-[#1a2a3a]">Clarity starts with a conversation.</h2>
-          <p className="text-lg text-[#3a4a5a] mb-8">Let's explore what you need, what's possible, and how fast we can help you get there.</p>
+          <h2 className="text-2xl md:text-3xl font-bold mb-4 text-foreground">Clarity starts with a conversation.</h2>
+          <p className="text-lg text-foreground mb-8">Let's explore what you need, what's possible, and how fast we can help you get there.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Dialog>
               <DialogTrigger asChild>

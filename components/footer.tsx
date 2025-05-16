@@ -112,7 +112,7 @@ export default function Footer() {
           <Link href="/terms" className="text-xs text-muted-foreground hover:text-foreground">
             Terms of Service
           </Link>
-          <Link href="/cookies" className="text-xs text-muted-foreground hover:text-foreground">
+          <Link href="/cookie-policy" className="text-xs text-muted-foreground hover:text-foreground">
             Cookie Policy
           </Link>
         </div>

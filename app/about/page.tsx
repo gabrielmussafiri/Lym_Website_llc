@@ -29,10 +29,10 @@ export default function AboutPage() {
       <section className="py-16 md:py-24">
         <div className="container px-4 md:px-6">
           <div className="max-w-3xl mx-auto">
-            <p className="text-lg text-muted-foreground dark:text-white mb-8">
+            <p className="text-lg text-foreground mb-8">
               Complianta is a boutique consultancy built to support the most ambitious companies of the AI era — helping cloud-native, fast-moving, and future-focused organizations meet security and compliance standards with precision and speed.
             </p>
-            <p className="text-lg text-muted-foreground dark:text-white mb-8">
+            <p className="text-lg text-foreground mb-8">
               We partner with startups, scaling SaaS platforms, and government-focused tech firms to operationalize trust through frameworks like:
             </p>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-12">
@@ -45,11 +45,11 @@ export default function AboutPage() {
               ].map((framework, i) => (
                 <div key={i} className="flex items-center">
                   <CheckCircle className="h-5 w-5 text-primary mr-2 flex-shrink-0" />
-                  <span>{framework}</span>
+                  <span className="text-foreground">{framework}</span>
                 </div>
               ))}
             </div>
-            <p className="text-lg text-muted-foreground dark:text-white">
+            <p className="text-lg text-foreground">
               Our work spans cloud security architecture, audit readiness, risk management, and strategic vCISO leadership — all tailored to companies balancing growth with governance.
             </p>
           </div>
@@ -64,13 +64,13 @@ export default function AboutPage() {
               <h2 className="text-3xl font-bold tracking-tighter mb-6">
                 Our Story
               </h2>
-              <p className="text-muted-foreground dark:text-white mb-4">
+              <p className="text-foreground mb-4">
                 Founded by security engineer and compliance advisor Yannick Massivi, Complianta emerged from a clear gap in the industry: fast-growing companies were being held back by legacy compliance models that added friction instead of clarity.
               </p>
-              <p className="text-muted-foreground dark:text-white mb-4">
+              <p className="text-foreground mb-4">
                 After years leading audit readiness efforts for startups and enterprise environments alike, Yannick launched Complianta to bring elite, enterprise-tested methodology to leaner, faster-moving organizations.
               </p>
-              <p className="text-muted-foreground dark:text-white mb-6">
+              <p className="text-foreground mb-6">
                 Today, Complianta is designed from the ground up to serve modern companies with:
               </p>
               <div className="space-y-3">
@@ -174,32 +174,32 @@ export default function AboutPage() {
               {
                 name: "Yannick Massivi",
                 title: "Founder & CEO",
-                bio: "CISSP-certified security architect with 9+ years leading compliance and cloud programs across AWS, Azure, and hybrid enterprise environments. Specializes in SOC 2, ISO 27001, AI governance, and fast-track audit delivery.",
+                bio: "Certified Information Systems Security Professional (CISSP) with 9+ years of experience in enterprise security and compliance. Expert in cloud security architecture across AWS, Azure, and hybrid environments. Specializes in SOC 2, ISO 27001, and AI governance frameworks, delivering audit-ready compliance programs.",
               },
               {
                 name: "Jessica Tran",
                 title: "Director of Compliance & Risk",
-                bio: "Former Big 4 consultant with 10+ years of SOC 2, HIPAA, ISO, and GDPR experience. Drives control mapping, risk programs, and auditor coordination.",
+                bio: "Former Big 4 advisory consultant with 10+ years of experience in SOC 2, HIPAA, ISO 27001, and GDPR compliance. Leads control mapping, risk management programs, and auditor coordination.",
               },
               {
                 name: "David Kim",
                 title: "Principal Cloud Security Architect",
-                bio: "AWS + Azure-certified infrastructure leader. Designs secure CI/CD pipelines, zero trust environments, and secure multi-cloud deployments.",
+                bio: "AWS and Azure-certified infrastructure leader with expertise in designing secure CI/CD pipelines, zero trust environments, and compliant multi-cloud deployments. Specializes in cloud-native security architecture and DevSecOps practices.",
               },
               {
                 name: "Emily Rivera",
                 title: "Compliance Program Manager",
-                bio: "Leads documentation, policy frameworks, audit readiness and evidence workflows. Expert in high-growth SaaS and audit coaching.",
+                bio: "Certified compliance professional with extensive experience in documentation frameworks, policy development, and audit readiness. Leads evidence workflows and provides expert guidance for high-growth SaaS companies.",
               },
               {
                 name: "Gabriel Godlive",
                 title: "DevSecOps Engineer",
-                bio: "Full-stack engineer focused on compliance automation, IaC, and secure software deployment. Integrates tools like Drata, Vanta, and AWS-native services.",
+                bio: "Full-stack security engineer focused on compliance automation, Infrastructure as Code (IaC), and secure software deployment. Expert in integrating compliance tools like Drata, Vanta, and AWS-native security services.",
               },
               {
                 name: "James Okoro",
                 title: "Security Operations Specialist",
-                bio: "Leads vulnerability scanning, endpoint protection, and incident readiness playbooks. Helps clients align operations with evolving risk.",
+                bio: "Certified security operations professional specializing in vulnerability management, endpoint protection, and incident response. Develops and implements security playbooks aligned with evolving risk landscapes.",
               }
             ].map((member, i) => (
               <Card key={i} className="overflow-hidden transform hover:scale-105 transition-all duration-300 hover:shadow-lg">
