@@ -177,14 +177,14 @@ export default function AboutPage() {
                 bio: "Certified Information Systems Security Professional (CISSP) with 9+ years of experience in enterprise security and compliance. Expert in cloud security architecture across AWS, Azure, and hybrid environments. Specializes in SOC 2, ISO 27001, and AI governance frameworks, delivering audit-ready compliance programs.",
               },
               {
-                name: "Jessica Tran",
-                title: "Director of Compliance & Risk",
-                bio: "Former Big 4 advisory consultant with 10+ years of experience in SOC 2, HIPAA, ISO 27001, and GDPR compliance. Leads control mapping, risk management programs, and auditor coordination.",
+                name: "Constanthino Mayele",
+                title: "Team Lead",
+                bio: "Master's candidate and accomplished team lead specializing in scaling automation solutions, endpoint management, and security. As a Zero Trust Advisor and Agile Practitioner, he brings a collaborative, lifelong learning mindset to every engagement, helping organizations implement modern security strategies and drive operational excellence.",
               },
               {
-                name: "David Kim",
-                title: "Principal Cloud Security Architect",
-                bio: "AWS and Azure-certified infrastructure leader with expertise in designing secure CI/CD pipelines, zero trust environments, and compliant multi-cloud deployments. Specializes in cloud-native security architecture and DevSecOps practices.",
+                name: "Joel Khang ",
+                title: "Senior Full Stack Web Developer",
+                bio: "Cloud developer specializing in Node.js and AWS, with a proven track record of building scalable, high-performance applications",
               },
               {
                 name: "Emily Rivera",

@@ -98,13 +98,20 @@ export default function Home() {
         <div className="container px-4 md:px-6 flex flex-col-reverse lg:flex-row items-center gap-12">
           {/* Left: Text Content */}
           <div className="w-full lg:w-1/2 flex flex-col justify-center items-start">
-            
+            {/* Top Tagline */}
+            <div className="mb-4">
+              <span className="inline-block text-sm font-semibold uppercase tracking-wider text-primary/80 bg-primary/10 rounded px-3 py-1">
+                Trusted by scaling startups & fast-moving enterprises
+              </span>
+            </div>
+            {/* Main Headline */}
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-normal tracking-tight text-balance text-foreground mb-6 text-left">
-              <span className="block">Compliance & AI Governance</span>
-              for the <span className="text-primary">Modern Enterprise</span>
+              Compliance & AI Governance for the Modern Enterprise
             </h1>
+            {/* Subheading / Supporting Text */}
             <p className="text-lg sm:text-xl md:text-2xl text-foreground mb-8 max-w-2xl">
-              We help fast-moving companies operationalize trust through frameworks like SOC 2, ISO/IEC 27001, HIPAA, GDPR, and ISO/IEC 42001 — with audit-ready precision and enterprise-grade velocity.
+              We help innovative companies build trust and scale securely by aligning with frameworks like SOC 2, ISO/IEC 27001, HIPAA, GDPR, and ISO/IEC 42001.<br />
+              Our programs deliver audit-ready precision, security-first implementation, and enterprise-grade velocity.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
               <Dialog>
@@ -137,8 +144,15 @@ export default function Home() {
                 asChild
                 className="text-blue border-primary hover:bg-primary/10"
               >
-                <Link href="/services">Explore Our Services</Link>
+                <Link href="/services">Browse Our Services</Link>
               </Button>
+            </div>
+            {/* Trust Indicators Row */}
+            <div className="mt-8 w-full">
+              <div className="flex flex-wrap gap-4 items-center text-muted-foreground text-sm font-medium">
+                <span>Trusted by early-stage startups, AI innovators, and fast-growing teams.</span>
+                {/* Optionally, add logos here if available */}
+              </div>
             </div>
           </div>
           {/* Right: Hero Image Placeholder */}

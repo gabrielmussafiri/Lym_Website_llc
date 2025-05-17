@@ -130,17 +130,17 @@ export default function ContactPage() {
                   <Phone className="h-5 w-5 text-primary mt-0.5" />
                   <div>
                     <span className="font-medium">Phone</span><br />
-                    <a href="tel:+15551234567" className="text-muted-foreground hover:text-primary">+1 (555) 123-4567</a>
+                    <a href="tel:+19723999143" className="text-muted-foreground hover:text-primary">+1 (972) 399-9143</a>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <MapPin className="h-5 w-5 text-primary mt-0.5" />
                   <div>
                     <span className="font-medium">Office</span><br />
-                    12436 FM 1960 Rd W, Unit #1621<br />
-                    Houston, TX 77065<br />
-                    United States<br />
-                    info@complianta.com
+                    Complianta LLC<br />
+                    12436 FM 1960 Rd W<br />
+                    Unit #1621<br />
+                    Houston, TX 77065
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
