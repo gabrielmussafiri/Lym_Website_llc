@@ -614,14 +614,14 @@ export default function Home() {
                 title: "$1.2M Pipeline Unlocked",
                 description: "Fintech platform closes enterprise deals post-SOC 2",
                 category: "SOC 2",
-                image: "/fintech-case-study.jpg",
+                image: "/case1.png",
                 link: "/case-studies/fintech-soc2"
               },
               {
                 title: "HIPAA Infrastructure Hardening",
                 description: "Healthtech startup secures sensitive PHI with compliant architecture",
                 category: "HIPAA",
-                image: "/healthcare-case-study.jpg",
+                image: "/Hippa2.png",
                 link: "/case-studies/healthcare-hipaa"
               },
               {

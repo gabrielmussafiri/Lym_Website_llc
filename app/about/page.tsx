@@ -187,7 +187,7 @@ export default function AboutPage() {
                 bio: "Cloud developer specializing in Node.js and AWS, with a proven track record of building scalable, high-performance applications",
               },
               {
-                name: "Emily Rivera",
+                name: "Yasmine McKenzie",
                 title: "Compliance Program Manager",
                 bio: "Certified compliance professional with extensive experience in documentation frameworks, policy development, and audit readiness. Leads evidence workflows and provides expert guidance for high-growth SaaS companies.",
               },
