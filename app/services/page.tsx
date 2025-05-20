@@ -61,7 +61,7 @@ export default function ServicesPage() {
               <div className="order-1 lg:order-2">
                 <div className="relative aspect-video overflow-hidden rounded-lg">
                   <Image
-                    src="/ai-governance.png"
+                    src="/aigouv.jpg"
                     alt="AI Governance"
                     fill
                     className="object-cover"
@@ -74,7 +74,7 @@ export default function ServicesPage() {
             <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
               <div className="order-2">
                 <h2 className="text-3xl font-bold tracking-tighter mb-4">
-                  Cloud Security Posture Review
+                Cloud Security Posture Review
                 </h2>
                 <p className="text-muted-foreground dark:text-white mb-6">
                   Security misconfigurations are the #1 cause of cloud breaches. We assess your AWS, Azure, or GCP environment through the lens of compliance frameworks and secure-by-design principles.
@@ -102,7 +102,7 @@ export default function ServicesPage() {
               <div className="order-1">
                 <div className="relative aspect-video overflow-hidden rounded-lg">
                   <Image
-                    src="/cloud-security.png"
+                    src="/cloud.jpg"
                     alt="Cloud Security"
                     fill
                     className="object-cover"
@@ -143,7 +143,7 @@ export default function ServicesPage() {
               <div className="order-1 lg:order-2">
                 <div className="relative aspect-video overflow-hidden rounded-lg">
                   <Image
-                    src="/vciso.png"
+                    src="/vciso.jpg"
                     alt="vCISO Advisory"
                     fill
                     className="object-cover"
@@ -184,7 +184,7 @@ export default function ServicesPage() {
               <div className="order-1">
                 <div className="relative aspect-video overflow-hidden rounded-lg">
                   <Image
-                    src="/startup-compliance.png"
+                    src="/compliance.jpg"
                     alt="Startup Compliance"
                     fill
                     className="object-cover"

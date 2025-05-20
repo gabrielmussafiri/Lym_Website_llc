@@ -241,28 +241,28 @@ export default function VCISOPage() {
               <Card>
                 <CardContent className="p-6">
                   <h3 className="text-xl font-bold mb-4">Ready to Get Started?</h3>
-                  <p className="text-muted-foreground mb-6">
+              <p className="text-muted-foreground mb-6">
                     Schedule a consultation to discuss how we can help strengthen your security program.
                   </p>
-                  <Dialog>
-                    <DialogTrigger asChild>
+                    <Dialog>
+                      <DialogTrigger asChild>
                       <Button className="w-full">Schedule Consultation</Button>
-                    </DialogTrigger>
-                    <DialogContent>
-                      <DialogTitle>Schedule a Free Consultation</DialogTitle>
-                      <div className="w-full" style={{ minHeight: 600 }}>
-                        <iframe
-                          src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0Vxu3mWG4YQPBDvvUz9CX7sNoH_BBnmcGmKPRSYAiQD9S_xtFPB8TmIU_J4LtUeU_aCTmUEgzh"
-                          width="100%"
-                          height="600"
-                          frameBorder="0"
-                          style={{ border: 0 }}
-                          allowFullScreen
-                          title="Schedule a Free Consultation"
-                        ></iframe>
-                      </div>
-                    </DialogContent>
-                  </Dialog>
+                      </DialogTrigger>
+                      <DialogContent>
+                        <DialogTitle>Schedule a Free Consultation</DialogTitle>
+                        <div className="w-full" style={{ minHeight: 600 }}>
+                          <iframe
+                            src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0Vxu3mWG4YQPBDvvUz9CX7sNoH_BBnmcGmKPRSYAiQD9S_xtFPB8TmIU_J4LtUeU_aCTmUEgzh"
+                            width="100%"
+                            height="600"
+                            frameBorder="0"
+                            style={{ border: 0 }}
+                            allowFullScreen
+                            title="Schedule a Free Consultation"
+                          ></iframe>
+                        </div>
+                      </DialogContent>
+                    </Dialog>
                 </CardContent>
               </Card>
             </div>

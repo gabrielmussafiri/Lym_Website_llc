@@ -316,33 +316,33 @@ export default function CaseStudiesPage() {
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
               Become the next success story.
-            </h2>
+              </h2>
             <p className="text-foreground">
               Whether you're scaling to Series B or seeking to unlock public sector contracts, we help you prove trust, protect growth, and lead with clarity.
-            </p>
-            <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
-              <Dialog>
-                <DialogTrigger asChild>
+              </p>
+              <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
+                <Dialog>
+                  <DialogTrigger asChild>
                   <Button size="lg">Schedule Your Consultation</Button>
-                </DialogTrigger>
-                <DialogContent>
-                  <DialogTitle>Schedule a Free Consultation</DialogTitle>
-                  <div className="w-full" style={{ minHeight: 600 }}>
-                    <iframe
-                      src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0Vxu3mWG4YQPBDvvUz9CX7sNoH_BBnmcGmKPRSYAiQD9S_xtFPB8TmIU_J4LtUeU_aCTmUEgzh"
-                      width="100%"
-                      height="600"
-                      frameBorder="0"
-                      style={{ border: 0 }}
-                      allowFullScreen
-                      title="Schedule a Free Consultation"
-                    ></iframe>
-                  </div>
-                </DialogContent>
-              </Dialog>
-              <Button variant="outline" size="lg" asChild>
+                  </DialogTrigger>
+                  <DialogContent>
+                    <DialogTitle>Schedule a Free Consultation</DialogTitle>
+                    <div className="w-full" style={{ minHeight: 600 }}>
+                      <iframe
+                        src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0Vxu3mWG4YQPBDvvUz9CX7sNoH_BBnmcGmKPRSYAiQD9S_xtFPB8TmIU_J4LtUeU_aCTmUEgzh"
+                        width="100%"
+                        height="600"
+                        frameBorder="0"
+                        style={{ border: 0 }}
+                        allowFullScreen
+                        title="Schedule a Free Consultation"
+                      ></iframe>
+                    </div>
+                  </DialogContent>
+                </Dialog>
+                <Button variant="outline" size="lg" asChild>
                 <Link href="/services">View Our Services</Link>
-              </Button>
+                </Button>
             </div>
           </div>
         </div>

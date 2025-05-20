@@ -10,7 +10,7 @@
     --card-foreground: 217 56% 20%;    /* #183153 Navy Blue */
     --popover: 0 0% 100%;              /* #FFFFFF White */
     --popover-foreground: 217 56% 20%; /* #183153 Navy Blue */
-    --primary: 212 54% 66%;            /* #7BA7D9 Muted Blue */
+    --primary: 224 97% 60%;            /* #365DFE Primary Blue */
     --primary-foreground: 0 0% 100%;   /* #FFFFFF White */
     --secondary: 210 44% 85%;          /* #B5D0EB Soft Blue */
     --secondary-foreground: 217 56% 20%; /* #183153 Navy Blue */
@@ -33,7 +33,7 @@
     --card-foreground: 205 73% 98%;    /* #F3FAFF Light Blue */
     --popover: 217 56% 20%;            /* #183153 Navy Blue */
     --popover-foreground: 205 73% 98%; /* #F3FAFF Light Blue */
-    --primary: 212 54% 66%;            /* #7BA7D9 Muted Blue */
+    --primary: 224 97% 60%;            /* #365DFE Primary Blue */
     --primary-foreground: 217 56% 20%; /* #183153 Navy Blue */
     --secondary: 215 28% 60%;          /* #3B5B7E Slate Blue */
     --secondary-foreground: 205 73% 98%; /* #F3FAFF Light Blue */

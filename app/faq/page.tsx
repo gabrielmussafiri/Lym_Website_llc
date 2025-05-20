@@ -17,24 +17,24 @@ const FAQ_CATEGORIES = [
     label: "General",
     title: "General Questions",
     faqs: [
-      {
-        question: "What services does Via Comply offer?",
-        answer:
-          "Via Comply offers a range of security and compliance services, including SOC 2 readiness, cloud security reviews, and virtual CISO (vCISO) advisory services. Our goal is to help startups and growing companies achieve and maintain compliance with industry standards while strengthening their overall security posture.",
-      },
-      {
-        question: "How do I know which compliance framework is right for my business?",
-        answer:
-          "The right compliance framework depends on your industry, customer requirements, and business goals. SOC 2 is often required for SaaS companies, HIPAA for healthcare, and ISO 27001 for international businesses. We offer free consultations to help determine which frameworks are most relevant for your specific situation.",
-      },
-      {
-        question: "How much do your services cost?",
-        answer:
-          "Our service costs vary based on the scope of work, your organization's size, and current security maturity. We offer flexible pricing models, including project-based and retainer options. Contact us for a customized quote based on your specific needs.",
-      },
-      {
-        question: "How long does it take to work with Via Comply?",
-        answer:
+                  {
+                    question: "What services does Via Comply offer?",
+                    answer:
+                      "Via Comply offers a range of security and compliance services, including SOC 2 readiness, cloud security reviews, and virtual CISO (vCISO) advisory services. Our goal is to help startups and growing companies achieve and maintain compliance with industry standards while strengthening their overall security posture.",
+                  },
+                  {
+                    question: "How do I know which compliance framework is right for my business?",
+                    answer:
+                      "The right compliance framework depends on your industry, customer requirements, and business goals. SOC 2 is often required for SaaS companies, HIPAA for healthcare, and ISO 27001 for international businesses. We offer free consultations to help determine which frameworks are most relevant for your specific situation.",
+                  },
+                  {
+                    question: "How much do your services cost?",
+                    answer:
+                      "Our service costs vary based on the scope of work, your organization's size, and current security maturity. We offer flexible pricing models, including project-based and retainer options. Contact us for a customized quote based on your specific needs.",
+                  },
+                  {
+                    question: "How long does it take to work with Via Comply?",
+                    answer:
           "Engagement timelines vary based on the service and your organization's needs. SOC 2 readiness typically takes 8-12 weeks for Type I and 6-9 months for Type II. Other services and vCISO programs are scoped according to your requirements.",
       },
     ],
@@ -44,26 +44,26 @@ const FAQ_CATEGORIES = [
     label: "SOC 2",
     title: "SOC 2 Questions",
     faqs: [
-      {
-        question: "What is SOC 2 compliance?",
-        answer:
-          "SOC 2 (System and Organization Controls 2) is a framework developed by the American Institute of CPAs (AICPA) that defines criteria for managing customer data based on five 'trust service principles': security, availability, processing integrity, confidentiality, and privacy.",
-      },
-      {
-        question: "What's the difference between SOC 2 Type I and Type II?",
-        answer:
-          "SOC 2 Type I assesses whether your security controls are properly designed at a specific point in time. Type II evaluates the operational effectiveness of those controls over a period (typically 6-12 months).",
-      },
-      {
-        question: "How long does it typically take to achieve SOC 2 compliance?",
-        answer:
-          "The timeline for SOC 2 compliance varies based on your organization's size and current security posture. With our streamlined approach, most startups can achieve SOC 2 Type I in 8-12 weeks and Type II in 6-9 months.",
-      },
-      {
-        question: "Do we need SOC 2 compliance for our startup?",
-        answer:
-          "If you handle customer data, especially for enterprise clients, SOC 2 compliance is increasingly becoming a requirement. It demonstrates your commitment to security and can be a competitive advantage in sales conversations.",
-      },
+                  {
+                    question: "What is SOC 2 compliance?",
+                    answer:
+                      "SOC 2 (System and Organization Controls 2) is a framework developed by the American Institute of CPAs (AICPA) that defines criteria for managing customer data based on five 'trust service principles': security, availability, processing integrity, confidentiality, and privacy.",
+                  },
+                  {
+                    question: "What's the difference between SOC 2 Type I and Type II?",
+                    answer:
+                      "SOC 2 Type I assesses whether your security controls are properly designed at a specific point in time. Type II evaluates the operational effectiveness of those controls over a period (typically 6-12 months).",
+                  },
+                  {
+                    question: "How long does it typically take to achieve SOC 2 compliance?",
+                    answer:
+                      "The timeline for SOC 2 compliance varies based on your organization's size and current security posture. With our streamlined approach, most startups can achieve SOC 2 Type I in 8-12 weeks and Type II in 6-9 months.",
+                  },
+                  {
+                    question: "Do we need SOC 2 compliance for our startup?",
+                    answer:
+                      "If you handle customer data, especially for enterprise clients, SOC 2 compliance is increasingly becoming a requirement. It demonstrates your commitment to security and can be a competitive advantage in sales conversations.",
+                  },
     ],
   },
   {
@@ -71,21 +71,21 @@ const FAQ_CATEGORIES = [
     label: "Cloud Security",
     title: "Cloud Security Questions",
     faqs: [
-      {
+                  {
         question: "What is a Cloud Security Review?",
-        answer:
+                    answer:
           "A Cloud Security Review is a comprehensive assessment of your cloud infrastructure (AWS, Azure, GCP) to identify misconfigurations, security gaps, and compliance risks. We provide actionable recommendations to strengthen your cloud environment and align with frameworks like SOC 2 and ISO 27001.",
-      },
-      {
-        question: "Which cloud platforms do you support?",
-        answer:
+                  },
+                  {
+                    question: "Which cloud platforms do you support?",
+                    answer:
           "We support AWS, Microsoft Azure, and Google Cloud Platform (GCP). Our team has deep expertise in multi-cloud and hybrid environments.",
-      },
-      {
+                  },
+                  {
         question: "How often should we review our cloud security?",
-        answer:
+                    answer:
           "We recommend conducting a cloud security review at least annually, or after significant changes to your infrastructure. Regular reviews help ensure ongoing compliance and reduce the risk of breaches.",
-      },
+                  },
     ],
   },
   {
@@ -93,19 +93,19 @@ const FAQ_CATEGORIES = [
     label: "vCISO Services",
     title: "vCISO Services Questions",
     faqs: [
-      {
-        question: "What is a vCISO?",
-        answer:
+                  {
+                    question: "What is a vCISO?",
+                    answer:
           "A virtual Chief Information Security Officer (vCISO) is an outsourced security executive who provides strategic leadership, risk management, and compliance oversight without the cost of a full-time hire.",
-      },
-      {
+                  },
+                  {
         question: "What does your vCISO service include?",
-        answer:
+                    answer:
           "Our vCISO service includes security program development, policy creation, risk assessments, audit preparation, board reporting, and ongoing advisory support tailored to your business needs.",
-      },
-      {
+                  },
+                  {
         question: "Can your vCISO work with our clients or auditors?",
-        answer:
+                    answer:
           "Yes, our vCISO can represent your organization in client meetings, vendor reviews, and audit engagements to ensure you present a strong security posture.",
       },
     ],
@@ -138,13 +138,13 @@ export default function FAQPage() {
           <div className="max-w-2xl mx-auto space-y-6">
             {currentCategory?.faqs.map((faq, i) => (
               <Card key={i} className="bg-white border border-[#e3eaf3] shadow-sm">
-                <CardContent className="p-6">
+                    <CardContent className="p-6">
                   <h3 className="font-semibold text-lg mb-2 text-[#1a2a3a]">{faq.question}</h3>
                   <p className="text-[#3a4a5a]">{faq.answer}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
         </div>
       </section>
 

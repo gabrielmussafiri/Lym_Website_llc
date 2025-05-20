@@ -621,14 +621,14 @@ export default function Home() {
                 title: "HIPAA Infrastructure Hardening",
                 description: "Healthtech startup secures sensitive PHI with compliant architecture",
                 category: "HIPAA",
-                image: "/Hippa2.png",
+                image: "/hipa2.jpg",
                 link: "/case-studies/healthcare-hipaa"
               },
               {
                 title: "AI Risk & Readiness",
                 description: "LLM-based product builds ISO/IEC 42001-aligned governance to satisfy top-tier investors",
                 category: "AI Governance",
-                image: "/ai-case-study.jpg",
+                image: "/aigouv.jpg",
                 link: "/case-studies/ai-governance"
               }
             ].map((study, i) => (

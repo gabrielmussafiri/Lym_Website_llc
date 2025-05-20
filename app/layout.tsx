@@ -7,7 +7,6 @@ import Header from "@/components/header"
 import Footer from "@/components/footer"
 import ScrollToTop from "@/components/scroll-to-top"
 import CrispChat from "@/components/crisp-chat"
-import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -34,7 +33,6 @@ export default function RootLayout({
             <CrispChat />
           </div>
         </ThemeProvider>
-        <SpeedInsights />
       </body>
     </html>
   )

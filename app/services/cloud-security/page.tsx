@@ -46,7 +46,7 @@ export default function CloudSecurityPage() {
                   <div key={i} className="flex items-start">
                     <CheckCircle className="h-5 w-5 text-primary mr-2 mt-0.5 flex-shrink-0" />
                     <span className="text-muted-foreground">{item}</span>
-                  </div>
+                </div>
                 ))}
               </div>
               <p className="text-muted-foreground italic">
@@ -243,7 +243,7 @@ export default function CloudSecurityPage() {
                   <h3 className="text-xl font-bold mb-4">Ready to Get Started?</h3>
                   <p className="text-muted-foreground mb-6">
                     Schedule a consultation to discuss how we can help secure your cloud infrastructure.
-                  </p>
+              </p>
                   <Dialog>
                     <DialogTrigger asChild>
                       <Button className="w-full">Schedule Consultation</Button>
@@ -260,7 +260,7 @@ export default function CloudSecurityPage() {
                           allowFullScreen
                           title="Schedule a Free Consultation"
                         ></iframe>
-                      </div>
+              </div>
                     </DialogContent>
                   </Dialog>
                 </CardContent>
