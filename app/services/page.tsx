@@ -225,7 +225,7 @@ export default function ServicesPage() {
               <div className="order-1 lg:order-2">
                 <div className="relative aspect-video overflow-hidden rounded-lg">
                   <Image
-                    src="/audit-readiness.png"
+                    src="/audit.webp"
                     alt="Audit Readiness"
                     fill
                     className="object-cover"

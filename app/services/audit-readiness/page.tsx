@@ -9,19 +9,11 @@ export default function AuditReadinessPage() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="relative py-20 md:py-28 overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <Image src="/audit-readiness-hero.png" alt="Audit Readiness Accelerator" fill priority className="object-cover" />
-          {/* Dark Overlay for better text readability */}
-          <div className="absolute inset-0 bg-black/50" />
-        </div>
-
-        <div className="container px-4 md:px-6 relative z-10">
+      <section className="py-20 md:py-28 bg-gradient-to-br from-primary/10 to-background">
+        <div className="container px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-white animate-fade-in-up">
-              Audit Readiness Accelerator
-            </h1>
-            <p className="mt-4 text-white/90 md:text-xl animate-fade-in-up-delay-1">
+            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-4">Audit Readiness Accelerator</h1>
+            <p className="mt-4 text-muted-foreground dark:text-white md:text-xl">
               Whether you're facing your first SOC 2 Type I or preparing to certify for ISO 27001, our 8–12 week accelerator delivers structure, accountability, and documentation to make audit a milestone — not a stress test.
             </p>
           </div>
@@ -54,7 +46,7 @@ export default function AuditReadinessPage() {
             </div>
             <div className="relative rounded-lg overflow-hidden">
               <Image
-                src="/audit-readiness-overview.jpg"
+                src="/audit.webp"
                 alt="Audit Readiness Overview"
                 width={600}
                 height={400}

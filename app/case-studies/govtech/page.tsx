@@ -9,19 +9,12 @@ function GovTechCaseStudyPage() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="relative py-20 md:py-28 overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <Image src="/govtech-case-study.jpg" alt="GovTech Case Study" fill priority className="object-cover" />
-          {/* Dark Overlay for better text readability */}
-          <div className="absolute inset-0 bg-black/60" />
-        </div>
-        <div className="container px-4 md:px-6 relative z-10">
-          <div className="max-w-3xl">
+      <section className="py-20 md:py-28 bg-gradient-to-br from-primary/10 to-background">
+        <div className="container px-4 md:px-6">
+          <div className="max-w-3xl mx-auto text-center">
             <Badge className="mb-4 bg-primary hover:bg-primary text-white">Case Study</Badge>
-            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-white mb-6">
-              Cloud-Native GovTech Firm Builds Security Program
-            </h1>
-            <p className="text-xl text-white/90 mb-8">
+            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-6">Cloud-Native GovTech Firm Builds Security Program</h1>
+            <p className="text-xl text-muted-foreground dark:text-white mb-8">
               Public sector SaaS aligns with NIST 800-53 and FedRAMP to unlock federal contracts
             </p>
           </div>
@@ -192,10 +185,10 @@ function GovTechCaseStudyPage() {
       {/* Results */}
       <section className="py-16 md:py-24 bg-muted">
         <div className="container px-4 md:px-6">
-          <div className="grid gap-12 lg:grid-cols-2 items-center">
+          <div className="grid gap-12 lg:grid-cols-2 items-center justify-items-center">
             <div>
-              <h2 className="text-3xl font-bold tracking-tighter mb-6">Results</h2>
-              <p className="text-muted-foreground mb-6">
+              <h2 className="text-3xl font-bold tracking-tighter mb-6 text-center">Results</h2>
+              <p className="text-muted-foreground mb-6 text-center">
                 CivicCloud positioned itself for FedRAMP Tailored engagement, passed preliminary agency security assessments, and reduced procurement friction. Key outcomes included:
               </p>
               <div className="space-y-4">
@@ -237,15 +230,7 @@ function GovTechCaseStudyPage() {
                 </div>
               </div>
             </div>
-            <div className="relative rounded-lg overflow-hidden">
-              <Image
-                src="/govtech-case-study.jpg"
-                alt="GovTech Results"
-                width={600}
-                height={400}
-                className="object-cover rounded-lg shadow-lg"
-              />
-            </div>
+            
           </div>
         </div>
       </section>

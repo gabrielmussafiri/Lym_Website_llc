@@ -10,19 +10,12 @@ export default function AIStartupCaseStudyPage() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="relative py-20 md:py-28 overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <Image src="/ai-startup-case-study.jpg" alt="AI Startup Case Study" fill priority className="object-cover" />
-          {/* Dark Overlay for better text readability */}
-          <div className="absolute inset-0 bg-black/60" />
-        </div>
-        <div className="container px-4 md:px-6 relative z-10">
-          <div className="max-w-3xl">
+      <section className="py-20 md:py-28 bg-gradient-to-br from-primary/10 to-background">
+        <div className="container px-4 md:px-6">
+          <div className="max-w-3xl mx-auto text-center">
             <Badge className="mb-4 bg-primary hover:bg-primary text-white">Case Study</Badge>
-            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-white mb-6">
-              AI Startup Readies for ISO/IEC 42001
-            </h1>
-            <p className="text-xl text-white/90 mb-8">
+            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-6">AI Startup Readies for ISO/IEC 42001</h1>
+            <p className="text-xl text-muted-foreground dark:text-white mb-8">
               AI/NLP platform secures enterprise pilots with responsible AI governance
             </p>
           </div>
@@ -193,10 +186,10 @@ export default function AIStartupCaseStudyPage() {
       {/* Results */}
       <section className="py-16 md:py-24 bg-muted">
         <div className="container px-4 md:px-6">
-          <div className="grid gap-12 lg:grid-cols-2 items-center">
+          <div className="grid gap-12 lg:grid-cols-2 items-center justify-items-center">
             <div>
-              <h2 className="text-3xl font-bold tracking-tighter mb-6">Results</h2>
-              <p className="text-muted-foreground mb-6">
+              <h2 className="text-3xl font-bold tracking-tighter mb-6 text-center">Results</h2>
+              <p className="text-muted-foreground mb-6 text-center">
                 LexiAI achieved ISO/IEC 42001 alignment in just 8 weeks, unlocking enterprise pilots and satisfying investor due diligence. Key outcomes included:
               </p>
               <div className="space-y-4">
@@ -238,15 +231,7 @@ export default function AIStartupCaseStudyPage() {
                 </div>
               </div>
             </div>
-            <div className="relative rounded-lg overflow-hidden">
-              <Image
-                src="/ai-startup-case-study.jpg"
-                alt="AI Startup Results"
-                width={600}
-                height={400}
-                className="object-cover rounded-lg shadow-lg"
-              />
-            </div>
+            
           </div>
         </div>
       </section>

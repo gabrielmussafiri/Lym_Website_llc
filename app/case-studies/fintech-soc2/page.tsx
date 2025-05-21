@@ -9,19 +9,12 @@ export default function FintechCaseStudyPage() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="relative py-20 md:py-28 overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <Image src="/fintech-case-study-hero.png" alt="FinTech Case Study" fill priority className="object-cover" />
-          {/* Dark Overlay for better text readability */}
-          <div className="absolute inset-0 bg-black/60" />
-        </div>
-        <div className="container px-4 md:px-6 relative z-10">
-          <div className="max-w-3xl">
+      <section className="py-20 md:py-28 bg-gradient-to-br from-primary/10 to-background">
+        <div className="container px-4 md:px-6">
+          <div className="max-w-3xl mx-auto text-center">
             <Badge className="mb-4 bg-primary hover:bg-primary text-white">Case Study</Badge>
-            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-white mb-6">
-              $1.2M Pipeline Unlocked
-            </h1>
-            <p className="text-xl text-white/90 mb-8">
+            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-6">$1.2M Pipeline Unlocked</h1>
+            <p className="text-xl text-muted-foreground dark:text-white mb-8">
               Fintech platform closes enterprise deals post-SOC 2
             </p>
           </div>

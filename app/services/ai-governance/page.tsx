@@ -14,19 +14,11 @@ export default function AIGovernancePage() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="relative py-20 md:py-28 overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <Image src="/ai-governance-hero.png" alt="AI Governance" fill priority className="object-cover" />
-          {/* Dark Overlay for better text readability */}
-          <div className="absolute inset-0 bg-black/50" />
-        </div>
-
-        <div className="container px-4 md:px-6 relative z-10">
+      <section className="py-20 md:py-28 bg-gradient-to-br from-primary/10 to-background">
+        <div className="container px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-white animate-fade-in-up">
-              AI Governance (ISO/IEC 42001)
-            </h1>
-            <p className="mt-4 text-white/90 md:text-xl animate-fade-in-up-delay-1">
+            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-4">AI Governance (ISO/IEC 42001)</h1>
+            <p className="mt-4 text-muted-foreground dark:text-white md:text-xl">
               Build a defensible AI governance program that scales with innovation. Our ISO/IEC 42001 advisory engagement aligns your models, processes, and internal accountability to the world's first AI-specific compliance standard.
             </p>
           </div>
@@ -66,7 +58,7 @@ export default function AIGovernancePage() {
             </div>
             <div className="relative rounded-lg overflow-hidden">
               <Image
-                src="/ai-governance-overview.jpg"
+                src="/secureai.webp"
                 alt="AI Governance Overview"
                 width={600}
                 height={400}

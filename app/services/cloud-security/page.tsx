@@ -9,19 +9,11 @@ export default function CloudSecurityPage() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="relative py-20 md:py-28 overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <Image src="/cloud-security-hero.png" alt="Cloud Security" fill priority className="object-cover" />
-          {/* Dark Overlay for better text readability */}
-          <div className="absolute inset-0 bg-black/50" />
-        </div>
-
-        <div className="container px-4 md:px-6 relative z-10">
+      <section className="py-20 md:py-28 bg-gradient-to-br from-primary/10 to-background">
+        <div className="container px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-white animate-fade-in-up">
-              Cloud Security Review
-            </h1>
-            <p className="mt-4 text-white/90 md:text-xl animate-fade-in-up-delay-1">
+            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-4">Cloud Security Review</h1>
+            <p className="mt-4 text-muted-foreground dark:text-white md:text-xl">
               Your cloud is your perimeter. We assess your entire cloud footprint — from IAM to encryption — and align it with compliance frameworks and secure architecture principles.
             </p>
           </div>
@@ -55,7 +47,7 @@ export default function CloudSecurityPage() {
             </div>
             <div className="relative rounded-lg overflow-hidden">
               <Image
-                src="/cloud-security-overview.jpg"
+                src="/cloud.jpg "
                 alt="Cloud Security Overview"
                 width={600}
                 height={400}

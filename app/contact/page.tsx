@@ -70,21 +70,21 @@ export default function ContactPage() {
           {/* Contact Form Card */}
           <Card className="w-full bg-card border border-border">
             <CardContent className="p-8">
-              <form onSubmit={handleSubmit} className="space-y-6">
+                  <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="space-y-1">
-                  <Label htmlFor="name">Full Name</Label>
+                      <Label htmlFor="name">Full Name</Label>
                   <Input id="name" name="name" value={formState.name} onChange={handleChange} required className="bg-background border border-border" />
-                </div>
+                    </div>
                 <div className="space-y-1">
-                  <Label htmlFor="email">Email</Label>
+                      <Label htmlFor="email">Email</Label>
                   <Input id="email" name="email" type="email" value={formState.email} onChange={handleChange} required className="bg-background border border-border" />
-                </div>
+                    </div>
                 <div className="space-y-1">
-                  <Label htmlFor="company">Company</Label>
+                      <Label htmlFor="company">Company</Label>
                   <Input id="company" name="company" value={formState.company} onChange={handleChange} required className="bg-background border border-border" />
-                </div>
+                    </div>
                 <div className="space-y-1">
-                  <Label htmlFor="service">Service of Interest</Label>
+                      <Label htmlFor="service">Service of Interest</Label>
                   <select
                     id="service"
                     name="service"
@@ -98,20 +98,20 @@ export default function ContactPage() {
                       <option key={opt.value} value={opt.value}>{opt.label}</option>
                     ))}
                   </select>
-                </div>
+                    </div>
                 <div className="space-y-1">
-                  <Label htmlFor="message">Message</Label>
+                      <Label htmlFor="message">Message</Label>
                   <Textarea id="message" name="message" value={formState.message} onChange={handleChange} rows={5} required className="bg-background border border-border" />
-                </div>
-                <Button type="submit" className="w-full" disabled={isSubmitting}>
-                  {isSubmitting ? "Sending..." : "Send Message"}
-                </Button>
+                    </div>
+                    <Button type="submit" className="w-full" disabled={isSubmitting}>
+                      {isSubmitting ? "Sending..." : "Send Message"}
+                    </Button>
                 {isSubmitted && (
                   <div className="text-green-600 text-center pt-2">Thank you! We'll be in touch within 24 hours.</div>
                 )}
               </form>
-            </CardContent>
-          </Card>
+              </CardContent>
+            </Card>
 
           {/* Contact Info & FAQ */}
           <div className="flex flex-col gap-8">
@@ -121,21 +121,21 @@ export default function ContactPage() {
               <div className="space-y-3">
                 <div className="flex items-start gap-3">
                   <Mail className="h-5 w-5 text-primary mt-0.5" />
-                  <div>
+              <div>
                     <span className="font-medium">Email</span><br />
                     <a href="mailto:info@complianta.com" className="text-muted-foreground hover:text-primary">info@complianta.com</a>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <Phone className="h-5 w-5 text-primary mt-0.5" />
-                  <div>
+                    <div>
                     <span className="font-medium">Phone</span><br />
                     <a href="tel:+19723999143" className="text-muted-foreground hover:text-primary">+1 (972) 399-9143</a>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <MapPin className="h-5 w-5 text-primary mt-0.5" />
-                  <div>
+                    <div>
                     <span className="font-medium">Office</span><br />
                     Complianta LLC<br />
                     12436 FM 1960 Rd W<br />
@@ -145,41 +145,41 @@ export default function ContactPage() {
                 </div>
                 <div className="flex items-start gap-3">
                   <Calendar className="h-5 w-5 text-primary mt-0.5" />
-                  <div>
+                    <div>
                     <span className="font-medium">Schedule a Call</span><br />
                     <span className="text-muted-foreground">Book a 30-minute consultation with our team.</span><br />
-                    <Dialog>
-                      <DialogTrigger asChild>
-                        <Button variant="outline" className="mt-2">Schedule Now</Button>
-                      </DialogTrigger>
-                      <DialogContent>
-                        <DialogTitle>Schedule a Free Consultation</DialogTitle>
-                        <div className="w-full" style={{ minHeight: 600 }}>
-                          <iframe
-                            src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0Vxu3mWG4YQPBDvvUz9CX7sNoH_BBnmcGmKPRSYAiQD9S_xtFPB8TmIU_J4LtUeU_aCTmUEgzh"
-                            width="100%"
-                            height="600"
-                            frameBorder="0"
-                            style={{ border: 0 }}
-                            allowFullScreen
-                            title="Schedule a Free Consultation"
-                          ></iframe>
-                        </div>
-                      </DialogContent>
-                    </Dialog>
+                      <Dialog>
+                        <DialogTrigger asChild>
+                          <Button variant="outline" className="mt-2">Schedule Now</Button>
+                        </DialogTrigger>
+                        <DialogContent>
+                          <DialogTitle>Schedule a Free Consultation</DialogTitle>
+                          <div className="w-full" style={{ minHeight: 600 }}>
+                            <iframe
+                              src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0Vxu3mWG4YQPBDvvUz9CX7sNoH_BBnmcGmKPRSYAiQD9S_xtFPB8TmIU_J4LtUeU_aCTmUEgzh"
+                              width="100%"
+                              height="600"
+                              frameBorder="0"
+                              style={{ border: 0 }}
+                              allowFullScreen
+                              title="Schedule a Free Consultation"
+                            ></iframe>
+                          </div>
+                        </DialogContent>
+                      </Dialog>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
             <div className="bg-card rounded-lg shadow-sm border border-border p-8">
               <h2 className="text-xl font-bold mb-4">Frequently Asked Questions</h2>
-              <div className="space-y-4">
-                <div>
-                  <h3 className="font-semibold">How quickly can you help us achieve compliance?</h3>
+                <div className="space-y-4">
+                  <div>
+                    <h3 className="font-semibold">How quickly can you help us achieve compliance?</h3>
                   <p className="text-muted-foreground">Timelines vary based on your current security posture and specific requirements. Most clients achieve SOC 2 Type I in 8-12 weeks.</p>
-                </div>
-                <div>
-                  <h3 className="font-semibold">Do you work with startups?</h3>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold">Do you work with startups?</h3>
                   <p className="text-muted-foreground">Yes! We specialize in helping startups and growing companies achieve compliance efficiently.</p>
                 </div>
                 <Link href="/faq" className="text-primary hover:underline inline-block mt-2">View all FAQs</Link>

@@ -9,19 +9,11 @@ export default function StartupCompliancePage() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="relative py-20 md:py-28 overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <Image src="/startup-compliance-hero.png" alt="Startup Compliance Foundations" fill priority className="object-cover" />
-          {/* Dark Overlay for better text readability */}
-          <div className="absolute inset-0 bg-black/50" />
-        </div>
-
-        <div className="container px-4 md:px-6 relative z-10">
+      <section className="py-20 md:py-28 bg-gradient-to-br from-primary/10 to-background">
+        <div className="container px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-white animate-fade-in-up">
-              Startup Compliance Foundations
-            </h1>
-            <p className="mt-4 text-white/90 md:text-xl animate-fade-in-up-delay-1">
+            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-4">Startup Compliance Foundations</h1>
+            <p className="mt-4 text-muted-foreground dark:text-white md:text-xl">
               Perfect for teams getting ready for their first enterprise customer, funding round, or SOC 2 audit. We build your initial compliance stack without breaking your engineering cadence.
             </p>
           </div>
@@ -54,7 +46,7 @@ export default function StartupCompliancePage() {
             </div>
             <div className="relative rounded-lg overflow-hidden">
               <Image
-                src="/startup-compliance-overview.jpg"
+                src="/compliance.jpg"
                 alt="Startup Compliance Overview"
                 width={600}
                 height={400}

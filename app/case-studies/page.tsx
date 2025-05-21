@@ -82,7 +82,7 @@ export default function CaseStudiesPage() {
               </div>
               <div className="order-1 lg:order-2">
                 <div className="relative aspect-video overflow-hidden rounded-lg">
-                  <Image src="/anthill-case-study.jpg" alt="AnthillAI Case Study" fill className="object-cover" />
+                  <Image src="/anthilluse.png" alt="AnthillAI Case Study" fill className="object-cover" />
                 </div>
               </div>
             </div>
@@ -137,7 +137,7 @@ export default function CaseStudiesPage() {
               </div>
               <div className="order-1">
                 <div className="relative aspect-video overflow-hidden rounded-lg">
-                  <Image src="/ai-startup-case-study.jpg" alt="AI Startup Case Study" fill className="object-cover" />
+                  <Image src="/aistartup.png" alt="AI Startup Case Study" fill className="object-cover" />
                 </div>
               </div>
             </div>
@@ -192,7 +192,7 @@ export default function CaseStudiesPage() {
               </div>
               <div className="order-1 lg:order-2">
                 <div className="relative aspect-video overflow-hidden rounded-lg">
-                  <Image src="/healthtech-case-study.jpg" alt="HealthTech Case Study" fill className="object-cover" />
+                  <Image src="/healthcare.png" alt="HealthTech Case Study" fill className="object-cover" />
                 </div>
               </div>
             </div>
@@ -247,7 +247,7 @@ export default function CaseStudiesPage() {
               </div>
               <div className="order-1">
                 <div className="relative aspect-video overflow-hidden rounded-lg">
-                  <Image src="/b2b-saas-case-study.jpg" alt="B2B SaaS Case Study" fill className="object-cover" />
+                  <Image src="/b2bsaas.png" alt="B2B SaaS Case Study" fill className="object-cover" />
                 </div>
               </div>
             </div>
@@ -302,7 +302,7 @@ export default function CaseStudiesPage() {
               </div>
               <div className="order-1 lg:order-2">
                 <div className="relative aspect-video overflow-hidden rounded-lg">
-                  <Image src="/govtech-case-study.jpg" alt="GovTech Case Study" fill className="object-cover" />
+                  <Image src="/cloud-native.png" alt="GovTech Case Study" fill className="object-cover" />
                 </div>
               </div>
             </div>
