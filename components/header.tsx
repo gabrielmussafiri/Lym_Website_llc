@@ -10,13 +10,13 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu, X, ShieldCheck } from "lucide-react";
 import { Dialog, DialogTrigger, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import Script from "next/script";
+import { CalendlyWidget } from "@/components/calendly-widget";
 
 const navigation = [
   { name: "Home", href: "/" },
   { name: "About", href: "/about" },
   { name: "Services", href: "/services" },
-  { name: "Case Studies", href: "/case-studies" },
-  // { name: "Resources", href: "/resources" },
+  { name: "Resources & Blogs", href: "/resources" },
   { name: "FAQ", href: "/faq" },
   { name: "Contact", href: "/contact" },
 ];
@@ -100,15 +100,7 @@ export default function Header() {
                       <DialogContent>
                         <DialogTitle>Schedule a Free Consultation</DialogTitle>
                         <div className="w-full" style={{ minHeight: 600 }}>
-                          <iframe
-                            src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0Vxu3mWG4YQPBDvvUz9CX7sNoH_BBnmcGmKPRSYAiQD9S_xtFPB8TmIU_J4LtUeU_aCTmUEgzh"
-                            width="100%"
-                            height="600"
-                            frameBorder="0"
-                            style={{ border: 0 }}
-                            allowFullScreen
-                            title="Schedule a Free Consultation"
-                          ></iframe>
+                          <CalendlyWidget />
                         </div>
                       </DialogContent>
                     </Dialog>
@@ -143,15 +135,7 @@ export default function Header() {
             <DialogContent>
               <DialogTitle>Schedule a Free Consultation</DialogTitle>
               <div className="w-full" style={{ minHeight: 600 }}>
-                <iframe
-                  src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0Vxu3mWG4YQPBDvvUz9CX7sNoH_BBnmcGmKPRSYAiQD9S_xtFPB8TmIU_J4LtUeU_aCTmUEgzh"
-                  width="100%"
-                  height="600"
-                  frameBorder="0"
-                  style={{ border: 0 }}
-                  allowFullScreen
-                  title="Schedule a Free Consultation"
-                ></iframe>
+                <CalendlyWidget />
               </div>
             </DialogContent>
           </Dialog>

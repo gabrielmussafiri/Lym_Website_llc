@@ -10,6 +10,7 @@ import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
+import { CalendlyWidget } from "@/components/calendly-widget";
 
 function ContactForm() {
   const [formState, setFormState] = React.useState({
@@ -126,15 +127,7 @@ export default function Home() {
                 <DialogContent>
                   <DialogTitle>Schedule a Free Consultation</DialogTitle>
                   <div className="w-full" style={{ minHeight: 600 }}>
-                    <iframe
-                      src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0Vxu3mWG4YQPBDvvUz9CX7sNoH_BBnmcGmKPRSYAiQD9S_xtFPB8TmIU_J4LtUeU_aCTmUEgzh"
-                      width="100%"
-                      height="600"
-                      frameBorder="0"
-                      style={{ border: 0 }}
-                      allowFullScreen
-                      title="Schedule a Free Consultation"
-                    ></iframe>
+                    <CalendlyWidget />
                   </div>
                 </DialogContent>
               </Dialog>
@@ -177,9 +170,7 @@ export default function Home() {
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
               Why Leading Teams Choose Complianta
             </h2>
-            <p className="text-foreground">
-              Precision Meets Speed
-            </p>
+          
           </div>
           <div className="grid gap-6 lg:grid-cols-4 lg:gap-12">
             <Card className="border-none shadow-none bg-transparent hover:bg-muted/50 transition-all duration-300 p-4 rounded-lg">
@@ -287,11 +278,11 @@ export default function Home() {
           <div className="marquee flex items-center gap-12 w-max" style={{ animation: 'marquee 30s linear infinite' }}>
             {[
               { name: "Anthill", logo: "./anthil.png" },
-              { name: "Amazon", logo: "./amazon.png" },
+              { name: "MayTech", logo: "./maytech.png" },
               { name: "Anthill", logo: "./anthil.png" },
-              { name: "Amazon", logo: "./amazon.png" },
+              { name: "MayTech", logo: "./maytech.png" },
               { name: "Anthill", logo: "./anthil.png" },
-              { name: "Amazon", logo: "./amazon.png" },
+              { name: "MayTech", logo: "./maytech.png" },
             ].map((company, i) => (
               <div
                 key={i}
@@ -308,11 +299,11 @@ export default function Home() {
             {/* Duplicate for seamless looping */}
             {[
               { name: "Anthill", logo: "./anthil.png" },
-              { name: "Amazon", logo: "./amazon.png" },
+              { name: "MayTech", logo: "./maytech.png" },
               { name: "Anthill", logo: "./anthil.png" },
-              { name: "Amazon", logo: "./amazon.png" },
+              { name: "MayTech", logo: "./maytech.png" },
               { name: "Anthill", logo: "./anthil.png" },
-              { name: "Amazon", logo: "./amazon.png" },
+              { name: "MayTech", logo: "./maytech.png" },
             ].map((company, i) => (
               <div
                 key={`dup-${i}`}
@@ -585,16 +576,16 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Featured Case Studies */}
+      {/* Featured Resources & Blogs */}
       <section className="py-16 md:py-24 bg-muted">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-12">
             <div>
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
-                Case Studies
+                Resources & Blogs
               </h2>
               <p className="mt-4 text-foreground dark:text-white md:text-xl max-w-2xl">
-                Real results from companies like yours
+                Insights, stories, and practical guidance for compliance, security, and AI governance
               </p>
             </div>
             <Button
@@ -602,8 +593,8 @@ export default function Home() {
               asChild
               className="mt-4 md:mt-0 hover:bg-primary hover:text-white transition-colors duration-300"
             >
-              <Link href="/case-studies" className="group">
-                View Case Studies
+              <Link href="/resources" className="group">
+                View All Resources
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Link>
             </Button>
@@ -611,52 +602,52 @@ export default function Home() {
           <div className="grid gap-6 md:grid-cols-3 lg:gap-12">
             {[
               {
-                title: "$1.2M Pipeline Unlocked",
-                description: "Fintech platform closes enterprise deals post-SOC 2",
-                category: "SOC 2",
-                image: "/case1.png",
-                link: "/case-studies/fintech-soc2"
-              },
-              {
-                title: "HIPAA Infrastructure Hardening",
-                description: "Healthtech startup secures sensitive PHI with compliant architecture",
-                category: "HIPAA",
-                image: "/hipa2.jpg",
-                link: "/case-studies/healthcare-hipaa"
-              },
-              {
-                title: "AI Risk & Readiness",
-                description: "LLM-based product builds ISO/IEC 42001-aligned governance to satisfy top-tier investors",
+                title: "How AI Startups Are Building Enterprise Trust with ISO/IEC 42001",
+                description: "In today's AI-driven economy, governance isn't a formality—it's a differentiator.",
                 category: "AI Governance",
-                image: "/aigouv.jpg",
-                link: "/case-studies/ai-governance"
+                image: "/Startups.jpg",
+                link: "/resources/ai-startups-enterprise-trust"
+              },
+              {
+                title: "What It Takes to Pass a Hospital Audit: HIPAA Compliance for Growing HealthTech Startups",
+                description: "A practical look at how one healthcare SaaS company secured protected health information.",
+                category: "HIPAA",
+                image: "/HealthTech.jpg",
+                link: "/resources/hipaa-hospital-audit-healthtech"
+              },
+              {
+                title: "How B2B SaaS Startups Can Fast-Track SOC 2 and Win Enterprise Trust",
+                description: "A 10-week path to compliance, maturity, and customer confidence.",
+                category: "SOC 2",
+                image: "/b2bsaas.jpg",
+                link: "/resources/b2b-saas-soc2-enterprise-trust"
               }
-            ].map((study, i) => (
+            ].map((article, i) => (
               <Card
                 key={i}
                 className="overflow-hidden transform hover:scale-105 transition-all duration-300 hover:shadow-lg"
               >
                 <div className="aspect-video relative">
                   <Image
-                    src={study.image}
-                    alt={study.title}
+                    src={article.image}
+                    alt={article.title}
                     fill
                     className="object-cover"
                   />
                   <div className="absolute top-4 left-4">
-                    <Badge variant="secondary">{study.category}</Badge>
+                    <Badge variant="secondary">{article.category}</Badge>
                   </div>
                 </div>
                 <CardContent className="p-6">
-                  <h3 className="text-xl font-bold mb-2">{study.title}</h3>
+                  <h3 className="text-xl font-bold mb-2">{article.title}</h3>
                   <p className="text-foreground dark:text-white mb-4">
-                    {study.description}
+                    {article.description}
                   </p>
                   <Link
-                    href={study.link}
+                    href={article.link}
                     className="group flex items-center text-primary font-medium"
                   >
-                    Read case study
+                    Read article
                     <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />
                   </Link>
                 </CardContent>
@@ -690,15 +681,7 @@ export default function Home() {
                   <DialogContent>
                     <DialogTitle>Schedule a Free Consultation</DialogTitle>
                     <div className="w-full" style={{ minHeight: 600 }}>
-                      <iframe
-                        src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0Vxu3mWG4YQPBDvvUz9CX7sNoH_BBnmcGmKPRSYAiQD9S_xtFPB8TmIU_J4LtUeU_aCTmUEgzh"
-                        width="100%"
-                        height="600"
-                        frameBorder="0"
-                        style={{ border: 0 }}
-                        allowFullScreen
-                        title="Schedule a Free Consultation"
-                      ></iframe>
+                      <CalendlyWidget />
                     </div>
                   </DialogContent>
                 </Dialog>

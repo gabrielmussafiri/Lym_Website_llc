@@ -1,4 +1,3 @@
-"use client"
 import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
@@ -6,7 +5,7 @@ import { Badge } from "@/components/ui/badge"
 import { Card, CardContent } from "@/components/ui/card"
 import { CheckCircle, ArrowLeft, Calendar, Clock, Users, Building } from "lucide-react"
 
-export default function AIStartupCaseStudyPage() {
+export default function HealthTechCaseStudyPage() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
@@ -14,9 +13,9 @@ export default function AIStartupCaseStudyPage() {
         <div className="container px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center">
             <Badge className="mb-4 bg-primary hover:bg-primary text-white">Case Study</Badge>
-            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-6">AI Startup Readies for ISO/IEC 42001</h1>
+            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-6">HealthTech Startup Achieves HIPAA Compliance</h1>
             <p className="text-xl text-muted-foreground dark:text-white mb-8">
-              AI/NLP platform secures enterprise pilots with responsible AI governance
+              Healthcare SaaS secures PHI and passes hospital audit with cloud hardening
             </p>
           </div>
         </div>
@@ -29,28 +28,28 @@ export default function AIStartupCaseStudyPage() {
             <div className="lg:col-span-2">
               <h2 className="text-3xl font-bold tracking-tighter mb-6">The Challenge</h2>
               <p className="text-muted-foreground mb-6">
-                LexiAI (name changed for confidentiality) is a Series A startup embedding AI copilots into productivity tools. As they prepared for enterprise pilots and investor diligence, they needed a governance plan to satisfy customers, investors, and evolving regulatory expectations.
+                Medix (name changed for confidentiality) is a healthcare SaaS startup handling protected health information (PHI) for hospitals. Before onboarding a major hospital network, they needed to meet HIPAA requirements but lacked internal documentation, formal policies, and infrastructure safeguards.
               </p>
               <ul className="space-y-3 mb-6">
                 <li className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
-                  <span>Enterprise and investor requirements for responsible AI governance</span>
+                  <span>Hospital client required HIPAA compliance and security audit</span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
-                  <span>Need to map AI risks and document model lifecycle controls</span>
+                  <span>No formal policies or PHI-handling documentation</span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
-                  <span>Accelerate procurement and due diligence for enterprise pilots</span>
+                  <span>Cloud infrastructure lacked encryption and access controls</span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
-                  <span>Build a scalable governance framework for future growth</span>
+                  <span>Short timeline to pass audit and go live</span>
                 </li>
               </ul>
               <p className="text-muted-foreground">
-                LexiAI partnered with Complianta to design and implement an ISO/IEC 42001-aligned AI governance program on a tight timeline.
+                Medix partnered with Complianta to implement HIPAA controls, harden their cloud, and prepare for a successful hospital audit.
               </p>
             </div>
             <div>
@@ -62,28 +61,28 @@ export default function AIStartupCaseStudyPage() {
                       <Building className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
                       <div>
                         <p className="font-medium">Industry</p>
-                        <p className="text-muted-foreground">AI / NLP Platform</p>
+                        <p className="text-muted-foreground">Healthcare SaaS</p>
                       </div>
                     </div>
                     <div className="flex items-start">
                       <Users className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
                       <div>
                         <p className="font-medium">Company Size</p>
-                        <p className="text-muted-foreground">25 employees</p>
+                        <p className="text-muted-foreground">70 employees</p>
                       </div>
                     </div>
                     <div className="flex items-start">
                       <Calendar className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
                       <div>
                         <p className="font-medium">Project Timeline</p>
-                        <p className="text-muted-foreground">8 weeks</p>
+                        <p className="text-muted-foreground">12 weeks</p>
                       </div>
                     </div>
                     <div className="flex items-start">
                       <Clock className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
                       <div>
-                        <p className="font-medium">Governance Achieved</p>
-                        <p className="text-muted-foreground">ISO/IEC 42001 Alignment</p>
+                        <p className="font-medium">Compliance Achieved</p>
+                        <p className="text-muted-foreground">HIPAA</p>
                       </div>
                     </div>
                   </div>
@@ -102,27 +101,27 @@ export default function AIStartupCaseStudyPage() {
             {[
               {
                 step: "1",
-                title: "AI Risk Mapping & Use Case Classification",
+                title: "Cloud Security & PHI Gap Assessment",
                 description:
-                  "We mapped all AI use cases, identified risk categories, and prioritized controls for bias, explainability, and data stewardship.",
+                  "We performed a full assessment of Medix's cloud stack, identifying gaps in encryption, access controls, and PHI handling.",
               },
               {
                 step: "2",
-                title: "Governance Charter & Oversight Board",
+                title: "Policy & Control Implementation",
                 description:
-                  "We established an AI governance charter and set up an internal oversight board with clear roles and responsibilities.",
+                  "We developed HIPAA-compliant policies, implemented encryption, and configured IAM and audit logging.",
               },
               {
                 step: "3",
-                title: "Policy & Control Implementation",
+                title: "Incident Response & Training",
                 description:
-                  "We developed and rolled out policies for responsible AI, model lifecycle management, and incident response.",
+                  "We trained staff on breach response, incident triage, and PHI best practices.",
               },
               {
                 step: "4",
-                title: "Stakeholder Training & Trust Page",
+                title: "Audit Prep & Evidence",
                 description:
-                  "We trained engineering and product teams, and published a Responsible AI Trust page for external stakeholders.",
+                  "We prepared Medix for the hospital audit, organized evidence, and supported Q&A with the client.",
               },
             ].map((phase, i) => (
               <Card key={i} className="relative overflow-hidden border-none shadow-md">
@@ -146,24 +145,24 @@ export default function AIStartupCaseStudyPage() {
           <div className="space-y-8">
             {[
               {
-                challenge: "AI Risk & Model Transparency",
+                challenge: "No PHI Policies or Documentation",
                 solution:
-                  "We implemented bias monitoring protocols and explainability controls for all production models, with regular reviews by the oversight board.",
+                  "We built all required HIPAA policies and PHI-handling documentation from scratch, tailored to Medix's workflows.",
               },
               {
-                challenge: "Stakeholder Trust & Transparency",
+                challenge: "Cloud Security Gaps",
                 solution:
-                  "We published a Responsible AI Trust page and provided detailed documentation to investors and enterprise clients.",
+                  "We implemented encryption, IAM best practices, and audit logging to secure PHI in the cloud.",
               },
               {
-                challenge: "Model Lifecycle Management",
+                challenge: "Staff Training & Incident Response",
                 solution:
-                  "We established policies for model versioning, audit trails, and incident response for AI-driven features.",
+                  "We trained staff on breach response, incident triage, and PHI best practices to ensure audit readiness.",
               },
               {
-                challenge: "Tight Timeline",
+                challenge: "Tight Audit Timeline",
                 solution:
-                  "We delivered the full governance program in just 8 weeks, enabling LexiAI to meet investor and client deadlines.",
+                  "We ran a parallel track for policy implementation and audit evidence collection to meet the hospital's deadline.",
               },
             ].map((item, i) => (
               <Card key={i} className="overflow-hidden">
@@ -186,46 +185,46 @@ export default function AIStartupCaseStudyPage() {
       {/* Results */}
       <section className="py-16 md:py-24 bg-muted">
         <div className="container px-4 md:px-6">
-          <div className="grid gap-12 lg:grid-cols-2 items-center justify-items-center">
+          <div className="grid gap-12 lg:grid-cols-2 items-center">
             <div>
-              <h2 className="text-3xl font-bold tracking-tighter mb-6 text-center">Results</h2>
-              <p className="text-muted-foreground mb-6 text-center">
-                LexiAI achieved ISO/IEC 42001 alignment in just 8 weeks, unlocking enterprise pilots and satisfying investor due diligence. Key outcomes included:
+              <h2 className="text-3xl font-bold tracking-tighter mb-6">Results</h2>
+              <p className="text-muted-foreground mb-6">
+                Medix achieved HIPAA compliance and passed the hospital audit, enabling PHI-handling features to go live. Key outcomes included:
               </p>
               <div className="space-y-4">
                 <div className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
                   <div>
-                    <h3 className="font-semibold">Secured 3 Enterprise Pilots</h3>
+                    <h3 className="font-semibold">Passed Hospital Audit</h3>
                     <p className="text-sm text-muted-foreground">
-                      LexiAI was selected for three enterprise pilots after demonstrating responsible AI governance and risk controls.
+                      Medix passed the hospital's security audit and was approved to handle PHI for a major client.
                     </p>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
                   <div>
-                    <h3 className="font-semibold">Passed Investor Due Diligence</h3>
+                    <h3 className="font-semibold">Reduced Risk Score by 42%</h3>
                     <p className="text-sm text-muted-foreground">
-                      The governance program satisfied all investor requirements for responsible AI, enabling a successful funding round.
+                      The compliance process identified and remediated vulnerabilities, reducing Medix's risk score by 42%.
                     </p>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
                   <div>
-                    <h3 className="font-semibold">Published Responsible AI Trust Page</h3>
+                    <h3 className="font-semibold">Enabled PHI Features</h3>
                     <p className="text-sm text-muted-foreground">
-                      LexiAI's public trust page became a key differentiator in sales and partnership conversations.
+                      PHI-handling features went live within one month of compliance, unlocking new revenue streams.
                     </p>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
                   <div>
-                    <h3 className="font-semibold">Built Scalable Governance Foundation</h3>
+                    <h3 className="font-semibold">Built Scalable Compliance Foundation</h3>
                     <p className="text-sm text-muted-foreground">
-                      The ISO/IEC 42001-aligned framework set the stage for future compliance and responsible AI growth.
+                      The controls and documentation set the stage for future certifications and growth.
                     </p>
                   </div>
                 </div>
@@ -244,14 +243,14 @@ export default function AIStartupCaseStudyPage() {
               <div className="text-4xl text-primary absolute -top-8 -left-8">"</div>
               <div className="text-4xl text-primary absolute -bottom-8 -right-8">"</div>
               <blockquote className="text-xl italic text-center px-8 py-4">
-                Complianta's team made AI governance practical and actionable. We were able to win enterprise pilots and satisfy investors with confidence.
+                Complianta's expertise made HIPAA compliance achievable and practical. We passed our hospital audit and launched new features faster than expected.
               </blockquote>
             </div>
             <div className="flex items-center justify-center mt-8">
-              <Image src="/cto-portrait.png" alt="Morgan Lee" width={60} height={60} className="rounded-full mr-4" />
+              <Image src="/cto-portrait.png" alt="Jamie Patel" width={60} height={60} className="rounded-full mr-4" />
               <div>
-                <p className="font-semibold">Morgan Lee</p>
-                <p className="text-sm text-muted-foreground">CTO, LexiAI</p>
+                <p className="font-semibold">Jamie Patel</p>
+                <p className="text-sm text-muted-foreground">CTO, Medix</p>
               </div>
             </div>
           </div>
@@ -262,9 +261,9 @@ export default function AIStartupCaseStudyPage() {
       <section className="py-16 md:py-24 bg-muted">
         <div className="container px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl font-bold tracking-tighter mb-6">Ready to unlock enterprise pilots with responsible AI?</h2>
+            <h2 className="text-3xl font-bold tracking-tighter mb-6">Ready to achieve HIPAA compliance and unlock new clients?</h2>
             <p className="text-muted-foreground mb-8">
-              Contact us today to discuss how we can help your organization implement AI governance and win more deals.
+              Contact us today to discuss how we can help your organization secure PHI and pass your next audit.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <Button size="lg" asChild>
@@ -276,10 +275,10 @@ export default function AIStartupCaseStudyPage() {
                   Schedule a Consultation
                 </a>
               </Button>
-              <Button variant="outline" size="lg" asChild>
-                <Link href="/case-studies">
+              <Button variant="outline" asChild>
+                <Link href="/resources">
                   <ArrowLeft className="mr-2 h-4 w-4" />
-                  Back to Case Studies
+                  Back to Resources & Blogs
                 </Link>
               </Button>
             </div>

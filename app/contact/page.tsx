@@ -10,6 +10,7 @@ import { Textarea } from "@/components/ui/textarea"
 import { Dialog, DialogContent, DialogTitle, DialogTrigger } from "@/components/ui/dialog"
 import { Mail, Phone, MapPin, Calendar } from "lucide-react"
 import type React from "react"
+import { CalendlyWidget } from "@/components/calendly-widget"
 
 const SERVICE_OPTIONS = [
   { value: "soc2", label: "SOC 2 Readiness" },
@@ -155,15 +156,7 @@ export default function ContactPage() {
                         <DialogContent>
                           <DialogTitle>Schedule a Free Consultation</DialogTitle>
                           <div className="w-full" style={{ minHeight: 600 }}>
-                            <iframe
-                              src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0Vxu3mWG4YQPBDvvUz9CX7sNoH_BBnmcGmKPRSYAiQD9S_xtFPB8TmIU_J4LtUeU_aCTmUEgzh"
-                              width="100%"
-                              height="600"
-                              frameBorder="0"
-                              style={{ border: 0 }}
-                              allowFullScreen
-                              title="Schedule a Free Consultation"
-                            ></iframe>
+                            <CalendlyWidget />
                           </div>
                         </DialogContent>
                       </Dialog>
@@ -202,15 +195,7 @@ export default function ContactPage() {
               <DialogContent>
                 <DialogTitle>Schedule a Free Consultation</DialogTitle>
                 <div className="w-full" style={{ minHeight: 600 }}>
-                  <iframe
-                    src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0Vxu3mWG4YQPBDvvUz9CX7sNoH_BBnmcGmKPRSYAiQD9S_xtFPB8TmIU_J4LtUeU_aCTmUEgzh"
-                    width="100%"
-                    height="600"
-                    frameBorder="0"
-                    style={{ border: 0 }}
-                    allowFullScreen
-                    title="Schedule a Free Consultation"
-                  ></iframe>
+                  <CalendlyWidget />
                 </div>
               </DialogContent>
             </Dialog>

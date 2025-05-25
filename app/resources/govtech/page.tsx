@@ -1,4 +1,3 @@
-"use client"
 import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
@@ -6,7 +5,7 @@ import { Badge } from "@/components/ui/badge"
 import { Card, CardContent } from "@/components/ui/card"
 import { CheckCircle, ArrowLeft, Calendar, Clock, Users, Building } from "lucide-react"
 
-export default function AnthillAICaseStudyPage() {
+function GovTechCaseStudyPage() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
@@ -14,9 +13,9 @@ export default function AnthillAICaseStudyPage() {
         <div className="container px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center">
             <Badge className="mb-4 bg-primary hover:bg-primary text-white">Case Study</Badge>
-            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-6">AnthillAI — Unlocking Enterprise Sales with SOC 2 & AI Governance</h1>
+            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-6">Cloud-Native GovTech Firm Builds Security Program</h1>
             <p className="text-xl text-muted-foreground dark:text-white mb-8">
-              AI/HR Tech platform closes deals with SOC 2, HIPAA, and AI governance
+              Public sector SaaS aligns with NIST 800-53 and FedRAMP to unlock federal contracts
             </p>
           </div>
         </div>
@@ -29,28 +28,28 @@ export default function AnthillAICaseStudyPage() {
             <div className="lg:col-span-2">
               <h2 className="text-3xl font-bold tracking-tighter mb-6">The Challenge</h2>
               <p className="text-muted-foreground mb-6">
-                AnthillAI (name changed for confidentiality) is an AI-driven HR tech company embedding GenAI into hiring workflows. As they entered late-stage enterprise sales cycles, buyers required SOC 2 Type II, HIPAA alignment, and demonstrable AI governance policies. AnthillAI had no prior certifications, documentation, or formal risk controls.
+                CivicCloud (name changed for confidentiality) is a cloud-native GovTech SaaS expanding into federal procurement. To win agency contracts, they needed to align with NIST 800-53 and FedRAMP requirements, but had no formal security program or documentation in place.
               </p>
               <ul className="space-y-3 mb-6">
                 <li className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
-                  <span>Enterprise buyers required SOC 2, HIPAA, and AI governance for contract approval</span>
+                  <span>Federal clients required NIST 800-53 and FedRAMP alignment</span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
-                  <span>No prior compliance certifications or formal documentation</span>
+                  <span>No formal security program or documentation</span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
-                  <span>Complex AWS infrastructure and GenAI risk factors</span>
+                  <span>Needed to build trust with agency partners</span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
-                  <span>Short timeline to close deals and satisfy investor diligence</span>
+                  <span>Short timeline to pass preliminary security assessments</span>
                 </li>
               </ul>
               <p className="text-muted-foreground">
-                AnthillAI partnered with Complianta to build a compliance and AI governance program from the ground up, fast.
+                CivicCloud partnered with Complianta to build a security program, map controls to NIST, and prepare for agency reviews and FedRAMP engagement.
               </p>
             </div>
             <div>
@@ -62,28 +61,28 @@ export default function AnthillAICaseStudyPage() {
                       <Building className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
                       <div>
                         <p className="font-medium">Industry</p>
-                        <p className="text-muted-foreground">AI / HR Tech</p>
+                        <p className="text-muted-foreground">GovTech / Public Sector SaaS</p>
                       </div>
                     </div>
                     <div className="flex items-start">
                       <Users className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
                       <div>
                         <p className="font-medium">Company Size</p>
-                        <p className="text-muted-foreground">60 employees</p>
+                        <p className="text-muted-foreground">35 employees</p>
                       </div>
                     </div>
                     <div className="flex items-start">
                       <Calendar className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
                       <div>
                         <p className="font-medium">Project Timeline</p>
-                        <p className="text-muted-foreground">6 months</p>
+                        <p className="text-muted-foreground">Phase 1: 4 months</p>
                       </div>
                     </div>
                     <div className="flex items-start">
                       <Clock className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
                       <div>
-                        <p className="font-medium">Compliance Achieved</p>
-                        <p className="text-muted-foreground">SOC 2 Type II, HIPAA, AI Governance</p>
+                        <p className="font-medium">Compliance Focus</p>
+                        <p className="text-muted-foreground">NIST 800-53, FedRAMP readiness</p>
                       </div>
                     </div>
                   </div>
@@ -102,27 +101,27 @@ export default function AnthillAICaseStudyPage() {
             {[
               {
                 step: "1",
-                title: "SOC 2 & HIPAA Gap Assessment",
+                title: "Security Roadmap & Gap Assessment",
                 description:
-                  "We performed a full gap analysis of AnthillAI's AWS stack and internal controls, mapping requirements for SOC 2, HIPAA, and AI governance.",
+                  "We developed a full-stack security roadmap and performed a gap assessment against NIST 800-53 and FedRAMP controls.",
               },
               {
                 step: "2",
-                title: "Remediation & Documentation",
+                title: "Documentation & Control Narratives",
                 description:
-                  "We created foundational security documentation, configured control ownership workflows, and established audit evidence processes.",
+                  "We created internal governance documentation and mapped control narratives to NIST requirements.",
               },
               {
                 step: "3",
-                title: "AI Governance Layer",
+                title: "Incident Response & Vendor Review",
                 description:
-                  "We launched an AI governance program aligned with ISO/IEC 42001, including bias review, ethical oversight, and explainability standards.",
+                  "We introduced incident response plans and vendor risk review workflows tailored for public sector expectations.",
               },
               {
                 step: "4",
-                title: "Audit & Buyer Readiness",
+                title: "Agency Assessment Support",
                 description:
-                  "We coached AnthillAI through audit prep, evidence walkthroughs, and enterprise buyer security reviews.",
+                  "We prepared CivicCloud for agency security reviews and supported Q&A with procurement teams.",
               },
             ].map((phase, i) => (
               <Card key={i} className="relative overflow-hidden border-none shadow-md">
@@ -146,24 +145,24 @@ export default function AnthillAICaseStudyPage() {
           <div className="space-y-8">
             {[
               {
-                challenge: "No Prior Certifications",
+                challenge: "No Security Program or Documentation",
                 solution:
-                  "We built all required policies, controls, and documentation from scratch, tailored to AnthillAI's business and technology.",
+                  "We built a security program from the ground up, including all required policies and procedures for NIST and FedRAMP.",
               },
               {
-                challenge: "GenAI Risk & Buyer Demands",
+                challenge: "NIST 800-53 Control Mapping",
                 solution:
-                  "We implemented AI governance controls, bias monitoring, and transparency protocols to satisfy enterprise buyers and regulators.",
+                  "We mapped CivicCloud's technical and operational controls to NIST requirements, filling gaps and documenting evidence.",
               },
               {
-                challenge: "AWS Security Complexity",
+                challenge: "Incident Response & Vendor Risk",
                 solution:
-                  "We remediated cloud misconfigurations, implemented IAM best practices, and automated evidence collection.",
+                  "We implemented incident response plans and vendor review processes to meet agency expectations.",
               },
               {
-                challenge: "Tight Sales Timeline",
+                challenge: "Procurement Friction & Trust",
                 solution:
-                  "We ran a parallel track for audit readiness and buyer security reviews, ensuring no deal momentum was lost.",
+                  "We supported agency assessments and built institutional trust, reducing procurement cycle times.",
               },
             ].map((item, i) => (
               <Card key={i} className="overflow-hidden">
@@ -186,46 +185,46 @@ export default function AnthillAICaseStudyPage() {
       {/* Results */}
       <section className="py-16 md:py-24 bg-muted">
         <div className="container px-4 md:px-6">
-          <div className="grid gap-12 lg:grid-cols-2 items-center">
+          <div className="grid gap-12 lg:grid-cols-2 items-center justify-items-center">
             <div>
-              <h2 className="text-3xl font-bold tracking-tighter mb-6">Results</h2>
-              <p className="text-muted-foreground mb-6">
-                AnthillAI achieved SOC 2 Type II, HIPAA alignment, and ISO/IEC 42001 AI governance, unlocking enterprise deals and passing investor due diligence. Key outcomes included:
+              <h2 className="text-3xl font-bold tracking-tighter mb-6 text-center">Results</h2>
+              <p className="text-muted-foreground mb-6 text-center">
+                CivicCloud positioned itself for FedRAMP Tailored engagement, passed preliminary agency security assessments, and reduced procurement friction. Key outcomes included:
               </p>
               <div className="space-y-4">
                 <div className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
                   <div>
-                    <h3 className="font-semibold">Closed Enterprise Deals</h3>
+                    <h3 className="font-semibold">FedRAMP Tailored Readiness</h3>
                     <p className="text-sm text-muted-foreground">
-                      AnthillAI closed multiple enterprise deals after demonstrating compliance and AI governance.
+                      Positioned for FedRAMP Tailored engagement and future certifications.
                     </p>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
                   <div>
-                    <h3 className="font-semibold">Passed Investor Due Diligence</h3>
+                    <h3 className="font-semibold">Passed Agency Assessments</h3>
                     <p className="text-sm text-muted-foreground">
-                      The program satisfied all investor requirements for security, privacy, and responsible AI.
+                      Successfully passed preliminary security reviews with key federal agency partners.
                     </p>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
                   <div>
-                    <h3 className="font-semibold">Built Scalable Compliance Foundation</h3>
+                    <h3 className="font-semibold">Reduced Procurement Friction</h3>
                     <p className="text-sm text-muted-foreground">
-                      The controls and documentation set the stage for future certifications and growth.
+                      Built institutional trust and shortened procurement cycles for new contracts.
                     </p>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
                   <div>
-                    <h3 className="font-semibold">Enabled Responsible AI Practices</h3>
+                    <h3 className="font-semibold">Scalable Security Foundation</h3>
                     <p className="text-sm text-muted-foreground">
-                      AnthillAI became a reference customer for responsible AI, helping win new business.
+                      Established a scalable security and compliance foundation for future growth.
                     </p>
                   </div>
                 </div>
@@ -244,14 +243,14 @@ export default function AnthillAICaseStudyPage() {
               <div className="text-4xl text-primary absolute -top-8 -left-8">"</div>
               <div className="text-4xl text-primary absolute -bottom-8 -right-8">"</div>
               <blockquote className="text-xl italic text-center px-8 py-4">
-                Complianta's team delivered clarity and speed. We went from zero policy to enterprise-ready in record time, and their AI governance expertise was a true differentiator.
+                Complianta helped us build a security program that met agency expectations and accelerated our federal sales cycle.
               </blockquote>
             </div>
             <div className="flex items-center justify-center mt-8">
-              <Image src="/cto-portrait.png" alt="Taylor Smith" width={60} height={60} className="rounded-full mr-4" />
+              <Image src="/cto-portrait.png" alt="Morgan Lee" width={60} height={60} className="rounded-full mr-4" />
               <div>
-                <p className="font-semibold">Taylor Smith</p>
-                <p className="text-sm text-muted-foreground">CTO, AnthillAI</p>
+                <p className="font-semibold">Morgan Lee</p>
+                <p className="text-sm text-muted-foreground">CTO, CivicCloud</p>
               </div>
             </div>
           </div>
@@ -262,9 +261,9 @@ export default function AnthillAICaseStudyPage() {
       <section className="py-16 md:py-24 bg-muted">
         <div className="container px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl font-bold tracking-tighter mb-6">Ready to unlock enterprise sales with compliance?</h2>
+            <h2 className="text-3xl font-bold tracking-tighter mb-6">Ready to unlock public sector growth?</h2>
             <p className="text-muted-foreground mb-8">
-              Contact us today to discuss how we can help your organization achieve compliance and win more deals.
+              Contact us today to discuss how we can help your organization build a security program for federal contracts and compliance.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <Button size="lg" asChild>
@@ -277,9 +276,9 @@ export default function AnthillAICaseStudyPage() {
                 </a>
               </Button>
               <Button variant="outline" size="lg" asChild>
-                <Link href="/case-studies">
+                <Link href="/resources">
                   <ArrowLeft className="mr-2 h-4 w-4" />
-                  Back to Case Studies
+                  Back to Resources & Blogs
                 </Link>
               </Button>
             </div>
@@ -288,4 +287,6 @@ export default function AnthillAICaseStudyPage() {
       </section>
     </div>
   )
-} 
+}
+
+export default GovTechCaseStudyPage 

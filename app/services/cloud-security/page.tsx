@@ -47,7 +47,7 @@ export default function CloudSecurityPage() {
             </div>
             <div className="relative rounded-lg overflow-hidden">
               <Image
-                src="/cloud.jpg "
+                src="/cloud.jpg"
                 alt="Cloud Security Overview"
                 width={600}
                 height={400}

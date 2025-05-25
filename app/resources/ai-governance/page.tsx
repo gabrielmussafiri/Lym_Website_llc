@@ -5,7 +5,7 @@ import { Badge } from "@/components/ui/badge"
 import { Card, CardContent } from "@/components/ui/card"
 import { CheckCircle, ArrowLeft, Calendar, Clock, Users, Building } from "lucide-react"
 
-function GovTechCaseStudyPage() {
+export default function AIGovernanceCaseStudyPage() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
@@ -13,9 +13,9 @@ function GovTechCaseStudyPage() {
         <div className="container px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center">
             <Badge className="mb-4 bg-primary hover:bg-primary text-white">Case Study</Badge>
-            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-6">Cloud-Native GovTech Firm Builds Security Program</h1>
+            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-6">AI Risk & Readiness</h1>
             <p className="text-xl text-muted-foreground dark:text-white mb-8">
-              Public sector SaaS aligns with NIST 800-53 and FedRAMP to unlock federal contracts
+              LLM-based product builds ISO/IEC 42001-aligned governance to satisfy top-tier investors
             </p>
           </div>
         </div>
@@ -28,28 +28,31 @@ function GovTechCaseStudyPage() {
             <div className="lg:col-span-2">
               <h2 className="text-3xl font-bold tracking-tighter mb-6">The Challenge</h2>
               <p className="text-muted-foreground mb-6">
-                CivicCloud (name changed for confidentiality) is a cloud-native GovTech SaaS expanding into federal procurement. To win agency contracts, they needed to align with NIST 800-53 and FedRAMP requirements, but had no formal security program or documentation in place.
+                SynthAI (name changed for confidentiality) is a fast-growing AI startup providing LLM-powered analytics for enterprise clients. As they prepared for a major funding round and enterprise pilots, investors and customers demanded proof of responsible AI governance and risk controls.
+              </p>
+              <p className="text-muted-foreground mb-6">
+                SynthAI needed to align with the new ISO/IEC 42001 standard for AI governance to:
               </p>
               <ul className="space-y-3 mb-6">
                 <li className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
-                  <span>Federal clients required NIST 800-53 and FedRAMP alignment</span>
+                  <span>Demonstrate responsible AI practices to investors and enterprise buyers</span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
-                  <span>No formal security program or documentation</span>
+                  <span>Map and mitigate AI risks (bias, explainability, data stewardship)</span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
-                  <span>Needed to build trust with agency partners</span>
+                  <span>Accelerate procurement and due diligence for enterprise pilots</span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
-                  <span>Short timeline to pass preliminary security assessments</span>
+                  <span>Build a scalable governance framework for future growth</span>
                 </li>
               </ul>
               <p className="text-muted-foreground">
-                CivicCloud partnered with Complianta to build a security program, map controls to NIST, and prepare for agency reviews and FedRAMP engagement.
+                SynthAI partnered with Complianta to design and implement an ISO/IEC 42001-aligned AI governance program on a tight timeline.
               </p>
             </div>
             <div>
@@ -61,28 +64,28 @@ function GovTechCaseStudyPage() {
                       <Building className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
                       <div>
                         <p className="font-medium">Industry</p>
-                        <p className="text-muted-foreground">GovTech / Public Sector SaaS</p>
+                        <p className="text-muted-foreground">AI / SaaS</p>
                       </div>
                     </div>
                     <div className="flex items-start">
                       <Users className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
                       <div>
                         <p className="font-medium">Company Size</p>
-                        <p className="text-muted-foreground">35 employees</p>
+                        <p className="text-muted-foreground">30 employees</p>
                       </div>
                     </div>
                     <div className="flex items-start">
                       <Calendar className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
                       <div>
                         <p className="font-medium">Project Timeline</p>
-                        <p className="text-muted-foreground">Phase 1: 4 months</p>
+                        <p className="text-muted-foreground">6 weeks</p>
                       </div>
                     </div>
                     <div className="flex items-start">
                       <Clock className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
                       <div>
-                        <p className="font-medium">Compliance Focus</p>
-                        <p className="text-muted-foreground">NIST 800-53, FedRAMP readiness</p>
+                        <p className="font-medium">Governance Achieved</p>
+                        <p className="text-muted-foreground">ISO/IEC 42001 Alignment</p>
                       </div>
                     </div>
                   </div>
@@ -101,27 +104,27 @@ function GovTechCaseStudyPage() {
             {[
               {
                 step: "1",
-                title: "Security Roadmap & Gap Assessment",
+                title: "AI Risk Mapping & Use Case Classification",
                 description:
-                  "We developed a full-stack security roadmap and performed a gap assessment against NIST 800-53 and FedRAMP controls.",
+                  "We mapped all LLM use cases, identified risk categories, and prioritized controls for bias, explainability, and data stewardship.",
               },
               {
                 step: "2",
-                title: "Documentation & Control Narratives",
+                title: "Governance Charter & Oversight Board",
                 description:
-                  "We created internal governance documentation and mapped control narratives to NIST requirements.",
+                  "We established an AI governance charter and set up an internal oversight board with clear roles and responsibilities.",
               },
               {
                 step: "3",
-                title: "Incident Response & Vendor Review",
+                title: "Policy & Control Implementation",
                 description:
-                  "We introduced incident response plans and vendor risk review workflows tailored for public sector expectations.",
+                  "We developed and rolled out policies for responsible AI, model lifecycle management, and incident response.",
               },
               {
                 step: "4",
-                title: "Agency Assessment Support",
+                title: "Stakeholder Training & Trust Page",
                 description:
-                  "We prepared CivicCloud for agency security reviews and supported Q&A with procurement teams.",
+                  "We trained engineering and product teams, and published a Responsible AI Trust page for external stakeholders.",
               },
             ].map((phase, i) => (
               <Card key={i} className="relative overflow-hidden border-none shadow-md">
@@ -145,24 +148,24 @@ function GovTechCaseStudyPage() {
           <div className="space-y-8">
             {[
               {
-                challenge: "No Security Program or Documentation",
+                challenge: "AI Bias & Explainability",
                 solution:
-                  "We built a security program from the ground up, including all required policies and procedures for NIST and FedRAMP.",
+                  "We implemented bias monitoring protocols and explainability controls for all production LLMs, with regular reviews by the oversight board.",
               },
               {
-                challenge: "NIST 800-53 Control Mapping",
+                challenge: "Stakeholder Trust & Transparency",
                 solution:
-                  "We mapped CivicCloud's technical and operational controls to NIST requirements, filling gaps and documenting evidence.",
+                  "We published a Responsible AI Trust page and provided detailed documentation to investors and enterprise clients.",
               },
               {
-                challenge: "Incident Response & Vendor Risk",
+                challenge: "Model Lifecycle Management",
                 solution:
-                  "We implemented incident response plans and vendor review processes to meet agency expectations.",
+                  "We established policies for model versioning, audit trails, and incident response for AI-driven features.",
               },
               {
-                challenge: "Procurement Friction & Trust",
+                challenge: "Rapid Timeline",
                 solution:
-                  "We supported agency assessments and built institutional trust, reducing procurement cycle times.",
+                  "We delivered the full governance program in just 6 weeks, enabling SynthAI to meet investor and client deadlines.",
               },
             ].map((item, i) => (
               <Card key={i} className="overflow-hidden">
@@ -185,46 +188,46 @@ function GovTechCaseStudyPage() {
       {/* Results */}
       <section className="py-16 md:py-24 bg-muted">
         <div className="container px-4 md:px-6">
-          <div className="grid gap-12 lg:grid-cols-2 items-center justify-items-center">
+          <div className="grid gap-12 lg:grid-cols-2 items-center">
             <div>
-              <h2 className="text-3xl font-bold tracking-tighter mb-6 text-center">Results</h2>
-              <p className="text-muted-foreground mb-6 text-center">
-                CivicCloud positioned itself for FedRAMP Tailored engagement, passed preliminary agency security assessments, and reduced procurement friction. Key outcomes included:
+              <h2 className="text-3xl font-bold tracking-tighter mb-6">Results</h2>
+              <p className="text-muted-foreground mb-6">
+                SynthAI achieved ISO/IEC 42001 alignment in just 6 weeks, unlocking enterprise pilots and satisfying investor due diligence. Key outcomes included:
               </p>
               <div className="space-y-4">
                 <div className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
                   <div>
-                    <h3 className="font-semibold">FedRAMP Tailored Readiness</h3>
+                    <h3 className="font-semibold">Secured 2 Enterprise Pilots</h3>
                     <p className="text-sm text-muted-foreground">
-                      Positioned for FedRAMP Tailored engagement and future certifications.
+                      SynthAI was selected for two enterprise pilots after demonstrating responsible AI governance and risk controls.
                     </p>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
                   <div>
-                    <h3 className="font-semibold">Passed Agency Assessments</h3>
+                    <h3 className="font-semibold">Passed Investor Due Diligence</h3>
                     <p className="text-sm text-muted-foreground">
-                      Successfully passed preliminary security reviews with key federal agency partners.
+                      The governance program satisfied all investor requirements for responsible AI, enabling a successful funding round.
                     </p>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
                   <div>
-                    <h3 className="font-semibold">Reduced Procurement Friction</h3>
+                    <h3 className="font-semibold">Published Responsible AI Trust Page</h3>
                     <p className="text-sm text-muted-foreground">
-                      Built institutional trust and shortened procurement cycles for new contracts.
+                      SynthAI's public trust page became a key differentiator in sales and partnership conversations.
                     </p>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
                   <div>
-                    <h3 className="font-semibold">Scalable Security Foundation</h3>
+                    <h3 className="font-semibold">Built Scalable Governance Foundation</h3>
                     <p className="text-sm text-muted-foreground">
-                      Established a scalable security and compliance foundation for future growth.
+                      The ISO/IEC 42001-aligned framework set the stage for future compliance and responsible AI growth.
                     </p>
                   </div>
                 </div>
@@ -243,14 +246,14 @@ function GovTechCaseStudyPage() {
               <div className="text-4xl text-primary absolute -top-8 -left-8">"</div>
               <div className="text-4xl text-primary absolute -bottom-8 -right-8">"</div>
               <blockquote className="text-xl italic text-center px-8 py-4">
-                Complianta helped us build a security program that met agency expectations and accelerated our federal sales cycle.
+                Complianta's expertise in AI governance was a game-changer. They helped us operationalize responsible AI in a way that made sense for our team and our clients. The process was fast, practical, and delivered real business value.
               </blockquote>
             </div>
             <div className="flex items-center justify-center mt-8">
-              <Image src="/cto-portrait.png" alt="Morgan Lee" width={60} height={60} className="rounded-full mr-4" />
+              <Image src="/cto-portrait.png" alt="Jordan Lee" width={60} height={60} className="rounded-full mr-4" />
               <div>
-                <p className="font-semibold">Morgan Lee</p>
-                <p className="text-sm text-muted-foreground">CTO, CivicCloud</p>
+                <p className="font-semibold">Jordan Lee</p>
+                <p className="text-sm text-muted-foreground">CTO, SynthAI</p>
               </div>
             </div>
           </div>
@@ -261,9 +264,9 @@ function GovTechCaseStudyPage() {
       <section className="py-16 md:py-24 bg-muted">
         <div className="container px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl font-bold tracking-tighter mb-6">Ready to unlock public sector growth?</h2>
+            <h2 className="text-3xl font-bold tracking-tighter mb-6">Ready to build trust with responsible AI?</h2>
             <p className="text-muted-foreground mb-8">
-              Contact us today to discuss how we can help your organization build a security program for federal contracts and compliance.
+              Contact us today to discuss how we can help your organization implement AI governance and unlock new opportunities.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <Button size="lg" asChild>
@@ -275,10 +278,10 @@ function GovTechCaseStudyPage() {
                   Schedule a Consultation
                 </a>
               </Button>
-              <Button variant="outline" size="lg" asChild>
-                <Link href="/case-studies">
+              <Button variant="outline" asChild>
+                <Link href="/resources">
                   <ArrowLeft className="mr-2 h-4 w-4" />
-                  Back to Case Studies
+                  Back to Resources & Blogs
                 </Link>
               </Button>
             </div>
@@ -287,6 +290,4 @@ function GovTechCaseStudyPage() {
       </section>
     </div>
   )
-}
-
-export default GovTechCaseStudyPage 
+} 

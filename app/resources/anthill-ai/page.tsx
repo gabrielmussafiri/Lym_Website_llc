@@ -1,3 +1,4 @@
+"use client"
 import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
@@ -5,7 +6,7 @@ import { Badge } from "@/components/ui/badge"
 import { Card, CardContent } from "@/components/ui/card"
 import { CheckCircle, ArrowLeft, Calendar, Clock, Users, Building } from "lucide-react"
 
-export default function AIGovernanceCaseStudyPage() {
+export default function AnthillAICaseStudyPage() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
@@ -13,9 +14,9 @@ export default function AIGovernanceCaseStudyPage() {
         <div className="container px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center">
             <Badge className="mb-4 bg-primary hover:bg-primary text-white">Case Study</Badge>
-            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-6">AI Risk & Readiness</h1>
+            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-6">AnthillAI — Unlocking Enterprise Sales with SOC 2 & AI Governance</h1>
             <p className="text-xl text-muted-foreground dark:text-white mb-8">
-              LLM-based product builds ISO/IEC 42001-aligned governance to satisfy top-tier investors
+              AI/HR Tech platform closes deals with SOC 2, HIPAA, and AI governance
             </p>
           </div>
         </div>
@@ -28,31 +29,28 @@ export default function AIGovernanceCaseStudyPage() {
             <div className="lg:col-span-2">
               <h2 className="text-3xl font-bold tracking-tighter mb-6">The Challenge</h2>
               <p className="text-muted-foreground mb-6">
-                SynthAI (name changed for confidentiality) is a fast-growing AI startup providing LLM-powered analytics for enterprise clients. As they prepared for a major funding round and enterprise pilots, investors and customers demanded proof of responsible AI governance and risk controls.
-              </p>
-              <p className="text-muted-foreground mb-6">
-                SynthAI needed to align with the new ISO/IEC 42001 standard for AI governance to:
+                AnthillAI (name changed for confidentiality) is an AI-driven HR tech company embedding GenAI into hiring workflows. As they entered late-stage enterprise sales cycles, buyers required SOC 2 Type II, HIPAA alignment, and demonstrable AI governance policies. AnthillAI had no prior certifications, documentation, or formal risk controls.
               </p>
               <ul className="space-y-3 mb-6">
                 <li className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
-                  <span>Demonstrate responsible AI practices to investors and enterprise buyers</span>
+                  <span>Enterprise buyers required SOC 2, HIPAA, and AI governance for contract approval</span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
-                  <span>Map and mitigate AI risks (bias, explainability, data stewardship)</span>
+                  <span>No prior compliance certifications or formal documentation</span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
-                  <span>Accelerate procurement and due diligence for enterprise pilots</span>
+                  <span>Complex AWS infrastructure and GenAI risk factors</span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
-                  <span>Build a scalable governance framework for future growth</span>
+                  <span>Short timeline to close deals and satisfy investor diligence</span>
                 </li>
               </ul>
               <p className="text-muted-foreground">
-                SynthAI partnered with Complianta to design and implement an ISO/IEC 42001-aligned AI governance program on a tight timeline.
+                AnthillAI partnered with Complianta to build a compliance and AI governance program from the ground up, fast.
               </p>
             </div>
             <div>
@@ -64,28 +62,28 @@ export default function AIGovernanceCaseStudyPage() {
                       <Building className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
                       <div>
                         <p className="font-medium">Industry</p>
-                        <p className="text-muted-foreground">AI / SaaS</p>
+                        <p className="text-muted-foreground">AI / HR Tech</p>
                       </div>
                     </div>
                     <div className="flex items-start">
                       <Users className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
                       <div>
                         <p className="font-medium">Company Size</p>
-                        <p className="text-muted-foreground">30 employees</p>
+                        <p className="text-muted-foreground">60 employees</p>
                       </div>
                     </div>
                     <div className="flex items-start">
                       <Calendar className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
                       <div>
                         <p className="font-medium">Project Timeline</p>
-                        <p className="text-muted-foreground">6 weeks</p>
+                        <p className="text-muted-foreground">6 months</p>
                       </div>
                     </div>
                     <div className="flex items-start">
                       <Clock className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
                       <div>
-                        <p className="font-medium">Governance Achieved</p>
-                        <p className="text-muted-foreground">ISO/IEC 42001 Alignment</p>
+                        <p className="font-medium">Compliance Achieved</p>
+                        <p className="text-muted-foreground">SOC 2 Type II, HIPAA, AI Governance</p>
                       </div>
                     </div>
                   </div>
@@ -104,27 +102,27 @@ export default function AIGovernanceCaseStudyPage() {
             {[
               {
                 step: "1",
-                title: "AI Risk Mapping & Use Case Classification",
+                title: "SOC 2 & HIPAA Gap Assessment",
                 description:
-                  "We mapped all LLM use cases, identified risk categories, and prioritized controls for bias, explainability, and data stewardship.",
+                  "We performed a full gap analysis of AnthillAI's AWS stack and internal controls, mapping requirements for SOC 2, HIPAA, and AI governance.",
               },
               {
                 step: "2",
-                title: "Governance Charter & Oversight Board",
+                title: "Remediation & Documentation",
                 description:
-                  "We established an AI governance charter and set up an internal oversight board with clear roles and responsibilities.",
+                  "We created foundational security documentation, configured control ownership workflows, and established audit evidence processes.",
               },
               {
                 step: "3",
-                title: "Policy & Control Implementation",
+                title: "AI Governance Layer",
                 description:
-                  "We developed and rolled out policies for responsible AI, model lifecycle management, and incident response.",
+                  "We launched an AI governance program aligned with ISO/IEC 42001, including bias review, ethical oversight, and explainability standards.",
               },
               {
                 step: "4",
-                title: "Stakeholder Training & Trust Page",
+                title: "Audit & Buyer Readiness",
                 description:
-                  "We trained engineering and product teams, and published a Responsible AI Trust page for external stakeholders.",
+                  "We coached AnthillAI through audit prep, evidence walkthroughs, and enterprise buyer security reviews.",
               },
             ].map((phase, i) => (
               <Card key={i} className="relative overflow-hidden border-none shadow-md">
@@ -148,24 +146,24 @@ export default function AIGovernanceCaseStudyPage() {
           <div className="space-y-8">
             {[
               {
-                challenge: "AI Bias & Explainability",
+                challenge: "No Prior Certifications",
                 solution:
-                  "We implemented bias monitoring protocols and explainability controls for all production LLMs, with regular reviews by the oversight board.",
+                  "We built all required policies, controls, and documentation from scratch, tailored to AnthillAI's business and technology.",
               },
               {
-                challenge: "Stakeholder Trust & Transparency",
+                challenge: "GenAI Risk & Buyer Demands",
                 solution:
-                  "We published a Responsible AI Trust page and provided detailed documentation to investors and enterprise clients.",
+                  "We implemented AI governance controls, bias monitoring, and transparency protocols to satisfy enterprise buyers and regulators.",
               },
               {
-                challenge: "Model Lifecycle Management",
+                challenge: "AWS Security Complexity",
                 solution:
-                  "We established policies for model versioning, audit trails, and incident response for AI-driven features.",
+                  "We remediated cloud misconfigurations, implemented IAM best practices, and automated evidence collection.",
               },
               {
-                challenge: "Rapid Timeline",
+                challenge: "Tight Sales Timeline",
                 solution:
-                  "We delivered the full governance program in just 6 weeks, enabling SynthAI to meet investor and client deadlines.",
+                  "We ran a parallel track for audit readiness and buyer security reviews, ensuring no deal momentum was lost.",
               },
             ].map((item, i) => (
               <Card key={i} className="overflow-hidden">
@@ -192,15 +190,15 @@ export default function AIGovernanceCaseStudyPage() {
             <div>
               <h2 className="text-3xl font-bold tracking-tighter mb-6">Results</h2>
               <p className="text-muted-foreground mb-6">
-                SynthAI achieved ISO/IEC 42001 alignment in just 6 weeks, unlocking enterprise pilots and satisfying investor due diligence. Key outcomes included:
+                AnthillAI achieved SOC 2 Type II, HIPAA alignment, and ISO/IEC 42001 AI governance, unlocking enterprise deals and passing investor due diligence. Key outcomes included:
               </p>
               <div className="space-y-4">
                 <div className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
                   <div>
-                    <h3 className="font-semibold">Secured 2 Enterprise Pilots</h3>
+                    <h3 className="font-semibold">Closed Enterprise Deals</h3>
                     <p className="text-sm text-muted-foreground">
-                      SynthAI was selected for two enterprise pilots after demonstrating responsible AI governance and risk controls.
+                      AnthillAI closed multiple enterprise deals after demonstrating compliance and AI governance.
                     </p>
                   </div>
                 </div>
@@ -209,25 +207,25 @@ export default function AIGovernanceCaseStudyPage() {
                   <div>
                     <h3 className="font-semibold">Passed Investor Due Diligence</h3>
                     <p className="text-sm text-muted-foreground">
-                      The governance program satisfied all investor requirements for responsible AI, enabling a successful funding round.
+                      The program satisfied all investor requirements for security, privacy, and responsible AI.
                     </p>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
                   <div>
-                    <h3 className="font-semibold">Published Responsible AI Trust Page</h3>
+                    <h3 className="font-semibold">Built Scalable Compliance Foundation</h3>
                     <p className="text-sm text-muted-foreground">
-                      SynthAI's public trust page became a key differentiator in sales and partnership conversations.
+                      The controls and documentation set the stage for future certifications and growth.
                     </p>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
                   <div>
-                    <h3 className="font-semibold">Built Scalable Governance Foundation</h3>
+                    <h3 className="font-semibold">Enabled Responsible AI Practices</h3>
                     <p className="text-sm text-muted-foreground">
-                      The ISO/IEC 42001-aligned framework set the stage for future compliance and responsible AI growth.
+                      AnthillAI became a reference customer for responsible AI, helping win new business.
                     </p>
                   </div>
                 </div>
@@ -246,14 +244,14 @@ export default function AIGovernanceCaseStudyPage() {
               <div className="text-4xl text-primary absolute -top-8 -left-8">"</div>
               <div className="text-4xl text-primary absolute -bottom-8 -right-8">"</div>
               <blockquote className="text-xl italic text-center px-8 py-4">
-                Complianta's expertise in AI governance was a game-changer. They helped us operationalize responsible AI in a way that made sense for our team and our clients. The process was fast, practical, and delivered real business value.
+                Complianta's team delivered clarity and speed. We went from zero policy to enterprise-ready in record time, and their AI governance expertise was a true differentiator.
               </blockquote>
             </div>
             <div className="flex items-center justify-center mt-8">
-              <Image src="/cto-portrait.png" alt="Jordan Lee" width={60} height={60} className="rounded-full mr-4" />
+              <Image src="/cto-portrait.png" alt="Taylor Smith" width={60} height={60} className="rounded-full mr-4" />
               <div>
-                <p className="font-semibold">Jordan Lee</p>
-                <p className="text-sm text-muted-foreground">CTO, SynthAI</p>
+                <p className="font-semibold">Taylor Smith</p>
+                <p className="text-sm text-muted-foreground">CTO, AnthillAI</p>
               </div>
             </div>
           </div>
@@ -264,9 +262,9 @@ export default function AIGovernanceCaseStudyPage() {
       <section className="py-16 md:py-24 bg-muted">
         <div className="container px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl font-bold tracking-tighter mb-6">Ready to build trust with responsible AI?</h2>
+            <h2 className="text-3xl font-bold tracking-tighter mb-6">Ready to unlock enterprise sales with compliance?</h2>
             <p className="text-muted-foreground mb-8">
-              Contact us today to discuss how we can help your organization implement AI governance and unlock new opportunities.
+              Contact us today to discuss how we can help your organization achieve compliance and win more deals.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <Button size="lg" asChild>
@@ -278,10 +276,10 @@ export default function AIGovernanceCaseStudyPage() {
                   Schedule a Consultation
                 </a>
               </Button>
-              <Button variant="outline" size="lg" asChild>
-                <Link href="/case-studies">
+              <Button variant="outline" asChild>
+                <Link href="/resources">
                   <ArrowLeft className="mr-2 h-4 w-4" />
-                  Back to Case Studies
+                  Back to Resources & Blogs
                 </Link>
               </Button>
             </div>

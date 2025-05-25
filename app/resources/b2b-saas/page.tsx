@@ -5,7 +5,7 @@ import { Badge } from "@/components/ui/badge"
 import { Card, CardContent } from "@/components/ui/card"
 import { CheckCircle, ArrowLeft, Calendar, Clock, Users, Building } from "lucide-react"
 
-export default function HealthTechCaseStudyPage() {
+export default function B2BSaaSCaseStudyPage() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
@@ -13,9 +13,9 @@ export default function HealthTechCaseStudyPage() {
         <div className="container px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center">
             <Badge className="mb-4 bg-primary hover:bg-primary text-white">Case Study</Badge>
-            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-6">HealthTech Startup Achieves HIPAA Compliance</h1>
+            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-6">B2B SaaS Fast-Tracks SOC 2 Certification</h1>
             <p className="text-xl text-muted-foreground dark:text-white mb-8">
-              Healthcare SaaS secures PHI and passes hospital audit with cloud hardening
+              Workflow automation platform secures enterprise deals with SOC 2 Type I in under 10 weeks
             </p>
           </div>
         </div>
@@ -28,28 +28,28 @@ export default function HealthTechCaseStudyPage() {
             <div className="lg:col-span-2">
               <h2 className="text-3xl font-bold tracking-tighter mb-6">The Challenge</h2>
               <p className="text-muted-foreground mb-6">
-                Medix (name changed for confidentiality) is a healthcare SaaS startup handling protected health information (PHI) for hospitals. Before onboarding a major hospital network, they needed to meet HIPAA requirements but lacked internal documentation, formal policies, and infrastructure safeguards.
+                FlowTech (name changed for confidentiality) is a B2B workflow automation platform preparing for a major enterprise partnership. They needed to pass SOC 2 Type I in less than 3 months to meet their client's security requirements, but lacked formal controls and documentation.
               </p>
               <ul className="space-y-3 mb-6">
                 <li className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
-                  <span>Hospital client required HIPAA compliance and security audit</span>
+                  <span>Enterprise client required SOC 2 Type I certification</span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
-                  <span>No formal policies or PHI-handling documentation</span>
+                  <span>No formal security controls or documentation</span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
-                  <span>Cloud infrastructure lacked encryption and access controls</span>
+                  <span>Limited internal security expertise</span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
-                  <span>Short timeline to pass audit and go live</span>
+                  <span>Aggressive timeline for certification</span>
                 </li>
               </ul>
               <p className="text-muted-foreground">
-                Medix partnered with Complianta to implement HIPAA controls, harden their cloud, and prepare for a successful hospital audit.
+                FlowTech partnered with Complianta to implement SOC 2 controls, establish security practices, and achieve certification within their tight timeline.
               </p>
             </div>
             <div>
@@ -61,28 +61,28 @@ export default function HealthTechCaseStudyPage() {
                       <Building className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
                       <div>
                         <p className="font-medium">Industry</p>
-                        <p className="text-muted-foreground">Healthcare SaaS</p>
+                        <p className="text-muted-foreground">B2B SaaS / Workflow Automation</p>
                       </div>
                     </div>
                     <div className="flex items-start">
                       <Users className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
                       <div>
                         <p className="font-medium">Company Size</p>
-                        <p className="text-muted-foreground">70 employees</p>
+                        <p className="text-muted-foreground">40 employees</p>
                       </div>
                     </div>
                     <div className="flex items-start">
                       <Calendar className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
                       <div>
                         <p className="font-medium">Project Timeline</p>
-                        <p className="text-muted-foreground">12 weeks</p>
+                        <p className="text-muted-foreground">10 weeks</p>
                       </div>
                     </div>
                     <div className="flex items-start">
                       <Clock className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
                       <div>
                         <p className="font-medium">Compliance Achieved</p>
-                        <p className="text-muted-foreground">HIPAA</p>
+                        <p className="text-muted-foreground">SOC 2 Type I</p>
                       </div>
                     </div>
                   </div>
@@ -101,27 +101,27 @@ export default function HealthTechCaseStudyPage() {
             {[
               {
                 step: "1",
-                title: "Cloud Security & PHI Gap Assessment",
+                title: "Rapid Gap Assessment",
                 description:
-                  "We performed a full assessment of Medix's cloud stack, identifying gaps in encryption, access controls, and PHI handling.",
+                  "We performed a comprehensive assessment of FlowTech's security posture, identifying gaps in controls and documentation.",
               },
               {
                 step: "2",
-                title: "Policy & Control Implementation",
+                title: "Control Implementation",
                 description:
-                  "We developed HIPAA-compliant policies, implemented encryption, and configured IAM and audit logging.",
+                  "We implemented standardized security policies, configured monitoring tools, and established control ownership.",
               },
               {
                 step: "3",
-                title: "Incident Response & Training",
+                title: "Team Training & Documentation",
                 description:
-                  "We trained staff on breach response, incident triage, and PHI best practices.",
+                  "We trained control owners, created evidence workflows, and developed comprehensive documentation.",
               },
               {
                 step: "4",
-                title: "Audit Prep & Evidence",
+                title: "Audit Readiness & Support",
                 description:
-                  "We prepared Medix for the hospital audit, organized evidence, and supported Q&A with the client.",
+                  "We prepared FlowTech for the audit, coordinated with the auditor, and supported throughout the process.",
               },
             ].map((phase, i) => (
               <Card key={i} className="relative overflow-hidden border-none shadow-md">
@@ -145,24 +145,24 @@ export default function HealthTechCaseStudyPage() {
           <div className="space-y-8">
             {[
               {
-                challenge: "No PHI Policies or Documentation",
+                challenge: "Limited Security Documentation",
                 solution:
-                  "We built all required HIPAA policies and PHI-handling documentation from scratch, tailored to Medix's workflows.",
+                  "We developed a complete set of SOC 2 policies and procedures, tailored to FlowTech's operations and technology stack.",
               },
               {
-                challenge: "Cloud Security Gaps",
+                challenge: "Control Implementation",
                 solution:
-                  "We implemented encryption, IAM best practices, and audit logging to secure PHI in the cloud.",
+                  "We implemented automated monitoring, access controls, and security tools aligned with SOC 2 requirements.",
               },
               {
-                challenge: "Staff Training & Incident Response",
+                challenge: "Team Readiness",
                 solution:
-                  "We trained staff on breach response, incident triage, and PHI best practices to ensure audit readiness.",
+                  "We trained control owners and established clear ownership and evidence collection processes.",
               },
               {
-                challenge: "Tight Audit Timeline",
+                challenge: "Timeline Pressure",
                 solution:
-                  "We ran a parallel track for policy implementation and audit evidence collection to meet the hospital's deadline.",
+                  "We ran parallel tracks for implementation and documentation, with weekly progress reviews and adjustments.",
               },
             ].map((item, i) => (
               <Card key={i} className="overflow-hidden">
@@ -189,42 +189,42 @@ export default function HealthTechCaseStudyPage() {
             <div>
               <h2 className="text-3xl font-bold tracking-tighter mb-6">Results</h2>
               <p className="text-muted-foreground mb-6">
-                Medix achieved HIPAA compliance and passed the hospital audit, enabling PHI-handling features to go live. Key outcomes included:
+                FlowTech achieved SOC 2 Type I certification in under 10 weeks, enabling them to secure enterprise partnerships. Key outcomes included:
               </p>
               <div className="space-y-4">
                 <div className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
                   <div>
-                    <h3 className="font-semibold">Passed Hospital Audit</h3>
+                    <h3 className="font-semibold">SOC 2 Type I Certification</h3>
                     <p className="text-sm text-muted-foreground">
-                      Medix passed the hospital's security audit and was approved to handle PHI for a major client.
+                      Achieved certification in under 10 weeks, meeting the enterprise client's requirements.
                     </p>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
                   <div>
-                    <h3 className="font-semibold">Reduced Risk Score by 42%</h3>
+                    <h3 className="font-semibold">Enterprise Client Approval</h3>
                     <p className="text-sm text-muted-foreground">
-                      The compliance process identified and remediated vulnerabilities, reducing Medix's risk score by 42%.
+                      Successfully onboarded two Fortune 100 clients following certification.
                     </p>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
                   <div>
-                    <h3 className="font-semibold">Enabled PHI Features</h3>
+                    <h3 className="font-semibold">Improved Security Posture</h3>
                     <p className="text-sm text-muted-foreground">
-                      PHI-handling features went live within one month of compliance, unlocking new revenue streams.
+                      Established robust security controls and monitoring capabilities.
                     </p>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
                   <div>
-                    <h3 className="font-semibold">Built Scalable Compliance Foundation</h3>
+                    <h3 className="font-semibold">Foundation for Growth</h3>
                     <p className="text-sm text-muted-foreground">
-                      The controls and documentation set the stage for future certifications and growth.
+                      Built a scalable compliance program ready for Type II and future certifications.
                     </p>
                   </div>
                 </div>
@@ -243,14 +243,14 @@ export default function HealthTechCaseStudyPage() {
               <div className="text-4xl text-primary absolute -top-8 -left-8">"</div>
               <div className="text-4xl text-primary absolute -bottom-8 -right-8">"</div>
               <blockquote className="text-xl italic text-center px-8 py-4">
-                Complianta's expertise made HIPAA compliance achievable and practical. We passed our hospital audit and launched new features faster than expected.
+                Complianta delivered SOC 2 Type I in record time. Their structured approach and expertise made the process smooth and efficient.
               </blockquote>
             </div>
             <div className="flex items-center justify-center mt-8">
-              <Image src="/cto-portrait.png" alt="Jamie Patel" width={60} height={60} className="rounded-full mr-4" />
+              <Image src="/cto-portrait.png" alt="Alex Chen" width={60} height={60} className="rounded-full mr-4" />
               <div>
-                <p className="font-semibold">Jamie Patel</p>
-                <p className="text-sm text-muted-foreground">CTO, Medix</p>
+                <p className="font-semibold">Alex Chen</p>
+                <p className="text-sm text-muted-foreground">CTO, FlowTech</p>
               </div>
             </div>
           </div>
@@ -261,9 +261,9 @@ export default function HealthTechCaseStudyPage() {
       <section className="py-16 md:py-24 bg-muted">
         <div className="container px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl font-bold tracking-tighter mb-6">Ready to achieve HIPAA compliance and unlock new clients?</h2>
+            <h2 className="text-3xl font-bold tracking-tighter mb-6">Ready to accelerate your SOC 2 journey?</h2>
             <p className="text-muted-foreground mb-8">
-              Contact us today to discuss how we can help your organization secure PHI and pass your next audit.
+              Contact us today to discuss how we can help you achieve SOC 2 certification and unlock enterprise opportunities.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <Button size="lg" asChild>
@@ -276,9 +276,9 @@ export default function HealthTechCaseStudyPage() {
                 </a>
               </Button>
               <Button variant="outline" size="lg" asChild>
-                <Link href="/case-studies">
+                <Link href="/resources">
                   <ArrowLeft className="mr-2 h-4 w-4" />
-                  Back to Case Studies
+                  Back to Resources & Blogs
                 </Link>
               </Button>
             </div>

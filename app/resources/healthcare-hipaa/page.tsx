@@ -104,9 +104,9 @@ export default function HealthcareCaseStudyPage() {
         <div className="container px-4 md:px-6">
           <div className="flex justify-between">
             <Button variant="outline" asChild>
-              <Link href="/case-studies">
+              <Link href="/resources">
                 <ArrowLeft className="mr-2 h-4 w-4" />
-                Back to Case Studies
+                Back to Resources & Blogs
               </Link>
             </Button>
             <Button variant="outline" asChild>
