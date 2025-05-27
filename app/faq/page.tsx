@@ -121,7 +121,7 @@ export default function FAQPage() {
     <div className="flex flex-col min-h-screen bg-[#f7fafd]">
       <section className="py-12 md:py-20">
         <div className="container px-4 md:px-6">
-          <h1 className="text-4xl font-bold text-center mb-8 text-[#1a2a3a]">Complianta</h1>
+          <h1 className="text-4xl font-bold text-center mb-8 text-[#1a2a3a]">Compliantas</h1>
           <div className="flex justify-center mb-8">
             <div className="flex gap-2 bg-[#e3eaf3] rounded-lg p-1">
               {FAQ_CATEGORIES.map((cat) => (

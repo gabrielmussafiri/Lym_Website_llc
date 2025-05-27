@@ -11,7 +11,7 @@ import CrispChat from "@/components/crisp-chat"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Complianta | Security & Compliance Consultancy",
+  title: "Compliantas | Security & Compliance Consultancy",
   description: "Helping startups achieve industry standards like SOC 2, ISO 27001, and HIPAA compliance.",
     generator: 'lygmgroup.co.za'
 }

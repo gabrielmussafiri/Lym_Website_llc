@@ -12,7 +12,7 @@ export default function Footer() {
             {/* <div className="h-10 w-10 rounded-full bg-primary flex items-center justify-center">
               <span className="text-primary-foreground font-bold text-lg">VC</span>
             </div> */}
-            <span className="ml-3 text-xl font-bold">Complianta</span>
+            <span className="ml-3 text-xl font-bold">Compliantas</span>
           </div>
           <p className="text-sm text-muted-foreground max-w-md">
           Boutique consultancy helping startups and growth-stage companies simplify compliance and scale securely.
@@ -102,7 +102,7 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl border-t border-border px-6 py-6 md:flex md:items-center md:justify-between lg:px-8">
         <div className="mt-8 md:mt-0 md:order-1">
           <p className="text-xs text-muted-foreground">
-            &copy; {new Date().getFullYear()} Complianta. All rights reserved.
+            &copy; {new Date().getFullYear()} Compliantas. All rights reserved.
           </p>
         </div>
         <div className="flex space-x-6 md:order-2">

@@ -59,7 +59,7 @@ export default function ArticleAIStartupsEnterpriseTrust() {
           <div className="my-8 border-t border-border" />
           <h3 className="text-xl font-semibold mb-4">One Startup's Journey: Governance in 8 Weeks</h3>
           <p className="mb-6">
-            Faced with investor reviews and upcoming enterprise pilots, a lean AI/NLP startup turned to Complianta for support. They had 25 employees, ambitious growth plans, and a tight timeline. What they needed was a governance foundation strong enough to unlock new partnerships—without slowing momentum.
+            Faced with investor reviews and upcoming enterprise pilots, a lean AI/NLP startup turned to Compliantas for support. They had 25 employees, ambitious growth plans, and a tight timeline. What they needed was a governance foundation strong enough to unlock new partnerships—without slowing momentum.
           </p>
           <p className="mb-6">Over eight weeks, here's what we helped them put in place:</p>
           <ol className="list-decimal list-inside space-y-4 mb-8">
@@ -103,7 +103,7 @@ export default function ArticleAIStartupsEnterpriseTrust() {
             If your team is building with AI and wondering what responsible governance could look like in practice, we'd be happy to walk you through it.
           </p>
           <p className="mb-6">
-            Let's explore how Complianta can help you turn responsible AI into a growth advantage.
+            Let's explore how Compliantas can help you turn responsible AI into a growth advantage.
           </p>
           <div className="mt-12">
             <Link href="/resources" className="text-primary hover:underline">← Back to Resources & Blogs</Link>

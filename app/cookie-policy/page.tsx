@@ -5,7 +5,7 @@ export default function CookiePolicyPage() {
     <div className="flex flex-col min-h-screen bg-background">
       <section className="py-20 md:py-28 bg-gradient-to-br from-primary/10 to-background">
         <div className="container px-4 md:px-6 max-w-2xl mx-auto text-center">
-          <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-4">Complianta — Cookie Policy</h1>
+          <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-4">Compliantas — Cookie Policy</h1>
           <p className="text-muted-foreground mb-2">Effective Date: 05/15/2025</p>
           <p className="text-lg text-muted-foreground mb-6">This Cookie Policy explains how we use cookies and similar technologies on our website.</p>
         </div>
@@ -39,7 +39,7 @@ export default function CookiePolicyPage() {
             </div>
             <div>
               <h2 className="text-xl font-semibold mb-2">Contact</h2>
-              <p>For more information about our data and security practices, contact us at: <a href="mailto:info@complianta.com" className="text-foreground underline hover:text-primary">info@complianta.com</a></p>
+              <p>For more information about our data and security practices, contact us at: <a href="mailto:info@compliantas.com" className="text-foreground underline hover:text-primary">info@compliantas.com</a></p>
             </div>
           </div>
         </div>

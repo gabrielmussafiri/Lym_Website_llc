@@ -52,7 +52,7 @@ export default function AIGovernanceCaseStudyPage() {
                 </li>
               </ul>
               <p className="text-muted-foreground">
-                SynthAI partnered with Complianta to design and implement an ISO/IEC 42001-aligned AI governance program on a tight timeline.
+                SynthAI partnered with Compliantas to design and implement an ISO/IEC 42001-aligned AI governance program on a tight timeline.
               </p>
             </div>
             <div>
@@ -246,7 +246,7 @@ export default function AIGovernanceCaseStudyPage() {
               <div className="text-4xl text-primary absolute -top-8 -left-8">"</div>
               <div className="text-4xl text-primary absolute -bottom-8 -right-8">"</div>
               <blockquote className="text-xl italic text-center px-8 py-4">
-                Complianta's expertise in AI governance was a game-changer. They helped us operationalize responsible AI in a way that made sense for our team and our clients. The process was fast, practical, and delivered real business value.
+                Compliantas's expertise in AI governance was a game-changer. They helped us operationalize responsible AI in a way that made sense for our team and our clients. The process was fast, practical, and delivered real value.
               </blockquote>
             </div>
             <div className="flex items-center justify-center mt-8">

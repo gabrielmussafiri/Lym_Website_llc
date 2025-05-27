@@ -5,9 +5,9 @@ export default function TermsOfServicePage() {
     <div className="flex flex-col min-h-screen bg-background">
       <section className="py-20 md:py-28 bg-gradient-to-br from-primary/10 to-background">
         <div className="container px-4 md:px-6 max-w-2xl mx-auto text-center">
-          <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-4">Complianta Master Subscription Agreement (MSA)</h1>
+          <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-4">Compliantas Master Subscription Agreement (MSA)</h1>
           <p className="text-muted-foreground mb-2">Effective Date: May 17, 2025</p>
-          <p className="text-lg text-muted-foreground mb-6">This Master Subscription Agreement ("MSA") is entered into by and between Complianta LLC, a Texas limited liability company with a place of business at 12436 FM 1960 Rd W Unit #1621 Houston, TX 77065 ("Complianta"), and the entity or individual (i) executing an order form for Complianta's services that references this MSA, (ii) accepting an order form through a cloud marketplace offer, or (iii) registering to use trial services, each agreeing to be bound by this MSA ("Customer"). Each of Complianta and Customer is a "Party" and collectively, the "Parties."</p>
+          <p className="text-lg text-muted-foreground mb-6">This Master Subscription Agreement ("MSA") is entered into by and between Compliantas LLC, a Texas limited liability company with a place of business at 12436 FM 1960 Rd W Unit #1621 Houston, TX 77065 ("Compliantas"), and the entity or individual (i) executing an order form for Compliantas's services that references this MSA, (ii) accepting an order form through a cloud marketplace offer, or (iii) registering to use trial services, each agreeing to be bound by this MSA ("Customer"). Each of Compliantas and Customer is a "Party" and collectively, the "Parties."</p>
         </div>
       </section>
       <section className="py-12 md:py-16">
@@ -18,11 +18,11 @@ export default function TermsOfServicePage() {
               <div className="space-y-4">
                 <div>
                   <h3 className="font-medium">1.1 Services</h3>
-                  <p>Complianta will provide services listed in the applicable Order Form, including compliance packages, cloud security reviews, vCISO advisory, and AI governance consulting. Services are provided for the term specified in the Order Form.</p>
+                  <p>Compliantas will provide services listed in the applicable Order Form, including compliance packages, cloud security reviews, vCISO advisory, and AI governance consulting. Services are provided for the term specified in the Order Form.</p>
                 </div>
                 <div>
                   <h3 className="font-medium">1.2 Support</h3>
-                  <p>Complianta offers commercially reasonable support during the subscription period, including email-based and scheduled advisory sessions.</p>
+                  <p>Compliantas offers commercially reasonable support during the subscription period, including email-based and scheduled advisory sessions.</p>
                 </div>
               </div>
             </div>
@@ -36,7 +36,7 @@ export default function TermsOfServicePage() {
                 </div>
                 <div>
                   <h3 className="font-medium">2.2 Taxes</h3>
-                  <p>Fees are exclusive of applicable taxes. Customer is responsible for taxes related to the purchase of services, excluding Complianta's income taxes.</p>
+                  <p>Fees are exclusive of applicable taxes. Customer is responsible for taxes related to the purchase of services, excluding Compliantas's income taxes.</p>
                 </div>
                 <div>
                   <h3 className="font-medium">2.3 Trial Services and Promotions</h3>
@@ -68,15 +68,15 @@ export default function TermsOfServicePage() {
               <div className="space-y-4">
                 <div>
                   <h3 className="font-medium">4.1 Ownership</h3>
-                  <p>Complianta retains ownership of its service methodologies, tools, templates, and intellectual property. Customer retains ownership of all submitted data.</p>
+                  <p>Compliantas retains ownership of its service methodologies, tools, templates, and intellectual property. Customer retains ownership of all submitted data.</p>
                 </div>
                 <div>
                   <h3 className="font-medium">4.2 Feedback</h3>
-                  <p>Customer may provide feedback, which Complianta may use to improve services.</p>
+                  <p>Customer may provide feedback, which Compliantas may use to improve services.</p>
                 </div>
                 <div>
                   <h3 className="font-medium">4.3 License</h3>
-                  <p>Complianta grants Customer a non-transferable, non-exclusive license to access services for internal use only.</p>
+                  <p>Compliantas grants Customer a non-transferable, non-exclusive license to access services for internal use only.</p>
                 </div>
               </div>
             </div>
@@ -88,7 +88,7 @@ export default function TermsOfServicePage() {
 
             <div>
               <h2 className="text-xl font-semibold mb-2">Section 6. Data Protection and Security</h2>
-              <p>Complianta will implement industry-standard technical and administrative safeguards to protect customer data and comply with applicable U.S. data protection laws.</p>
+              <p>Compliantas will implement industry-standard technical and administrative safeguards to protect customer data and comply with applicable U.S. data protection laws.</p>
             </div>
 
             <div>
@@ -100,7 +100,7 @@ export default function TermsOfServicePage() {
                 </div>
                 <div>
                   <h3 className="font-medium">7.2 Disclaimer</h3>
-                  <p>Services are provided "as-is." Complianta disclaims all warranties, express or implied, including merchantability and fitness for a particular purpose.</p>
+                  <p>Services are provided "as-is." Compliantas disclaims all warranties, express or implied, including merchantability and fitness for a particular purpose.</p>
                 </div>
               </div>
             </div>
@@ -114,7 +114,7 @@ export default function TermsOfServicePage() {
                 </div>
                 <div>
                   <h3 className="font-medium">8.2 Cap on Liability</h3>
-                  <p>Liability is capped at the total fees paid by Customer to Complianta in the 12 months preceding the claim.</p>
+                  <p>Liability is capped at the total fees paid by Customer to Compliantas in the 12 months preceding the claim.</p>
                 </div>
               </div>
             </div>
@@ -153,11 +153,11 @@ export default function TermsOfServicePage() {
             <div>
               <h2 className="text-xl font-semibold mb-2">Contact Information</h2>
               <p>
-                Complianta LLC<br />
+                Compliantas LLC<br />
                 12436 FM 1960 Rd W<br />
                 Unit #1621<br />
                 Houston, TX 77065<br />
-                Email: <a href="mailto:legal@complianta.com" className="text-foreground underline hover:text-primary">legal@complianta.com</a><br />
+                Email: <a href="mailto:legal@compliantas.com" className="text-foreground underline hover:text-primary">legal@compliantas.com</a><br />
                 Phone: +1 (972) 399-9143
               </p>
             </div>

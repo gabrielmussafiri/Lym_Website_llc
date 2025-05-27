@@ -18,7 +18,7 @@ export default function AboutPage() {
       <section className="py-20 md:py-28 bg-gradient-to-br from-primary/10 to-background">
         <div className="container px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-4">About Complianta</h1>
+            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-4">About Compliantas</h1>
             <p className="mt-4 text-muted-foreground dark:text-white md:text-xl">
               Security & Compliance for What's Next
             </p>
@@ -31,7 +31,7 @@ export default function AboutPage() {
         <div className="container px-4 md:px-6">
           <div className="max-w-3xl mx-auto">
             <p className="text-lg text-foreground mb-8">
-              Complianta is a boutique consultancy built to support the most ambitious companies of the AI era — helping cloud-native, fast-moving, and future-focused organizations meet security and compliance standards with precision and speed.
+              Compliantas is a boutique consultancy built to support the most ambitious companies of the AI era — helping cloud-native, fast-moving, and future-focused organizations meet security and compliance standards with precision and speed.
             </p>
             <p className="text-lg text-foreground mb-8">
               We partner with startups, scaling SaaS platforms, and government-focused tech firms to operationalize trust through frameworks like:
@@ -66,13 +66,13 @@ export default function AboutPage() {
                 Our Story
               </h2>
               <p className="text-foreground mb-4">
-                Founded by security engineer and compliance advisor Yannick Massivi, Complianta emerged from a clear gap in the industry: fast-growing companies were being held back by legacy compliance models that added friction instead of clarity.
+                Founded by security engineer and compliance advisor Yannick Massivi, Compliantas emerged from a clear gap in the industry: fast-growing companies were being held back by legacy compliance models that added friction instead of clarity.
               </p>
               <p className="text-foreground mb-4">
-                After years leading audit readiness efforts for startups and enterprise environments alike, Yannick launched Complianta to bring elite, enterprise-tested methodology to leaner, faster-moving organizations.
+                After years leading audit readiness efforts for startups and enterprise environments alike, Yannick launched Compliantas to bring elite, enterprise-tested methodology to leaner, faster-moving organizations.
               </p>
               <p className="text-foreground mb-6">
-                Today, Complianta is designed from the ground up to serve modern companies with:
+                Today, Compliantas is designed from the ground up to serve modern companies with:
               </p>
               <div className="space-y-3">
                 {[
@@ -229,7 +229,7 @@ export default function AboutPage() {
         <div className="container px-4 md:px-6">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
-              Why Companies Choose Complianta
+              Why Companies Choose Compliantas
             </h2>
           </div>
 
