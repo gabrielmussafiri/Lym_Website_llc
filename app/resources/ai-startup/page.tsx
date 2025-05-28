@@ -50,7 +50,7 @@ export default function AIStartupCaseStudyPage() {
                 </li>
               </ul>
               <p className="text-muted-foreground">
-                LexiAI partnered with Compliantas to design and implement an ISO/IEC 42001-aligned AI governance program on a tight timeline.
+                LexiAI partnered with Complianta to design and implement an ISO/IEC 42001-aligned AI governance program on a tight timeline.
               </p>
             </div>
             <div>
@@ -244,7 +244,7 @@ export default function AIStartupCaseStudyPage() {
               <div className="text-4xl text-primary absolute -top-8 -left-8">"</div>
               <div className="text-4xl text-primary absolute -bottom-8 -right-8">"</div>
               <blockquote className="text-xl italic text-center px-8 py-4">
-                Compliantas's team made AI governance practical and actionable. We were able to win enterprise pilots and satisfy investors with confidence.
+                Complianta's team made AI governance practical and actionable. We were able to win enterprise pilots and satisfy investors with confidence.
               </blockquote>
             </div>
             <div className="flex items-center justify-center mt-8">

@@ -33,10 +33,10 @@ export default function Header() {
       >
         <div className="flex lg:flex-1">
           <Link href="/" className="-m-1.5 p-1.5">
-            <span className="sr-only">Compliantas</span>
+            <span className="sr-only">Complianta</span>
             <div className="flex items-center">
               <span className="ml-0 text-4xl md:text-5xl font-extrabold tracking-tight text-sidebar-primary dark:text-white" style={{letterSpacing: '-0.03em'}}>
-                Compliantas
+                Complianta
               </span>
             </div>
           </Link>
@@ -56,12 +56,12 @@ export default function Header() {
                   className="-m-1.5 p-1.5"
                   onClick={() => setMobileMenuOpen(false)}
                 >
-                  <span className="sr-only">Compliantas</span>
+                  <span className="sr-only">Complianta</span>
                   <div className="flex items-center">
                     <div className="h-10 w-10 rounded-full bg-primary flex items-center justify-center">
                       
                     </div>
-                    <span className="ml-3 text-2xl font-bold">Compliantas</span>
+                    <span className="ml-3 text-2xl font-bold">Complianta</span>
                   </div>
                 </Link>
                 <Button

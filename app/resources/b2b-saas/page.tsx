@@ -49,7 +49,7 @@ export default function B2BSaaSCaseStudyPage() {
                 </li>
               </ul>
               <p className="text-muted-foreground">
-                FlowTech partnered with Compliantas to implement SOC 2 controls, establish security practices, and achieve certification within their tight timeline.
+                FlowTech partnered with Complianta to implement SOC 2 controls, establish security practices, and achieve certification within their tight timeline.
               </p>
             </div>
             <div>
@@ -243,7 +243,7 @@ export default function B2BSaaSCaseStudyPage() {
               <div className="text-4xl text-primary absolute -top-8 -left-8">"</div>
               <div className="text-4xl text-primary absolute -bottom-8 -right-8">"</div>
               <blockquote className="text-xl italic text-center px-8 py-4">
-                Compliantas delivered SOC 2 Type I in record time. Their structured approach and expertise made the process smooth and efficient.
+                Complianta delivered SOC 2 Type I in record time. Their structured approach and expertise made the process smooth and efficient.
               </blockquote>
             </div>
             <div className="flex items-center justify-center mt-8">

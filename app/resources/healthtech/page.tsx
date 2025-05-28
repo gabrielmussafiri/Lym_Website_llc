@@ -49,7 +49,7 @@ export default function HealthTechCaseStudyPage() {
                 </li>
               </ul>
               <p className="text-muted-foreground">
-                Medix partnered with Compliantas to implement HIPAA controls, harden their cloud, and prepare for a successful hospital audit.
+                Medix partnered with Complianta to implement HIPAA controls, harden their cloud, and prepare for a successful hospital audit.
               </p>
             </div>
             <div>
@@ -243,7 +243,7 @@ export default function HealthTechCaseStudyPage() {
               <div className="text-4xl text-primary absolute -top-8 -left-8">"</div>
               <div className="text-4xl text-primary absolute -bottom-8 -right-8">"</div>
               <blockquote className="text-xl italic text-center px-8 py-4">
-                Compliantas's expertise made HIPAA compliance achievable and practical. We passed our hospital audit and launched new features faster than expected.
+                Complianta's expertise made HIPAA compliance achievable and practical. We passed our hospital audit and launched new features faster than expected.
               </blockquote>
             </div>
             <div className="flex items-center justify-center mt-8">

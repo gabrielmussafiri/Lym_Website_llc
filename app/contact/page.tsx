@@ -124,7 +124,7 @@ export default function ContactPage() {
                   <Mail className="h-5 w-5 text-primary mt-0.5" />
               <div>
                     <span className="font-medium">Email</span><br />
-                    <a href="mailto:info@compliantas.com" className="text-muted-foreground hover:text-primary">info@compliantas.com</a>
+                    <a href="mailto:info@complianta.com" className="text-muted-foreground hover:text-primary">info@complianta.com</a>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
@@ -138,7 +138,7 @@ export default function ContactPage() {
                   <MapPin className="h-5 w-5 text-primary mt-0.5" />
                     <div>
                     <span className="font-medium">Office</span><br />
-                    Compliantas LLC<br />
+                    Complianta LLC<br />
                     12436 FM 1960 Rd W<br />
                     Unit #1621<br />
                     Houston, TX 77065

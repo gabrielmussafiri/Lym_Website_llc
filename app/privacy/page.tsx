@@ -5,9 +5,9 @@ export default function PrivacyPolicyPage() {
     <div className="flex flex-col min-h-screen bg-background">
       <section className="py-20 md:py-28 bg-gradient-to-br from-primary/10 to-background">
         <div className="container px-4 md:px-6 max-w-2xl mx-auto text-center">
-          <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-4">Compliantas — Privacy Policy</h1>
+          <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-4">Complianta — Privacy Policy</h1>
           <p className="text-muted-foreground mb-2">Effective Date: May 17, 2025</p>
-          <p className="text-lg text-muted-foreground mb-6">This Privacy Policy explains how Compliantas LLC ("Compliantas," "we," or "us") collects, uses, shares, and protects information through our services, websites, applications, and any other interactions you have with us (collectively, the "Services").</p>
+          <p className="text-lg text-muted-foreground mb-6">This Privacy Policy explains how Complianta LLC ("Complianta," "we," or "us") collects, uses, shares, and protects information through our services, websites, applications, and any other interactions you have with us (collectively, the "Services").</p>
         </div>
       </section>
       <section className="py-12 md:py-16">
@@ -17,10 +17,10 @@ export default function PrivacyPolicyPage() {
               <h2 className="text-xl font-semibold mb-2">1. Scope of This Policy</h2>
               <ul className="list-disc list-inside space-y-1">
                 <li>Our Services, including compliance and security offerings</li>
-                <li>Our public website (e.g., www.compliantas.com)</li>
+                <li>Our public website (e.g., www.complianta.com)</li>
                 <li>Communications such as email, support, and marketing</li>
               </ul>
-              <p className="mt-2">It does not apply to third-party services that may integrate with Compliantas. These are governed by their own policies.</p>
+              <p className="mt-2">It does not apply to third-party services that may integrate with Complianta. These are governed by their own policies.</p>
             </div>
             <div>
               <h2 className="text-xl font-semibold mb-2">2. Information We Collect</h2>
@@ -82,11 +82,11 @@ export default function PrivacyPolicyPage() {
                 <li>Request deletion</li>
                 <li>Opt out of marketing communications</li>
               </ul>
-              <p className="mt-2">To exercise these rights, contact us at <a href="mailto:legal@compliantas.com" className="text-foreground underline hover:text-primary">legal@compliantas.com</a>.</p>
+              <p className="mt-2">To exercise these rights, contact us at <a href="mailto:legal@complianta.com" className="text-foreground underline hover:text-primary">legal@complianta.com</a>.</p>
             </div>
             <div>
               <h2 className="text-xl font-semibold mb-2">8. International Data Transfers</h2>
-              <p>Compliantas is based in the U.S. and may transfer data globally. We use Standard Contractual Clauses (SCCs) and other lawful mechanisms to protect data transfers from the EEA, UK, and Switzerland.</p>
+              <p>Complianta is based in the U.S. and may transfer data globally. We use Standard Contractual Clauses (SCCs) and other lawful mechanisms to protect data transfers from the EEA, UK, and Switzerland.</p>
             </div>
             <div>
               <h2 className="text-xl font-semibold mb-2">9. Children's Privacy</h2>
@@ -98,7 +98,7 @@ export default function PrivacyPolicyPage() {
             </div>
             <div>
               <h2 className="text-xl font-semibold mb-2">11. Contact Us</h2>
-              <p>Compliantas LLC<br />[Your Registered Business Address]<br />Email: <a href="mailto:legal@compliantas.com" className="text-foreground underline hover:text-primary">legal@compliantas.com</a></p>
+              <p>Complianta LLC<br />[Your Registered Business Address]<br />Email: <a href="mailto:legal@complianta.com" className="text-foreground underline hover:text-primary">legal@complianta.com</a></p>
               <p>If you have questions or complaints about our privacy practices, we encourage you to contact us directly.</p>
             </div>
             <div>

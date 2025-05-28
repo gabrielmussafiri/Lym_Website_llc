@@ -49,7 +49,7 @@ function GovTechCaseStudyPage() {
                 </li>
               </ul>
               <p className="text-muted-foreground">
-                CivicCloud partnered with Compliantas to build a security program, map controls to NIST, and prepare for agency reviews and FedRAMP engagement.
+                CivicCloud partnered with Complianta to build a security program, map controls to NIST, and prepare for agency reviews and FedRAMP engagement.
               </p>
             </div>
             <div>
@@ -243,7 +243,7 @@ function GovTechCaseStudyPage() {
               <div className="text-4xl text-primary absolute -top-8 -left-8">"</div>
               <div className="text-4xl text-primary absolute -bottom-8 -right-8">"</div>
               <blockquote className="text-xl italic text-center px-8 py-4">
-                Compliantas helped us build a security program that met agency expectations and accelerated our federal sales cycle.
+                Complianta helped us build a security program that met agency expectations and accelerated our federal sales cycle.
               </blockquote>
             </div>
             <div className="flex items-center justify-center mt-8">

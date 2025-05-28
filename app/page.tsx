@@ -168,7 +168,7 @@ export default function Home() {
         <div className="container px-4 md:px-6">
           <div className="text-center mb-10">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
-              Why Leading Teams Choose Compliantas
+              Why Leading Teams Choose Complianta
             </h2>
           
           </div>
@@ -493,7 +493,7 @@ export default function Home() {
           <div className="grid gap-12 md:grid-cols-3">
             {[
               {
-                quote: "Compliantas delivered clarity in a space where others brought red tape. Our SOC 2 Type I was done faster than we thought possible.",
+                quote: "Complianta delivered clarity in a space where others brought red tape. Our SOC 2 Type I was done faster than we thought possible.",
                 author: "CTO, Fintech Scale-Up"
               },
               {
@@ -531,7 +531,7 @@ export default function Home() {
             {[
               {
                 quote:
-                  "Compliantas helped us achieve SOC 2 compliance in record time. Their expertise was invaluable.",
+                  "Complianta helped us achieve SOC 2 compliance in record time. Their expertise was invaluable.",
                 name: "Sarah Johnson",
                 title: "CTO, FinTech Startup",
                
@@ -666,7 +666,7 @@ export default function Home() {
                 This is compliance as a growth enabler — not a checkbox.
               </h2>
               <p className="mt-4 text-foreground dark:text-white md:text-xl">
-                Partner with Compliantas to accelerate trust, reduce risk, and scale securely.
+                Partner with Complianta to accelerate trust, reduce risk, and scale securely.
               </p>
               <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
                 <Dialog>

@@ -100,7 +100,7 @@ export default function ArticleB2BSaaSSOC2EnterpriseTrust() {
             SOC 2 is not just about compliance — it's about credibility. And speed matters.
           </p>
           <p className="mb-6">
-            If you're aiming to win enterprise clients or navigate security reviews with confidence, Compliantas can help you get there — fast, and the right way.
+            If you're aiming to win enterprise clients or navigate security reviews with confidence, Complianta can help you get there — fast, and the right way.
           </p>
           <p className="mb-6">
             Let's build something secure, sustainable, and scalable together.

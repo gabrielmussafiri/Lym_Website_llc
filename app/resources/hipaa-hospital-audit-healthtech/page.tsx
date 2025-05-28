@@ -54,7 +54,7 @@ export default function ArticleHIPAAHospitalAuditHealthtech() {
           <div className="my-8 border-t border-border" />
           <h3 className="text-xl font-semibold mb-4">How One Startup Got Audit-Ready in 12 Weeks</h3>
           <p className="mb-6">
-            A cloud-native SaaS company in the care coordination space was preparing to onboard its first major hospital client. The problem? No policies, minimal controls, and an audit deadline fast approaching. Compliantas was engaged to build a HIPAA-aligned program from the ground up.
+            A cloud-native SaaS company in the care coordination space was preparing to onboard its first major hospital client. The problem? No policies, minimal controls, and an audit deadline fast approaching. Complianta was engaged to build a HIPAA-aligned program from the ground up.
           </p>
           <h4 className="font-semibold mb-2">What We Did:</h4>
           <ul className="list-disc list-inside space-y-4 mb-8">
@@ -95,7 +95,7 @@ export default function ArticleHIPAAHospitalAuditHealthtech() {
           <h3 className="text-xl font-semibold mb-4">Building in HealthTech?</h3>
           <p className="mb-6">
             Wondering if your cloud, policies, or team would pass an audit today?
-            <br />Let's explore how Compliantas can help you close the gaps and move forward with confidence.
+            <br />Let's explore how Complianta can help you close the gaps and move forward with confidence.
           </p>
           <div className="mt-12">
             <Link href="/resources" className="text-primary hover:underline">← Back to Resources & Blogs</Link>

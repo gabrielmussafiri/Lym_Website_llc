@@ -50,7 +50,7 @@ export default function AnthillAICaseStudyPage() {
                 </li>
               </ul>
               <p className="text-muted-foreground">
-                AnthillAI partnered with Compliantas to build a compliance and AI governance program from the ground up, fast.
+                AnthillAI partnered with Complianta to build a compliance and AI governance program from the ground up, fast.
               </p>
             </div>
             <div>
@@ -244,7 +244,7 @@ export default function AnthillAICaseStudyPage() {
               <div className="text-4xl text-primary absolute -top-8 -left-8">"</div>
               <div className="text-4xl text-primary absolute -bottom-8 -right-8">"</div>
               <blockquote className="text-xl italic text-center px-8 py-4">
-                Compliantas's team delivered clarity and speed. We went from zero policy to enterprise-ready in record time, and their AI governance expertise was a true differentiator.
+                Complianta's team delivered clarity and speed. We went from zero policy to enterprise-ready in record time, and their AI governance expertise was a true differentiator.
               </blockquote>
             </div>
             <div className="flex items-center justify-center mt-8">
