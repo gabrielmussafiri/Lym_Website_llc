@@ -48,14 +48,63 @@ export default function ContactPage() {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     setIsSubmitting(true)
-    await new Promise((resolve) => setTimeout(resolve, 1500))
-    setIsSubmitting(false)
-    setIsSubmitted(true)
-    setFormState({ name: "", email: "", company: "", service: "", message: "" })
+    
+    try {
+      console.log('Starting form submission...');
+      console.log('Form data:', formState);
+
+      // Validate form data
+      const missingFields = [];
+      if (!formState.name) missingFields.push('Name');
+      if (!formState.email) missingFields.push('Email');
+      if (!formState.company) missingFields.push('Company');
+      if (!formState.service) missingFields.push('Service');
+      if (!formState.message) missingFields.push('Message');
+
+      if (missingFields.length > 0) {
+        throw new Error(`Please fill in all required fields: ${missingFields.join(', ')}`);
+      }
+
+      // Validate email format
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(formState.email)) {
+        throw new Error('Please enter a valid email address');
+      }
+
+      console.log('Sending request to /api/contact...');
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formState),
+      });
+
+      console.log('Response status:', response.status);
+      const data = await response.json();
+      console.log('Response data:', data);
+
+      if (!response.ok) {
+        throw new Error(data.error || data.details || 'Failed to send message');
+      }
+
+      if (data.success) {
+        console.log('Form submitted successfully');
+        setIsSubmitted(true);
+        setFormState({ name: "", email: "", company: "", service: "", message: "" });
+      } else {
+        throw new Error(data.error || 'Failed to send message');
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      alert(error instanceof Error ? error.message : 'Failed to send message. Please try again later.');
+    } finally {
+      setIsSubmitting(false);
+    }
   }
 
   return (
-    <div className="flex flex-col min-h-screen bg-background">
+    <>
       {/* Hero/Intro Section */}
       <section className="py-12 md:py-20">
         <div className="container px-4 md:px-6 max-w-2xl mx-auto text-center">
@@ -71,21 +120,21 @@ export default function ContactPage() {
           {/* Contact Form Card */}
           <Card className="w-full bg-card border border-border">
             <CardContent className="p-8">
-                  <form onSubmit={handleSubmit} className="space-y-6">
+              <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="space-y-1">
-                      <Label htmlFor="name">Full Name</Label>
+                  <Label htmlFor="name">Full Name</Label>
                   <Input id="name" name="name" value={formState.name} onChange={handleChange} required className="bg-background border border-border" />
-                    </div>
+                </div>
                 <div className="space-y-1">
-                      <Label htmlFor="email">Email</Label>
+                  <Label htmlFor="email">Email</Label>
                   <Input id="email" name="email" type="email" value={formState.email} onChange={handleChange} required className="bg-background border border-border" />
-                    </div>
+                </div>
                 <div className="space-y-1">
-                      <Label htmlFor="company">Company</Label>
+                  <Label htmlFor="company">Company</Label>
                   <Input id="company" name="company" value={formState.company} onChange={handleChange} required className="bg-background border border-border" />
-                    </div>
+                </div>
                 <div className="space-y-1">
-                      <Label htmlFor="service">Service of Interest</Label>
+                  <Label htmlFor="service">Service of Interest</Label>
                   <select
                     id="service"
                     name="service"
@@ -99,20 +148,20 @@ export default function ContactPage() {
                       <option key={opt.value} value={opt.value}>{opt.label}</option>
                     ))}
                   </select>
-                    </div>
+                </div>
                 <div className="space-y-1">
-                      <Label htmlFor="message">Message</Label>
+                  <Label htmlFor="message">Message</Label>
                   <Textarea id="message" name="message" value={formState.message} onChange={handleChange} rows={5} required className="bg-background border border-border" />
-                    </div>
-                    <Button type="submit" className="w-full" disabled={isSubmitting}>
-                      {isSubmitting ? "Sending..." : "Send Message"}
-                    </Button>
+                </div>
+                <Button type="submit" className="w-full" disabled={isSubmitting}>
+                  {isSubmitting ? "Sending..." : "Send Message"}
+                </Button>
                 {isSubmitted && (
                   <div className="text-green-600 text-center pt-2">Thank you! We'll be in touch within 24 hours.</div>
                 )}
               </form>
-              </CardContent>
-            </Card>
+            </CardContent>
+          </Card>
 
           {/* Contact Info & FAQ */}
           <div className="flex flex-col gap-8">
@@ -122,21 +171,21 @@ export default function ContactPage() {
               <div className="space-y-3">
                 <div className="flex items-start gap-3">
                   <Mail className="h-5 w-5 text-primary mt-0.5" />
-              <div>
+                  <div>
                     <span className="font-medium">Email</span><br />
-                    <a href="mailto:info@complianta.com" className="text-muted-foreground hover:text-primary">info@complianta.com</a>
+                    <a href="mailto:info@compliantas.com" className="text-muted-foreground hover:text-primary">info@compliantas.com</a>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <Phone className="h-5 w-5 text-primary mt-0.5" />
-                    <div>
+                  <div>
                     <span className="font-medium">Phone</span><br />
                     <a href="tel:+19723999143" className="text-muted-foreground hover:text-primary">+1 (972) 399-9143</a>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <MapPin className="h-5 w-5 text-primary mt-0.5" />
-                    <div>
+                  <div>
                     <span className="font-medium">Office</span><br />
                     Complianta LLC<br />
                     12436 FM 1960 Rd W<br />
@@ -146,33 +195,33 @@ export default function ContactPage() {
                 </div>
                 <div className="flex items-start gap-3">
                   <Calendar className="h-5 w-5 text-primary mt-0.5" />
-                    <div>
+                  <div>
                     <span className="font-medium">Schedule a Call</span><br />
                     <span className="text-muted-foreground">Book a 30-minute consultation with our team.</span><br />
-                      <Dialog>
-                        <DialogTrigger asChild>
-                          <Button variant="outline" className="mt-2">Schedule Now</Button>
-                        </DialogTrigger>
-                        <DialogContent>
-                          <DialogTitle>Schedule a Free Consultation</DialogTitle>
-                          <div className="w-full" style={{ minHeight: 600 }}>
-                            <CalendlyWidget />
-                          </div>
-                        </DialogContent>
-                      </Dialog>
-                    </div>
+                    <Dialog>
+                      <DialogTrigger asChild>
+                        <Button variant="outline" className="mt-2">Schedule Now</Button>
+                      </DialogTrigger>
+                      <DialogContent>
+                        <DialogTitle>Schedule a Free Consultation</DialogTitle>
+                        <div className="w-full" style={{ minHeight: 600 }}>
+                          <CalendlyWidget />
+                        </div>
+                      </DialogContent>
+                    </Dialog>
                   </div>
                 </div>
               </div>
+            </div>
             <div className="bg-card rounded-lg shadow-sm border border-border p-8">
               <h2 className="text-xl font-bold mb-4">Frequently Asked Questions</h2>
-                <div className="space-y-4">
-                  <div>
-                    <h3 className="font-semibold">How quickly can you help us achieve compliance?</h3>
+              <div className="space-y-4">
+                <div>
+                  <h3 className="font-semibold">How quickly can you help us achieve compliance?</h3>
                   <p className="text-muted-foreground">Timelines vary based on your current security posture and specific requirements. Most clients achieve SOC 2 Type I in 8-12 weeks.</p>
-                  </div>
-                  <div>
-                    <h3 className="font-semibold">Do you work with startups?</h3>
+                </div>
+                <div>
+                  <h3 className="font-semibold">Do you work with startups?</h3>
                   <p className="text-muted-foreground">Yes! We specialize in helping startups and growing companies achieve compliance efficiently.</p>
                 </div>
                 <Link href="/faq" className="text-primary hover:underline inline-block mt-2">View all FAQs</Link>
@@ -199,12 +248,9 @@ export default function ContactPage() {
                 </div>
               </DialogContent>
             </Dialog>
-            <Button variant="outline" size="lg" asChild>
-              <Link href="/services">Explore Services</Link>
-            </Button>
           </div>
         </div>
       </section>
-    </div>
+    </>
   )
 }

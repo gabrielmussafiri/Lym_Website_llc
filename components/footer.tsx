@@ -1,9 +1,76 @@
+"use client"
+
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react"
+import { useState, useEffect } from "react"
+import { CheckCircle2 } from "lucide-react"
 
 export default function Footer() {
+  const [email, setEmail] = useState("")
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [message, setMessage] = useState<{ type: 'success' | 'error', text: string } | null>(null)
+
+  // Add useEffect to clear message after 5 seconds
+  useEffect(() => {
+    if (message) {
+      const timer = setTimeout(() => {
+        setMessage(null)
+      }, 5000) // 5 seconds
+
+      return () => clearTimeout(timer)
+    }
+  }, [message])
+
+  const handleSubscribe = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+    setIsSubmitting(true)
+    setMessage(null)
+
+    try {
+      console.log('Footer: Sending subscription request for:', email);
+      
+      const response = await fetch('/api/newsletter', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json',
+        },
+        body: JSON.stringify({ email }),
+      })
+
+      console.log('Footer: Response status:', response.status);
+      
+      // Check if the response is JSON
+      const contentType = response.headers.get('content-type');
+      if (!contentType || !contentType.includes('application/json')) {
+        throw new Error('Server returned non-JSON response');
+      }
+
+      const data = await response.json()
+      console.log('Footer: Response data:', data);
+
+      if (!response.ok) {
+        throw new Error(data.error || 'Failed to subscribe')
+      }
+
+      setMessage({
+        type: 'success',
+        text: 'Thank you for subscribing! Please check your email for confirmation.'
+      })
+      setEmail("")
+    } catch (error) {
+      console.error('Footer: Error during subscription:', error);
+      setMessage({
+        type: 'error',
+        text: error instanceof Error ? error.message : 'Failed to subscribe. Please try again.'
+      })
+    } finally {
+      setIsSubmitting(false)
+    }
+  }
+
   return (
     <footer className="bg-muted">
       <div className="mx-auto max-w-7xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8">
@@ -81,7 +148,7 @@ export default function Footer() {
             <div>
               <h3 className="text-sm font-semibold">Subscribe</h3>
               <p className="mt-4 text-sm text-muted-foreground">Get the latest compliance updates.</p>
-              <form className="mt-4 sm:flex sm:max-w-md">
+              <form onSubmit={handleSubscribe} className="mt-4 space-y-3">
                 <Input
                   type="email"
                   name="email"
@@ -89,11 +156,37 @@ export default function Footer() {
                   autoComplete="email"
                   required
                   placeholder="Enter your email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                   className="w-full min-w-0"
                 />
-                <div className="mt-3 sm:ml-3 sm:mt-0">
-                  <Button type="submit">Subscribe</Button>
-                </div>
+                <Button type="submit" disabled={isSubmitting} className="w-full">
+                  {isSubmitting ? "Subscribing..." : "Subscribe"}
+                </Button>
+                {message && (
+                  <div className={`mt-3 p-3 rounded-lg ${
+                    message.type === 'success' 
+                      ? 'bg-primary/10 border border-primary/20' 
+                      : 'bg-destructive/10 border border-destructive/20'
+                  }`}>
+                    <div className="flex items-center gap-2">
+                      {message.type === 'success' ? (
+                        <CheckCircle2 className="h-5 w-5 text-primary" />
+                      ) : (
+                        <svg className="h-5 w-5 text-destructive" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                      )}
+                      <p className={`text-sm ${
+                        message.type === 'success' 
+                          ? 'text-primary' 
+                          : 'text-destructive'
+                      }`}>
+                        {message.text}
+                      </p>
+                    </div>
+                  </div>
+                )}
               </form>
             </div>
           </div>

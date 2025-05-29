@@ -33,10 +33,59 @@ function ContactForm() {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
-    await new Promise((resolve) => setTimeout(resolve, 1500));
-    setIsSubmitting(false);
-    setIsSubmitted(true);
-    setFormState({ name: "", email: "", company: "", service: "", message: "" });
+    
+    try {
+      console.log('Starting form submission...');
+      console.log('Form data:', formState);
+
+      // Validate form data
+      const missingFields = [];
+      if (!formState.name) missingFields.push('Name');
+      if (!formState.email) missingFields.push('Email');
+      if (!formState.company) missingFields.push('Company');
+      if (!formState.service) missingFields.push('Service');
+      if (!formState.message) missingFields.push('Message');
+
+      if (missingFields.length > 0) {
+        throw new Error(`Please fill in all required fields: ${missingFields.join(', ')}`);
+      }
+
+      // Validate email format
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(formState.email)) {
+        throw new Error('Please enter a valid email address');
+      }
+
+      console.log('Sending request to /api/contact...');
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formState),
+      });
+
+      console.log('Response status:', response.status);
+      const data = await response.json();
+      console.log('Response data:', data);
+
+      if (!response.ok) {
+        throw new Error(data.error || data.details || 'Failed to send message');
+      }
+
+      if (data.success) {
+        console.log('Form submitted successfully');
+        setIsSubmitted(true);
+        setFormState({ name: "", email: "", company: "", service: "", message: "" });
+      } else {
+        throw new Error(data.error || 'Failed to send message');
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      alert(error instanceof Error ? error.message : 'Failed to send message. Please try again later.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -93,7 +142,7 @@ function ContactForm() {
 
 export default function Home() {
   return (
-    <div className="flex flex-col">
+    <>
       {/* Hero Section with Two Columns */}
       <section className="relative py-20 md:py-32 bg-background">
         <div className="container px-4 md:px-6 flex flex-col-reverse lg:flex-row items-center gap-12">
@@ -125,7 +174,7 @@ export default function Home() {
                   </Button>
                 </DialogTrigger>
                 <DialogContent>
-                  <DialogTitle>Schedule a Free Consultation</DialogTitle>
+                  <DialogTitle className="text-xl font-semibold mb-4">Schedule a Free Consultation</DialogTitle>
                   <div className="w-full" style={{ minHeight: 600 }}>
                     <CalendlyWidget />
                   </div>
@@ -679,7 +728,7 @@ export default function Home() {
                     </Button>
                   </DialogTrigger>
                   <DialogContent>
-                    <DialogTitle>Schedule a Free Consultation</DialogTitle>
+                    <DialogTitle className="text-xl font-semibold mb-4">Schedule a Free Consultation</DialogTitle>
                     <div className="w-full" style={{ minHeight: 600 }}>
                       <CalendlyWidget />
                     </div>
@@ -752,6 +801,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-    </div>
+    </>
   );
 }
