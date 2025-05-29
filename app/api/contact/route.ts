@@ -1,15 +1,12 @@
 import { NextResponse } from 'next/server';
 import { Resend } from 'resend';
 
-// Initialize Resend with your API key
-const RESEND_API_KEY = 're_fYuN4RiQ_5a9ktJu83LaGKdrfee4m3Yg1';
-
-// Validate API key format
-if (!RESEND_API_KEY.startsWith('re_')) {
-  console.error('Invalid Resend API key format');
+// Validate that the API key is present
+if (!process.env.RESEND_API_KEY) {
+  throw new Error('RESEND_API_KEY is not defined in environment variables');
 }
 
-const resend = new Resend(RESEND_API_KEY);
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 // Add a GET method for testing
 export async function GET() {
@@ -67,41 +64,19 @@ export async function GET() {
 }
 
 export async function POST(request: Request) {
-  try {
-    console.log('Received POST request to /api/contact');
-    console.log('Request headers:', Object.fromEntries(request.headers.entries()));
+  console.log('Received POST request to /api/contact');
+  console.log('Request headers:', request.headers);
 
-    // Parse the request body
-    let body;
-    try {
-      body = await request.json();
-      console.log('Parsed request body:', body);
-    } catch (parseError) {
-      console.error('Error parsing request body:', parseError);
-      return NextResponse.json(
-        { success: false, error: 'Invalid JSON in request body' },
-        { status: 400 }
-      );
-    }
+  try {
+    const body = await request.json();
+    console.log('Parsed request body:', body);
 
     const { name, email, company, service, message } = body;
 
-    // Validate all required fields
-    const missingFields = [];
-    if (!name) missingFields.push('name');
-    if (!email) missingFields.push('email');
-    if (!company) missingFields.push('company');
-    if (!service) missingFields.push('service');
-    if (!message) missingFields.push('message');
-
-    if (missingFields.length > 0) {
-      console.error('Missing required fields:', missingFields);
+    // Validate required fields
+    if (!name || !email || !company || !service || !message) {
       return NextResponse.json(
-        { 
-          success: false, 
-          error: 'Missing required fields',
-          details: `Missing fields: ${missingFields.join(', ')}`
-        },
+        { error: 'All fields are required' },
         { status: 400 }
       );
     }
@@ -109,67 +84,54 @@ export async function POST(request: Request) {
     // Validate email format
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
-      console.error('Invalid email format:', email);
       return NextResponse.json(
-        { success: false, error: 'Invalid email format' },
+        { error: 'Invalid email format' },
         { status: 400 }
       );
     }
 
     console.log('Preparing to send email with Resend...');
-    console.log('Email details:', {
-      from: 'info@compliantas.com',
-      to: ['info@compliantas.com'],
-      replyTo: email,
-      subject: `New Contact Form Submission - ${service}`,
-    });
-
-    // Send email using Resend
-    const { data, error } = await resend.emails.send({
+    const emailDetails = {
       from: 'info@compliantas.com',
       to: ['info@compliantas.com'],
       replyTo: email,
       subject: `New Contact Form Submission - ${service}`,
       html: `
-        <h2>New Contact Form Submission</h2>
-        <p><strong>Name:</strong> ${name}</p>
-        <p><strong>Email:</strong> ${email}</p>
-        <p><strong>Company:</strong> ${company}</p>
-        <p><strong>Service:</strong> ${service}</p>
-        <p><strong>Message:</strong></p>
-        <p>${message}</p>
+        <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
+          <h2 style="color: #2563eb;">New Contact Form Submission</h2>
+          <div style="margin: 20px 0; padding: 20px; background-color: #f8fafc; border-radius: 8px;">
+            <p><strong>Name:</strong> ${name}</p>
+            <p><strong>Email:</strong> ${email}</p>
+            <p><strong>Company:</strong> ${company}</p>
+            <p><strong>Service:</strong> ${service}</p>
+            <p><strong>Message:</strong></p>
+            <p style="white-space: pre-wrap;">${message}</p>
+          </div>
+          <hr style="border: 1px solid #e5e7eb; margin: 20px 0;" />
+          <p style="color: #6b7280; font-size: 12px;">
+            This message was sent from the contact form on Complianta's website.
+          </p>
+        </div>
       `,
-    });
+    };
+    console.log('Email details:', emailDetails);
+
+    const { data, error } = await resend.emails.send(emailDetails);
 
     if (error) {
       console.error('Resend API error:', error);
       return NextResponse.json(
-        { 
-          success: false, 
-          error: 'Failed to send email',
-          details: error.message
-        },
+        { error: 'Failed to send email' },
         { status: 500 }
       );
     }
 
     console.log('Email sent successfully:', data);
+    return NextResponse.json({ success: true, data });
+  } catch (error) {
+    console.error('Error processing request:', error);
     return NextResponse.json(
-      { 
-        success: true, 
-        message: 'Email sent successfully',
-        messageId: data?.id
-      },
-      { status: 200 }
-    );
-  } catch (error: any) {
-    console.error('Unexpected error in contact form handler:', error);
-    return NextResponse.json(
-      { 
-        success: false, 
-        error: 'Internal server error',
-        details: error?.message || 'An unexpected error occurred'
-      },
+      { error: 'Internal server error' },
       { status: 500 }
     );
   }
