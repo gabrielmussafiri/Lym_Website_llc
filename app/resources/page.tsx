@@ -19,7 +19,7 @@ const articles = [
     excerpt: "In today's AI-driven economy, governance isn't a formality—it's a differentiator. Here's how a startup aligned with ISO/IEC 42001 and accelerated their path to enterprise adoption.",
     author: "Yannick Massivi",
     date: "January 2025",
-    image: "/startups.jpg"
+    image: "/Startups.jpg"
   },
   {
     slug: "hipaa-hospital-audit-healthtech",
