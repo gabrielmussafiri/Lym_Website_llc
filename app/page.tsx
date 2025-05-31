@@ -328,10 +328,10 @@ export default function Home() {
             {[
               { name: "Anthill", logo: "./anthil.png" },
               { name: "MayTech", logo: "./maytech.png" },
+              { name: "Kunti", logo: "./kunti.png" },
+              { name: "Lygm", logo: "./lygm.png" },
               { name: "Anthill", logo: "./anthil.png" },
-              { name: "MayTech", logo: "./maytech.png" },
-              { name: "Anthill", logo: "./anthil.png" },
-              { name: "MayTech", logo: "./maytech.png" },
+              { name: "Lygm", logo: "./lygm.png" },
             ].map((company, i) => (
               <div
                 key={i}
@@ -349,10 +349,10 @@ export default function Home() {
             {[
               { name: "Anthill", logo: "./anthil.png" },
               { name: "MayTech", logo: "./maytech.png" },
+              { name: "Kunti", logo: "./kunti.png" },
+              { name: "Lygm", logo: "./lygm.png" },
               { name: "Anthill", logo: "./anthil.png" },
-              { name: "MayTech", logo: "./maytech.png" },
-              { name: "Anthill", logo: "./anthil.png" },
-              { name: "MayTech", logo: "./maytech.png" },
+              { name: "Lygm", logo: "./lygm.png" },
             ].map((company, i) => (
               <div
                 key={`dup-${i}`}
