@@ -18,7 +18,7 @@ const articles = [
     title: "How AI Startups Are Building Enterprise Trust with ISO/IEC 42001",
     excerpt: "In today's AI-driven economy, governance isn't a formality—it's a differentiator. Here's how a startup aligned with ISO/IEC 42001 and accelerated their path to enterprise adoption.",
     author: "Yannick Massivi",
-    date: "June 2024",
+    date: "January 2025",
     image: "/startups.jpg"
   },
   {
@@ -26,7 +26,7 @@ const articles = [
     title: "What It Takes to Pass a Hospital Audit: HIPAA Compliance for Growing HealthTech Startups",
     excerpt: "A practical look at how one healthcare SaaS company secured protected health information, hardened its cloud, and passed a hospital audit — in just 12 weeks.",
     author: "Yannick Massivi",
-    date: "June 2024",
+    date: "June 2025",
     image: "/HealthTech.jpg"
   },
   {
@@ -34,7 +34,7 @@ const articles = [
     title: "How B2B SaaS Startups Can Fast-Track SOC 2 and Win Enterprise Trust",
     excerpt: "A 10-week path to compliance, maturity, and customer confidence — without slowing down your roadmap.",
     author: "Yannick Massivi",
-    date: "June 2024",
+    date: "April 2025",
     image: "/b2bsaas.jpg"
   },
   {
@@ -42,8 +42,8 @@ const articles = [
     title: "How Cloud-Native GovTech Startups Can Align with NIST 800-53 and FedRAMP to Unlock Federal Markets",
     excerpt: "A strategic roadmap for early-stage SaaS teams looking to win government trust, pass agency reviews, and build a scalable security foundation.",
     author: "Yannick Massivi",
-    date: "June 2024",
-    image: "/blog-govtech-nist.jpg"
+    date: "May 2025",
+    image: "/cloud-native.png"
   }
 ]
 
