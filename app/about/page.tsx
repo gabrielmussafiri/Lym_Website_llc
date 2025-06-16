@@ -174,33 +174,34 @@ export default function AboutPage() {
             {[
               {
                 name: "Yannick Massivi",
-                title: "Founder & CEO",
-                bio: "Certified Information Systems Security Professional (CISSP) with 9+ years of experience in enterprise security and compliance. Expert in cloud security architecture across AWS, Azure, and hybrid environments. Specializes in SOC 2, ISO 27001, and AI governance frameworks, delivering audit-ready compliance programs.",
+                title: "Founder & Chief Compliance Strategist",
+                bio: "Certified CISSP with 9+ years leading enterprise compliance and security. Yannick specializes in SOC 2, ISO 27001, and AI governance frameworks, helping companies achieve audit readiness with clarity and speed. Clients rely on his strategic vision and deep technical expertise to build trust with customers and scale securely",
               },
               {
                 name: "Constanthino Mayele",
-                title: "Team Lead",
-                bio: "Master's candidate and accomplished team lead specializing in scaling automation solutions, endpoint management, and security. As a Zero Trust Advisor and Agile Practitioner, he brings a collaborative, lifelong learning mindset to every engagement, helping organizations implement modern security strategies and drive operational excellence.",
+                title: "Compliance Automation Lead",
+                bio: "Master’s-level specialist in automating security controls and endpoint management. Constanthino bridges technical implementation with regulatory frameworks, reducing manual effort and accelerating audit readiness. His collaborative, agile mindset ensures your compliance program runs smoothly from day one",
+
               },
               {
                 name: "Joel Khang ",
-                title: "Senior Full Stack Web Developer",
-                bio: "Cloud developer specializing in Node.js and AWS, with a proven track record of building scalable, high-performance applications",
+                title: "Cloud Security Engineer",
+                bio: "Cloud architect with a focus on secure, compliant infrastructure across AWS, Azure, and GCP. Joel aligns cloud deployments with compliance frameworks, ensuring your systems are audit-ready and secure by design. He empowers teams to deploy faster—without sacrificing security",
               },
               {
                 name: "Yasmine McKenzie",
-                title: "Compliance Program Manager",
-                bio: "Certified compliance professional with extensive experience in documentation frameworks, policy development, and audit readiness. Leads evidence workflows and provides expert guidance for high-growth SaaS companies.",
+                title: "Compliance Documentation Specialist",
+                bio: "Certified compliance professional with extensive experience in policy development, evidence management, and audit preparation. Yasmine translates complex frameworks into clear, actionable documentation that simplifies audits and builds trust with clients and regulators alike.",
               },
               {
                 name: "Gabriel Godlive",
-                title: "DevSecOps Engineer",
-                bio: "Full-stack security engineer focused on compliance automation, Infrastructure as Code (IaC), and secure software deployment. Expert in integrating compliance tools like Drata, Vanta, and AWS-native security services.",
+                title: "Compliance Automation Engineer",
+                bio: "Expert in integrating security and compliance tools to streamline evidence collection and reporting. Gabriel automates the heavy lifting of compliance, so your team can focus on growth while staying audit-ready. Specializes in SOC 2, ISO 27001, and AI governance automation using Drata, Vanta, and AWS-native solutions.",
               },
               {
-                name: "James Okoro",
-                title: "Security Operations Specialist",
-                bio: "Certified security operations professional specializing in vulnerability management, endpoint protection, and incident response. Develops and implements security playbooks aligned with evolving risk landscapes.",
+                name: "Cedric Mukendi",
+                title: "Security Operations & Risk Management Lead",
+                bio: "Certified security operations professional specializing in vulnerability management, endpoint protection, and incident response. Cedric develops proactive risk management strategies and security playbooks that align with SOC 2, ISO 27001, and AI risk frameworks—keeping your business safe and audit-ready",
               }
             ].map((member, i) => (
               <Card key={i} className="overflow-hidden transform hover:scale-105 transition-all duration-300 hover:shadow-lg">
