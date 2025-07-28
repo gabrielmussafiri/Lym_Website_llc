@@ -173,7 +173,7 @@ export default function ContactPage() {
                   <Mail className="h-5 w-5 text-primary mt-0.5" />
                   <div>
                     <span className="font-medium">Email</span><br />
-                    <a href="mailto:info@compliantas.com" className="text-muted-foreground hover:text-primary">info@compliantas.com</a>
+                    <a href="mailto:info@compliantas.com" className="text-muted-foreground hover:text-primary">info@complianta.co</a>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
