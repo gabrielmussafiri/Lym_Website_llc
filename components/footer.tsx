@@ -129,8 +129,8 @@ export default function Footer() {
               <h3 className="text-sm font-semibold">Services</h3>
               <ul className="mt-4 space-y-2">
                 <li>
-                  <Link href="/services/soc2" className="text-sm text-muted-foreground hover:text-foreground">
-                    SOC 2 Readiness
+                  <Link href="/services/ai-governance" className="text-sm text-muted-foreground hover:text-foreground">
+                  AI Governance Compliance
                   </Link>
                 </li>
                 <li>
@@ -141,6 +141,16 @@ export default function Footer() {
                 <li>
                   <Link href="/services/vciso" className="text-sm text-muted-foreground hover:text-foreground">
                     vCISO Advisory
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/services/startup-compliance" className="text-sm text-muted-foreground hover:text-foreground">
+                    Compliance
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/services/startup-compliance" className="text-sm text-muted-foreground hover:text-foreground">
+                    Audit Readiness
                   </Link>
                 </li>
               </ul>
