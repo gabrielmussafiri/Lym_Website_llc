@@ -113,11 +113,7 @@ export default function Footer() {
                     About Us
                   </Link>
                 </li>
-                <li>
-                  <Link href="/case-studies" className="text-sm text-muted-foreground hover:text-foreground">
-                    Case Studies
-                  </Link>
-                </li>
+                
                 <li>
                   <Link href="/contact" className="text-sm text-muted-foreground hover:text-foreground">
                     Contact
