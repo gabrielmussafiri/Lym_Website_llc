@@ -1,10 +1,15 @@
 {
-    "redirects": [
-      {
-        "source": "/(.*)",
-        "destination": "https://complianta.co/$1",
-        "permanent": true
-      }
-    ]
-  }
-  
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "compliantas.com"
+        }
+      ],
+      "destination": "https://complianta.co/$1",
+      "permanent": true
+    }
+  ]
+}
