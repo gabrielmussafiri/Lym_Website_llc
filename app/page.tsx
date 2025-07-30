@@ -201,7 +201,7 @@ export default function Home() {
           <div className="w-full lg:w-1/2 flex justify-center items-center">
             {/* Replace the src below with your uploaded transparent image */}
             <Image
-              src="/homeok.png"
+              src="/homeok22.png"
               alt="Compliance dashboard illustration"
               width={990}
               height={980}
